@@ -1,0 +1,214 @@
+@import "../../../../Styles/colors.scss";
+
+.insightNotification-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  &__closeIconContainer {
+    position: absolute !important;
+    right: 0;
+    height: 15px;
+    width: 15px;
+    background: rgb(247, 176, 71) !important;
+    border-radius: 0px !important;
+    padding: 0 !important;
+    &__icon {
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+  &__head {
+    padding: 1rem 2.4rem 1rem 1.2rem;
+    &__title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 10px;
+      color: #fff;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      z-index: -1;
+      height: fit-content;
+    }
+    &__leftText1 {
+      color: #fff;
+      margin: 0 1.5rem;
+      cursor: pointer;
+    }
+    &__leftText2 {
+      color: #fff;
+      margin-right: 1.5rem;
+      cursor: pointer;
+    }
+    &__textUnderline {
+      text-decoration: underline;
+    }
+    &__filterIcon {
+      font-size: 2rem !important;
+      float: right;
+      color: #fff;
+      cursor: pointer;
+    }
+    &__expandIcon {
+      float: right;
+      padding: 0.2rem !important;
+      margin-right: 1rem !important;
+    }
+  }
+  &__filtersContainer {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    overflow-x: scroll;
+    padding: 0.5rem 0;
+    margin-left: 1.5rem;
+    &__filterOption {
+      color: #fff;
+      margin-right: 1rem;
+      &__chip {
+        font-size: 1.2rem !important;
+      }
+      &__activeChip {
+        background: rgb(247, 176, 71) !important;
+      }
+    }
+  }
+  &__insightsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    position: absolute;
+    &__loader {
+      position: fixed;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    &::-webkit-scrollbar {
+      width: 4px; /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent; /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: lightgrey; /* color of the scroll thumb */
+      border-radius: 20px; /* roundness of the scroll thumb */
+    }
+    &__scroll {
+      overflow: auto;
+      overflow-x: hidden;
+      margin-bottom: 2rem;
+    }
+    &__messageCard {
+      padding: 3rem 3rem 6rem 3rem;
+      margin: 1.5rem 1rem;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 1px 10px 0 #000;
+      border-radius: 4px;
+      font-size: 13px;
+      display: flex;
+      transition: all 0.5s ease-in-out;
+      position: relative;
+      align-items: flex-start;
+      min-height: 13rem;
+      flex-direction: column;
+      background-color: $SLATE-INSIGHT-CARD-BG;
+      &:hover {
+        transform: scale(1.01);
+      }
+      &__textContainer {
+        width: 100%;
+        color: #fff;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+    &__dismissCard {
+      animation: swipeLeft 1s ease forwards;
+    }
+    &__pinCard {
+      animation: swipeLeft 1s ease forwards;
+    }
+    &__favCard {
+      animation: swipeRight 1s ease forwards;
+    }
+    &__leftIconContainer {
+      position: absolute;
+      bottom: 5%;
+      left: 6%;
+      &__icon1 {
+        color: #fff;
+        font-size: 18px !important;
+        margin-right: 1rem;
+        cursor: pointer;
+        &.active {
+          color: rgb(247, 176, 71);
+        }
+      }
+      &__icon2 {
+        color: #fff;
+        font-size: 18px !important;
+        cursor: pointer;
+        &.active {
+          color: rgb(247, 176, 71);
+        }
+      }
+    }
+    &__rightIconContainer {
+      position: absolute;
+      bottom: 5%;
+      right: 5px;
+      &__iconContainer {
+        padding: 0.5rem !important;
+        &__icon {
+          font-size: 18px !important;
+          color: #fff;
+        }
+      }
+    }
+    &__noDataContainer {
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 78vh;
+      flex-direction: column;
+      font-size: 32px;
+      font-weight: 500;
+      opacity: 0.7;
+      &__commonText {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__open {
+    transform: translateX(0%);
+  }
+  &__hidden {
+    transform: translateX(-100%);
+  }
+
+  @keyframes swipeLeft {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translateX(110%);
+    }
+  }
+  @keyframes swipeRight {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translateX(-110%);
+    }
+  }
+}

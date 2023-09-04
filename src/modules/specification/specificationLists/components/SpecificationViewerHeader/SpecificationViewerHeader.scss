@@ -1,0 +1,32 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.spec-viewer-header{
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    box-shadow: 0px 2px 4px #9e989869;
+
+    &__wrapper{
+        @include flexCenter(space-between);
+        flex-wrap: wrap;
+
+        &__navBack{
+            font-size: 1.8rem;
+            position: relative;
+            top: 3px;
+            cursor: pointer;
+        }
+
+        &__text{
+            @include flexCenter(flex-start);
+            h2{
+                font-size: 2.2rem;
+                font-weight: 600;
+                margin-right: 10px;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

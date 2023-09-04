@@ -1,0 +1,198 @@
+// @import "../../../../../assets/onx/variable";
+// @import "../../../../../assets/onx/abstracts/mixins";
+
+
+@import "../../../../../assets/onx/variable";
+
+.materialMasterImport {
+    @include flexCenter(space-between);
+    &__materialUpload {
+        margin: 6px 6px 6px 6px;
+        &__dropZone {
+            background: #EBEBEB;
+            border: 2px dashed #505050;
+            box-sizing: border-box;
+            border-radius: 4px;
+            &__content {
+                text-align: center;
+                padding-top: 12rem;
+                &__dragText {
+                    font-family: $font-family;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    line-height: 32px;
+                    padding-top: 1rem;
+                }
+                &__uploadButton {
+                    align-items: center;
+                    padding: 8px 24px;
+                    background: #F0F0F0;
+                    box-shadow: 0px 0px 1px -4px #000000, inset 0px 2px 1px #FFFFFF;
+                    border-radius: 6px;
+                    font-family: $font-family;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #1F1F1F;
+                    margin-top: 1rem;
+                }
+                &__file {
+                    @include flexCenter(space-around);
+                    background: #FFFFFF !important;
+                    border: 1px solid #D2D2D2;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    padding: 2rem 2rem;
+                    width: fit-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-family: $font-family;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    line-height: 16px;
+                    letter-spacing: 0.5px;
+                    color: #070905;
+                }
+                &__uploadMessage {
+                    font-family: $font-family;
+                    font-style: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.5px;
+                    color: #070905;
+                    margin-top: 3rem;
+                    margin-bottom: 10rem;
+                }
+                &__fileFormat {
+                    font-family: $font-family;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.5px;
+                    color: #070905;
+                    padding-top: 1rem;
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+        &__planWarning {
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #070905;
+            padding-top: 2rem;
+        }
+    }
+    &__download-template-button {
+        border: none;
+        background-color: #00000000;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        /* identical to box height, or 154% */
+
+        display: flex;
+        align-items: center;
+
+        /* Onx/A2 */
+
+        color: #212121;
+        text-align: center;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.action-discard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    background: #F0F0F0;
+    box-shadow: 0px 0px 1px -4px #000000, inset 0px 2px 1px #FFFFFF;
+    border-radius: 6px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #1F1F1F;
+}
+
+.action-import {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    background: #F0F0F0;
+    // box-shadow: 0px 0px 1px -4px #000000, inset 0px 2px 1px #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #1F1F1F;
+}
+
+.action-import-active {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 24px;
+    background: #0E0D0D;
+    border: 0.5px solid #0E0D0D;
+    box-sizing: border-box;
+    // box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.25);
+    border: none;
+    border-radius: 6px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF!important;
+    &:hover {
+        background: #0E0D0D,
+     }
+}
+
+.horizontal-line {
+  margin-bottom: 2rem;
+}
+
+.warning-import-message {
+
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  text-align: center;
+
+  /* Onx/A3 */
+
+  color: #424242;
+}

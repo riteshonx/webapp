@@ -1,0 +1,79 @@
+.imageDetailsPopup {
+  &__iconButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &__mainContainer {
+    display: flex;
+    flex: 1;
+    &__imageContainer {
+      display: flex;
+      flex: 10;
+      align-items: center;
+      justify-content: center;
+      background-color: darkgrey;
+      &__image {
+        width: 100%;
+        display: flex;
+        flex: 1;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &__doc {
+        font-size: 15rem;
+        color: grey;
+        flex: 1;
+      }
+    }
+    &__detailsContainer {
+      visibility: hidden;
+      width: 0%;
+      &__dashboardCheck {
+        .MuiTypography-body1 {
+          font-size: 1.4rem;
+        }
+      }
+      &__show {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        padding: 4rem;
+        margin-top: 2rem;
+        visibility: visible;
+        &__nonEditable {
+          pointer-events: none;
+        }
+
+        &__text {
+          width: 100%;
+          z-index: 1;
+          margin-bottom: 1rem;
+          text-align: left;
+          &__label {
+            margin: 0 0 4px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #000;
+          }
+        }
+
+        &__upload {
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        &__text {
+          font-size: 1.4rem;
+          color: #000;
+          margin-left: 0.1rem;
+        }
+      }
+    }
+  }
+}

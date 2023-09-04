@@ -1,0 +1,75 @@
+@import '../../../Styles/colors.scss';
+
+.v2-dailylog-popover {
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid $SLATE-BORDER-PRIMARY;
+    background: linear-gradient(89.95deg, #FAB144 -49.88%, rgba(255, 168, 13, 0.1) 102.13%);
+  }
+
+  &-wrapper {
+    padding: 20px;
+    // display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  &-table {
+    border-collapse: collapse;
+    width: 95%;
+    border: 1px solid $SLATE-V2-3;
+    text-align: center;
+
+    &-head {
+      border: 1px solid$SLATE-V2-3
+    }
+
+    tr td:not(:last-child),
+    tr th:not(:last-child) {
+      border-right: 1px solid$SLATE-V2-3;
+    }
+
+    td {
+      padding: 8px;
+      border: 1px solid $SLATE-V2-3;
+      
+    }
+
+    th {
+      padding: 5px;
+      width: 110px;
+    }
+  }
+  &-loader{
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    & > div {
+      height: 40px;
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+  }
+    &-fallback{
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    img{
+      align-self: flex-end;
+    }
+  }
+  
+}

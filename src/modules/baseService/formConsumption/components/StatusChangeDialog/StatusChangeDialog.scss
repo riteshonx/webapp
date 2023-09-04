@@ -1,0 +1,47 @@
+@import "../../../../../assets/onx/variable";
+
+$dark-green: #105c6b;
+
+.statusChangeDialog {
+  .MuiDialog-paper {
+    max-width: 710px;
+  }
+
+  &_controlBar {
+    @include flexCenter(initial);
+    height: 50px;
+    &_oldStatus {
+      color: $dark-green;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    &_label {
+      margin-left: 2rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  &_comment {
+    width: 100%;
+    min-height: 100px;
+    padding: 1.2rem;
+    font-family: inherit;
+    border-radius: 3px;
+  }
+  &_actions {
+    &_btn {
+      text-transform: none;
+      &_update {
+        background-color: $dark-green;
+        color: white;
+        &:hover {
+          background-color: #073641;
+        }
+        //to increase the specificity
+        &.MuiButtonBase-root {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}

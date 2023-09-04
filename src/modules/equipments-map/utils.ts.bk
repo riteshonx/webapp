@@ -1,0 +1,184 @@
+export const handleEquipmentAnimationMovement = (marker) => {
+  const originLng = marker.getPosition().lng();
+  const originLat = marker.getPosition().lat();
+  const range = 0.001;
+  const lngMax = marker.getPosition().lng() + range;
+  const lngMin = marker.getPosition().lng() - range;
+  const lngMoveStep = 0.00001;
+  let direction = 1;
+  let loop = setInterval(() => {
+    const { lat, lng } = marker.getPosition();
+    // console.log("marker.getPosition", lat(), lng());
+    if (lng() >= lngMax) {
+      setTimeout(() => {
+        console.log("setPosition", originLat, originLng);
+        marker.setPosition({
+          lat: originLat,
+          lng: originLng,
+        });
+        console.log(
+          "markerStyle",
+          document
+            .querySelectorAll(
+              'img[src="/static/media/excavator-animation-digging-mini.601f99c3e9709fe6978e.gif"]'
+            )
+            .forEach(
+              (item) =>
+                (item.style.transform = `scaleX(${
+                  Math.random() / 2 > 0.5 ? 1 : -1
+                })`)
+            )
+        );
+      }, 3000);
+
+      // direction = -1;
+      // clearInterval(loop);
+    } else {
+      // console.log("direction", direction);
+      console.log("setPosition", lat(), lng());
+      marker.setPosition({
+        lat: lat(),
+        lng: lng() + lngMoveStep * direction,
+      });
+    }
+  }, 50);
+};
+
+export const handleEquipmentsLoad = (map) => {
+  if (!equipments) return;
+  // console.log("handleEquimentsLoad", equipments);
+
+  const icon = {
+    url: ExcavatorIcon,
+    labelOrigin: new google.maps.Point(48, 0),
+  };
+  const iconAnimation = {
+    url: ExcavatorAnimationGif,
+    labelOrigin: new google.maps.Point(48, 0),
+  };
+
+  equipments.length &&
+    setEquipmentMarkers(
+      equipments.map(
+        ({ model, oemName, equipmentId, equipmentTrackings }, idx) => {
+          if (!equipmentTrackings[0]) return;
+          const marker = new window.google.maps.Marker({
+            position: {
+              lat: parseFloat(equipmentTrackings[0].metadata.Latitude),
+              lng: parseFloat(equipmentTrackings[0].metadata.Longitude),
+            },
+            map,
+            label: ifDisplayLabel && `${equipmentId}`,
+            title: `${oemName} - ${model} (${equipmentId})`,
+            icon: idx === defaultEqupmentIdx ? iconAnimation : icon,
+            animation: google.maps.Animation.BUNCE,
+          });
+
+          return marker;
+        }
+      )
+    );
+
+  // create currentMarker
+  handleCurrentMarkerCreate(defaultEqupmentIdx);
+};
+
+export const handleCurrentMarkerCreate = (idx) => {
+  console.log("handleCurrentMarkerCreate equipments", equipments);
+  console.log("RadioButtonCheckedIcon", RadioButtonCheckedIcon);
+  if (!equipments[idx]) return;
+  const { equipmentTrackings } = equipments[idx];
+  const { metadata } = equipmentTrackings[0];
+
+  const icon = {
+    url: "//cdn.iconscout.com/icon/premium/png-256-thumb/done-1890937-1601243.png",
+    origin: new google.maps.Point(0, 0),
+    scaledSize: new google.maps.Size(32, 32),
+    anchor: new google.maps.Point(32, 82),
+  };
+  setCurrentMarker(
+    new window.google.maps.Marker({
+      position: { lat: metadata?.Latitude, lng: metadata?.Longitude },
+      map,
+      icon,
+    })
+  );
+
+  map && map.panTo({ lat: metadata?.Latitude, lng: metadata?.Longitude });
+};
+
+export const handleCurrentMarkerChange = (idx) => {
+  if (!equipments[idx]) return;
+  const { equipmentTrackings } = equipments[idx];
+  const { metadata } = equipmentTrackings[0];
+  console.log("setPosition", metadata);
+  currentMarker &&
+    currentMarker.setPosition({
+      lat: parseFloat(metadata?.Latitude),
+      lng: parseFloat(metadata?.Longitude),
+    });
+};
+
+const handleCurrentItemChange = (idx) => {
+  if (!equipments || !equipments[idx]) return;
+
+  const { oemName, model, equipmentId, Camera, equipmentTrackings } =
+    equipments[idx];
+
+  const { Latitude, Longitude } = equipmentTrackings[0].metadata;
+
+  setCurrentItem({
+    name: `${oemName} - ${model} (${equipmentId})`,
+    location: `${Latitude}, ${Longitude}`,
+    camera: Camera?.URL,
+  });
+};
+
+const handleEquimentListItemClick = (idx) => {
+  const { Location } = equipments[idx];
+
+  setCurrentItemId((prevItemId) => {
+    handleCurrentEquipmentMarkerChange(idx, prevItemId);
+    return idx;
+  });
+
+  console.log(" equipments[idx]", equipments[idx]);
+
+  const { Latitude: lat, Longitude: lng } = Location;
+  map && map.panTo({ lat, lng });
+};
+
+const handleKeywordsChange = (e) => {
+  console.log("event", e.target.value);
+  setSearchKeywords(e.target.value);
+};
+
+const handleCurrentEquipmentMarkerChange = (currentItemId, prevItemId) => {
+  // console.log(
+  //   "handleCurrentEquipmentMarkerChange",
+  //   currentItemId,
+  //   prevItemId,
+  //   equipmentMarkers,
+  //   equipmentMarkers[currentItemId]
+  // );
+  if (!equipmentMarkers[currentItemId]) return;
+  // console.log(
+  //   "handleCurrentEqupmentMarkerChange",
+  //   equipmentMarkers[currentItemId]
+  // );
+  // console.log(
+  //   "handleCurrentEqupmentMarkerChange prev",
+  //   equipmentMarkers[prevItemId]
+  // );
+  equipmentMarkers.forEach((item) => {
+    if (item.label !== equipments[currentItemId].EquipmentHeader.EquipmentId)
+      item.setIcon({
+        url: ExcavatorIcon,
+        labelOrigin: new google.maps.Point(48, 0),
+      });
+  });
+  equipmentMarkers[currentItemId].setIcon({
+    url: ExcavatorAnimationGif,
+    labelOrigin: new google.maps.Point(48, 0),
+  });
+};

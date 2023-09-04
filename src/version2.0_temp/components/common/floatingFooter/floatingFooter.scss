@@ -1,0 +1,42 @@
+@import '../../../assets/styles/colors.scss';
+.floating-footer {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0;
+  height: 70px;
+  z-index: 1;
+  pointer-events: none;
+
+  &>img {
+    position: absolute;
+    right: 20px;
+    width: 65px;
+    pointer-events: all;
+  }
+
+  &-feed{
+    &-btn{
+        position: absolute;
+        left: 10px;
+        pointer-events: all;
+  }
+}
+    &-container {
+    position: absolute;
+    background: $SLATE-BG-LIGHT;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: -100px;
+    transition: bottom 0.6s linear;
+    &-show {
+      bottom: 0px;
+    }
+    &-timeline {
+      width: 80vw;
+    }
+  }
+}

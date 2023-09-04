@@ -1,0 +1,66 @@
+@import '../../../../assets/onx/variable';
+.Toastify__toast--warning{
+    background-color: $onx-error-light;
+    color: $onx-error-dark;
+    border: 1px solid $onx-error-main;
+    .Toastify__close-button{
+        color: $onx-error-dark;
+        position: absolute;
+        right: 4px;
+        top: 2px;
+    }
+}
+
+.Toastify__toast--success{
+    background-color: $onx-success-light;
+    color: $onx-success-dark;
+    border: 1px solid $onx-success-main;
+    .Toastify__close-button{
+        color: $onx-success-dark;
+        position: absolute;
+        right: 4px;
+        top: 2px;
+    }
+}
+
+.Toastify__toast--error{
+    background-color: $onx-error-light;
+    color: $onx-error-dark;
+    border: 1px solid $onx-error-main;
+    .Toastify__close-button{
+        color: $onx-error-dark;
+        position: absolute;
+        right: 4px;
+        top: 2px;
+    }
+}
+
+.Toastify__toast--info{
+    background-color: $onx-info-dark;
+    color: #fff;
+    .Toastify__close-button{
+        color: #fff;
+        position: absolute;
+        right: 4px;
+        top: 2px;
+    }
+}
+
+.Toastify__toast{
+    min-height: 50px;
+}
+
+.msgtoaster{
+    display: flex;
+    align-items: center;
+    &__icon{
+        font-size: 2rem;
+    }
+    &__text{
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        word-wrap: break-word;
+        line-height: 1.6rem;
+        width: 230px;
+    }
+}

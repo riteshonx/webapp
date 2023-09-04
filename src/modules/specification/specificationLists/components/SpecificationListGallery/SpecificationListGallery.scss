@@ -1,0 +1,69 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.specifications-lists{
+    margin: 10px 0px;
+    max-height: calc(100vh - 235px);
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-gap: 32px 32px;
+
+    &__card{
+        // width: 350px;
+        border-radius: 5px;
+        background: #FBFBFB;
+        border: 2px solid #D7D7D7;
+        margin: 10px 15px 10px 0px;
+        
+        &__thumbnail{
+            @include flexCenter(center);
+            border-radius: 5px 5px 0px 0px;
+            height: 190px;
+            background: #F2F2F2;
+            border-bottom: 1px solid #D7D7D7;
+            cursor: pointer;
+
+            .img-responsive{
+                max-width: 400px;
+                height: 100%;
+                padding: 5px 0px;
+            }
+        }
+
+        &__details{
+            @include flexCenter(space-between);
+            margin: 10px 0px;
+            padding: 0px 10px;
+
+            &__name{
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+
+            &__versionInfo{
+                color: #9e9e9e;
+                font-size: 1.1rem;
+            }
+
+            &__right{
+                svg{
+                    color: #9e9e9e;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__card:hover{
+        border: 2px solid #00000059;
+    }
+}
+
+.no-specification{
+    margin: 10px 0px;
+    height: calc(100vh - 247px);
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;    
+}

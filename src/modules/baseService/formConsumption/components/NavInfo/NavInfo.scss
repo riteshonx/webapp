@@ -1,0 +1,32 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+.formNavinfo{
+    font-size: 13px;
+    padding: 2px 25px;
+    &__header{
+        font-weight: 600;
+        color: #757575;
+        margin-right: 5px;
+        text-transform: uppercase;
+    }
+
+    &__details{
+        @include flexCenter(flex-start);
+        margin: 10px 0px;
+
+        &__created{
+            @include flexCenter(flex-start);
+            margin-right: 50px;
+
+            div{
+               margin-right: 10px; 
+            }
+        }
+    }
+
+    &__status{
+        background: #D5E3E3;
+        padding: 2px 12px;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,19 @@
+.ftLoginHContainer {
+  text-align: center;
+  margin: 1rem;
+
+  &_logo {
+    height: 75px;
+    width: 75px;
+  }
+
+  &_heading {
+    margin-top: 1rem;
+    font-weight: 900;
+  }
+  &_description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

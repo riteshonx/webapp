@@ -1,0 +1,89 @@
+.newWidget-main {
+  position: relative;
+  height: 27rem;
+  background-color: rgb(255, 255, 255);
+  width: 35rem;
+  min-width: 35rem;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: 100% 116%;
+  padding: 1.4rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: url("../../../../../../assets/images/Productivity.svg");
+  &__titleContainer {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    &__projectsCount {
+      padding: 0 1rem;
+      background-color: #424242;
+      margin-left: 0.5rem;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+  }
+  &__totalAvgContainer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    &__avgTitle {
+      font-size: 13px;
+      font-weight: 600;
+      width: 58%;
+    }
+  }
+  &__avgContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40%;
+    &__avgCostAndTitleContainer {
+      &__avgCost {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      &__avgTitle {
+        font-size: 10px;
+        font-weight: 600;
+        color: #757575;
+      }
+    }
+    &__percContainer {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 400;
+      width: 22.35%;
+      position: absolute;
+      right: 2.65px;
+    }
+  }
+  &__onsiteAvgContainer {
+    margin-bottom: 0.8rem;
+  }
+  &__legendContainer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1.2rem;
+    &__main {
+      display: flex;
+      align-items: center;
+      &__colorContainer {
+        font-size: 1.5rem;
+      }
+      &__name {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}

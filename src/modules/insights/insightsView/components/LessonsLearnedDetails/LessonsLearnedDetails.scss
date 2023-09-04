@@ -1,0 +1,80 @@
+@import '../../../../../assets/onx/variable';
+
+.lessonsLearnedDetails {
+    padding: 5px;
+    color: #000;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+
+        &__title {
+            font-size: 16px;
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &__action {
+            &__button {
+                font-size: 12px;
+                margin: 0 10px;
+                background-color: $onx-primary;
+                color: #fff;
+
+                &:hover {
+                    background-color: $onx-primary;
+                }
+
+                &.MuiButton-outlined {
+                    background-color: #fff;
+                    border: 1px solid $onx-primary;
+                    color: $onx-primary;
+                }
+            }
+        }
+    }
+
+    &__content {
+        margin-right: 30px;
+        &__info {
+            margin: 10px;
+            float: right;
+            font-size: 14px;
+            color: $onx-primary;
+        }
+
+        &__parameter {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px 30px;
+
+            &__group {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        &>div {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        h4,
+        p {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: $onx-A3;
+        }
+    }
+}

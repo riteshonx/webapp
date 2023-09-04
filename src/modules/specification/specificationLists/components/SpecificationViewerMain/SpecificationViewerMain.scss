@@ -1,0 +1,29 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.sections-main{
+    @include flexCenter(space-between);
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+
+
+    &__text{
+        font-weight: 600;
+    }
+
+    &__icon{
+        font-size: 1.2rem;
+
+        svg{
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 17px;
+        }
+
+        &__light{
+            color: #BDBDBD;
+        }
+    }
+}

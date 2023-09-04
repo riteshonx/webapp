@@ -1,0 +1,150 @@
+
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+
+.projectSettingInfo{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        overflow-y: auto;
+        box-shadow: none;
+
+        &__project-image {
+            width: 100%;
+            height: 40%;
+            margin: 0;
+            background: $onx-A6;
+        
+            .img-responsive {
+              width: 100%;
+              height: 100%;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+        }
+        &__header{
+            font-size: 24px;
+            font-weight: 700;
+            padding: 20px 20px 10px 20px;
+        }
+
+        &__form-wrapper{
+            margin: 10px 0px;
+        }
+
+        &__form{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+
+            &__body{
+                display: flex;
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0;
+                overflow-y: auto;
+                flex-direction: column;
+                padding: 10px 20px;
+                margin-bottom: 50px;
+                &__container {
+                    @include flexCenter(flex-start);
+                    height: 60px;
+                    position: relative;
+                }
+
+                &__checkbox{
+                    @include flexCenter(flex-start);
+
+                    .MuiTypography-body1{
+                        font-size: 1.4rem;
+                    }
+                }
+                
+                &__label {
+                    .MuiFormLabel-root{
+                    width: 100px;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    }
+                &__icon{
+                    margin-left: 10px;
+                    font-size: 20px;
+                    cursor: pointer;
+                    color: #000;
+                }
+                &__text{
+                    color:#bfbdbd
+                }
+                }
+
+                &__input-field{
+                    width: 100%;
+
+                }
+                &__input-portfolio-field{
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+
+            &__action{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 10px 0px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 500px;
+                button{
+                    // width: 135px;
+                    margin: 5px 5px;
+                    display: flex;
+                    flex-basis: 45%;
+                    text-transform: none !important;
+                }
+
+                .project-primary{
+                    margin-left: 10px;
+                    color: $onx-white;
+                    background: $onx-primary;
+                }
+        
+                .project-primary:disabled{
+                    background: none;
+                    color: lightgray;
+                }
+            }
+        }
+
+        &__error-wrap{
+            color: $onx-red;
+            height: 18px;
+            font-size: 1.2rem;
+            position: absolute;
+            bottom: -5px;
+            
+            &__message{
+                padding: 0px;
+                margin: 0px;
+                font-size: 1rem;
+            }
+            &__addressmessage{
+                padding: 0px;
+                margin: 5px 0 0 0;
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
+.projectSettingInfo__wrapper .MuiFormHelperText-root{
+    font-size: 1rem;
+}

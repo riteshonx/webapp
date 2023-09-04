@@ -1,0 +1,22 @@
+@import "../../../../assets/onx/variable";
+@import "../../../../assets/onx/abstracts/mixins";
+
+.progress-bar{
+    background-color: rgba(36, 182, 210, 0.2);
+    border-radius: 10px;
+    height: 10px;
+    margin: 10px;
+
+    .fill-portion {
+        background: linear-gradient(270deg, #59B5C7 15.5%, #105C6B 85.5%);
+        border-radius: 2rem;
+        height: 100%;
+        animation: progress 1500ms ease-in 1;
+    }
+
+    @keyframes progress {
+        from {
+            width: 0;
+        }
+    }
+}

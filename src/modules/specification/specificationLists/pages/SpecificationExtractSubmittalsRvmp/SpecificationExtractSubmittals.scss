@@ -1,0 +1,27 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.section-review {
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+
+  .sectionDetails {
+    padding-top: 1px;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 165px);
+
+    .sectionFile {
+      width: 40%;
+      background: #f1f3f5;
+      height: 100%;
+    }
+
+    .sectionReview {
+      margin-left: 20px;
+      width: 60%;
+      height: 100%;
+    }
+  }
+}

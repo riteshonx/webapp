@@ -1,0 +1,26 @@
+.support-main {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../../../../../assets/images/Support.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  &__text1 {
+    position: absolute;
+    top: 5%;
+    font-size: 2rem;
+  }
+  &__text2 {
+    position: absolute;
+    bottom: 5%;
+    font-size: 1.7rem;
+  }
+  &__buildVersion {
+    position: absolute;
+    right: 1%;
+    bottom: 2%;
+    font-size: 1.1rem;
+  }
+}

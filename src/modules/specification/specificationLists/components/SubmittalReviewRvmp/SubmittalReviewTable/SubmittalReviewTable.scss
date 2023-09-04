@@ -1,0 +1,86 @@
+@import "../../../../../../assets/onx/variable";
+@import "../../../../../../assets/onx/abstracts/mixins";
+
+.submittal-review-table {
+    overflow: auto;
+    height: 85%;
+
+    .submittalTable {
+        width: 100%;
+        border-collapse: collapse;
+
+        th, td {
+            border: 1px solid #DDDDDD;
+            padding: 8px 12px;
+            text-align: left;
+            overflow: hidden;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+            z-index: 1;
+        }
+
+        .idDetails {
+            width: 80px;
+        }
+
+        .typeDetails {
+            width: 196px;
+
+            .dropDown {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .invalidRow {
+            background: #FFF5F5;
+
+            .idDetails {
+                text-align: center;
+            }
+
+            svg {
+                color: #F85757;
+            }
+        }
+    }
+
+    .type1 {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        color:  $onx-A2;
+        background: $onx-A8;
+    }
+
+    .type2 {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        color:  $onx-A2;
+        background: $onx-A10;
+    }
+
+    .type3 {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        color:  $onx-A2;
+    }
+}
+
+.submitalMenuText, .submitalOprText {
+    font-weight: normal !important;
+    font-size: 13px !important;
+    line-height: 20px !important;
+    color:  $onx-A2 !important;
+    justify-content: left !important;
+    padding-left: 8px !important;
+}
+
+.submitalMenuText {
+    margin-right: 16px !important;
+}

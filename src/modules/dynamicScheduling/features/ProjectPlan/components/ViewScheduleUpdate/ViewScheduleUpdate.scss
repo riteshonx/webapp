@@ -1,0 +1,133 @@
+@import '../../../../../../assets/onx/variable';
+.ViewScheduleUpdate{
+    position: fixed;
+    top: 115px;
+    display: flex;
+    height: calc(100vh - 155px);
+    right: 0;
+    transition-property: width;
+    transition-duration: 0.1s;
+    background: white;
+    z-index: 1000;
+    border-radius: 5px 0px 0px 5px;
+    width: 500px;
+    border: 1px solid grey;
+    & > div{
+        width: 100%;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+        &__header{
+            font-size: 2.4rem;
+            font-weight: 600;
+            padding: 10px  15px 0 15px;
+            &__close{
+                background: $onx-btn-secondary;
+                padding-left: 3px;
+                padding-right: 3px;
+                min-width: 3.2rem !important;
+                height: 3.2rem;
+                left: 437px;
+            }
+        }
+        &__info{
+            background: #FFF8D4;
+            font-size: 11px;
+            padding: 10px 10px;
+            font-weight: 400;
+            border-radius: 4px;
+            margin: 10px  15px;
+        }
+        &__body{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-basis: 0;
+            flex-shrink: 1;
+            overflow: auto;
+            padding: 10px  15px;
+            width: 100%;
+            &__item{
+                padding: 0 0 0 20px;
+                display: flex;
+                width: 100%;
+                &__left{
+                    flex: 1;
+                    display: flex;
+                    &__timeline{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        position: relative;
+                        margin-right: 10px;
+                        &__dot{
+                            width: 10px;
+                            height: 10px;
+                            background: #c2c2c2;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 0;
+                            left: -4px;
+                        }
+                        &__connector{
+                            height: 90%;
+                            border-right: 2px dashed #c2c2c2;
+                            margin-top: 5px;
+                        }
+                    }
+                    &__date{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 10px;
+                        font-size: 1.2rem;
+                    }
+                }
+                &__data{
+                    flex: 3;
+                    display: flex;
+                    flex-direction: column;
+                    &__subitem{
+                        display: flex;
+                        &__avator{
+                            width: 35px;
+                            height: 35px;
+                            background: #c2c2c2;
+                            border-radius: 50%;
+                            margin: 0 15px 0 0;
+                        }
+                        &__entry{
+                            border-bottom: 1px solid #c1c1c1;
+                            padding: 0 5px 10px 5px;
+                            font-size: 1.2rem;
+                            margin: 0 0 15px 0;
+                            &__duration{
+                                margin-top: 1rem;
+                                font-size: 1rem;
+                                color: #c1c1c1;
+                            }
+                        }
+                        .createLink:hover{
+                            text-decoration: underline;
+                            color: #0052cc;
+                            cursor: pointer;
+                            // font-weight: 700;
+                        }
+
+                        &__select-all {
+                            margin-left: 183px
+                        }
+                    }
+                }
+            }
+        }
+        &__footer{
+            border-top: 1px solid #c2c2c2;
+            padding: 4px;
+            padding: 10px  15px;
+            display: flex;
+            justify-content: flex-end;
+        }
+}

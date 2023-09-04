@@ -1,0 +1,84 @@
+
+@import '../../assets/styles/colors.scss';
+
+
+.v2-dateRangeSlider {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-bottom: 0.5px solid rgba(255, 168, 13, 0.4);
+  // max-height: 6rem;
+  margin: 0.5rem 0;
+  &-scrollContainer {
+    flex: 1;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    // margin-bottom: -1rem;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &-dateList {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 0 0.5rem;
+      margin-bottom: 0.5rem;
+      color: $WHITE;
+      &-dates {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2px;
+        padding: 1rem;
+        justify-content: center;
+        cursor: pointer;
+        min-width: 77px;
+        max-width: 77px;
+        min-height: 44px;
+        max-height: 44px;
+        font-size: 1.25rem;
+        background-color: $LAYER-BG-1;
+        &-dayAndDateStyle {
+          flex: 1;
+          display: flex;
+        }
+        &-selectedDate {
+          background-color: $SLATE-V2-3;
+          color: $WHITE;
+        }
+        &-currentDate {
+          background-color: $LAYER-BG-1;
+        }
+      }
+    }
+    &-uploadedDatesMark {
+      padding: 0.3rem;
+      border-radius: 50%;
+      background-color: $SLATE-V2-3;
+      visibility: visible;
+    }
+    &-uploadedDatesMarkHide {
+      visibility: hidden;
+    }
+    &-monthAndYearLabelHide {
+      display: none;
+    }
+    &-monthAndYearLabel {
+      display: flex;
+      position: sticky;
+      top: 0;
+      left: 0;
+      visibility: visible;
+      font-size: 1.25rem;
+      font-weight: bold;
+      &__monthStyle {
+        margin-right: 0.2rem;
+      }
+    }
+  }
+}

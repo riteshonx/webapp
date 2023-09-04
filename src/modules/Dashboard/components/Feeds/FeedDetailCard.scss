@@ -1,0 +1,43 @@
+@import "../../Styles/colors.scss";
+.v2-feed-detail {
+  flex: 1;
+  &-title {
+    color: $SLATE-V2-3;
+    margin-top: 8px;
+    font-size: 14px;
+    &-form {
+      color: $SLATE-INSIGHT-SPAN-TEXT;
+      cursor: pointer;
+      width: fit-content;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-value {
+    color: $WHITE;
+    font-size: 14px;
+
+    & span[data-insight="true"] {
+      text-decoration: underline;
+      cursor: pointer;
+      color: $SLATE-INSIGHT-SPAN-TEXT;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-weather {
+    font-size: 14px;
+    color: $SLATE-INSIGHT-SPAN-TEXT;
+    &-subject {
+      color: $WHITE;
+    }
+  }
+  &-linked-item-key {
+    color: $WHITE;
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+}

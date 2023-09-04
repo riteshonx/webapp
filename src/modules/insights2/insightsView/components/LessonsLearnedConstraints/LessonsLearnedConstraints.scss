@@ -1,0 +1,68 @@
+@import '../../../../../assets/onx/variable';
+@import '../../../styles/colors.scss';
+.constraints {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & h5 {
+            font-size: 12px;
+        }
+        & button {
+            color: $SLATE-V2-3 !important;
+        }
+    }
+
+    & .constraints__table {
+        border-collapse: collapse;
+
+        & th {
+            text-align: left;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        & td,
+        & th {
+            border: 1px solid #ddd;
+            padding: 4px 12px;
+            font-size: 12px;
+            & svg {
+                fill: $WHITE;
+            }
+        }
+
+        &__name__container {
+            display: flex;
+            align-items: center;
+
+            
+            label.disabled {
+                color: $onx-A6
+            }
+
+            &__btn__icon {
+                transform: rotate(-45deg);
+                fill: $SLATE-V2-3 !important;
+            }
+        }
+
+        &__relationship {
+            width: 180px;
+        }
+
+        &__action {
+            width: 55px;
+        }
+
+        .MuiSvgIcon-root {
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        .MuiFormControlLabel-label {
+            font-size: 12px;
+        }
+    }
+}

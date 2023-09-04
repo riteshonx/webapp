@@ -1,0 +1,22 @@
+.datetimepicker{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    .MuiOutlinedInput-input{
+        padding: 10px 35px;
+        font-size: 1.2rem;
+    }
+    &__icon{
+        position: absolute;
+        left: 5px;
+        top: 6px;
+    }
+    &__fixed{
+        color: #fff;
+        background: #c2c2c230;
+        .MuiOutlinedInput-input{
+            color: #000000;
+        }
+    }
+}

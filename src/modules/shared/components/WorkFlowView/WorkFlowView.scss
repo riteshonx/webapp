@@ -1,0 +1,94 @@
+@import "../../../../assets/onx/variable";
+
+.WorkFlowView__main {
+  display: flex;
+    flex-grow: 1;
+  &__workflowEditor {
+    display: flex;
+    flex-grow: 1;
+  }
+  &__loader{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__header {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  &__buttonContainer {
+    &__button1 {
+      @include button(#000000, #ffffff);
+      border: 1px solid #666666;
+      margin-right: 1rem;
+      padding: 1.4rem 2.5rem !important;
+      &:hover {
+        color: #ffffff;
+        background-color: #666666;
+      }
+    }
+    &__button2 {
+      @include button(#ffffff, #666666);
+      padding: 1.4rem 2.5rem !important;
+      color: #ffffff !important;
+      &:hover {
+        color: #000000 !important;
+      }
+    }
+  }
+}
+
+.currentStepNotation {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #0f561e;
+  margin-top: 1.5rem;
+}
+
+.projectlevelWorkflowPopup__handle {
+  &1 {
+    border-radius: 0;
+    visibility: hidden;
+  }
+  &2 {
+    border-radius: 0;
+    visibility: hidden;
+  }
+  &3 {
+    border-radius: 0;
+    visibility: hidden;
+  }
+  &4 {
+    border-radius: 0;
+    visibility: hidden;
+  }
+}
+
+.react-flow__handle__right__new {
+  visibility: hidden !important;
+  position: absolute !important;
+  background: #000 !important;
+  &__target1 {
+    visibility: hidden !important;
+    top: 2rem !important;
+    border-radius: 4px !important;
+  }
+  &__target2 {
+    visibility: hidden !important;
+    top: 87% !important;
+    border-radius: 4px !important;
+  }
+}
+ 
+.react-flow__handle__left__new {
+  visibility: hidden !important;
+  position: absolute !important;
+}

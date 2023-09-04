@@ -1,0 +1,51 @@
+.swipeWrapper-container {
+  position: fixed;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  &__innerContainer {
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 1px 10px 0 transparent;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    position: relative;
+    border-radius: 4px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+  }
+  &__scroll {
+    &::-webkit-scrollbar {
+      width: 4px; /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent; /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: lightgrey; /* color of the scroll thumb */
+      border-radius: 20px; /* roundness of the scroll thumb */
+    }
+  }
+  &__open {
+    transform: translateX(0%);
+  }
+  &__hidden {
+    transform: translateX(100%);
+  }
+  &__openFromBottom {
+    transform: translateY(0%);
+  }
+  &__hiddenBottom {
+    transform: translateY(100%);
+  }
+  &__openFromLeft {
+    transform: translate(0%);
+  }
+  &__hiddenLeft {
+    transform: translateX(-100%);
+  }
+}

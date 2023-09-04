@@ -1,0 +1,72 @@
+@import '../../../../../assets/onx/variable';
+
+.bimStepper {
+    padding: 0 0 24px !important;
+
+    .MuiStep-root {
+        padding: 0;
+    }
+
+    .MuiStepLabel-horizontal{
+        background: linear-gradient(180deg, rgba(248,248,248,1) 30%, rgba(255,255,255,1) 30%);
+        padding: 30px 0 10px;
+        min-height: 265px;
+    }
+
+    .blankStepDetails {
+        min-height: 195px; 
+        margin: 25px auto 0;
+        padding: 10px 20px;
+    }
+
+    .stepDetails {
+        width: 90%;
+        min-height: 195px;
+        background: linear-gradient(132.77deg, #FCFCFC 11.98%, #F1F1F1 111.18%);
+        border-radius: 4px;
+        margin: 25px auto 0;
+        padding: 10px 20px;
+
+        &.completed {
+            .stepTitle, .parameter {
+                color: $onx-A4;
+            }
+        }
+
+        .stepTitle {
+            font-size: 1.4rem;
+            line-height: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+
+        button {
+            padding: 4px 12px;
+            border-radius: 4px;
+            border-color: transparent;
+            margin: 8px 0 0 !important;
+            min-width: 114px !important;
+        }
+
+        .parameter{
+            text-align: left;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+
+            .paramList {
+                padding-bottom: 5px;
+                font-weight: 500;
+
+                .value {
+                    font-weight: bold;
+                }
+            }
+
+            .paramProgress {
+                color: $onx-success-main;
+            }
+        }
+    }
+}

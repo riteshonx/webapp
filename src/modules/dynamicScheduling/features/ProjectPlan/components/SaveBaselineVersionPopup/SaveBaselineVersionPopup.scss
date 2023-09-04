@@ -1,0 +1,197 @@
+@import "../../../../../../assets/onx/variable";
+.save-baseline-version-popup {
+  display: flex;
+  justify-content: center;
+  //   width: 522px;
+  //   height: 408px;
+  &__title {
+    // .MuiTypography-root {
+    // display: grid;
+    // grid-template-columns: [first-start] auto [first-end second-start] auto [second-end third-start] auto [third-end];
+    // }
+    padding-left: 0px;
+    padding-right: 0px;
+    h2 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #353e49;
+
+    &-empty {
+      width: 150px;
+    }
+    &-text {
+      position: relative;
+      right: 50px;
+    }
+    &-close {
+      &-button {
+        width: 36px;
+        height: 36px;
+        min-width: 36px !important;
+        // background: #fff;
+        // border: none;
+        cursor: pointer;
+        margin-right: 14px !important;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__name {
+      &_label {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+
+        color: #68736f;
+      }
+
+      &-input {
+        box-sizing: border-box;
+
+        width: 441px;
+        height: 37px;
+
+        input {
+          border: 1px solid #b7c0c6;
+          border-radius: 4px;
+        }
+
+        &-error {
+          color: #f00;
+        }
+      }
+      .text_field_custom-info-icon {
+        left: 45.5rem;
+      }
+    }
+
+    &__description {
+      margin-top: 24px;
+      &-label {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: #68736f;
+      }
+
+      &-input {
+        box-sizing: border-box;
+
+        width: 441px;
+        height: 74px;
+        padding-left: 8px;
+        padding-top: 11px;
+        border: 1px solid #b7c0c6;
+        border-radius: 4px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height */
+        resize: none;
+        display: flex;
+        align-items: center;
+      }
+      ::placeholder {
+        color: rgb(179, 179, 179);
+        opacity: 1; /* Firefox */
+        font-size: 1.5rem;
+      }
+    }
+
+    &__last-save-version-text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 13px;
+      align-self: center;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      color: #68736f;
+    }
+
+    &__baseline-this-version {
+      display: flex;
+      align-self: center;
+      &-checkbox {
+        border: 1px solid #68736f;
+        border-radius: 5px;
+        margin-right: 4px;
+        accent-color: $onx-primary;
+      }
+
+      &-text {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: #68736f;
+      }
+    }
+
+    &__footer {
+      align-self: center;
+      height: 39px;
+      margin-top: 25px;
+      margin-bottom: 30px;
+
+      button {
+        height: 39px;
+        width: 123.42px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      &-cancel {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .MuiDialog-paperWidthMd {
+    width: 522px;
+  }
+}

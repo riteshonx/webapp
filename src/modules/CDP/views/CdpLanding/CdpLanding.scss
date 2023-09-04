@@ -1,0 +1,11 @@
+.cdp-landing {
+  height: 100%;
+  padding: 100px;
+  &--header {
+    font-size: 32px;
+  }
+  &--container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,124 @@
+@import '../../../../../assets/onx/variable';
+
+.bimQueryList {
+    padding: 30px 20px 20px 20px;
+
+    &.onNameEdit {
+        .submit-section button, .addCaluse, .MuiIconButton-label, .MuiAutocomplete-root, svg, .radioLabel, .spatial-buttons {
+            pointer-events: none;
+        }
+    }
+
+    .bimCloseButton {
+        margin: -20px -10px 0 0;
+        float: right;
+        pointer-events: auto !important;
+    }
+
+    .bimCloseButton:hover {
+        cursor: pointer;
+    }
+
+    .heading {
+        align-items: center; 
+
+        &.textBox {
+            .MuiOutlinedInput-input {
+                font-weight: bold !important;
+                font-size: 2.4rem;
+                line-height: 36px;
+            }
+        }
+    }
+
+    .blodText1 {
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 36px;
+        align-items: center;
+        display: flex;
+    }
+
+    .btn-secondary {
+        background: #F0F0F0;
+        border: 0.5px solid #B8B6B6;
+    }
+
+    .btn-section {
+        text-align: center;
+
+        button {
+            width: 100%;
+            margin: 20px 0 !important;
+        }
+
+        .cancel-section {
+            width: 100%;
+            text-align: right;
+    
+            button {
+                width: auto;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .queryItem {
+        background-color:  $onx-A9;
+        padding: 8px 30px;
+        margin: 10px -30px 0;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+
+        .queryDesc {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex:1;
+        }
+
+        svg {
+            margin: 0 2.5px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .addCaluse {
+        margin-top: 30px !important;
+    }
+
+    .joinOprLabel {
+        padding: 11px 0;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: $onx-A3;
+    }
+
+    .radioLabel {
+        padding: 11px 0; 
+
+        .MuiFormControlLabel-label{
+            font-size: 1.2rem !important;
+        }
+
+        .MuiButtonBase-root {
+            color: $onx-btn-primary;
+        }
+    }
+
+    .query-error{
+        min-height: 15px;
+        font-size: 1rem;
+        margin-top: 3px;
+        color: red;
+        font-weight: 400;
+    }
+    
+}
+
+ 

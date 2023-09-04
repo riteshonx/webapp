@@ -1,0 +1,16 @@
+.customRoleMenu{
+    & .MuiPopover-paper{
+        box-shadow: 0 2px 4px #c2c2c2;
+    }
+    &__menu{
+        &__item{
+        font-size: 1.2rem;
+        }
+    }
+    .cellicon{
+        font-size:1.8rem;
+        cursor: pointer;
+        color: #B0B0B0;
+    }
+}
+

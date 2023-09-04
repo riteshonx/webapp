@@ -1,0 +1,125 @@
+@import "../../../../../assets/onx/variable";
+
+.workflowStartPage__main {
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding: 20px;
+
+  &__viewIconContainer {
+    margin: 1rem 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #333333;
+    display: none;
+    &__icon {
+      margin: 0 1.5rem 0.5rem 0;
+      padding: 0.4rem 2rem;
+      cursor: pointer;
+
+      &__iconStyle {
+        margin-right: 0.2rem;
+        height: 2rem;
+        width: 2rem;
+      }
+      &__active {
+        color: #fff;
+        background-color: #808080;
+        box-shadow: 0px 1px 5px rgba(128, 128, 128, 0.12),
+          0px 3px 1px -2px rgba(128, 128, 128, 0.2),
+          0px 2px 4px rgba(128, 128, 128, 0.14);
+        border-radius: 18px;
+      }
+    }
+  }
+  &__buttonContainer {
+    margin-bottom: 1rem;
+    &__button__hidden {
+      visibility: hidden;
+    }
+    &__button {
+      @include button(#ffffff, #666666);
+      // padding: 1.5rem 2.5rem !important;
+      // margin-right: 1rem;
+      color: #ffffff !important;
+      &:hover {
+        color: #000000 !important;
+      }
+    }
+  }
+  &__header {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.6rem;
+
+    &__icon {
+      height: 1.5rem;
+      border-radius: 0px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__body {
+    &__text1 {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      color: #8c8c8c;
+    }
+    &__plusContainer {
+      margin: 2rem 0 0 0;
+      width: 25.5rem;
+      height: 15.3rem;
+      background: #ebebeb;
+      border: 1px solid #c8c8c8;
+      box-sizing: border-box;
+      border-radius: 8px;
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &__icon {
+        width: 2.8rem;
+        height: 2.5rem;
+        flex-grow: 1;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4.1rem;
+        line-height: 2.5rem;
+      }
+      &__text {
+        width: 25.5rem;
+        padding: 0.5rem;
+        background: #ffffff;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        border-radius: 0 0 8px 8px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.1rem;
+        line-height: 2.5rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.no-permission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}

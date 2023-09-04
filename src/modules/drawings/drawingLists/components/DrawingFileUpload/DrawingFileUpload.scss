@@ -1,0 +1,282 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.fileUpload{
+    position: fixed;
+    top: 0px;
+    background: #1d1b1ba1;
+    width: 100%;
+    height: calc(100%);
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.drawing-attachment{
+    position: relative;
+    width: 75%;
+    height: 550px;
+    align-items: center;
+    background: white;
+    
+    &__close-icon{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        .closeIcon-svg{
+            cursor: pointer;
+        }
+    }
+
+    &__header{
+        padding: 10px 20px;
+        color: black;
+        font-size: 1.4rem;
+        border-bottom: 1px solid #d3d3d394;
+        font-weight: 600;
+    }
+
+    &__container{
+        padding: 10px 20px;
+        height: calc(100% - 95px);
+        // @include flexCenter(center);
+
+        &__main{
+            width: 70%;
+            margin: 45px auto;
+        }
+    }
+
+    &__dropZone{
+        @include flexCenter(center);
+        flex-wrap: wrap;
+        height: 350px;
+        width: 100%;
+        border: 2px dashed black;
+        border-radius: 2px;
+        text-align: center;
+    }
+
+    &__dropZone--white{
+        @include flexCenter(center);
+        flex-wrap: wrap;
+        background: #FFFFFF;
+        border: 2px dashed lightgray;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+
+    &__wrapper{
+        @include flexCenter(center);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text{
+        font-size: 10px;
+        @include flexCenter(center);
+        flex-direction: column;
+        flex-wrap: wrap;
+          
+        &__icon{
+           margin-bottom: 10px;
+
+            svg{
+                font-size: 40px;
+            }
+        }
+
+        &__message{
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin-bottom: 7px;
+
+            &__click{
+                color: #0378CD;  
+                cursor: pointer; 
+                margin: 0px 3px;   
+            }
+
+            &__click:hover{
+                border-bottom: 1px solid #0378CD;
+            }
+        }
+
+        &__note{
+            color: #9e9e9e;
+        }
+
+        &__note2{
+            font-weight: 600;
+            width: 273px;
+            margin-top: 15px;
+            font-size: 1.1rem;
+        }
+        
+    }
+
+    &__viewList{
+        padding: 10px;
+        border: 1px solid #F8F8F8;
+        border-radius: 5px;
+        margin-bottom: 20px;
+
+        &__file{
+            @include flexCenter(flex-start);
+            position: relative;
+            padding: 10px 0px;
+            background: #FFFFFF;
+            border-bottom: 1px solid #C4C4C4C4;
+
+            &__fileSize{
+                color:#C4C4C4;
+                font-size: 10px;
+                text-align: left;
+            }
+
+            &__thumbnail{
+                height: 50px;
+                width: 50px;
+                border-radius: 5px;
+                // background: #C4C4C4;
+                margin-right: 20px;
+
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 5px; 
+                }
+
+                svg{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 5px; 
+                }
+            }
+
+            &__fileRemove{
+                position: absolute;
+                right: 10px;
+                top: 20px;
+
+                svg{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &__file-list{
+        @include flexCenter(space-between);
+        flex-wrap: wrap;
+        box-shadow: 0px 1px 6px #00000033;
+        padding: 10px;
+
+        &__details{
+            @include flexCenter(flex-start);
+            flex-wrap: wrap;
+
+            &__image{
+                margin-right: 10px;
+
+                img{
+                    position: relative;
+                    top: 2px;            
+                }
+            }
+
+           &__text{
+            word-break: break-word;
+                &__time{
+                    font-size: 1rem;
+                    color: #989898;
+                }
+
+                label{
+                    font-weight: 600;
+                }
+
+            }
+        }    
+
+        &__actions{
+            @include flexCenter(flex-end);
+            flex-wrap: wrap;
+
+            &__selectTemplate{
+                margin-right: 10px;
+                width: 200px;
+
+                .MuiOutlinedInput-input, .MuiSelect-outlined{
+                    padding: 9px 14px;
+                    font-size: 1.1rem;
+                    line-height: 16px;
+                    background: #FFFFFF;
+                }
+
+                .MuiSelect-select.Mui-disabled{
+                    background: #d3d3d366;
+                }
+            }
+
+            &__delete{
+                .deleteIcon{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .progress{
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #C4C4C4;
+    }
+
+    &__action{
+        position: relative;
+        @include flexCenter(space-between);
+        flex-wrap: wrap;
+        border-top: 1px solid #d3d3d394;
+        padding: 10px;
+
+        &__refresh-msg{
+            font-size: 1.2rem;
+            color: #d3d3d394;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%)
+        }
+    }
+
+    &__no-file{
+        padding: 10px 20px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.upload-dialog{
+    .MuiDialog-paperWidthSm, .MuiPaper-root{
+        width: 70% !important;
+        max-width: 91% !important;
+    }
+
+    .MuiDialogTitle-root{
+        box-shadow: 0px 2px 4px #9e989869;
+        z-index: 3;
+    }
+
+    .MuiDialogContent-root{
+        position: relative;
+        padding: 0px;
+    }
+}

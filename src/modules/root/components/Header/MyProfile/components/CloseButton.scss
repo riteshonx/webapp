@@ -1,0 +1,10 @@
+.closeButton {
+  display: flex;
+  position: fixed;
+  padding: 2rem;
+  top: 0;
+  right: 0;
+  &:hover {
+    cursor: pointer;
+  }
+}

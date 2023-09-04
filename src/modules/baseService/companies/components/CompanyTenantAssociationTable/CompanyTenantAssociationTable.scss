@@ -1,0 +1,12 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+
+.tenantMembers{
+    &__error-wrap{
+        position: relative;
+        top: 2px;
+        color: $onx-red;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,56 @@
+.FilterDrawingsMultiSelect{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #dddddd;
+        align-items: center;
+        &__name{
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        &__active{
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #c2c2c2;
+        }
+        &__action{
+            padding-right: 10px;
+            display: flex;
+            align-items: center;
+            &__value{
+                background: #dddd;
+                width:20px;
+                border-radius: 50%;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+            }
+        }
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        &__data{
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        &__control{
+            font-size: 1.2rem;
+            font-weight: 400;
+            width: 100%;
+            .MuiTypography-body1{
+                font-weight: 400;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

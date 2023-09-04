@@ -1,0 +1,101 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.actionDialog {
+  .MuiDialog-container {
+    .MuiDialog-paper {
+      padding: 2rem 1rem;
+    }
+  }
+  .addDueDateSection {
+    &_header {
+      .MuiTypography-root {
+        font-size: 1.6rem;
+      }
+    }
+
+    &_datePicker {
+      width: 185px;
+      .MuiOutlinedInput-input {
+        padding: 1.2rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .MuiOutlinedInput-notchedOutline {
+        border-color: lightgray;
+      }
+    }
+  }
+  .addAssigneeSection {
+    &_header {
+      .MuiTypography-root {
+        font-size: 1.6rem;
+      }
+    }
+    &__body {
+      height: 30vh;
+      overflow-y: hidden;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        position: relative;
+        &__label {
+          font-weight: 600;
+          font-size: 1rem;
+          letter-spacing: 0.02em;
+          color: #000;
+          margin-bottom: 0.5rem;
+        }
+      }
+      &__add-assignee {
+        font-size: 1.2rem;
+        font-weight: 800;
+        cursor: pointer;
+        text-align: center;
+        color: #000000;
+        margin: 0 0 10px 0;
+        width: 199%;
+        height: 40px;
+      }
+      &__list {
+        height: 30vh;
+        overflow-y: auto;
+        &__info {
+          @include flexCenter(flex-start);
+          flex-wrap: wrap;
+          position: relative;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #d3d3d36e;
+          margin-bottom: 10px;
+          margin-right: 10px;
+
+          .MuiAvatar-colorDefault {
+            width: 30px;
+            height: 30px;
+          }
+
+          &__name {
+            font-size: 1.3rem;
+            margin-left: 10px;
+          }
+
+          &__close {
+            position: absolute;
+            right: 2px;
+            top: 0;
+            cursor: pointer;
+            & button {
+              padding: 4px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .controls {
+    padding: 8px 24px;
+  }
+}

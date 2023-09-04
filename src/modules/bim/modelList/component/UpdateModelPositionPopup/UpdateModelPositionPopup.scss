@@ -1,0 +1,56 @@
+@import "../../../../../assets/onx/variable";
+
+.bim-update-position-modal {
+    .header {
+        color: $onx-white;
+        background-color: $onx-primary;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 12px 25px;
+        margin-bottom: 25px;
+        border-bottom: 0.5px solid rgba(59, 59, 59, 0.5);
+        box-shadow: none;
+
+        svg {
+            width: 30px;
+            height: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .fileList {
+        padding: 0 20px 20px;
+
+        .info-msg {
+            margin-top: 10px;
+        }
+
+        .MuiInputLabel-root {
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        .MuiTextField-root{
+            margin-bottom: 16px;
+        }
+    }
+
+    .footer {
+        border-top: 0.5px solid rgba(59, 59, 59, 0.5);
+        padding: 12px 25px;
+        text-align: end;
+
+        .btn-secondary {
+            box-shadow: none;
+        }
+    }
+
+
+    .MuiDialogContent-root {
+        padding: 0;
+    }
+}

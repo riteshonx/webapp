@@ -1,0 +1,15 @@
+@import '../../../../../assets/onx/variable';
+
+.bimDragDiv {
+    z-index: 1300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-left: 0;
+
+    .dargButton{
+        cursor: move;
+    }
+}
+ 

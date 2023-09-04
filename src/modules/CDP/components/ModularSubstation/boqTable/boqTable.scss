@@ -1,0 +1,72 @@
+.boq-container {
+  height: 100%;
+  &--nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &--search {
+    position: relative;
+    input {
+      font-size: 12px;
+      padding: 10px;
+      padding-left: 36px;
+      border: 1px solid #787874;
+      border-radius: 4px;
+      width: 300px;
+    }
+    input:focus {
+      border: 1px solid #787874;
+    }
+    svg {
+      position: absolute;
+      left: 8px;
+      top: 6px;
+    }
+  }
+  &--sort-n-filter {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    button {
+      display: flex;
+      align-items: center;
+      padding: 4px 10px;
+      height: 30px;
+      background-color: transparent;
+      border: 1px solid #787874;
+      margin-left: 10px;
+      border-radius: 4px;
+      border: 1px solid var(--gray-25);
+      &:active, &:focus {
+        border: 1px solid #787874;
+      }
+      & svg {
+        margin-right: 6px;
+      }
+    }
+  }
+  &--table {
+    margin-top: 20px;
+    height: calc(100% - 70px);
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      color: var(--black);
+    }
+    th {
+      background: var(--gray-5);
+      padding: 12px;
+      font-size: 12px;
+      text-align: left;
+      border: 1px solid var(--gray-25);
+      font-weight: 500;
+    }
+    td {
+      padding: 12px;
+      font-size: 12px;
+      text-align: left;
+      border: 1px solid var(--gray-25);
+    }
+  }
+}

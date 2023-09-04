@@ -1,0 +1,41 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.template-action{
+    @include flexCenter(space-between);
+    flex-wrap: wrap;
+    margin: 10px 0px;
+
+    &__middle{
+        @include flexCenter(center);
+
+        &__search{
+            position: relative;
+            width: 340px;
+            margin: 0px 15px;
+            .MuiOutlinedInput-input{
+                padding: 10px 14px;
+                font-family: $font-family;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 16px;
+                letter-spacing: 0.4000000059604645px;
+                text-align: left;
+            }
+            &__icon{
+              position: absolute;
+              right: 5px;
+              top: 5px;
+              color: $onx-A7 !important;
+            }
+        }
+    }
+
+    &__right{
+        @include flexCenter(flex-end);
+          .btn-primary{
+            margin-left: 15px;
+          }
+    }
+}

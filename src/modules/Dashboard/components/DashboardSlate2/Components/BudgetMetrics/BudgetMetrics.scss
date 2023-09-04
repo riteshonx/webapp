@@ -1,0 +1,105 @@
+.budgetMetrics-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 85%;
+  height: 85%;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  &__headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 1rem 2rem;
+    background: linear-gradient(0deg, #13223d, #234f70 100%) no-repeat;
+    &__title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #f7b047;
+    }
+    &__iconButton {
+      padding: 0.5rem;
+      &__icon {
+        font-size: 20px;
+        color: #f7b047;
+      }
+    }
+  }
+  &__bodyContainer1 {
+    margin: 2rem;
+    background-color: #171d25;
+    flex: 1;
+    height: 50%;
+    display: flex;
+  }
+  &__bodyContainer2 {
+    margin: 0 2rem 2rem 2rem;
+    background-color: #171d25;
+    flex: 1;
+    height: 50%;
+    display: flex;
+    &__spaceDiv {
+      flex: 0.05;
+      flex-direction: column;
+    }
+    &__classCodeData {
+      flex: 0.45;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 2rem 10rem 2rem 6rem;
+      &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__head {
+          color: #fff;
+          font-size: 18px;
+          font-weight: bold;
+          &__subHead1 {
+            color: #f7b047;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          &__subHead2 {
+            color: #f7b047;
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+        &__classCodeName {
+          cursor: pointer;
+          white-space: nowrap;
+          font-weight: 400;
+          color: #fff;
+        }
+        &__impact {
+          font-weight: 400;
+          color: #fff;
+          padding-right: 4rem;
+        }
+        &__selected {
+          font-weight: bold;
+          color: rgb(247, 176, 71);
+        }
+      }
+    }
+    &__chartDiv {
+      display: flex;
+      flex-direction: column;
+    }
+    &__flex1 {
+      flex: 0.4;
+    }
+    &__flex2 {
+      flex: 1;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.mapview2-container {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  z-index: 1;
+  .MuiCardContent-root {
+    padding: 0px !important;
+  }
+  #googleMap {
+    margin: 0 auto;
+    display: flex;
+    flex: 9;
+    width: 100%;
+    height: 100%;
+  }
+}

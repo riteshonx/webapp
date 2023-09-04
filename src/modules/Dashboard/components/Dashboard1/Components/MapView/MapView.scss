@@ -1,0 +1,110 @@
+.mapview1-container {
+  min-width: 100% !important;
+  max-width: 100% !important;
+  border-radius: 3rem !important;
+  height: 100%;
+  &__header {
+    font-weight: 800 !important;
+    background: #1d3a40;
+    border: 1px solid grey;
+    color: #fff;
+  }
+  &__portfolio {
+    padding: 1rem 0 1rem 1rem;
+  }
+  &__portfolioContent {
+    display: flex;
+    flex-direction: row;
+  }
+  &__projectContent {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem !important;
+  }
+
+  .MuiCardContent-root {
+    padding: 0px !important;
+  }
+  #googleMap {
+    margin: 0 auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex: 9;
+  }
+  .address-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85.2%;
+    flex: 1;
+    .loc-icon {
+      width: 30px;
+      height: 30px;
+    }
+    .location {
+      margin: 10px 0px 8px 8px;
+      color: #1d3a40;
+      text-align: center;
+    }
+  }
+
+  .date-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 4px 10px;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .left {
+      border-radius: 8px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      height: 5rem;
+      width: 5rem;
+      flex: 1.5;
+      flex-direction: column;
+      .t-icon {
+        font-size: 3rem;
+        color: #615151 !important;
+      }
+    }
+    .right {
+      flex: 3;
+      flex-direction: column;
+    }
+  }
+  .details-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+  .label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 3px 0;
+    color: #615151 !important;
+  }
+  .gm-style .gm-style-iw-c button {
+    display: none !important;
+  }
+  .projects-container {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 1rem;
+    .count {
+      border-radius: 4px;
+      color: #000;
+      font-size: 5rem;
+      font-weight: bolder;
+    }
+  }
+}

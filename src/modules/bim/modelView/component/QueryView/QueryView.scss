@@ -1,0 +1,31 @@
+@import '../../../../../assets/onx/variable';
+
+.bimQueryView {
+    margin: 0 -30px;
+    background-color: $onx-A7;
+    padding: 8px 30px;
+
+    .query-container{
+        display: flex;
+        flex-wrap: wrap;
+        .query-details{
+            margin: 0 10px 10px 0;
+            .query-result{
+                color: $onx-warn;
+            }
+        }
+        .query-params{
+            margin-right: auto;
+            width: 70%;
+        }
+    }
+    .caluse {
+        padding-bottom: 10px;
+
+        .green {
+            color: $onx-success-main;
+        }
+    }
+}
+
+ 

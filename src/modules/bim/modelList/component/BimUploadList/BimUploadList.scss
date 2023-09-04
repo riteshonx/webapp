@@ -1,0 +1,105 @@
+@import "../../../../../assets/onx/variable";
+.bimUploadList {
+  width: 100%;
+  height: 100%;
+
+  .header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .titleIcon {
+      display: flex;
+      align-items: center;
+      margin-left: 25px;
+
+      svg {
+        align-items: initial;
+        margin-right: 5px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .modelTitle {
+        font-weight: 500;
+        font-size: 24px;
+        margin: 20px 25px 20px 0px;
+      }
+    }
+
+    .upload-button {
+      margin: 20px 26px 20px 20px !important;
+      float: right;
+      color: $onx-primary;
+      border: 1px solid $onx-primary !important;
+    }
+
+    .createAssmbly {
+      margin: 20px 10px 20px 20px !important;
+    }
+  }
+
+  .filterSection {
+    padding: 13px 10px 13px 10px;
+    float: right;
+
+    .checkbox-label {
+      .MuiFormControlLabel-label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+
+    .checkbox {
+      color: $onx-primary;
+    }
+  }
+
+  .full-Width-info {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin-top: 30px;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .MuiPaginationItem-rounded {
+    background: white;
+    border: 2px solid $onx-primary;
+    color: $onx-primary;
+    padding: 6px 20px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.bimUploadDialog {
+  .dialog__header__text {
+    font-size: 42px;
+    line-height: 40px;
+    color: $onx-primary;
+    padding-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .dialog__body {
+    font-weight: 500;
+    margin: 15px 20px 46px 20px;
+  }
+
+  .dialog__footer {
+    .btn-secondary {
+      color: $onx-primary;
+      border-color: $onx-primary !important;
+      margin-right: 40px !important;
+    }
+  }
+}

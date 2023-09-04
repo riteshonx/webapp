@@ -1,0 +1,32 @@
+@import './utils.scss';
+@import './colors.scss';
+
+.v2-lessons-learned {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $SLATE-V2-1;
+  }
+  &-loader {
+    height: 5em;
+    width: 5em;
+    border: 0.2em solid $SLATE-V2-3;
+    border-top: 0.2em solid transparent;
+    animation: circulerRotate 1s linear;
+    border-radius: 50%;
+    @keyframes circulerRotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.projects {
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0px;
+  align-content: flex-start;
+  padding-top: 10px;
+  &__grid{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-gap: 10px 0px;
+    width: 99%;
+  }
+    &__users {
+      display: inline-block;
+      width: 100px;
+      height: 90px;
+      margin: 10px 10px;
+    }
+
+    &__users-active{
+      .projects__user-avatar{
+        border: 2px solid $onx-primary;
+        border-radius: 50%;
+      }
+
+      .projects__user-name{
+        font-weight: 700;
+      }
+    }
+  
+    &__user-name {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 7px 0px 0px 0px;
+      height: 42px;
+      overflow: hidden;
+    }
+  
+    &__user-avatar {
+      @include avatar(72px, 72px);
+    }
+
+    &__user-avatar:hover {
+      @include avatar(75px, 75px, 2px);
+    }    
+  
+    .highlight {
+      border: 2px solid $onx-primary;
+    }
+  
+    .boldText{
+      font-weight: bold;
+    }
+  }
+
+  .noUpdatePermission{
+    width: 100%;
+    padding: 10px;
+
+    .no-permission{
+        @include flexCenter(center);
+        flex-wrap: wrap;
+        margin: 10px 0px;
+        height: 60vh;
+        width: 100%;
+        font-size: 1.4rem;
+     }
+}

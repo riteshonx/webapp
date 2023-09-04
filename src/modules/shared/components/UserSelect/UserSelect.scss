@@ -1,0 +1,184 @@
+.AssigneeSelect {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  &__search {
+    height: 35px;
+    border: 1px solid #ddd;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+    .MuiInput-root {
+      padding: 2px 15px 0 25px;
+    }
+    .MuiInput-underline:before,
+    .MuiInput-underline:after,
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+      border-bottom: none;
+    }
+    &__avatargroup {
+      cursor: pointer;
+      position: relative;
+      left: 5px;
+      .MuiAvatarGroup-avatar {
+        height: 3.5rem;
+        width: 3.5rem;
+        font-size: 1.2rem;
+        background: #000;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+    &__icon {
+      position: absolute !important;
+      left: 15px;
+      top: 10px;
+      color: #c2c2c2;
+      cursor: pointer;
+      font-size: 1.8rem;
+    }
+    &__edit {
+      position: absolute !important;
+      right: 5px;
+      top: 10px;
+      color: #c2c2c2;
+      cursor: pointer;
+      font-size: 1.8rem;
+      z-index: 2;
+    }
+    &__input {
+      width: 100%;
+      border-bottom: 1px solid;
+    }
+    &__close {
+      position: absolute !important;
+      right: 0;
+      top: 8px;
+      padding: 5px !important;
+      &__icon {
+        font-size: 1.8rem !important;
+      }
+    }
+  }
+  &__option {
+    z-index: 999;
+    position: absolute;
+    top: 40px;
+    width: 90%;
+    background: #fff;
+    box-shadow: 0px 4px 56px rgba(0, 0, 0, 0.04),
+      0px 12px 16px rgba(0, 0, 0, 0.04);
+    &__label {
+      padding: 4px 10px;
+      font-weight: 600;
+      background: #f7f7f7;
+    }
+    &__list {
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0;
+      overflow-y: auto;
+      flex-direction: column;
+      max-height: 150px;
+      &__item {
+        border-bottom: 1px solid #ddd;
+        padding: 2px 0 2px 0;
+        align-items: center;
+        margin: 0px 5px 0px 5px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 999;
+        background: #fff;
+        &__left {
+          display: flex;
+          align-items: center;
+          &__icon {
+            width: 2.2rem !important;
+            height: 2.2rem !important;
+            font-size: 1.4rem !important;
+            background: #000 !important;
+            color: #fff !important;
+            margin-right: 5px;
+            text-transform: uppercase;
+          }
+          &__label {
+            display: flex;
+            flex-direction: column;
+            &__name {
+              font-size: 1.2rem;
+              font-weight: 500;
+              text-align: left;
+              white-space: nowrap;
+              width: 90px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            &__email {
+              font-size: 1rem;
+              font-weight: 300;
+              color: #c1c1c1;
+              text-align: left;
+              white-space: nowrap;
+              width: 90px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        &__right {
+          padding: 0;
+          cursor: pointer;
+          position: relative;
+          &__add {
+            position: absolute;
+            right: 0;
+            top: -12px;
+            padding: 0.2rem !important;
+            &__icon {
+              font-size: 1.8rem !important;
+              border: 1px dashed;
+              border-radius: 50%;
+            }
+          }
+          &__remove {
+            position: absolute;
+            right: 0;
+            top: -12px;
+            padding: 0.2rem !important;
+            &__icon {
+              font-size: 1.8rem !important;
+            }
+          }
+        }
+      }
+    }
+    &__nodata {
+      text-align: center;
+      padding: 10px;
+      font-weight: 400;
+    }
+    &__actions {
+      padding: 2px 5px;
+      display: flex;
+      justify-content: flex-end;
+      background: #fafafa;
+      z-index: 999;
+      &__error {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: red;
+        display: flex;
+        align-items: center;
+      }
+      &__btn {
+        text-transform: none !important;
+        margin: 0 1px;
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+}

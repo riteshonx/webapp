@@ -1,0 +1,170 @@
+@import "../../../../../../assets/onx/variable";
+@import "../../../../../../assets/onx/abstracts/mixins";
+
+.productivity-popup {
+    .pp-content {
+        background: #F4F9F8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px 0px 0px 6px;
+        position: fixed;
+        max-height: 85%;
+        top: 10%;
+        right: 0;
+        z-index: 1;
+        overflow: auto;
+
+        &.close {
+            animation: slide-out 0.5s forwards;
+        }
+
+        &.open {
+            animation: slide-in 0.5s forwards;
+        }
+
+        .header-sec {
+            color: $onx-success;
+            border-bottom: 0.5px solid rgba(59, 59, 59, 0.2);
+            padding: 18px 20px 18px 10px;
+            @include flexCenter(space-between);
+
+            .title {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 10px;
+            }
+
+            .close-btn {
+                font-size: 14px;
+                line-height: 10px;
+                text-decoration-line: underline;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .content-sec {
+            max-width: 709px;
+
+            .nav-info {
+                padding: 10px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 10px;
+                color: #3B3B3B;
+
+                .value-info {
+                    color: $onx-success;
+                }
+
+                .nav-arrow {
+                    color: $onx-success;
+                    padding: 0 11px;
+                }
+
+                .metric-info:last-child {
+                    font-weight: 700;
+                }
+            }
+
+            .tabSection {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                padding: 12px 10px 0 10px;
+                border-bottom: 0.5px solid rgba(59, 59, 59, 0.2);
+
+                .product-metric-tab {
+                    min-height: 0;
+
+                    .MuiTabs-indicator {
+                        background-color: $onx-success;
+                        height: 4px;
+                    }
+
+                    .MuiTab-root {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-transform: none;
+                        padding: 0 0 6px 0;
+                        min-width: 136px;
+                        min-height: 0;
+                    }
+
+                    .MuiTab-wrapper {
+                        padding: 0 4px;
+                    }
+
+                    .Mui-selected {
+                        color: $onx-success;
+                    }
+                }
+
+                .btn-secondary {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: $onx-success;
+                    padding: 5px 8px;
+                    border: 1px solid $onx-success !important;
+                    margin: 0 0 11px !important;
+                }
+            }
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #F4F9F8;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $onx-success;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: $onx-success;
+    }
+
+    @keyframes slide-in {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes slide-out {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    .variances-dot {
+        height: 10px;
+        width: 10px;
+        background-color: #FFA80D;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .productivity-popup-load-widget{
+        width: 689px;
+        height: 100%;
+        min-height: 200px;
+        @include flexCenter(center);
+    }
+
+}

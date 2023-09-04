@@ -1,0 +1,35 @@
+.cdp-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-content {
+    position: relative;
+    box-shadow: 2px 2px 14px 0px #00000026;
+    background: var(--black);
+    color: var(--white);
+    padding: 50px 40px;
+    border-radius: 10px;
+  }
+  &-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    opacity: 0.6;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &-title {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,229 @@
+@import '../../../../../assets/onx/variable';
+.scheduleRecepiePlan {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  & .gantt-container__right {
+    z-index: 1;
+  }
+  &__metadata {
+    display: flex;
+    flex-direction: column;
+    background: #fafafa;
+    border-bottom: 1px solid #ddd;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 15px 5px 15px;
+      align-items: center;
+      &__left {
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 36px;
+        width: 50%;
+        display: flex;
+        &__navBack {
+          margin-top: 6px;
+          cursor: pointer;
+        }
+
+        &__navBackWithMargin {
+          width: 100%;
+        }
+
+        &__pointer {
+          width: 500px;
+          cursor: pointer;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      &__right {
+        width: 50%;
+        &__actionButton {
+          display: flex;
+          justify-content: end;
+          margin-right: 24px;
+
+          &__auto-schedule {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 6px 9px;
+            width: 40px;
+            // height: 31px;
+            cursor: pointer;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    &__action {
+      display: flex;
+      padding: 5px 15px 15px 15px;
+      margin-left: 25px;
+      .MuiOutlinedInput-input,
+      .MuiSelect-outlined {
+        padding: 10px 14px;
+        font-size: 1.3rem;
+        line-height: 16px;
+        background: #f8f8f8;
+        width: 100%;
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &__input {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+
+        &__textfield {
+          &__description {
+            padding-right: 20px;
+          }
+
+          &__name {
+            width: 80%;
+          }
+          // width: 95%;
+          &__warning {
+            color: red;
+            font-size: 10px;
+            height: 10px;
+            bottom: 10px;
+            font-weight: 400;
+            position: relative;
+            right: 180px;
+            top: 25px;
+            width: 50%;
+          }
+
+          &__descriptionWarning {
+            color: red;
+            font-size: 10px;
+            height: 10px;
+            position: relative;
+            bottom: 0px;
+            left: 5px;
+            font-weight: 400;
+          }
+        }
+
+        &__disabled {
+          opacity: 0.5;
+          pointer-events: none;
+        }
+      }
+      &__type {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 20%;
+        margin-right: 24px;
+        &__textfield {
+          width: 95%;
+        }
+      }
+      &__material {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 25%;
+        &__textfield {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__popover {
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+    padding: 10px;
+    filter: drop-shadow(0px 0px 2px #5ebd7e);
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+    &.left-bottom::after {
+      border-bottom: 10px solid #fff;
+      top: -10px;
+      left: 10px;
+    }
+    &.left-top::after {
+      border-top: 10px solid #fff;
+      bottom: -10px;
+      left: 10px;
+    }
+    &.right-bottom::after {
+      border-bottom: 10px solid #fff;
+      top: -10px;
+      right: 10px;
+    }
+    &.right-top::after {
+      border-top: 10px solid #fff;
+      bottom: -10px;
+      right: 10px;
+    }
+  }
+}
+
+.recepiePlanFloatingBtn {
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
+  background: $onx-primary;
+  width: 45px;
+  height: 45px;
+  border-radius: 9px;
+  z-index: 999;
+
+  &__columnName {
+    &__typography {
+      padding: 8px;
+    }
+
+    .MuiPopover-paper {
+      width: 220px !important;
+    }
+
+    .MuiTypography-body1 {
+      font-size: 12px !important;
+      line-height: 20px !important;
+      font-weight: 500 !important;
+    }
+
+    .MuiTypography-body1:hover {
+      font-size: 12px !important;
+      line-height: 20px !important;
+      font-weight: 600 !important;
+      cursor: pointer;
+    }
+
+    &__checkIcon {
+      font-size: 15px;
+      float: right;
+      margin-top: 3px;
+    }
+
+    &__hideTickIcon {
+      display: none;
+    }
+
+    &__disabledColumn {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+}
+
+.scheduleRecepiePlan .gantt_task_row:last-child {
+  border-bottom: none;
+}

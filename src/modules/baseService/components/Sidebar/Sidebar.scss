@@ -1,0 +1,42 @@
+@import '../../../../assets/onx/variable';
+
+.base{
+    &__sidebar{
+        display: flex;
+        flex-direction: column;
+        width:'100%'
+    }
+    &__sidebarItem{
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__label{
+        padding: 0;
+        margin: 10px;
+        color: $onx-A6;
+        font-size:1.2rem;
+    }
+    &__selectedlabel{
+        padding: 0;
+        margin: 10px;
+        color: #fff;
+        font-size:1.2rem;
+    }
+    &__icon{
+        color: $onx-A6;
+    }
+    &__selectedicon{
+        color: #fff
+    }
+    &__slectedItem{
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        background: $onx-A4;
+    }
+}

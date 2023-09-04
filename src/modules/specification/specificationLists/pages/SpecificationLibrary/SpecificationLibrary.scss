@@ -1,0 +1,70 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.specification-lib{
+    width: 100%;
+    padding: 15px 20px;
+    position: relative;
+
+   &__header{
+        @include flexCenter(space-between);
+
+        .header-name{
+            font-weight: 600;
+        }
+
+        .btn-upload{
+            margin-right: 30px;
+        }
+   }
+
+   &__close-icon{
+        position: absolute;
+        right: 5px;
+        top: 4px;
+
+        svg{
+            cursor: pointer;
+        }
+   }
+
+   &__lists{
+        height: calc(100vh - 190px);
+        overflow-y: auto;
+        padding: 0px 10px;
+   }
+
+
+}
+
+.lib-dialog{
+    .MuiDialog-paperWidthSm, .MuiPaper-root{
+        width: 90% !important;
+        height: 90% !important;
+        max-width: 91% !important;
+    }
+
+    .MuiDialogTitle-root{
+        box-shadow: 0px 2px 4px #9e989869;
+        z-index: 3;
+    }
+
+    .MuiDialogContent-root{
+        position: relative;
+        padding: 0px;
+    }
+}
+
+.noUploadSpecificationPermission{
+    width: 100%;
+    padding: 10px;
+
+    .no-permission{
+        @include flexCenter(center);
+        flex-wrap: wrap;
+        margin: 10px 0px;
+        height: 60vh;
+        width: 100%;
+        font-size: 1.4rem;
+     }
+}

@@ -1,0 +1,89 @@
+@import '../../../../../assets/onx/variable';
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.bimSideBar {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    padding: 0;
+    border-right: 1px solid !important;
+    border-color: $onx-A8 !important;
+
+    .menuIcons {
+        padding: 30px 10px;
+        
+        &.open {
+            border-right: 1px solid !important;
+            border-color: $onx-A8 !important;
+        }
+        
+        .menuButton {
+            margin-bottom: 15px;
+            align-items: initial;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .sideBar {
+        &.open{
+            overflow: auto;
+            height: 100%;
+        }
+
+        .bimDrawer {
+            width: 0;
+            > *:first-child {
+                position: relative;
+            }
+        }
+
+        .bimDrawerOpen {
+            width: 400px;
+            transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+            height: 100%;
+            > *:first-child {
+                padding: 20px 20px 40px 20px;
+                position: relative;
+                border-right: 1px solid var(--onx-A8)  !important;
+                height: 100%;
+            }
+        }
+
+        .bimDrawerClose {
+            overflow: hidden;
+            width: 0;
+            height: 0;
+            transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+        }
+        
+        .AddNewViewBtn{
+            padding: 10px 0;
+            border-radius: 4px;
+            border-color: transparent;
+            margin: 12px 0 !important;
+        }
+
+        .blodText1 {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 26px;
+        }
+
+        .blodText2 {
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 20px;
+        }
+
+        .displyFlex {
+            @include flexCenter(space-between);
+            padding: 10px 0;
+        }
+
+        svg:hover {
+            cursor: pointer;
+        }
+    }
+}

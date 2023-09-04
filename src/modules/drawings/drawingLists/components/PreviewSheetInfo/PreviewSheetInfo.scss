@@ -1,0 +1,107 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.sheetInfo{
+    
+    &__item{
+        border-bottom: 1px solid #E8E8E8;
+        // min-height: 51px;
+
+        &__name{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-size: 1.2rem;
+        }
+       
+        &__details{
+            width: 100%;
+
+            &__field{
+                @include flexCenter(space-between);
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+    
+                &__details{
+                    width: 100%;
+    
+                    .MuiInputLabel-animated{
+                        margin-bottom: 7px;
+                        font-size: 12px;
+                    }
+    
+                    .MuiOutlinedInput-input, .MuiSelect-outlined{
+                        padding: 10px 14px;
+                        font-size: 1.2rem;
+                        line-height: 16px;
+                        background: #FFFFFF;
+                    }
+    
+                    .MuiSelect-select.Mui-disabled{
+                        background: #d3d3d366;
+                    }
+    
+                    .date-picker{
+                        position: relative;
+                    
+                        .calendar-icon{
+                            top: -3px;
+                            position: absolute;
+                            right: 5px;
+                        }
+                    }
+    
+                    &__datetimepicker{
+                        position: relative;
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                        .MuiOutlinedInput-input{
+                            padding: 10px 35px;
+                            font-size: 1.2rem;
+                        }
+                        &__icon{
+                            position: absolute;
+                            left: 5px;
+                            top: 6px;
+                        }
+                        &__fixed{
+                            color: #fff;
+                            background: #c2c2c230;
+                            .MuiOutlinedInput-input{
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+    
+                &__remove{
+                    width: 20%;
+                    @include flexCenter(flex-start);
+                    padding-left: 10px;
+    
+                    button{
+                        position: relative;
+                        top: 10px;
+                    }
+                }
+            }
+
+        }
+
+    }
+    
+    .MuiPaper-elevation1{
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+    .MuiPaper-elevation1:hover{
+        background: #c8c8c842;
+    }
+
+    .MuiCollapse-container{
+        background: #F8F8F8;
+    }
+}

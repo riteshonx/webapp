@@ -1,0 +1,23 @@
+@import '../../../../assets/onx/variable';
+.view {
+  margin-right: 0.5rem;
+  margin-top: 8px;
+  .activeview {
+    background-color: $onx-A7 !important;
+  }
+  &__label {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+
+  &__select {
+    width: 125px;
+    height: 26px;
+  }
+  .MuiSelect-outlined {
+    padding-right: 32px;
+    padding: 6px !important;
+    min-width: 75px;
+  }
+}

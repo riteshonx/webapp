@@ -1,0 +1,21 @@
+.pcLandingPage-main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  ::-webkit-scrollbar {
+    width: 5.5px !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-clip: content-box;
+    border-radius: 15px !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 15px !important;
+    height: 2rem !important;
+    background: lightgrey;
+    background-color: #105c6b;
+  }
+}

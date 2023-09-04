@@ -1,0 +1,50 @@
+.personalizeBook-main-page3 {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  position: relative;
+  background-image: url(../../../../../../../assets/images/clock.jpeg);
+  background-size: 210% 86%;
+  background-position-y: 138%;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  &__slateLogo {
+    position: absolute;
+    top: 21.8%;
+    left: 0;
+    color: #fbc30a;
+    font-size: 14px;
+    padding: 1rem;
+  }
+  &__container {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    top: 32%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+    &__content {
+      color: #fff;
+      font-size: 18px;
+      margin: 0;
+      line-height: 30px;
+      padding: 15px 0 29px;
+      width: 450px;
+      font-weight: 600;
+      &__marginRight {
+        margin-right: 1.5rem;
+      }
+      &__yellow {
+        color: #fbc30a;
+      }
+    }
+  }
+}

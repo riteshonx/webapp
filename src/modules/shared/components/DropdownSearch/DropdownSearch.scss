@@ -1,0 +1,39 @@
+.project-container {
+  position: relative;
+  font-weight: 600;
+  &_disable {
+    opacity: 0.5 !important;
+  }
+  .MuiTextField-root {
+    width: 20rem;
+  }
+  .MuiOutlinedInput-root {
+  }
+
+  .MuiOutlinedInput-root:hover {
+    border-color: "white" !important;
+  }
+
+  .MuiInputBase-input {
+    color: #fff;
+    padding: 1.2rem !important;
+  }
+
+  .MuiSvgIcon-root {
+    color: #fff;
+  }
+  .dropdown {
+    .MuiAutocomplete-root {
+    }
+    .MuiAutocomplete-input {
+      padding: 0.3rem 0 !important;
+    }
+    .MuiOutlinedInput-notchedOutline {
+      border: none !important;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+.MuiAutocomplete-noOptions {
+  color: #fff !important;
+}

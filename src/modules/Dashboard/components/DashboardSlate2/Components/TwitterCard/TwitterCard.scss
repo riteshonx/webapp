@@ -1,0 +1,71 @@
+.twitter-feeds2 {
+  min-width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  &__header {
+    font-weight: 800 !important;
+    border: 1px solid grey;
+    color: #fff;
+  }
+  &__flip-icon-container {
+    min-width: 100%;
+    max-width: 100%;
+    position: relative;
+    &__flip-icon {
+      position: absolute;
+      right: 1.5rem;
+      top: 1.3rem;
+      color: #fff;
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .twitter-tweet {
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+  }
+  .twitter-container {
+    padding: 10px !important;
+    background: #fff;
+    overflow: auto;
+    visibility: hidden;
+    .skeleton-text {
+      flex: 1;
+      flex-direction: row;
+      display: flex;
+      padding: 15px;
+      visibility: visible;
+      .left {
+        flex: 1;
+        flex-direction: column;
+      }
+      .right {
+        flex: 6;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .twitter-container:hover {
+    overflow-y: scroll;
+    visibility: visible;
+    background-color: transparent;
+  }
+
+  .twitter-container::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .twitter-container::-webkit-scrollbar-track {
+    background-clip: content-box;
+    border-radius: 15px;
+  }
+
+  .twitter-container::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    height: 3rem;
+    background: #1da1f2;
+  }
+}

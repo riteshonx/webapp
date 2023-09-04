@@ -1,0 +1,86 @@
+@import '../../../../../assets/onx/variable';
+
+.bimMainContainer {
+    width: 100%;
+    height: calc(100vh - 54px);
+    display: inline-flex;
+    position:relative;
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    .canvasDiv {
+        position: absolute;
+        left: 41px;
+        width: 100%;
+        height: 100%;
+        background: $onx-A9;
+    }
+    
+    .canvasStyle {
+        min-width: 250px;
+        min-height: 250px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 4px 4px 0;
+        display: block;
+    }
+
+    .spatial-header{
+        padding: 20px 0;
+        .button-container {
+            .spatial-buttons {
+                button {
+                    margin: 0 !important;
+                }
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .loading-info { 
+        position: absolute;
+        top: 45%; 
+        left: 45%;
+        pointer-events: none;
+        text-align: center;
+
+        .libProgress {
+            font-weight: bold;
+        }
+    }
+
+    .loading-info2 { 
+        position: absolute;
+        left: 45%;
+        bottom: 24px;
+        pointer-events: none;
+        text-align: center;
+    }
+
+    .loading-info3 { 
+        position: absolute;
+        width: 100%; 
+        height: 100%;
+        left: 0;
+        top: 0;
+        padding-top: 25px;
+        text-align: center;
+        // background-color:rgba(0,0,0,0.2);
+        // z-index: 1400;
+        // cursor: default;
+        cursor: progress;
+    }
+
+    .loading-info4 { 
+        position: fixed;
+        width: 100%; 
+        height: 100%;
+        left: 0;
+        top: 75px;
+        // pointer-events: none;
+        text-align: center;
+        cursor: progress;
+    }
+}

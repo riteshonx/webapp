@@ -1,0 +1,67 @@
+.projectMetrics-main {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-shadow: inset 0 0 10px lightgray;
+  height: 100%;
+  width: 100%;
+  &__headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    background-color: #ecf3ec;
+    border-bottom: 0.5px solid lightgray;
+    &__name {
+      flex: 1;
+      display: flex;
+      font-weight: 500;
+      color: #171d25;
+    }
+    &__filterContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+      border: 0.5px solid #171d25;
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+      &__filter {
+        padding: 0.5rem;
+        background-color: #fff;
+        color: #171d25;
+        border-right: 0.5px solid #171d25;
+      }
+    }
+  }
+  &__container {
+    padding: 0.5rem 0.7rem;
+    height: calc(100% - 37px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    &__innerContainer {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      &__chartContainer {
+        display: flex;
+        flex: 1;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+  .activeFilter {
+    background-color: #171d25;
+    color: #fff;
+  }
+  .marginRight {
+    margin-right: 0.5rem;
+  }
+  .marginBottom {
+    margin-bottom: 0.5rem;
+  }
+}

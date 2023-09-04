@@ -1,0 +1,66 @@
+@import "../../../../../assets/onx/variable";
+
+.formlistTable{
+    &__cellicon{
+        font-size:1.8rem;
+        cursor: pointer;
+        color: #B0B0B0;
+    }
+
+    &__projectsAssociated {
+        &__typography {
+            padding: 4px 8px 4px 8px;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+        }
+
+        &__header {
+            padding: 8px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &__name {
+            margin-left: 10px;
+            padding-bottom: 10px
+        }
+  
+        .MuiPopover-paper {
+          width: 220px !important;
+          position: relative !important;
+        }
+  
+        .MuiTypography-body1 {
+          font-size: 14px !important;
+          line-height: 15px !important;
+          font-weight: 500 !important;
+        }
+  
+        // .MuiTypography-body1:hover {
+        //   font-size: 14px !important;
+        //   line-height: 15px !important;
+        //   font-weight: 600 !important;
+        //   cursor: pointer;
+        // }
+  
+        &__checkIcon {
+          font-size: 15px;
+          float: right;
+          margin-top: 3px;
+        }
+  
+        &__hideTickIcon {
+          display: none;
+        }
+  
+        &__disabledColumn {
+          opacity: 0.6;
+          pointer-events: none;
+        }
+      }
+}
+
+  

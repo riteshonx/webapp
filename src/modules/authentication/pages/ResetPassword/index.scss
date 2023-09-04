@@ -1,0 +1,97 @@
+@import "../../../../assets/onx/variable";
+
+.resetPassword {
+  $shrink: unique-id();
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("../../../../assets/images/login-bg.png");
+  background-color: rgba(27, 27, 27, 0.5);
+  //background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  // background-blend-mode: multiply;
+  background-size: auto 100vh;
+  background-position: center center;
+  animation: $shrink 10s infinite alternate;
+  height: 100vh;
+  &_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+  }
+  @keyframes #{$shrink} {
+    0% {
+      background-size: auto 100vh;
+    }
+    100% {
+      background-size: auto 110vh;
+    }
+  }
+
+  &_leftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    &_text {
+      color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      &_1 {
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+      }
+      &_2 {
+        font-weight: 300;
+      }
+      &_3 {
+        font-size: 18px;
+        padding-right: 50px;
+      }
+    }
+  }
+
+  &_container {
+    padding: 1.8rem;
+    //width: 550px;
+    background-color: white;
+    border-radius: 5px;
+    //box-shadow: 8px 10px 8px 1px #6f6f6f;
+    z-index: 1;
+
+    &_parent1 {
+      width: 425px;
+      padding: 1.8rem;
+      background-color: rgb(214, 213, 206);
+    }
+    &_parent2 {
+      padding: 1.8em;
+      background-color: rgb(234, 233, 230);
+    }
+
+    &_form {
+      display: flex;
+      flex-flow: column wrap;
+      //margin-top: 2rem;
+
+      &_input {
+        margin: 1.5rem;
+        padding: 1rem;
+      }
+    }
+  }
+
+  &_error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(143, 0, 0);
+    &_message {
+      text-align: center;
+      color: white;
+    }
+  }
+}

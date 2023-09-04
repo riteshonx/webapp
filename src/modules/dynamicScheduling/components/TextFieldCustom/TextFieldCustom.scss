@@ -1,0 +1,70 @@
+@import '../../../../assets/onx/variable';
+
+.form {
+  display: block;
+  &-control {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    //line-height: 1.5;
+    color: #495057;
+    background: #ffffff;
+    border: 0.5px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 36px;
+    font-family: 'Poppins';
+  }
+  ::placeholder {
+    color: rgb(179, 179, 179);
+    opacity: 1; /* Firefox */
+  }
+
+  &-label {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    margin-left: 1px;
+    font-weight: 700;
+  }
+}
+
+.required {
+  color: $onx-red;
+}
+.error {
+  color: $onx-red;
+}
+.custom-error-color{
+  color: #fe9a0b;
+}
+
+.is-invalid {
+  border-color: $onx-red;
+  :focus-visible {
+    border-color: $onx-red;
+  }
+}
+
+.text_field_custom-info-icon {
+  position: absolute;
+  left: 54.5rem;
+  margin-top: 4px;
+  color: $onx-white;
+  background-color: $onx-red;
+  border-radius: 50%;
+}
+
+.search-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 10.5px;
+  margin-left: 14.5px;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}

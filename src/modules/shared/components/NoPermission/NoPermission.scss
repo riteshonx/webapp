@@ -1,0 +1,15 @@
+@import "../../../../assets/onx/variable";
+@import "../../../../assets/onx/abstracts/mixins";
+.NoPermission {
+  width: 100%;
+  padding: 10px;
+
+  .no-permission {
+    @include flexCenter(center);
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    height: 60vh;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}

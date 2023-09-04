@@ -1,0 +1,17 @@
+
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.select-version{
+
+    .MuiOutlinedInput-input, .MuiSelect-outlined{
+        padding: 13px 14px;
+        font-size: 1.2rem;
+        line-height: 16px;
+        background: #FFFFFF;
+    }
+
+    .MuiInput-underline:before{
+        border: none;
+    }
+}

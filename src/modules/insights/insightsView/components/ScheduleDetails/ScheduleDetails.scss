@@ -1,0 +1,105 @@
+@import '../../../../../assets/onx/variable';
+
+.scheduleDetails {
+    padding: 5px;
+    color: #000;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+    }
+
+    &__content {
+        &__info {
+            margin: 10px;
+            float: right;
+            font-size: 14px;
+            color: $onx-primary;
+        }
+
+        &__subject {
+            margin-bottom: 5px;
+
+            &__tab--header {
+                line-height: 18px;
+                color: #000;
+                background-color: $onx-A9;
+                font-size: 16px !important;
+                padding: 10px !important;
+                margin: 0 !important;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                border: 1px solid #DDDDDD;
+            }
+
+            &.flex {
+                display: flex;
+            }
+
+            &__ruleName {
+                margin-left: 14px;
+            }
+
+            &__table {
+                height: calc(100vh - 500px);
+                overflow: auto;
+                position: relative;
+
+                &>table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+
+                &__header {
+                    position: sticky;
+                    top: -1px;
+                    z-index: 1;
+                    line-height: 18px;
+                    color: $onx-primary;
+                    background-color: $onx-A9;
+                    border: 1px solid #ddd;
+                    text-align: left;
+                    padding: 4px 12px;
+
+                    &:last-child {
+                        width: 160px
+                    }
+                }
+
+                &__data {
+                    line-height: 20px;
+                    color: $onx-A3;
+                    padding: 4px 12px;
+                    border: 1px solid #ddd;
+
+                    &__btn {
+                        margin-right: 4px;
+
+                        &__icon {
+                            transform: rotate(-45deg);
+                            color: #3a8be3;
+                        }
+                    }
+                }
+            }
+        }
+
+        h4,
+        p,
+        tr,
+        td {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: $onx-A3;
+        }
+
+    }
+}

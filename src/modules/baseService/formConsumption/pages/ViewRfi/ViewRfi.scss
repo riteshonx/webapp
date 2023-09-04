@@ -1,0 +1,506 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.view-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  &_wowf {
+    &_header {
+      padding: 0 1.5rem;
+      box-shadow: #f1f1f1 0px 3px 2px 0px;
+      @include flexCenter(initial);
+    }
+
+    &_infoBar {
+      @include flexCenter(space-between);
+    }
+  }
+
+  &__workflow-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 100;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.view-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  flex-grow: 0;
+  box-shadow: 0px 2px 4px #9e989869;
+  margin-bottom: 20px;
+
+  .header-wrapper {
+    margin-bottom: 0px;
+  }
+
+  &__header {
+    @include flexCenter(space-between);
+    flex-wrap: wrap;
+
+    &__form-by {
+      @include flexCenter(flex-start);
+      flex-wrap: wrap;
+      margin: 0px 0px 10px 25px;
+
+      &__details {
+        margin-right: 30px;
+        text-transform: uppercase;
+        font-size: 13px;
+        &__label {
+          color: #757575;
+          font-weight: 600;
+        }
+        &__value {
+          margin-left: 4px;
+          text-transform: none;
+        }
+        &__status {
+          background: #d5e3e3;
+          padding: 2px 12px;
+          border-radius: 5px;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    &__rfi-progress {
+      @include flexCenter(flex-start);
+      flex-wrap: wrap;
+      text-transform: uppercase;
+
+      &__wrapper {
+        margin-right: 30px;
+      }
+
+      &__label {
+        color: #757575;
+      }
+
+      &__value {
+        font-weight: 600;
+      }
+    }
+  }
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__right {
+      display: flex;
+      &__followers {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      &__workFLow {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        text-transform: none;
+        &__icon {
+          font-size: 18px;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.view-rfi-form {
+  margin: 0px 10px;
+  display: flex;
+  flex-grow: 1;
+
+  &__form-container {
+    padding: 0px;
+    flex-grow: 1;
+
+    &__field-wrapper {
+      padding: 2px 20px;
+      margin: 0px 0px;
+      .featureFormTable {
+        overflow-x: auto;
+        width: 100%;
+        &__caption {
+          color: #757575;
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin: 10px 10px;
+        }
+        &__table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          border: 1px solid #ddd;
+          &__headcell {
+            text-align: left;
+            background: #f2f2f2;
+            border: 1px solid #ddd;
+            padding: 10px;
+            min-width: 285px;
+          }
+          &__cell {
+            text-align: left;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 10px 10px 10px;
+            min-width: 285px;
+            &:first-of-type {
+              border-left: 1px solid #ddd;
+            }
+          }
+          &__headerSlno {
+            text-align: left;
+            background: #f2f2f2;
+            border: 1px solid #ddd;
+            padding: 10px;
+            min-width: 50px;
+          }
+          &__cellSlno {
+            text-align: center;
+            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 10px 10px 10px;
+            min-width: 50px;
+          }
+        }
+      }
+    }
+    &__field-data {
+      margin: 15px 0px;
+    }
+    &__table-data {
+      margin: 0px;
+    }
+    &__links {
+      padding: 0;
+    }
+    &__field-label {
+      color: #757575;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 10px 0px;
+    }
+
+    &__form-value {
+      font-size: 1.4rem;
+      &__section{
+        display: flex;
+        padding: 2px;
+        flex-direction: column;
+        min-height: 150px;
+        justify-content: space-around;
+      }
+      &__asset{
+        margin-left: 16px;
+        padding: 16px;
+        max-height: 200px;
+        overflow-y: auto;
+        li{
+          margin-bottom: 12px;
+        }
+      }
+      &__linkedForms{
+        table{
+         border-collapse: collapse;
+        }
+       }
+
+      &__text {
+        @extend .filed-value;
+      }
+
+      &__long-text {
+        @extend .filed-value;
+        min-height: 60px;
+      }
+
+      &__number {
+        @extend .filed-value;
+      }
+
+      &__time {
+        @extend .filed-value;
+      }
+
+      &__boolean {
+        display: grid;
+        grid-template-columns: 200px auto;
+        flex-wrap: wrap;
+
+        &__value {
+          padding: 10px 5px;
+        }
+
+        &__comment {
+          @extend .filed-value;
+          min-height: 60px;
+        }
+      }
+
+      &__multi-user {
+        @include flexCenter(flex-start);
+        flex-wrap: wrap;
+
+        &__wrapper {
+          margin: 5px 10px 5px 0px;
+        }
+      }
+
+      &__single-user {
+        @extend .filed-value;
+      }
+
+      &__multi-company {
+        @include flexCenter(flex-start);
+        flex-wrap: wrap;
+
+        &__wrapper {
+          margin: 5px 10px 5px 0px;
+        }
+      }
+
+      &__single-company {
+        @extend .filed-value;
+      }
+
+      &__file-attachment {
+        border: 1px solid #f8f8f8;
+
+        &__file {
+          @include flexCenter(flex-start);
+          position: relative;
+          padding: 10px 0px;
+          border-bottom: 1px solid #f8f8f8;
+
+          &__fileSize {
+            color: #c4c4c4;
+            font-size: 10px;
+          }
+
+          &__thumbnail {
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+            // background: #C4C4C4;
+            margin-right: 20px;
+
+            img {
+              height: 50px;
+              width: 50px;
+              border-radius: 5px;
+            }
+
+            svg {
+              height: 50px;
+              width: 50px;
+              border-radius: 5px;
+            }
+          }
+
+          &__fileRemove {
+            position: absolute;
+            right: 10px;
+            top: 20px;
+
+            svg {
+              cursor: pointer;
+            }
+          }
+
+          &__link {
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    &__main {
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0;
+      overflow-y: auto;
+      flex-direction: column;
+
+      &__form-fields {
+        margin-top: 30px;
+        min-height: 600px;
+      }
+      &__commentaction {
+        display: flex;
+        padding: 20px 0 0 0;
+        border-bottom: 0.5px solid $onx-A7;
+        &__tab {
+          font-size: 1.4rem;
+          margin: 0 2rem;
+          min-width: 120px;
+          text-align: center;
+          padding: 5px 5px 0 5px;
+          cursor: pointer;
+        }
+        &__active {
+          border-bottom: 4px solid $onx-A2;
+        }
+      }
+    }
+  }
+
+  &__form-wrapper {
+    height: calc(100vh - 320px);
+    overflow-y: auto;
+    margin: 0 auto;
+    padding-right: 15px;
+    max-width: 1000px;
+  }
+
+  &__form-action {
+    @include flexCenter(flex-end);
+    padding: 0px 20px;
+    margin: 10px 0px;
+  }
+
+  &__form-info {
+    display: flex;
+    justify-content: space-between;
+    background: #fffcef;
+    border: 1px solid #fff2bc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    &__field {
+      display: flex;
+      font-size: 1.3rem;
+      flex-direction: column;
+      font-weight: 600;
+      align-items: center;
+      &__label {
+        color: #757575;
+        text-transform: uppercase;
+      }
+      &__value {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  &__form-comments {
+    margin: 20px 0px 50px 0px;
+
+    &__commentaction {
+      display: flex;
+      padding: 20px 0 0 0;
+      border-bottom: 0.5px solid $onx-A7;
+      &__tab {
+        font-size: 1.4rem;
+        margin: 0 2rem;
+        min-width: 120px;
+        text-align: center;
+        padding: 5px 5px 0 5px;
+        cursor: pointer;
+      }
+      &__active {
+        border-bottom: 4px solid $onx-A2;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.error-wrap {
+  color: $onx-red;
+  height: 18px;
+  font-size: 1.2rem;
+  position: relative;
+  top: 3px;
+
+  &__message {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
+  }
+}
+
+.date-time-picker {
+  .MuiFormHelperText-root.Mui-error {
+    color: #ff0000;
+    height: 18px;
+    font-size: 1rem !important;
+    position: relative;
+    top: -2px;
+    font-family: "$font-family";
+    right: 13px;
+  }
+}
+
+.review-rfi-wrapper {
+  @include flexCenter(flex-start);
+  flex-direction: column;
+  margin: 0px auto;
+  height: calc(100vh - 220px);
+  overflow-y: auto;
+}
+
+.btn-primary {
+  color: $onx-white;
+  margin-left: 10px;
+}
+
+.MuiListItem-root.Mui-selected {
+  font-weight: 600 !important;
+}
+
+.filed-value {
+  background: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+// @media screen and (min-width: 1200px){
+//     .view-rfi-form{
+//         max-width: none;
+//         margin: 0px 200px;
+//     }
+// }
+
+.noData {
+  padding: 10px 20px;
+  &__message {
+    height: calc(100vh - 148px);
+    @include flexCenter(center);
+    font-size: 1.6rem;
+  }
+}
+
+.noViewPermission {
+  width: 100%;
+  padding: 10px;
+
+  .no-permission {
+    @include flexCenter(center);
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    height: 60vh;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,159 @@
+@import '../../../../../assets/onx/variable';
+
+.bimDragDrop {
+    height: 100%;
+    align-items: center;
+    display: grid;
+
+    .header {
+        background-color: $onx-primary;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 12px 25px;
+        margin-bottom: 25px;
+
+        svg {
+            width: 30px;
+            height: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &-title {   
+            display: flex;
+            svg {
+                width: 20px;
+                height: 32px;
+            }
+        }
+    }
+
+    .dropZone {
+        @include flexCenter(center);
+        background: rgba(217, 217, 217, 0.2);
+        border: 1px dashed #3B3B3B;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 461px;
+        height: 250px;
+        text-align: center;
+        margin: 0 auto 40px;
+        background: url('../../../../../assets/images/ant-design_cloud-upload-outlined.svg') no-repeat center;
+
+        .dragText {
+            font-size: 16px;
+            line-height: 24px;
+            color: #C1BDBD;
+        }
+
+        .dragText2 {
+            font-size: 14px;
+            line-height: 24px;
+            color: #C1BDBD;
+        }
+
+        .fileExt {
+            font-size: 16px;
+            line-height: 24px;
+            color: $onx-primary;
+        }
+
+        .uploadButton {
+            color: $onx-primary;
+            border-color: $onx-primary !important;
+            margin: 35px 0 !important;
+        }
+
+        .seletedfiles {
+            font-size: 12px;
+            word-break: break-all;
+            padding: 20px 10px 0;
+        }
+    }
+
+    .footer {
+        border-top: 0.5px solid rgba(59, 59, 59, 0.5);
+        padding: 12px 25px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+
+        .btn-secondary {
+            color: $onx-primary;
+            border-color: $onx-primary !important;
+        }
+
+        .MuiFormControlLabel-label {
+            font-size: 1.4rem;
+        }
+    }
+
+    .alert {
+        margin:  -20px auto 20px;
+        width: 37.5vw;
+    }
+    .warning{
+        margin:  -20px auto 20px;
+        width: 80%;
+    }
+}
+
+.bimUploadDialog {
+    .MuiDialogContent-root {
+        padding: 0;
+    }
+}
+
+.bimUploadStageDialog {
+    .MuiDialogContent-root {
+        padding: 0;
+    }
+
+    .header {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 16px;
+        padding: 20px 25px;
+        margin-bottom: 20px;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+        box-shadow: none;
+        align-items: center;
+
+        svg {
+            width: 30px;
+            height: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .footer {
+        border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+        padding: 20px 25px;
+        text-align: end;
+        margin-top: 15px;
+
+        .btn-secondary {
+            color: $onx-primary;
+            border-color: $onx-primary !important;
+        }
+    }
+
+    .bim-stage-viewer {
+        margin: 0 54px;
+    }
+}
+
+.bim-info-popup {
+    .MuiPopover-paper {
+        padding: 10px;
+        max-width: 800px;
+        word-break: keep-all;
+    }
+}

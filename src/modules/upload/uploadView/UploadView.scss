@@ -1,0 +1,221 @@
+@import "../../../assets/onx/variable";
+@import "../../../assets/onx/abstracts/mixins";
+
+.uploadView {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0rem 2rem 0 2rem;
+  &__header {
+    @include flexCenter(flex-start);
+    margin: 0px 0px 10px 0px;
+
+    &__navBack {
+      font-size: 1.8rem;
+      position: relative;
+      top: 3px;
+      cursor: pointer;
+    }
+
+    &__text {
+      overflow-wrap: anywhere;
+      h2 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__topContainer {
+    position: fixed;
+    background: #fff;
+    z-index: 1;
+    padding-top: 7rem;
+    top: 0;
+    background-color: #fff;
+  }
+  &__checkbox {
+    padding: 0;
+    margin-right: 0.5rem;
+  }
+  &__tags-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 4rem 0.5rem 6rem;
+    border-bottom: 1px solid lightGrey;
+
+    &__showTagButton {
+      display: flex;
+      align-items: center;
+      justify-self: flex-start;
+      cursor: pointer;
+      margin-right: 1rem;
+      padding: 0.3rem 0;
+      &__img {
+        height: 2.4rem;
+        width: 2.4rem;
+        margin-right: 0.5rem;
+      }
+    }
+    &__iconButton {
+      padding: 0.3rem;
+      margin: 0 0.5rem 0rem 0.5rem;
+      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+    &__scrollContainer {
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      align-items: center;
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 4px;
+        display: none;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-clip: content-box;
+        border-radius: 15px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        height: 2rem;
+      }
+    }
+
+    &__selectedTagStyles {
+      background-color: #171d25;
+      color: #fff;
+    }
+    &__nonSelectedTagStyles {
+      background-color: rgba(13, 68, 75, 0.1);
+      color: #171d25;
+    }
+    &__tagStyles {
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      width: fit-content;
+      margin: 0 0.5rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+      white-space: nowrap;
+    }
+  }
+  &__viewStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+  }
+  &__view-btn {
+    @include flexCenter(flex-end);
+
+    .g-view {
+      @include flexCenter(center);
+      width: 134px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 600;
+      & svg {
+        margin-right: 1rem;
+      }
+    }
+
+    .l-view {
+      @include flexCenter(center);
+      width: 120px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 600;
+      & svg {
+        margin-right: 1rem;
+      }
+    }
+
+    .toggle-primary {
+      color: $onx-white;
+      background: $onx-primary;
+      border: $onx-primary;
+      font-size: 1.2rem;
+      padding: 6px 20px;
+      border-radius: 30px;
+      text-transform: none;
+    }
+    svg {
+      font-size: 1.5rem !important;
+    }
+  }
+  &__right {
+    @include flexCenter(flex-end);
+    flex-wrap: wrap;
+    &__add-btn {
+      color: #171d25;
+    }
+    &__search {
+      position: relative;
+      width: 300px;
+      margin-right: 15px;
+      z-index: 1;
+      .MuiOutlinedInput-input {
+        padding: 8px 14px;
+        font-family: $font-family;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+        letter-spacing: 0.4000000059604645px;
+        text-align: left;
+      }
+      &__icon {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: $onx-A7;
+      }
+    }
+  }
+
+  &__btn {
+    margin-left: 2.5rem !important;
+  }
+
+  &__picker {
+    .MuiInputAdornment-positionStart {
+      margin-right: 0;
+    }
+
+    .MuiInputBase-input {
+      width: 0;
+    }
+    .MuiInputAdornment-root {
+      height: auto;
+    }
+  }
+}
+
+.datepicker-button-previous,
+.datepicker-button-next {
+  background: #171d25 !important;
+}
+
+.date-day-Item-selected {
+  color: #171d25 !important;
+  border-color: #171d25 !important;
+}
+
+.datepicker-date-day-Item {
+  &:hover {
+    background: #171d25 !important;
+    color: #fff !important;
+  }
+}

@@ -1,0 +1,111 @@
+// color variables
+
+$onx-primary: var(--onx-A1);
+$onx-text-dark: var(--onx-text-dark);
+$onx-text-main: var(--onx-text-main);
+$onx-text-light: var(--onx-text-light);
+$onx-white: var(--onx-text-light);
+$onx-black: var(--onx-text-black);
+$onx-success: var(--onx-success-dark);
+$onx-warn: var(--onx-error-dark);
+$onx-red: var(--onx-text-error);
+$onx-grey: #c4c4c4;
+$onx-A2: var(--onx-A2);
+$onx-A3: var(--onx-A3);
+$onx-A4: var(--onx-A4);
+$onx-A5: var(--onx-A5);
+$onx-A6: var(--onx-A6);
+$onx-A7: var(--onx-A7);
+$onx-A8: var(--onx-A8);
+$onx-A9: var(--onx-A9);
+$onx-A10: var(--onx-A10);
+$onx-box-shadow: 0px 2px 4px #00000014, 0px 4px 24px #00000014;
+$onx-card-shadow-base: var(--onx-card-bs-base);
+$onx-card-shadow-metallic: var(--onx-card-bs-metallic);
+$onx-card-shadow-hover: var(--onx-card-bs-hover);
+$background-color: var(--onx-text-light);
+$onx-btn-primary: var(--onx-btn-primary);
+$onx-btn-secondary: var(--onx-btn-secondary);
+$onx-btn-disabled: var(--onx-btn-disabled);
+$onx-btn-primary-color: var(--onx-btn-primary-color);
+$onx-btn-secondary-color: var(--onx-btn-secondary-color);
+$onx-btn-disabled-color: var(--onx-btn-disabled-color);
+$onx-success-light: var(--onx-success-light);
+$onx-success-main: var(--onx-success-main);
+$onx-success-dark: var(--onx-success-dark);
+$onx-error-light: var(--onx-error-light);
+$onx-error-main: var(--onx-error-main);
+$onx-error-dark: var(--onx-error-dark);
+$onx-info-light: var(--onx-info-light);
+$onx-info-main: var(--onx-info-main);
+$onx-info-dark: var(--onx-info-dark);
+$onx-linear-grad: var(--onx-linear-grad);
+
+// font-family
+$font-family: "Poppins", sans-serif;
+
+// mixins
+@mixin flexCenter($position) {
+  display: flex;
+  justify-content: $position;
+  align-items: center;
+}
+
+// vendor prefixes
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
+// avatars
+@mixin avatar($width, $height) {
+  @include flexCenter(center);
+  width: $width;
+  height: $height;
+  // background: #2a97ff73;
+  border-radius: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 1px solid $onx-primary;
+
+  .avatar-icon {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// Button
+@mixin button($color, $bgColor) {
+  margin: 1rem 0 0 0;
+  color: $color;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem;
+  height: 2.5rem;
+  background-color: $bgColor;
+  border-radius: 4px;
+  border: 1px solid $bgColor;
+}
+
+@mixin highlightLinks() {
+  a {
+    background: #e6e6ff;
+    padding: 0 3px;
+    border-radius: 3px;
+    color: #6161ff;
+
+    &:visited {
+      background: #f5edfe;
+      padding: 0 3px;
+      border-radius: 3px;
+      color: #5000a0;
+    }
+  }
+}

@@ -1,0 +1,198 @@
+@import '../../../../../assets/onx/variable';
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.custommenu{
+  & .MuiPopover-paper{
+      box-shadow: 0 2px 4px #c2c2c2;
+  }
+  &__menu{
+      &__item{
+      font-size: 1.2rem;
+      }
+  }
+}
+
+.cellicon{
+  font-size:1.8rem;
+  cursor: pointer;
+  color: #B0B0B0;
+}
+
+.tip-icon{
+  // display: block;
+  // margin: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  // top: 10%;
+  width: 40%;
+}
+
+.create-dialog{
+  display: flex;
+}
+
+.create-dialogue-text{
+  /* Bodycopy 1/Regular */
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  /* or 154% */
+
+  text-align: center;
+
+  /* Dark */
+
+  color: #333333;
+
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 20px 0px;
+}
+
+.creatematerial-dialog{
+  width: 459px;
+  height: 288px;
+}
+
+.dialog-import{
+  left: 20%;
+  position: absolute;
+  bottom: 10%;
+}
+
+.dialog-manual-add{
+  right: 20%;
+  position: absolute;
+  bottom: 10%;
+}
+
+.material-header {
+  @include flexCenter(space-between);
+  flex-wrap: wrap;
+  width: 50%;
+  margin-left: 0px;
+  &__tab {
+    @include flexCenter(flex-start);
+    width: 100%;
+    &__header{
+      // font-size: 2.4rem;
+      // font-weight: 700;
+      // line-height: 36px;
+      position: absolute;
+      width: 196px;
+      height: 36px;
+      // left: 24px;
+      // top: 40px;
+
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      /* 333333 */
+
+      color: #333333;
+
+    }
+
+    &__controls{
+      // right: 5%;
+      // position: absolute;
+      
+      margin-left: auto;
+    }
+
+    &__description{
+      font-size: 1.2rem;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+    }
+    
+    &__icon {
+      margin-right: 5px;
+    }
+
+    &__gallery {
+      @extend .tab-btn;
+      margin-right: 10px;
+    }
+
+    &__gallery--active {
+      @extend .tab-btn;
+      margin-right: 10px;
+      @extend .tab-active;
+    }
+
+    &__list {
+      @extend .tab-btn;
+    }
+
+    &__list--active {
+      @extend .tab-btn;
+      @extend .tab-active;
+    }
+  }
+
+  &__events {
+    @include flexCenter(flex-start);
+
+    &__search-bar {
+      position: relative;
+      width: 240rem;
+      padding: 16px;
+      .MuiOutlinedInput-input {
+        padding: 10px 14px;
+        font-family: $font-family;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+        letter-spacing: 0.4000000059604645px;
+        text-align: left;
+      }
+      &__icon {
+        position: absolute;
+        right: 28px;
+        top: 20px;
+        color: #dddddd;
+      }
+    }
+  }
+}
+
+.tab-btn {
+  @include flexCenter(center);
+  padding: 8px 20px;
+  border-radius: 18px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.tab-active {
+  background: #808080;
+  box-shadow: $onx-box-shadow;
+  color: $onx-white;
+}
+
+.actionBtn {
+  width: 50%;
+  height: 30p;
+  position: relative;
+  bottom: 35px;
+  left: 133px;
+  margin-top: 10%;
+}

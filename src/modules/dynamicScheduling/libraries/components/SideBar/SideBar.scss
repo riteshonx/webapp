@@ -1,0 +1,68 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.sideBar {
+    background: #e5e5e54d;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: $onx-box-shadow;
+
+    &__header{
+        @include flexCenter(flex-start);
+        height: 75px;
+        margin-left: 40px;
+
+        &__text{
+            font-size: 2.3rem;
+            font-weight: bold;
+        }
+    }
+        
+    &__nav {
+        cursor: pointer;
+        margin: 5px 10px;
+        flex-wrap: wrap;
+        display: flex;
+
+        &__content {
+            display: flex;
+            width: 100%;
+            background-color: $onx-white;
+
+            &__text {
+                width: 100%;
+                padding: 10px 8px;
+                margin: 3px 0px;
+                border-bottom: 1px solid $onx-grey;
+                font-size: 1.3rem;
+            }
+
+            &__hover {
+                // background: $onx-greyH;
+            }
+        }
+
+        &__active {
+            padding: 12px 0px 12px 3px;
+            border-left: 3px solid $onx-black;
+            margin: 6px 0px
+        }
+
+        &__hidden{
+            padding: 12px 0px 12px 3px;
+            border-left: 3px solid $onx-black;
+            margin: 6px 0px;
+            visibility: hidden;
+        }
+
+        &__hide {
+            visibility: hidden;
+        }
+
+        &__active-hover {
+            padding: 12px 0px 12px 3px;
+            border-left: 1px solid $onx-black;
+            border-width: thick;
+        }
+    }
+}

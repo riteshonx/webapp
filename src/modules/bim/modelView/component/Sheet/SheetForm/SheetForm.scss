@@ -1,0 +1,74 @@
+@import '../../../../../../assets/onx/variable';
+.bimSheetFormContainer{
+    position: relative;
+    z-index: 2;
+}
+
+.bimSheetForm {
+    height: 100%;
+    width: 400px;
+    background-color: $onx-white;
+    z-index: 2;
+    overflow-y: auto;
+    border-right: 1px solid var(--onx-A8)  !important;
+
+    .bimCloseButton {
+        float: right;
+        margin: 10px 10px 0;
+    }
+
+    .bimCloseButton:hover, .menuButton:hover {
+        cursor: pointer;
+    }
+
+    .menuButton {
+        margin-right: 5px;
+    }
+    .backButton:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .sheetBody{
+        padding: 30px 20px 20px 20px;
+
+        .blodText1 {
+            font-weight: bold;
+            font-size: 2.4rem;
+            line-height: 36px;
+            align-items: center;
+            display: flex;
+            padding-bottom: 10px;
+        }
+
+        .checkbox {            
+            .MuiCheckbox-root {
+                margin: 9px 6px 9px 9px;
+                padding: 0;
+                color: $onx-btn-primary;
+            }
+            .MuiFormControlLabel-label { 
+                font-size: 1.2rem;
+                line-height: 18px
+            }
+        }
+
+        .sheetList{
+            margin: 0 -20px;
+            border-top: 0.5px solid #DEDEDE;
+            padding-top: 0;
+            outline: none;
+            
+            .MuiListItem-root.focused {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+
+            .MuiListItem-root.focused.Mui-selected {
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+        }
+    }
+
+}
+
+ 

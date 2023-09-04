@@ -1,0 +1,18 @@
+.tenantView-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  height: 100vh;
+  margin-top: -54px;
+  background-image: url("../../../../../../assets/images/bg-5.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  &__text {
+    font-size: 6rem;
+    font-weight: bolder;
+    color: #fff;
+    padding: 1rem 2rem;
+  }
+}

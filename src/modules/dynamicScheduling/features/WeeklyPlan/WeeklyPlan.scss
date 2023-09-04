@@ -1,0 +1,140 @@
+
+  
+  .Weelyplan {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+    width: calc(100% - 32px);;
+    &__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__currentWeek{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            background: #E1FDE3;
+            border: 1px solid lightgray;
+            &__week{
+                color: #114A15;
+                font-weight: 600;
+            }
+            &__days{
+                color: #114A15;
+            }
+        }
+        &__weekbefore{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background: #ececec;
+            border:0.5px solid #BDBDBD;
+            &__back{
+
+                &__btn{
+                padding:2px;
+                }
+            }
+            &__current{
+                &__week{
+                    font-weight: 600;
+                }
+            }
+            &__next{
+
+                &__btn{
+                padding:2px;
+                }
+            }
+        }
+    }
+    &__planner{
+        position: relative;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        &__weeks{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-gap: 0;
+            grid-template-columns: repeat(7, 1fr);
+            height: 100%;
+            &__box{
+                background-color: #FFFFFF;
+                ;
+                color: #000;
+                border-radius: 0;
+                padding: 0;
+                display: flex;
+                flex-grow: 1;
+                border: 1px solid #c2c2c2;
+                &__header{
+                    font-size: 14px;
+                    text-align: center;
+                    border-bottom: 1px solid #c2c2c2;
+                    width: 100%;
+                    flex-grow: 0;
+                    height: 25px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            & .activeday{
+                background: #fffdea;
+                color: #6b5c0d;
+            }
+            & .weekend {
+                background: #f4f7f4;
+            }
+        }
+        &__tasks{
+            background: transparent;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0px;
+            overflow-y: auto;
+            &__list{
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                &__initial{
+                    grid-column: 1 / span 7;
+                    background: #0a3340;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+        }
+    }
+      
+      
+      /* width */
+      ::-webkit-scrollbar {
+        width: 3px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      
+  }
+  

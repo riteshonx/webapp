@@ -1,0 +1,91 @@
+.columnConfiguration{
+    &__head{
+        position: relative;
+        padding: 10px 20px 10px 20px;
+        box-shadow: 0px 2px 3px #9e989869;
+
+        &__title{
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            text-align: left; 
+            padding: 6px 0;
+        }
+        &__subTitle{
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 18px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        &__close{
+            position: absolute;
+            right:10px;
+            top:10px;
+            cursor: pointer;
+        }
+    }
+    &__body{
+        padding: 10px 20px 20px 20px;
+        display: flex;
+        flex-direction: row;
+        &__main{
+            display: flex;
+            flex-basis: 50%;
+            flex-direction: column;
+            padding: 10px 20px 50px 20px;
+            overflow-y: auto;
+            &__title{
+               font-size: 1.6rem;
+                line-height: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            &__item{
+                display: grid;
+                grid-template-columns: auto 60px;
+                align-items: center;
+
+                &__field{
+                    padding: 10px 10px;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 4px;
+                    margin: 5px;
+                    flex-basis: 90%;
+                }
+                &__action{
+                   flex-basis: 10%;
+                   cursor: pointer;
+                }
+            }
+
+            &__active{
+                background: lightgrey;
+            }
+        }
+    }
+    &__footer{
+        padding: 0 30px 30px 0;
+        &__btn{
+            padding: 20px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.dragging{
+    
+    .activeFiled{
+        border: 1px solid;
+        background-color: #F8F8F8;
+        font-weight: 600;
+    }
+}
+
+.dragZone{
+    cursor: move !important;
+}

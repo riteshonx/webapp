@@ -1,0 +1,39 @@
+.personalizeBook-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  flex: 1;
+  margin: 2rem 0;
+  &__bookContainer {
+    width: 90%;
+    height: 100%;
+  }
+  &__prevIconContainer {
+    z-index: 1;
+    left: 4%;
+    width: 40px;
+    height: 40px;
+    bottom: -10%;
+    border: 1px solid #ffce14 !important;
+    background-color: #ffce14 !important;
+    color: #fff !important;
+  }
+  &__nextIconContainer {
+    z-index: 1;
+    right: 4%;
+    width: 40px;
+    bottom: -10%;
+    height: 40px;
+    border: 1px solid #ffce14 !important;
+    background-color: #ffce14 !important;
+    color: #fff !important;
+  }
+  &__icon {
+    font-size: 1.5rem !important;
+  }
+}

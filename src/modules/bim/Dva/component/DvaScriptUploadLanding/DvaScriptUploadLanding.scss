@@ -1,0 +1,37 @@
+@import '../../../../../assets/onx/variable';
+.dvaUploadLanding{
+    width: 100%;
+    height: calc(100vh - 54px);
+
+    .dvaSideBar {
+        width: fit-content;
+        display: flex;
+        padding: 0;
+        border-right: 1px solid !important;
+        border-color: $onx-A8 !important;
+    
+        .menuIcons {
+            padding: 22px 10px !important; 
+            .menuButton {
+                align-items: initial;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .dvasidescriptmanagement {
+                position: absolute;
+                top: 66px;
+                left: 118px;    
+                font-family: 'Poppins';
+                font-style: normal;
+                font-size: large;
+                font-weight: bolder;
+                line-height: 40px;display: flex;
+                align-items: center;
+                color: #000000;
+            }
+        }
+    }
+
+}

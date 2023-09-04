@@ -1,0 +1,281 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.workflow-details {
+  margin: 10px 0px;
+  padding: 5px 0px;
+  border-top: 1px solid #c8c8c887;
+  border-bottom: 1px solid #c8c8c887;
+
+  .MuiPaper-elevation1 {
+    box-shadow: none !important;
+  }
+
+  .MuiAccordionSummary-content {
+    color: #969696;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__view-steps {
+    @include flexCenter(flex-start);
+    flex-wrap: wrap;
+    padding: 12px;
+    margin: 10px 0px;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    &__wrapper {
+      @include flexCenter(center);
+      flex-wrap: wrap;
+      cursor: pointer;
+      background: #f8f8f8;
+      padding: 3px 20px;
+      border-radius: 7px;
+
+      span {
+        margin-right: 10px;
+
+        img {
+          position: relative;
+          top: 2px;
+        }
+      }
+    }
+  }
+
+  &__label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px 0px;
+  }
+
+  &__wrapper {
+    min-height: 50px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  &__step {
+    font-size: 1.4rem;
+    margin: 20px 20px;
+
+    &__label {
+      display: flex;
+
+      &__status {
+        background: #8bc097;
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 5px;
+        border-radius: 5px;
+        margin-left: 10px;
+
+        svg {
+          height: 11px;
+          width: 16px;
+        }
+
+        .statusName {
+          color: $onx-white;
+        }
+      }
+
+      &__created {
+        background: #a077c0 !important;
+      }
+    }
+
+    &__info {
+      background: #f8f8f8;
+      padding: 10px 25px;
+      margin: 5px 0px;
+    }
+
+    &__details {
+      @include flexCenter(space-between);
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      &__info {
+        display: flex;
+        font-size: 1.2rem;
+        flex-direction: column;
+        .assignedOn {
+          margin: 0;
+          &__label {
+            color: #989898;
+            margin-right: 5px;
+          }
+
+          &__value {
+            font-weight: 600;
+            font-size: 1.2rem;
+          }
+        }
+
+        .dueDate {
+          margin: 0;
+          &__label {
+            color: #989898;
+            margin-right: 5px;
+          }
+
+          &__value {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    &__assignee {
+      display: flex;
+      flex-direction: column;
+      &__label {
+        color: #989898;
+        text-transform: uppercase;
+      }
+
+      &__user {
+        @include flexCenter(flex-start);
+        margin: 5px 0px;
+        flex-wrap: wrap;
+
+        .avater {
+          .MuiAvatar-root {
+            height: 3rem;
+            width: 3rem;
+            font-size: 1.6rem;
+            margin-right: 5px;
+          }
+        }
+
+        .userName {
+          font-weight: 600;
+        }
+      }
+
+      &__info {
+        display: flex;
+        font-size: 1.2rem;
+        flex-direction: column;
+        .assignedOn {
+          margin: 5px 0;
+          &__label {
+            color: #989898;
+            margin-right: 5px;
+          }
+
+          &__value {
+            font-weight: 600;
+            font-size: 1.2rem;
+          }
+        }
+
+        .dueDate {
+          margin: 0;
+          &__label {
+            color: #989898;
+            margin-right: 5px;
+          }
+
+          &__value {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    &__status {
+      &__label {
+        font-weight: 600;
+      }
+
+      &__time {
+        margin: 0;
+        font-size: 1.2rem;
+
+        .label {
+          color: #989898;
+          margin-right: 5px;
+        }
+        .value {
+          font-weight: 600;
+        }
+      }
+    }
+    &__signature {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      &__label {
+        font-weight: 600;
+      }
+      &__value {
+        width: 200px;
+      }
+      &__empty {
+        padding-top: 7px;
+      }
+    }
+    &__comment {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      flex-wrap: wrap;
+      &__label {
+        color: #989898;
+        text-transform: uppercase;
+        padding-right: 5px;
+      }
+      &__value {
+        padding-left: 20px;
+
+        @include highlightLinks();
+      }
+    }
+
+    &__attachments {
+      margin-bottom: 10px;
+
+      &__label {
+        color: #989898;
+        text-transform: uppercase;
+      }
+
+      &__value {
+        .fileDetails {
+          margin: 10px 0;
+          padding: 2px;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          &__download {
+            cursor: pointer;
+          }
+          &__thumbnail {
+            margin: 0 10px 0 0;
+            display: flex;
+            align-items: center;
+            &__icon {
+              margin-right: 15px;
+            }
+          }
+        }
+        .attach_icon {
+          font-size: 1.5rem;
+        }
+        .attach_icon:hover {
+          color: blue !important;
+        }
+        &__download {
+          cursor: pointer;
+          display: flex;
+        }
+      }
+    }
+  }
+}

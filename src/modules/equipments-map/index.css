@@ -1,0 +1,6 @@
+img[alt=Google] {
+  display: none;
+}
+.noBorder {
+  border: none !important;
+}

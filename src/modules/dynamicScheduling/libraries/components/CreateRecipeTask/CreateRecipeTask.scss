@@ -1,0 +1,58 @@
+@import '../../../../../assets/onx/variable';
+
+.create-recipe-task {
+  &__form {
+    &__duration {
+      flex-direction: row;
+      margin-left: 15px;
+      justify-content: space-between;
+
+      &__days {
+          display: block;
+          font-size: 1.3rem;
+          margin-bottom: 7px;
+          margin-left: 1px;
+          font-weight: 700;
+
+        &__unit {
+          display: flex;
+          align-items: center;
+          place-self: flex-end;
+          padding-left: 1rem;
+          font-weight: 500;
+          padding-bottom: 8px;
+        }
+      }
+    }
+
+    &__add {
+      min-width: 8rem;
+    }
+    &__cancel {
+      min-width: 8rem;
+     // border: 1px solid grey;
+      text-transform: capitalize;
+    }
+
+    &__content-bottom {
+      grid-gap: 1rem;
+      grid-column: left-start / right-end;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__disabled {
+      pointer-events: none;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+}
+
+.MuiOutlinedInput-input {
+  padding: 10.5px 11px;
+}
+
+.required {
+  color: $onx-red;
+}

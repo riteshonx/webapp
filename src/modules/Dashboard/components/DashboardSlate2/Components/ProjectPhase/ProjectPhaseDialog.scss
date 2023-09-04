@@ -1,0 +1,52 @@
+.projectPhaseDialog-main {
+  &__title {
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+    color: #fe9a0b;
+    padding: 1rem 2.2rem !important;
+  }
+  &__content {
+    padding: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    display: flex;
+    flex-direction: column;
+    &__selectedPhasesContainer {
+      color: #fff;
+      background-color: #171d25;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      padding: 1rem 0 1rem 2rem;
+    }
+  }
+  &__loadingContainer {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  &__phase {
+    font-size: 1.3rem !important;
+    color: #fff;
+  }
+  &__icon{
+   color: #fff !important; 
+  }
+  &__saveButton {
+    color: #fe9a0b !important;
+  }
+  &__cancelButton {
+    color: #fff !important;
+  }
+  &__error{
+   color: #fe9a0b;
+   font-size: 1.3rem;
+   padding: 1rem 2.2rem
+  }
+  .disabled{
+    color: #9b9b9b !important;
+  }
+}

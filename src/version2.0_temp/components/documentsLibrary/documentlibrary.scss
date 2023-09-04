@@ -1,0 +1,52 @@
+@import '../../assets/styles/colors.scss';
+
+.v2-document-library {
+  &-contentbox{
+    height: 100%;
+    width: 100%;
+  }
+	&-header {
+		height: 5rem;
+		background-color:$SLATE-V2-2;
+		display: flex;
+		padding: 15px;
+		&-title {
+			width: 70%;
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 22px;
+			line-height: 24px;
+		}
+		&-rightbox {
+			display: flex;
+			width: 30%;
+			justify-content: flex-end;
+      align-items: center;
+		}
+    &-gallery-icon{
+      width: 10%;
+    }
+    &-icons{
+      height: 24px !important;
+      width: 24px !important;
+      color: $SLATE-V2-3;
+      cursor: pointer;
+    }
+	}
+	&-carousel{
+	position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+	&-content{
+		height: 100%;
+		width: 100%;
+	}
+	}
+
+}

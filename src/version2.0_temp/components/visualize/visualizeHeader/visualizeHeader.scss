@@ -1,0 +1,95 @@
+@import 'src/version2.0_temp/assets/styles/colors.scss';
+
+.v2-visualize {
+    &-header {
+        grid-area: visualizeAppBar;
+        border-bottom: 1px solid $SLATE-V2-3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px 10px 10px;
+
+        &-syncInfo {
+            margin-left: 10px;
+            margin-top: 10px;
+            min-width: 181px;
+            font-weight: 300;
+            font-size: 12px;
+        }
+
+        &-searchPanel {
+            width: 392px;
+        }
+
+        &-formStatusSelector {
+            .MuiButton-contained {
+                margin-right: 10px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                text-transform: none;
+
+                &.openStatus {
+                    background-color: $OVERDUE;
+                    
+                    input[type="checkbox"]:checked { 
+                        accent-color: $OVERDUE;
+                    }
+                }
+    
+                &.closedStatus {
+                    background-color: $CLOSED-LIGHT;
+
+                    input[type="checkbox"]:checked { 
+                        accent-color: $CLOSED-LIGHT;;
+                    }
+                }
+    
+                &.mixedStatus {
+                    background-color: $IN-PROGRESS;
+                    cursor: auto;
+
+                    input[type="checkbox"]:checked { 
+                        accent-color: $IN-PROGRESS;;
+                    }
+                }
+
+                &.readyStatus {
+                    background-color: $READY;
+                    
+                    input[type="checkbox"]:checked { 
+                        accent-color: $READY;
+                    }
+                }
+            }
+
+            
+
+            input[type="checkbox"] {
+                display: none;
+                margin-right: 13px;
+
+                &+span:first-of-type {
+                    display: block;
+                    height: 13px;
+                    width: 13px;
+                    outline: .5px solid $BLACK;
+                    margin-right: 13px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            input[type="checkbox"]:checked {
+                display: block;
+                outline: .5px solid $BLACK;
+
+                &+span:first-of-type {
+                    display: none;
+                }
+            }
+        }
+    }
+}

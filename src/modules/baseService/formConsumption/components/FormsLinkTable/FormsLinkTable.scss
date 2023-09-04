@@ -1,0 +1,38 @@
+.FormsLinkTable{
+    &__headecell{
+        font-size:12px;
+        color: #333333;
+        font-weight: 600;
+        &.MuiTableCell-root{
+            padding: 0;
+        }
+    }
+    &__cell{
+        font-size:12px;
+        &.MuiTableCell-root{
+            padding: 0;
+        }
+    }
+    &__checkcell{
+        padding-left: 4px;
+    }
+    &__container{
+        height: calc(100vh - 290px);
+        width: 100%;
+        flex-grow: 1;
+        padding: 0px 1px;
+        overflow: auto;
+        margin: 0;
+      }
+      &__visuallyHidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        top: 20px;
+        width: 1;
+      }
+}

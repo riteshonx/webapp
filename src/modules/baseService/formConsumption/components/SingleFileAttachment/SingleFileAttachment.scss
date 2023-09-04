@@ -1,0 +1,100 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.single-file-attachment{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &__dropZone{
+        @include flexCenter(center);
+        flex-wrap: wrap;
+        height: 50px;
+        text-align: center;
+        width: 100%;
+        background: #F8F8F8;
+        border: 2px dashed lightgray;
+        border-radius: 2px;
+        padding: 0 20px;
+    }
+
+    &__dropZone--white{
+        @include flexCenter(center);
+        flex-wrap: wrap;
+        height: 100px;
+        width: 100%;
+        background: #FFFFFF;
+        border: 2px dashed lightgray;
+        border-radius: 2px;
+    }
+
+    &__text{
+        font-size: 10px;
+    }
+
+    &__viewList{
+        border: 1px solid #F8F8F8;
+        width: 100%;
+        &__file{
+            position: relative;
+            padding: 0 0 10px 0px;
+            background: #FFFFFF;
+            border-bottom: 1px solid #C4C4C4C4;
+            display: flex;
+            &__description{
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                &__fileName{
+                    color:#000;
+                    text-align: left;
+                    font-size: 1.2rem;
+                }
+                &__fileSize{
+                    color:#C4C4C4;
+                    text-align: left;
+                    font-size: 1.2rem;
+                }
+            }
+
+            &__thumbnail{
+                border-radius: 5px;
+                &__icon{
+                    font-size: 2.4rem;
+                }
+
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 5px; 
+                }
+            }
+
+            &__fileRemove{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+
+                svg{
+                    cursor: pointer;
+                }
+                svg{
+                    cursor: pointer;
+                }
+            }
+            &__download{
+                position: absolute;
+                right: 40px;
+                top: 10px;
+
+                svg{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .progress{
+        width: 100%;
+    }
+
+}

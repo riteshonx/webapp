@@ -1,0 +1,123 @@
+.collaborateMain {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  &__backButtonIcon {
+    position: absolute !important;
+    color: #fff !important;
+    left: 0.5%;
+    top: 1%;
+    z-index: 3;
+  }
+  &__container {
+    max-height: 100%;
+    padding: 1rem 2rem;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden !important;
+    position: absolute;
+    flex: 1;
+    color: #fff;
+    flex-direction: column;
+    display: flex;
+    background-image: url("../../../../../../assets/images/collaborate.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: zoomInOut 2s forwards ease-in;
+    &__textContainer1 {
+      position: absolute;
+      top: 10%;
+    }
+    &__textContainer2 {
+      position: absolute;
+      top: 18%;
+    }
+    &__textContainer3 {
+      position: absolute;
+      top: 48%;
+      &__button {
+        margin: 0 1rem;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          color: #f7b047;
+          text-decoration: underline;
+        }
+      }
+    }
+    &__textAnimation {
+      margin-left: -5rem;
+      font-size: 2rem;
+      font-weight: bold;
+      flex-direction: row;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      animation: topToBottomCollaborate 4s forwards ease-in;
+      @keyframes topToBottomCollaborate {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+
+        100% {
+          transform: translateY(100%);
+          opacity: 1;
+        }
+      }
+    }
+    &__username {
+      color: #f7b047;
+      margin-left: 1rem;
+    }
+  }
+
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1.03);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  &__suggestion {
+    cursor: pointer;
+    padding: 45px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    max-width: 380px;
+    &__left {
+      background: transparent;
+      border: 0.1px solid #f7b047;
+    }
+    &__right {
+      background: #171d25;
+      border: 0.1px solid #171d25;
+      display: flex;
+      align-self: flex-end;
+    }
+  }
+  &__suggestion-list {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__scroll-text {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    transform: translateY(100%);
+    animation: moveSuggestions 80s linear infinite;
+  }
+
+  @keyframes moveSuggestions {
+    to {
+      transform: translateY(-100%);
+    }
+  }
+}

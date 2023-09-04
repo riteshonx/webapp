@@ -1,0 +1,97 @@
+@import '../../assets/styles/colors.scss';
+.v2-gridview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // padding-top: 19.5rem;
+  padding-bottom: 2rem;
+  padding: 10px 20px;
+  // overflow: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0px;
+  align-content: flex-start;
+  // overflow: scroll;
+  max-height: 100%;
+  &-doclist {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 15px 10px;
+    margin: 0.2rem;
+    width: 100%;
+    &-container {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      height: 230px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+         background: url("../../../assets/images/aibg.png") no-repeat;
+      background-size: 100% 100%;
+      border-radius: 4px;
+    }
+    &-filecontainer {
+      // background: lightGrey;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      height: 100%;
+   
+
+      overflow: hidden;
+
+      &-img {
+        width: 250px;
+        height: 230px;
+        flex: 1;
+        border-radius: 5px;
+        background: url("../../../assets/images/logoWhite.png") no-repeat;
+        background-position: center;
+        background-size: 25%;
+      }
+      &-docsandvideo {
+        font-size: 5rem;
+        color: grey;
+      }
+    }
+    &-textcontainer {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      color: $WHITE;
+      font-size: 1.3rem;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
+      background: rgba(0, 0, 0, 0.09);
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-iconcontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-icon {
+        color: $WHITE;
+        margin: 0 0.5rem;
+        font-size: 2.2rem;
+        &:hover {
+          color: lightgray;
+        }
+      }
+    }
+  }
+  &-nocontent {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+}

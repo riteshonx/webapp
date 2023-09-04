@@ -1,0 +1,43 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.drawing-template-header{
+    font-weight:600;
+    padding : 16px 0;
+    flex-grow: 0;
+    box-shadow:  0px 8px 6px rgba(0, 0, 0, 0.04), 0px 12px 16px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: space-between;
+    &__title{
+        padding: 0 16px;
+        font-size: 2.6rem;
+    }
+    &__subtitle{
+        padding: 0 16px;
+        font-size: 1rem;
+    }
+    &__action{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+        &__preview{
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 15px;
+            text-transform: none;
+            &__text{
+                padding: 0 1px;
+                font-weight: 400;
+            }
+            &__icon{
+                margin-right: 10px;
+            }
+        }
+        &__discardbtn{
+            margin: 0 10px;
+        }
+   }
+}

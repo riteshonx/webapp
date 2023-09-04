@@ -1,0 +1,182 @@
+@import "../../../../../assets/onx/variable";
+
+.myProfile {
+  &_hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &_container {
+    padding: 0 4rem;
+    width: 600px;
+    height: 550px;
+    overflow-y: scroll;
+
+    &_header {
+      position: sticky;
+      top: 0;
+      right: 0;
+      left: 0;
+      padding: 3rem;
+      border-radius: 8px 8px 0 0;
+      background-color: #fdfdfd;
+      box-shadow: 0 1px 2px rgb(196, 196, 196);
+    }
+
+    &_body {
+      &_subSection {
+        display: flex;
+        padding: 56px 10px;
+        border-bottom: 1px solid rgb(224, 224, 224);
+        flex-direction: column;
+        &:first-of-type {
+          padding-top: 2rem;
+        }
+        &_avatar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          height: 65px;
+          width: 65px;
+          font-size: 3.5rem;
+          text-transform: uppercase;
+          background-color: rgb(209, 125, 0);
+          color: white;
+        }
+
+        &_heading {
+          font-size: 16px;
+        }
+
+        &_content {
+          // margin-left: 24px;
+          flex: 1;
+
+          &_grouped {
+            display: flex;
+            position: relative;
+          }
+
+          &_icon {
+            color: $onx-error-dark;
+            position: absolute;
+            bottom: 20px;
+            right: -20px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          &_inputContainer {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            &_inputField {
+              margin-top: 1rem;
+            }
+          }
+
+          &_addEmail {
+            margin-left: 1rem;
+            font-weight: 600;
+            font-size: 12px;
+            color: $onx-error-dark;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          &_changePassword {
+            font-weight: 600;
+            font-size: 12px;
+            color: $onx-error-dark;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          &_address {
+            margin-top: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  &_with_error_border{
+    border: 1px solid #d02f2f;
+  }
+
+  &_errorIcon{
+    position: absolute;
+    right: 10px;
+    top: 34px;
+  }
+
+  &_errorMsg{
+    position: absolute;
+    bottom: -18px;
+    color: rgb(228, 2, 2);
+    font-size: 12px;
+  }
+
+  &_ml1 {
+    margin-left: 1rem;
+  }
+}
+
+.myProfile{
+  &__slateDashboard{
+    background-color: #171d25;
+    &__header{
+      color: #fff;
+      background-color: #171d25;
+      box-shadow: none;
+      border-bottom: 2px solid #fe9a0b;
+    }
+    &__actionButtonContainer{
+      background-color: #171d25;
+    }
+    &__ftInputContainer{
+     
+      label{
+        color: #fff
+      }
+    }
+    &__password{
+      color: #fff;
+    }
+    &__secondaryEmail{
+      color: #fe9a0b;
+      text-decoration: underline;
+      display: flex;
+    }
+    &__cancel{
+      color: #fe9a0b;
+    }
+    &__subSection{
+      border-bottom: 1px solid #fe9a0b;
+    }
+    &__select{
+       .MuiSvgIcon-root{
+        color:"#fff"
+      }
+       .MuiSelect-outlined.MuiSelect-outlined{
+        border:"1px solid #fff";
+        padding:"10px 10px"
+      }
+      .MuiSelect-selectMenu{
+        color:'#fff'
+      }
+    }
+  }
+
+}

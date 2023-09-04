@@ -1,0 +1,58 @@
+@import "assets/onx/root.scss";
+@import "assets/onx/_variable.scss";
+@import "assets/onx/abstracts/functions";
+@import "assets/onx/abstracts/mixins";
+@import "assets/onx/abstracts/variables";
+@import "assets/onx/base/animation";
+@import "assets/onx/base/base";
+@import "assets/onx/base/typography";
+@import "assets/onx/base/utilities";
+@import "assets/onx/components/button";
+@import "assets/onx/components/input";
+@import "assets/onx/components/card";
+@import "assets/onx/components/datepicker.scss";
+@import "../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url(./assets/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url(./assets/fonts/Poppins/Poppins-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url(./assets/fonts/Poppins/Poppins-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(./assets/fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+}
+
+// scroll bar
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: $onx-A6;
+  border: solid 6px transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  height: 100px;
+}

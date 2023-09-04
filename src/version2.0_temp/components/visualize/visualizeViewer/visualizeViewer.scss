@@ -1,0 +1,18 @@
+@import 'src/version2.0_temp/assets/styles/colors.scss';
+
+.v2-visualize {
+    &-viewer {
+       width: 100%;
+       height: 100%;
+       position: relative;
+       background: white;
+
+       &-status-contsiner {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        padding: 12px 0;
+       }
+    }
+}

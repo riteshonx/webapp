@@ -1,0 +1,15 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+
+.header-wrapper{
+    @include flexCenter(flex-start);
+    flex-wrap: wrap;
+    margin: 0px 0px 10px 0px;
+
+    &__text{
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+}

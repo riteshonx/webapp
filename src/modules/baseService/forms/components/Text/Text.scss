@@ -1,0 +1,15 @@
+
+.text{
+    width: 100%;
+    .MuiOutlinedInput-input{
+        padding: 10px 14px;
+        font-size: 1.2rem;
+    }
+    &__fixed{
+        color: #fff;
+        background: #c2c2c230;
+        .MuiOutlinedInput-input{
+            color: #000000;
+        }
+    }
+}

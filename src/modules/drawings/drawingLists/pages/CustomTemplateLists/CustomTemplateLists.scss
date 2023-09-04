@@ -1,0 +1,25 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.templates{
+    width: 100%;
+    padding: 15px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1 
+}
+
+.noPublishDrawingPermission{
+    width: 100%;
+    padding: 10px;
+
+    .no-permission{
+        @include flexCenter(center);
+        flex-wrap: wrap;
+        margin: 10px 0px;
+        height: 60vh;
+        width: 100%;
+        font-size: 1.4rem;
+     }
+}

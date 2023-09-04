@@ -1,0 +1,46 @@
+.commentBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .demo-option-hidden{
+        display: none;
+    }
+    .rdw-editor-main{
+        background: #F6F6F6;
+        font-size: 14px;
+        padding: 1rem;
+        overflow: hidden;
+    }
+    .rdw-editor-toolbar{
+        background: #F6F6F6;
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+    .rdw-option-wrapper{
+        background: #f6f6f6;
+        height: 14px;
+    }
+    .public-DraftStyleDefault-block{
+        margin: 0.5rem 0;
+    }
+    .public-DraftEditor-content[contenteditable=true] {
+        height: 80px;
+        overflow: auto;
+    }
+    &__error{
+        font-size: 1rem;
+        color: red;
+        margin: 0.5rem 0 0 0.5rem;
+    }
+    &__action{
+        display: flex;
+        margin-top:1rem ;
+        &__post{
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+        &__cancel{
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import '../../../../../assets/styles/colors.scss';
+
+.v2-task-link {
+	padding: 16px;
+	border-top: 1px solid $SLATE-BORDER-PRIMARY;
+	&-label {
+		color: $SLATE-V2-3;
+	}
+	&-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		margin-top: 10px;
+
+		&-link-item {
+			display: flex;
+			align-items: center;
+			cursor: text;
+			max-width: 265px;
+			&-icon {
+				transform: rotate(-45deg);
+				color: $SLATE-V2-3;
+				margin-right: 5px;
+			}
+		}
+	}
+}

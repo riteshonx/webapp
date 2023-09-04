@@ -1,0 +1,223 @@
+@import "../../../../../../assets/onx/variable";
+@import "../../../../../../assets/onx/abstracts/mixins";
+
+.connectorsScreen-main {
+  background: #171d25;
+  min-height: 100%;
+  max-height: 100%;
+  &__title {
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+    color: #fe9a0b;
+    padding: 1rem 2.2rem !important;
+    &__iconButton {
+      position: absolute !important;
+      right: 1%;
+      top: 1.2%;
+      &__icon {
+        font-size: 2rem !important;
+      }
+    }
+  }
+  &__content {
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    &__connectedSystemName {
+      color: #fbd784;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 15rem;
+      margin-bottom: -10px;
+    }
+
+    &__tabs {
+      display: flex;
+      justify-content: center;
+      &__tab {
+        font-size: 1.8rem;
+        padding: 0 1rem;
+        color: rgba(152, 175, 197, 0.7);
+        cursor: pointer;
+        &__active {
+          color: #fbd784;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__artifactsIngestedText {
+      text-decoration: underline;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      &:hover {
+        color: #fe9a0b;
+      }
+    }
+    &__headContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2.5rem 4rem 1.5rem 4rem;
+      &__loginBtn {
+        position: absolute;
+        right: 0;
+        padding-right: 15rem;
+        color: #fff;
+      }
+      &__imgTxtContainer {
+        display: flex;
+        align-items: center;
+        &__img {
+          height: 10rem;
+          width: 15rem;
+          margin-right: 2rem;
+        }
+        &__text {
+          font-size: 24px;
+          color: #fff;
+        }
+      }
+      &__searchAndFilterContainer {
+        display: flex;
+        align-items: center;
+        &__search {
+          position: relative;
+          width: 300px;
+          margin-right: 2rem;
+          .MuiInputLabel-root {
+            color: lightgray;
+            margin-top: -0.5rem;
+            font-size: 1.2rem;
+          }
+          .MuiOutlinedInput-input {
+            padding: 10px 14px;
+            font-family: $font-family;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 16px;
+            letter-spacing: 0.4000000059604645px;
+            text-align: left;
+            border: 0.5px solid #fff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+          }
+          &__icon {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            color: $onx-A7;
+          }
+        }
+        &__filter {
+          position: relative;
+          width: 300px;
+          .MuiSelect-outlined {
+            padding: 10px 14px;
+            font-family: $font-family;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 16px;
+            letter-spacing: 0.4000000059604645px;
+            text-align: left;
+            border: 0.1px solid #fff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+          }
+          .MuiOutlinedInput-root {
+            &:hover fieldset {
+              border-color: transparent !important;
+            }
+          }
+          .Mui-focused fieldset {
+            border-color: transparent !important;
+          }
+        }
+      }
+    }
+    &__lastSyncDiv {
+      display: flex;
+      align-items: center;
+      &__icon {
+        font-size: 12px !important;
+        margin-left: 1rem;
+      }
+    }
+    &__redirectIcon {
+      font-size: 18px !important;
+      cursor: pointer;
+      transition: all 0.5s ease !important;
+      &:hover {
+        color: #fe9a0b !important;
+      }
+    }
+    &__redirectIconButton {
+      padding: 0.4rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background: linear-gradient(0deg, #13223d, #234f70 100%) no-repeat !important;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__phase {
+    font-size: 1.3rem !important;
+    color: #fff;
+  }
+  &__saveButton {
+    color: #fe9a0b !important;
+  }
+  &__cancelButton {
+    color: #fff !important;
+  }
+  & .MuiTableContainer-root {
+    background: #171d25;
+  }
+  & .MuiTableHead-root {
+    & .MuiTableCell-root {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  & .MuiTableBody-root {
+    & .MuiTableCell-root {
+      font-size: 13px;
+    }
+  }
+
+  & .MuiTableCell-root {
+    background-color: #171d25;
+    color: #fff;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.12);
+  }
+  ::-webkit-scrollbar {
+    width: 2px; /* width of the entire scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: lightgrey; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    // border: 3px solid orange; /* creates padding around scroll thumb */
+  }
+}
+.btn-primary {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 13px;
+  background: linear-gradient(0deg, #13223d, #234f70 100%) no-repeat !important;
+}
+
+.backdrop {
+  color: #fab144;
+}

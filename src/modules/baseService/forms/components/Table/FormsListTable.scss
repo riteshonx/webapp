@@ -1,0 +1,91 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+ .formlistTable{
+    &__root{
+        padding: 0 24px;
+        display: flex;
+        flex-grow: 1;
+        & .MuiPaper-elevation1{
+            box-shadow: none;
+        }
+        .nodata{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            
+        }
+        .no-permission{
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 0px;
+            width: 100%;
+            font-size: 1.4rem;
+            justify-content: center
+         }
+    }
+    &__container{
+        height: calc(100vh - 240px);
+        width: 100%;
+        flex-grow: 1;
+        padding: 0;
+        overflow: auto;
+    }
+
+    &__paper{
+        width: 100%;
+        margin-bottom: 0;
+        display: flex;
+        flex: 1 1 0;
+        overflow-y: auto;
+    }
+
+    &__visuallyHidden{
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        top: 20px;
+        width: 1px;
+    }
+    &__cell{
+        font-size:1.2rem;
+        color: #333333;
+        padding: 4px 16px;
+        height: 50px;
+        &__namefield{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__icon{
+                font-size: 1.4rem;
+                cursor: pointer;
+            }
+        }
+    }
+    &__headecell{
+        font-size:1.2rem;
+        color: #333333;
+        font-weight: 600;
+    }
+    &__cellicon{
+        font-size:1.8rem;
+        cursor: pointer;
+        color: #B0B0B0;
+    }
+    &__row{
+        cursor: pointer;
+        &:hover{
+            background-color: #c8c8c842;
+        }
+    }
+    &__button{
+        padding:0.5rem
+    }
+ }

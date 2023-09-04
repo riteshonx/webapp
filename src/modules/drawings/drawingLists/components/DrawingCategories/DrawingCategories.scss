@@ -1,0 +1,172 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.categories{
+    margin: 20px 15px 10px 15px;
+
+    &__sort{
+        .MuiInputLabel-animated{
+            margin-bottom: 7px;
+            font-size: 1.2rem;
+        }
+
+        &__radio-grouping{
+            @include flexCenter(flex-start);
+            flex-wrap: wrap;
+
+            .MuiFormGroup-root{
+                flex-direction: row;
+            }
+
+            .MuiFormControlLabel-root{
+                margin-right: 30px;
+            }
+
+            .MuiTypography-body1{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+    &__lists{
+        // height: calc(100vh - 355px);
+        // overflow-y: auto;
+        &__header{
+            @include flexCenter(space-between);
+            padding: 7px;
+            border-bottom: 1px solid #E8E8E8;
+
+            &__text{
+                color: #9E9E9E;
+            }
+            &__add{
+                font-weight: 600;
+                cursor: pointer;
+                font-size: 1.2rem;
+            }
+        }
+
+        &__category{
+            @include flexCenter(space-between);
+            padding: 10px 7px;
+            border-bottom: 1px solid #E8E8E8;
+            height: 50px;
+
+            &__name{
+                width: 100%;
+                
+                &__label{
+                    cursor: text;
+                }
+
+                .MuiOutlinedInput-notchedOutline{
+                    border: none
+                }
+
+                .MuiOutlinedInput-input{
+                    padding: 7px;
+                    font-size: 1.2rem;
+                }
+
+                .MuiInputBase-input.Mui-disabled{
+                    background: #d3d3d366;
+                }
+
+                .MuiOutlinedInput-input:hover{
+                    background: #F8F8F8;
+                }
+            }
+
+            &__action{
+                @include flexCenter(flex-end);
+
+                &__delete{
+                    margin-left: 15px;
+                    
+                    svg{
+                        cursor: pointer;
+                        color: #9E9E9E;
+                        font-size: 22px;
+                        position: relative;
+                        top: 2px;
+                    }
+                }
+
+                &__status{
+                    font-style: italic;
+                    color: #9E9E9E;
+                    font-size: 1.2rem;
+                    
+                    svg{
+                        margin-left: 15px;
+                        cursor: pointer;
+                        color: #9E9E9E;
+                        font-size: 22px;
+                        position: relative;
+                        top: 2px;
+                    }
+                }
+            }
+        }
+
+        &__no-data{
+            @include flexCenter(center);
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 10px 20px;
+            height: calc(100vh - 460px);
+
+            &__message{
+                text-align: center;
+            }
+
+            &__add{
+                margin: 15px 0px;
+            }
+        }
+    }
+
+    &__action{
+        @include flexCenter(flex-end);
+    }
+
+}
+
+.add-category{
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+
+    .MuiInputLabel-animated{
+        margin-bottom: 7px;
+        font-size: 1.2rem;
+    }
+
+    .MuiTypography-body1{
+        font-size: 1.2rem;
+    }
+
+    .MuiOutlinedInput-input, 
+    .MuiSelect-outlined{
+        padding: 13px 14px;
+        font-size: 1.2rem;
+        line-height: 16px;
+        background: #F8F8F8;
+        width: 300px;
+    }
+
+    &__action{
+        margin: 5px 0px;
+        @include flexCenter(flex-end);
+
+        &__cancel{
+            margin-right: 20px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+
+    &__checkbox{
+        width: 145px;
+    }
+}

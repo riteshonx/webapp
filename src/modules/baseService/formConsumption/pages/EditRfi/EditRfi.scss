@@ -1,0 +1,329 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+.editFeatureform {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+
+  &_wowf {
+    &_header {
+      padding: 0 1.5rem;
+      box-shadow: #f1f1f1 0px 3px 2px 0px;
+      @include flexCenter(initial);
+    }
+
+    &_infoBar {
+      @include flexCenter(space-between);
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    font-size: 1.4rem;
+    flex-grow: 0;
+    box-shadow: #f1f1f1 0px 3px 2px 0px;
+    margin-bottom: 15px;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 10px 0;
+      &__action {
+        @include flexCenter(flex-end);
+        font-weight: 600;
+
+        &__followers {
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        &__workFLow {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-weight: 600;
+          text-transform: none;
+          &__icon {
+            font-size: 18px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-grow: 1;
+    &[data-workflowenabled="false"] {
+      justify-content: center;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      &__container {
+        display: flex;
+        flex-grow: 1;
+        width: 100%;
+        flex-direction: column;
+        flex-shrink: 1;
+        flex-basis: 0;
+        overflow-y: auto;
+        &__step {
+          margin: 0 30px 0 30px;
+          &__info {
+            display: flex;
+            justify-content: space-between;
+            background: #fffcef;
+            align-items: flex-start;
+            border: 1px solid #fff2bc;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 15px 10px;
+            &__field {
+              margin: 0;
+              font-size: 1.2rem;
+              flex-basis: 25%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              &__label {
+                color: #757575;
+                font-weight: 600;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+              }
+              &__value {
+                font-weight: 600;
+                font-size: 1.3rem;
+                padding-top: 1.2rem;
+              }
+            }
+          }
+        }
+        form {
+          padding: 10px 0;
+        }
+        &__links {
+          padding: 0 20px;
+        }
+        &__formfields {
+          padding: 0px 20px;
+          &__fields {
+            margin-top: 15px;
+            &__field {
+              padding: 2px 20px;
+              margin: 5px 0px;
+              position: relative;
+              &__table {
+                width: 100%;
+                display: grid;
+              }
+              &__impact {
+                .MuiFormGroup-root {
+                  flex-direction: row !important;
+                }
+                &__inputs {
+                  display: flex;
+                  align-items: center;
+                  &__label {
+                    font-size: 1.4rem;
+                    margin-left: 2rem;
+                    cursor: pointer;
+                    text-transform: none !important;
+                  }
+                }
+              }
+              &__section{
+                display: flex;
+                padding: 2px;
+                flex-direction: column;
+                min-height: 150px;
+                justify-content: space-around;
+              }
+              &__objectType{
+                display: flex;
+                padding: 2px;
+                flex-direction: column;
+              }
+              &__linkedForms{
+               table{
+                border-collapse: collapse;
+               }
+              }
+              &__clear {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                cursor: pointer;
+                &:hover {
+                  border-bottom: 1px solid #ddd;
+                }
+              }
+
+              .MuiInputLabel-root {
+                margin: 0px 0px 8px 0px;
+                font-size: 1.4rem;
+                font-weight: 600;
+                color: #000000;
+              }
+              .MuiOutlinedInput-input,
+              .MuiSelect-outlined {
+                padding: 10px 14px;
+                font-size: 1.3rem;
+                line-height: 16px;
+              }
+              .MuiAutocomplete-inputRoot {
+                // display: none;
+                max-width: 100%;
+              }
+
+              .MuiOutlinedInput-multiline {
+                padding: 0px;
+              }
+            }
+          }
+        }
+        &__form-action {
+          @include flexCenter(flex-end);
+          padding: 0px 20px;
+          margin: 10px 0px;
+
+          .rfi-primary {
+            margin-left: 10px;
+            color: $onx-white;
+            background: $onx-primary;
+          }
+
+          .rfi-primary:disabled {
+            background: none;
+            color: lightgray;
+          }
+        }
+        &__commentaction {
+          display: flex;
+          padding: 20px 0 0 0;
+          border-bottom: 0.5px solid $onx-A7;
+          &__tab {
+            font-size: 1.4rem;
+            margin: 0 2rem;
+            min-width: 120px;
+            text-align: center;
+            padding: 5px 5px 0 5px;
+            cursor: pointer;
+          }
+          &__active {
+            border-bottom: 4px solid $onx-A2;
+          }
+        }
+        &__workflowdetails {
+          padding: 0 20px;
+        }
+      }
+    }
+    &__review {
+      flex-basis: 35%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      &__container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        overflow-y: auto;
+      }
+    }
+  }
+  &__workflow-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 100;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.error-wrap {
+  color: $onx-red;
+  height: 18px;
+  font-size: 1.2rem;
+  position: relative;
+  top: 3px;
+
+  &__message {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
+  }
+}
+
+.date-time-picker {
+  .MuiFormHelperText-root.Mui-error {
+    color: #ff0000;
+    height: 18px;
+    font-size: 1rem !important;
+    position: relative;
+    top: -2px;
+    font-family: "$font-family";
+    right: 13px;
+  }
+}
+
+.btn-primary {
+  color: $onx-white;
+  margin-left: 10px;
+}
+
+.MuiListItem-root.Mui-selected {
+  font-weight: 600 !important;
+}
+
+.edit-page-noData {
+  height: calc(100vh - 148px);
+  font-size: 1.6rem;
+
+  &__message {
+    height: calc(100vh - 148px);
+    color: #808080d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.noUpdatePermission {
+  width: 100%;
+  padding: 10px;
+
+  .no-permission {
+    @include flexCenter(center);
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    height: 60vh;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}
+
+.noData {
+  padding: 10px 20px;
+  &__message {
+    height: calc(100vh - 148px);
+    @include flexCenter(center);
+    font-size: 1.6rem;
+  }
+}
+.container_order{
+  order: 1;
+}

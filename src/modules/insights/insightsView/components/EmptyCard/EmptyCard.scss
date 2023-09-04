@@ -1,0 +1,18 @@
+@import '../../../../../assets/onx/variable';
+
+.emptyCard {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__message {
+        background-color: $onx-A9;
+        border: 1px dashed #B8B6B6;
+        padding: 50px;
+        border-radius: 6px;
+        font-family: 12px;
+        color: $onx-A3;
+        text-align: center;
+    }
+}

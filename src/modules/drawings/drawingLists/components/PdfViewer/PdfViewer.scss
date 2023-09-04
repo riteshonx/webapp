@@ -1,0 +1,11 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.pdfView{
+    background: #e8e6e669;
+    border: 1px solid lightgray;
+
+    &__webviewer{
+        height: 100%;
+    }
+}

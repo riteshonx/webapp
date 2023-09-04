@@ -1,0 +1,148 @@
+@import '../../../../../assets/onx/variable';
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.material-dialog {
+  &__content {
+    &__fields {
+
+      &__header {
+        font-weight: 600;
+      }
+
+      .MuiGrid-item {
+        width: 300px;
+        padding: 0px 15px 0px 15px;
+      }
+
+      .MuiFormLabel-root {
+        font-weight: 600;
+        line-height: 16px;
+        color: #000000;
+      }
+
+      .MuiInput-root {
+        width: 100%;
+      }
+
+      .MuiInputBase-input,
+      .MuiSelect-selectMenu {
+        font-size: 1.3rem;
+        color: #1f1f1f;
+      }
+
+      &__select-box {
+        font-size: 1.3rem;
+        color: #1f1f1f;
+      }
+    }
+
+    &__popUpBody {
+      padding: 20px;
+    }
+  }
+
+  &__footer {
+    @include flexCenter(flex-end);
+    margin: 15px 0px;
+  }
+}
+.button-delete{
+  background: none;
+  border: none;
+  color: #D02F2F;
+  text-transform: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  left: 28px;
+  position: absolute;
+}
+.type-container{
+  position: relative;
+}
+
+.tags {
+  display: grid;
+  grid-template-columns: 130px auto;
+
+  &__action {
+    &__btn {
+      cursor: pointer;
+
+      &__icon {
+        height: 20px;
+        margin-right: 2px;
+      }
+
+      &__text {
+        position: relative;
+        top: 1px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 18px;
+      }
+    }
+
+    &__btn:hover {
+      @include flexCenter(flex-start);
+      background: transparent;
+    }
+  }
+
+  &__lists {
+    padding: 5px 10px;
+  }
+}
+
+.popUpBody {
+  padding: 15px 20px;
+}
+
+
+.edit-icon {
+  position: relative;
+  top: 2px;
+  height: 20px;
+  margin-left: 0px;
+  color: #b0b0b0;
+  cursor: pointer;
+}
+
+.editTask {
+  @include flexCenter(space-between);
+  flex-wrap: wrap;
+
+  &__info {
+    @include flexCenter(flex-end);
+    color: #a1a1a1;
+    font-size: 1.2rem;
+
+    &__wrap {
+      margin-left: 15px;
+    }
+
+    &__header {
+      font-weight: 600;
+    }
+  }
+}
+
+.error-wrap {
+  color: $onx-red;
+  height: 18px;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 5px;
+
+  &__message {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
+  }
+  &__message-small {
+    padding: 0px;
+    margin: 0px;
+    font-size: 0.9rem;
+  }
+}

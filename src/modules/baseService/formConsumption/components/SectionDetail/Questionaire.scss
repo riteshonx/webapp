@@ -1,0 +1,45 @@
+.questionaire__dialog {
+  padding: 10px;
+  margin: 10px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px 5px 24px;
+    &__title {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  &__body {
+    height: 75vh;
+    overflow: auto;
+    &__questionWrapper {
+      margin-bottom: 10px;
+      &__question {
+        .MuiFormLabel-root {
+          font-size: 20px;
+          color: #000;
+        }
+        &__container {
+          display: flex;
+          align-items: center;
+
+          p {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      &__answer {
+        .MuiTypography-root {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+.MuiDialog-paper {
+  margin: 10px;
+  padding: 10px;
+}

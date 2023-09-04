@@ -1,0 +1,78 @@
+@import '../../../assets/onx/variable';
+.data-grid-cell {
+    outline: none !important;
+}
+.data-grid-column {
+    min-width: 20% !important;
+}
+.data-grid-column2 {
+    min-width: 50% !important;
+}
+.data-grid-row {
+    width: calc(100vw - 118px) !important;
+}
+.data-grid-columnHeader {
+    .MuiDataGrid-columnHeaderTitleContainer {
+        padding: 0
+    }
+}
+.tabs-indicator {
+    background-color: $onx-primary;
+}
+.button-size {
+    font-size: 1.25rem !important;
+}
+.menu-list-composition {
+    &__menu-item {
+        font-size: 1.5rem;
+        font-family: Poppins,sans-serif;
+        width: 190px;
+    }
+}
+
+.connectors-grid {
+    .MuiButtonBase-root {
+        font-size: 1.35rem;
+        font-family: Poppins,sans-serif;
+    }
+    .tabs-container {
+        .Mui-selected {
+            color: $onx-primary
+        }
+    }
+}
+.upload-file-modal {
+    &__dialog {
+        width: 375px;
+        &__content {
+            height: 45vh;
+            &__file-upload {
+                background: $onx-A10;
+                height: 100%;
+                padding: 0 5px;
+            }
+        }
+        &__actions {
+            &__cancel {
+                color: $onx-primary;
+                border-color: $onx-primary;
+                text-transform: none;
+                &:hover {
+                    border-color: $onx-primary;
+                }
+            }
+        }
+    }
+}
+.slate-project {
+    &__project-plugin {
+        &__cancel {
+            color: $onx-primary;
+                border-color: $onx-primary;
+                text-transform: none;
+                &:hover {
+                    border-color: $onx-primary;
+                }
+        }
+    }
+}

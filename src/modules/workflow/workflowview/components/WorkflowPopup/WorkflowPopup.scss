@@ -1,0 +1,96 @@
+@import "../../../../../assets/onx/variable";
+
+.workflowPopUp__main {
+  &__header {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    max-width: 38rem;
+    overflow-wrap: break-word;
+    color: #333333;
+    width: 100%;
+    padding: 0.5rem 0;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.04);
+      background: #eaeaea;
+      cursor: pointer;
+      padding-left: 0.5rem;
+    }
+  }
+  &__formControl {
+    margin: 0 !important;
+    margin-top: -0.5rem !important;
+    padding: 1rem 0 !important;
+
+    &__checkbox {
+      margin: 0 0.5rem 0 0 !important;
+      padding: 0 !important;
+    }
+    &__label {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+      color: #000000;
+    }
+  }
+  &__buttonContainer {
+    margin-top: 1.5rem;
+    &__button1 {
+      @include button(#000000, #ffffff);
+      border: 1px solid #666666;
+      margin-right: 1rem;
+      padding: 1.4rem 2.5rem !important;
+      &:hover {
+        color: #ffffff;
+        background-color: #666666;
+      }
+    }
+    &__button2 {
+      @include button(#ffffff, #666666);
+      padding: 1.4rem 2.5rem !important;
+      color: #ffffff !important;
+      &:hover {
+        color: #000000 !important;
+      }
+    }
+  }
+  &__rules {
+    margin: 1rem 0 0 0;
+    .MuiSelect-outlined{
+      padding: 10px 14px !important;
+      font-size: 1.2rem !important;
+    }
+    &__header {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.14rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+
+      color: #000000;
+      margin-bottom: 1.2rem;
+    }
+    &__editsAllowedLabel {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      color: #000000;
+      margin-bottom: 0.5rem;
+      &__disabled {
+        opacity: 0.5;
+        .MuiSelect-outlined{
+          padding: 10px 14px !important;
+          font-size: 1.2rem !important;
+        }
+      }
+    }
+  }
+}

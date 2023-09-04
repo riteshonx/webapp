@@ -1,0 +1,130 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.ProjectEquipmentMaster {
+  padding: 10px 25px;
+
+  &-header {
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  }
+}
+
+.modalContent {
+  display: flex;
+  justify-content: center;
+
+  .date-picker {
+    position: relative;
+
+    .calendar-icon {
+      top: -3px;
+      position: absolute;
+      right: 0px;
+      width: 100%;
+      border-radius: 5px;
+      height: 50px;
+
+      .MuiIconButton-label {
+        justify-content: flex-end !important;
+      }
+    }
+  }
+}
+
+.ProjectEquipmentMasterTableHeader {
+  font-weight: bold;
+}
+
+.gap-1 {
+  gap: 1%;
+}
+
+.ProjectEquipmentMasterTablePagination {
+  position: sticky;
+  bottom: 0px;
+  z-index: 2;
+  background: white;
+}
+
+.ProjectEquipmentMasterTable {
+  border-right: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
+  overflow: auto;
+
+  .date-picker {
+    position: relative;
+
+    .calendar-icon {
+      top: -3px;
+      position: absolute;
+      right: 0px;
+      width: 100%;
+      border-radius: 5px;
+      height: 50px;
+
+      .MuiIconButton-label {
+        justify-content: flex-end !important;
+      }
+    }
+  }
+  .bordered-cell {
+    border-right: 1px solid #bdbdbd;
+  }
+
+  th {
+    border-top: 1px solid #bdbdbd;
+  }
+
+  td.bordered-cell {
+    padding: 0px;
+    background: white;
+    overflow: hidden;
+  }
+
+  td.non-editable-cell {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 250px;
+    text-overflow: ellipsis;
+  }
+
+  .left-border.bordered-cell {
+    border-left: 1px solid #bdbdbd;
+  }
+
+  .MuiTableRow-root:nth-child(even) {
+    background: #fafafa;
+  }
+
+  .MuiTableRow-root {
+    border-bottom: 1px solid #bdbdbd;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.unitWidth {
+  width: 31px;
+}
+.equipmentbtn {
+  right: 20px;
+}
+.noCreatePermission-equipment {
+  width: 100%;
+  padding: 10px;
+
+  .no-permission-equipment {
+    @include flexCenter(center);
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    height: 60vh;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,8 @@
+.resizeWindow {
+    display: flex;
+
+    &__slider {
+        width: 10px;
+        cursor: col-resize;
+    }
+}

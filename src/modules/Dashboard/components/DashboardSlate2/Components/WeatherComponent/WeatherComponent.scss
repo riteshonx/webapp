@@ -1,0 +1,174 @@
+.weather-container {
+  height: auto;
+  transition: all 1s linear;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__row-1 {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    &__col-1 {
+      flex: 0.5;
+      flex-direction: column;
+    }
+    &__col-2 {
+      flex: 0.5;
+      flex-direction: column;
+      text-align: right;
+      padding: 2rem 2rem 10rem 2rem;
+      &__icon {
+        color: #fff;
+        font-size: 3rem !important;
+      }
+      &__loc {
+        color: #fff;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &__row-2 {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    &__tab-1 {
+      font-size: 1.5rem;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      padding: 0 2rem 1rem 2rem;
+      text-transform: uppercase;
+      &__icon {
+        margin-right: 0.5rem;
+        font-size: 2rem !important;
+        vertical-align: middle;
+      }
+    }
+    &__tab-2 {
+      font-size: 1.5rem;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      padding: 0 2rem 1rem 2rem;
+      text-transform: uppercase;
+      &__icon {
+        margin-right: 0.5rem;
+        font-size: 2rem !important;
+        vertical-align: middle;
+      }
+    }
+    &__active {
+      border-bottom: 5px solid #9d91d5;
+    }
+  }
+
+  &__tab-content {
+    position: relative;
+    background-image: url("../../../../../../assets/images/weather-bg-1.jpg");
+    color: #fff;
+    height: 160px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__left {
+      text-align: center;
+      padding: 20px;
+      &__content {
+        font-size: 70px;
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        &__temp {
+          font-size: 25px;
+          font-weight: bold;
+          position: absolute;
+        }
+        &__day {
+          background: #988c82;
+          border-radius: 40px;
+          padding: 5px 0;
+          width: 110px;
+          margin: 0 auto;
+        }
+        &__speed {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  &__forecast-container {
+    text-align: center;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__border {
+      border-left: 2px solid #988c82;
+    }
+    &__day {
+      margin: 0 auto;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 40px;
+      width: 60px;
+      padding: 5px 0px;
+      background: #988c82;
+    }
+    &__weatherType {
+      margin: 15px 0;
+    }
+    &__temp {
+      text-align: center;
+      font-size: 18;
+      &__sub {
+        font-size: 12;
+      }
+    }
+  }
+
+  &__blink_me {
+    animation: blinker 1s linear infinite;
+    color: darkorange;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  &__scrollText {
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    text-align: center;
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+
+    -moz-animation: my-animation 20s linear infinite;
+    -webkit-animation: my-animation 20s linear infinite;
+    animation: my-animation 20s linear infinite;
+
+    & p {
+      margin: 20px 0 !important;
+      color: #000;
+    }
+    & h3 {
+      color: #000;
+    }
+  }
+
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-160px);
+      -webkit-transform: translateY(-160px);
+      transform: translateY(-160px);
+    }
+  }
+}

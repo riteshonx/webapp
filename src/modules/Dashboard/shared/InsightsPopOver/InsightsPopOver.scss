@@ -1,0 +1,51 @@
+.insightsPopover {
+  &__header {
+    padding: 10px 10px 10px 20px;
+    background: #171d25;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #fcc055;
+  }
+  &__tabContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0rem 0rem 1.5rem;
+    &__tab {
+      cursor: pointer;
+      padding: 0.2rem 1rem;
+      font-weight: bold;
+      margin-right: 1rem;
+    }
+    &__selectedTab {
+      border-bottom: 2px solid #171d25;
+    }
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1.5rem;
+    height: 80%;
+    overflow: auto;
+    flex-direction: column;
+    margin: 1rem 0;
+    &__noContent {
+      justify-content: center;
+    }
+  }
+  &__slate-insights__button {
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    img {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.v2-insight {
+  &-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-circle {
+    border-radius: 50%;
+    background-color: #fff;
+    border: 10px solid rgb(105, 105, 105);
+  }
+
+  &-item {
+    height: 160px;
+    width: 160px;
+
+    &-heading {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    &-subheading {
+      font-weight: 600;
+    }
+
+    &-title {
+      font-size: 18px;
+    }
+
+    &-chip {
+      position: relative;
+      width: 100px;
+      height: 24px;
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(59, 59, 59, 0.1);
+      border-radius: 2em;
+      margin: 4px 0;
+      &>svg {
+        position: absolute;
+        right: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.featureFormTable{
+    overflow-x: auto;
+  &__table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      &__headcell{
+        text-align: left;
+        background: #f2f2f2;
+        border: 1px solid #ddd;
+        padding: 10px;
+     }
+     &__cell {
+       text-align: left;
+       border-right: 1px solid #ddd;
+       border-bottom: 1px solid #ddd;
+       padding: 10px;
+       
+       .rowDiv{
+        width: 130px;
+       }
+
+       .cellDiv{
+         width: 130px;
+         &__inputs{
+           display: flex;
+           align-items: center;
+           &__label{
+             margin-left: 2rem;
+             cursor: pointer;
+             text-transform: none !important;
+           }
+           &__groups{
+             display: flex;
+             flex-direction: row !important;
+           }
+         }
+       }
+      &:first-of-type{
+          border-left: 1px solid #ddd;
+      }
+     }
+     &__slnoth{
+      text-align: left;
+        background: #f2f2f2;
+        border: 1px solid #ddd;
+        padding: 10px;
+        min-width: 50px;
+     }
+     &__slnotd{
+      text-align: center;
+      border-right: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 10px 10px 10px;
+      min-width: 50px;
+     }
+    }
+}

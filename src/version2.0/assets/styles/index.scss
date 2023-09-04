@@ -1,0 +1,36 @@
+@import './utils.scss';
+@import './ProjectInfo.scss';
+.v2-components-homepage-container {
+  background-color: #181D24;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 60px calc(100vh - 60px);
+  grid-template-areas: 'appBar'
+    'main';
+
+  .v2-components-homepage-main {
+    grid-area: main;
+  }
+
+  .v2-component-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px 40px;
+    width: 100%;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #181d24;
+}
+}
+
+
+

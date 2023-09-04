@@ -1,0 +1,72 @@
+@import "../../../../../assets/onx/variable";
+
+.workflowViewStartStep__main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  padding: 2rem;
+  &__header {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.75rem;
+    &__text__disableEdit:hover {
+      cursor: default;
+    }
+    &__text {
+      transition: all 0.2s ease-in-out;
+      padding: 0 0.5rem;
+
+      &:hover {
+        transform: scale(1.04);
+        background: #eaeaea;
+      }
+    }
+    &__textField {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+      padding: 0.2rem 0.4rem;
+      border: 0.5px solid #b4b4b4;
+      &::placeholder {
+        opacity: 0.5;
+      }
+      &:focus {
+        outline-color: #b4b4b4;
+      }
+    }
+    &__icon {
+      height: 1.5rem;
+      border-radius: 0px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    &__button {
+      @include button(#ffffff, #666666);
+      &:hover {
+        color: #000000;
+      }
+    }
+  }
+
+  &__body {
+    &__text {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      color: #8c8c8c;
+    }
+    &__button {
+      @include button(#ffffff, #666666);
+
+      &:hover {
+        color: #000000;
+      }
+    }
+  }
+}

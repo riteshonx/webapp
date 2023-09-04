@@ -1,0 +1,141 @@
+@import '../../../../../assets/onx/variable';
+.projectAssociation{
+    &__head{
+        position: relative;
+        padding: 30px 40px 5px 40px;
+        box-shadow: 0 0 1px rgba(0 ,0, 0,0.5);
+        &__title{
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            text-align: left; 
+            padding: 6px 0;
+        }
+        &__subtitle{
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 18px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        &__close{
+            position: absolute;
+            right:10px;
+            top:10px;
+            cursor: pointer;
+        }
+        &__search{
+            position: relative;
+            width: 60%;
+            padding: 10px 0;
+            & .MuiOutlinedInput-input{
+                padding: 10px 14px;
+                font-size: 1.4rem;
+              }
+              &__icon{
+                position: absolute;
+                right: 10px;
+                top: 15px;
+                color: #c2c2c2;
+                cursor: pointer;
+            }
+        }
+        &__header{
+            display: flex;
+            padding: 10px 0;
+            justify-content: space-between;
+            &__project{
+                flex-basis: 32%;
+                border-radius: 4px 0 0 4px;
+                font-size: 1.4rem;
+                font-weight: 600;
+                text-align: left;
+            }
+            &__template{
+                flex-basis: 32%;
+                border-radius: 0 4px 4px 0;
+                font-size: 1.4rem;
+                font-weight: 600;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                &__icon{
+                    margin-left: 2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &__body{
+        padding: 10px 40px 40px 40px;
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        max-height: 50vh;
+        overflow-y: auto;
+        &__main{
+            display: flex;
+            flex-direction: column;
+            &__item{
+                display: flex;
+                padding: 10px 0;
+                justify-content: space-between;
+                &__project{
+                    flex-basis: 32%;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    text-align: left;
+                    border: 1px solid #c2c2c2;
+                    padding: 5px 15px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 4px;
+                    background: #c2c2c23b;
+                    &__icon{
+                        height: 30px;
+                        width: 30px;
+                        border: 1px solid;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 25px;
+                    }
+                }
+                &__template{
+                    flex-basis: 32%;
+                    font-size: 1.4rem;
+                    &__select{
+                        width: 100%;
+                        .MuiOutlinedInput-input{
+                            padding: 10px 0 10px 10px;
+                            max-width: 240px;
+                        }
+                    }
+                }
+            }
+            &__nocontent{
+
+            }
+        }
+        &__nocontent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+    }
+    &__footer{
+        padding: 15px 30px 15px 0;
+        box-shadow: 0 0 1px rgba(0,0,0,0.5);
+        &__btn{
+            padding: 15px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+    }
+}

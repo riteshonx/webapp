@@ -1,0 +1,166 @@
+.EditSystemRole{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 2;
+    transition-property: width;
+    transition-duration: 0.4s;
+    &.open{
+        width: 60%;
+    }
+    &.close{
+        width: 0;
+    }
+    &__left{
+        // flex-basis: 25%;
+        background: rgba(0, 0, 0, 0.1);
+    } 
+    &__right{
+        width: 100%;
+        background: #fff;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 4px 0 0 4px;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        &__header{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 16px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            &__name{
+                font-size: 2.6rem;
+                margin: 0 0 10px 0;
+                width: 50%;
+                ::placeholder {
+                    color: #aaa7a775;
+                    opacity: 1; /* Firefox */
+                }
+                &__input{
+                    font-size: 2.4rem;
+                    font-weight: 600;
+                    padding: 5px 4px;
+                    border-radius: 4px;
+                    background: #f7f7f7;
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    user-select: none;
+                    &:active,&:focus{
+                        outline: none;
+                        border: none;
+                    }
+                }
+                &__error{
+                    font-size: 1rem;
+                    margin: 0 0 0 3px;
+                    color: red;
+                    font-weight: 400;
+                    height: 1rem;
+                }
+            }
+            &__description{
+                width: 50%;
+                ::placeholder {
+                    color: #aaa7a775;
+                    opacity: 1; /* Firefox */
+                }
+                &__input{
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    padding: 10px 4px;
+                    border-radius: 4px;
+                    background: #f7f7f7;
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    user-select: none;
+                    &:active,&:focus{
+                        outline: none;
+                        border: none;
+                    }
+                }
+            }
+        }
+        &__body{
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            flex-grow: 1;
+            margin: 0 20px;
+            &__header{
+                padding: 0 20px;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+            &__content{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0;
+                overflow-y: auto;
+                padding: 10px 20px;
+            }
+            .permission{
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+                &:last-of-type{
+                    border-bottom: none;
+                }
+                &__left{
+
+                    &__label{
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                    }
+                    &__description{
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+                    &__option{
+                        display: flex;
+                        align-items: center;
+                        padding-top: 1rem;
+                        &__label{
+                            font-size: 1.2rem;
+                            flex-basis: 20%;
+                        }
+                        &__select{
+                            font-size: 1.2rem;
+                            flex-basis: 75%;
+                            .MuiOutlinedInput-input{
+                                padding: 10px 14px;
+                                font-size: 1.2rem;
+                            }
+                            &__menuitem{
+                                font-size: 1.2rem !important;
+                            }
+                        }
+                    }
+                }
+                &__right{
+                    padding-left: 20px;
+                    &__label{
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        &__footer{
+            padding: 10px 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: flex-end;
+            &__btn{
+                margin-left: 20px;
+            }
+        }
+    }
+}

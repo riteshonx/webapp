@@ -1,0 +1,79 @@
+@import "../../../../assets/onx/variable";
+
+.forgotPassword {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // background: url("../../../../assets/images/entry-background.jpg");
+  // background-color: rgba(27, 27, 27, 0.5);
+  // background-blend-mode: multiply;
+  // height: 100vh;
+  $shrink: unique-id();
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("../../../../assets/images/login-bg.png");
+  background-color: rgba(27, 27, 27, 0.5);
+  background-repeat: no-repeat;
+  // background-blend-mode: multiply;
+  background-size: auto 100vh;
+  background-position: center center;
+  animation: $shrink 10s infinite alternate;
+  @keyframes #{$shrink} {
+    0% {
+      background-size: auto 100vh;
+    }
+    100% {
+      background-size: auto 110vh;
+    }
+  }
+  height: 100vh;
+  padding: 1rem;
+
+  &_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+  }
+
+  &_container {
+    padding: 1.8rem;
+    // width: 500px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    // box-shadow: 8px 10px 8px 1px #6f6f6f;
+    z-index: 1;
+    &_errorBox{
+      text-align: center;
+      margin-top: 2rem;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: $onx-error-dark;
+      background-color: $onx-error-light;
+      font-weight: 400;
+    }
+    &_form {
+      display: flex;
+      flex-flow: column wrap;
+      margin-top: 2rem;
+
+      &_input {
+        margin: 1.5rem;
+        padding: 1rem;
+      }
+    }
+  }
+
+  &_error_box {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: $onx-error-dark;
+    background-color: $onx-error-light;
+    font-weight: 400;
+  }
+}

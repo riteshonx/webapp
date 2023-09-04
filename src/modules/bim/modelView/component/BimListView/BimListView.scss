@@ -1,0 +1,34 @@
+@import '../../../../../assets/onx/variable';
+
+.bimNoViews {
+    padding-bottom: 20px;
+}
+
+.bimList {
+    margin:  0 -20px;
+
+    .listItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 20px;
+        border-bottom: 0.5px solid #DEDEDE;
+        cursor: pointer;
+
+        .title {
+            flex: 1;
+            padding: 8px 0;
+            margin: -8px 0;
+        }
+
+        svg {
+            margin: 0 3px;
+        }
+
+        &.active {
+            background-color: $onx-A8;
+        }
+    }
+}
+
+ 

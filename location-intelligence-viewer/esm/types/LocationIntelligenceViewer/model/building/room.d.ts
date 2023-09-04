@@ -1,0 +1,37 @@
+import { ColorRepresentation, Vector3 } from 'three';
+import { Area } from '../../../Viewer';
+import { FocusableObject } from '../../../Viewer/models/focusableObject';
+import { IRoom } from '../../interfaces/IRoom';
+import { HighlightOptions } from '../../utils/highlightOptions';
+import { SmartLevel, SmartRoom, SmartZone } from '../external/smart';
+import { Boundary } from '../gltf/boundary';
+import { Building } from './building';
+import { Level } from './level';
+import { Zone } from './zone';
+export declare class Room extends Area {
+    nodeType: 'Room';
+    parentBuilding: Building;
+    parentLevel: Level;
+    parentZone: Zone;
+    private persistedColor;
+    private persistedColorStrength;
+    private colorPersist;
+    private hoverHighlightMode;
+    externalReferenceId: string;
+    private isVisisbleInScene;
+    private nodeDepth;
+    private roomLabel;
+    issueCount: number;
+    constructor(room: IRoom, boundary: Boundary, floorHeight: number, floorCenter: Vector3, parentBuilding: Building, parentLevel: Level, parentZone: Zone, nodeDepth: number);
+    get parentLevelOrZone(): Zone | Level;
+    createRoomLabel(show: boolean): void;
+    createLabelElement(): HTMLSpanElement;
+    highlight(color?: ColorRepresentation, options?: HighlightOptions): void;
+    unHighlight(removeHighlightPersistance?: boolean): void;
+    setIssueCount(count: number): void;
+    onAddToWorld(): void;
+    onRemoveFromWorld(): void;
+    asSmartRoom(parentNode: SmartLevel | SmartZone, parentLevel: SmartLevel, focusOn: (focusableObject: FocusableObject) => Promise<void>): SmartRoom;
+    private _highlight;
+    private _unHighlight;
+}

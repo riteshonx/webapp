@@ -1,0 +1,66 @@
+
+@import '../../../../assets/styles/colors.scss';
+.v2-common-detail-popover {
+  &-loader {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    & > div {
+      height: 40px;
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  }
+  &-no-data {
+    height: 60px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    position: relative;
+    & > img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+      background: #34363a;
+      border-radius: 50%;
+    }
+  }
+  &-nav {
+    justify-content: space-between;
+    font-size: 16px;
+    border-bottom: 1px solid #FFFFFF4D;
+    padding: 10px 16px;
+    font-weight:  500;
+    &-title{
+      color: rgba(255,255,255,0.7);
+      font-weight: 600;
+    }
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    font-weight: 500;
+    overflow-y: auto;
+  }
+  &-title {
+    margin-right: 4px;
+    white-space: nowrap;
+    color: rgba(255,255,255,0.5)
+  }
+  &-value{
+    color: #fff;
+    font-weight: 600;
+  }
+  &-col {
+    display: flex;
+    color: $SLATE-V2-4;
+    flex-direction: column;
+    font-size: 14px;
+  }
+}

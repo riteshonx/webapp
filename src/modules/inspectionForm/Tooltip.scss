@@ -1,0 +1,10 @@
+.tooltip-main {
+  cursor: pointer;
+  &__titleStyle {
+    padding: 0.8rem;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2rem;
+    text-align: left;
+  }
+}

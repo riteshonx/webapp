@@ -1,0 +1,192 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.InsightsSettings {
+  width: 100%;
+  &__header {
+    border-bottom: 1px solid;
+    p {
+      font-size: 24px;
+      line-height: 56px;
+      font-family: "Poppins";
+      font-weight: 600;
+    }
+  }
+  &__individual_box {
+    display: flex;
+    margin-top: 30px;
+    p{
+        align-self: center;
+        width: 50%;
+    }
+  }
+  &__input_area {
+    margin-top: 35px;
+    height: 570px;
+    margin-bottom: 10px;
+    &__labels{
+      display: flex;
+      justify-content: space-between;
+      width: 29%;
+      margin-left: 63%;
+    }
+    &__boxes {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 50px;
+      p {
+        font-size: 16px;
+        line-height: 30px;
+        font-family: "Poppins";
+        font-weight: 400;
+      }
+      &__style {
+        width: 100%;
+        height: 45px;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  &__constraints{
+    display: flex;
+    width: 19%;
+    justify-content: space-between;
+    margin-left: 10%;
+    &__single_input{
+      margin-left: 10%;
+      &__style{
+        height: 45px;
+        border-radius: 4px;
+        padding-left: 2px;
+        opacity: 0.5;
+    }
+    }
+    &__multi_input{
+      width: 100px;
+    }
+    &__style{
+        height: 45px;
+        border-radius: 4px;
+        padding-left: 2px;
+        opacity: 0.5;
+    }
+    &__maxRangeWarning{
+      font-size: 10px;
+      color: #FF0000;
+      width: 120px;
+      position: absolute;
+    }
+  }
+
+  &__action-button {
+    border-top: 1px solid;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+  }
+}
+.cancel-button {
+  width: 100px;
+  height: 35px;
+  color: #0d444b;
+  border: 1px solid #0d444b;
+  border-radius: 4px;
+  margin-right: 40px;
+  text-transform: capitalize;
+}
+.update-button {
+  width: 100px;
+  height: 35px;
+  color: var(--onx-text-light);
+  background: var(--onx-A1);
+}
+.update-button:hover{
+    color: var(--onx-text-light);
+    background: var(--onx-A1); 
+}
+.noCreatePermission-insight{
+    width: 100%;
+    padding: 10px;
+  
+    .no-permission-insight{
+        @include flexCenter(center);
+        flex-wrap: wrap;
+        margin: 10px 0px;
+        height: 60vh;
+        width: 100%;
+        font-size: 1.4rem;
+     }
+  }
+  .btn-disabled{
+    cursor: not-allowed !important;
+    pointer-events: all !important;
+    opacity: 0.3;
+  }
+  .order-error-msg{
+    .form{
+      position: relative;
+    }
+    .error{
+      position: absolute;
+      top: 21%;
+      right: 9%;
+      width: 100px;
+    }
+  }
+  .rfi-error-msg{
+    .form{
+      position: relative;
+    }
+    .error{
+      position: absolute;
+      top: 31%;
+      right: 9%;
+      width: 100px;
+    }
+  }
+
+  .physical-max-day-error{
+    .form{
+      position: relative;
+    }
+    .error{
+      position: absolute;
+      top: 42%;
+      right: 9%;
+      width: 100px;
+    }
+  }
+  .physical-min-day-error{
+    .form{
+      position: relative;
+    }
+    .error{
+      position: absolute;
+      top: 42%;
+      right: 32%;
+      width: 100px;
+    }
+  }
+  .mgmt-max-day-error{
+    .form{
+      position: relative;
+    }
+    .error{
+      position: absolute;
+      top: 52%;
+      right: 9%;
+      width: 100px;
+ }
+  }
+  .mgmt-min-day-error{
+    .form{
+      position: relative;
+    }
+    .error{
+      position: absolute;
+      right: 32%;
+      top: 52%;
+      width: 100px;
+    }
+  }

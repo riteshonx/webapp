@@ -1,0 +1,22 @@
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.teammateContainer {
+  padding: 3rem;
+  width: 100%;
+  &_heading {
+    @include flexCenter(flex-start);
+    margin-bottom: 3rem;
+    &_backArrowIcon {
+      margin: 0.5rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &_error {
+    @include flexCenter(center);
+    height: 80%;
+    color: rgb(184, 11, 11);
+  }
+}

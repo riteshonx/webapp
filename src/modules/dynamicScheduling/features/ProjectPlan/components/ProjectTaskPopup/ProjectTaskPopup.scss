@@ -1,0 +1,106 @@
+@import '../../../../../../assets//onx//variable';
+.project-task-popup {
+  &__header {
+    &__title {
+      &-text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        /* identical to box height, or 150% */
+
+        display: flex;
+        align-items: center;
+
+        color: #333333;
+      }
+      &-btn {
+        float: right;
+
+        &-close {
+          background: $onx-btn-secondary;
+          padding-left: 3px;
+          padding-right: 3px;
+          min-width: 3.2rem !important;
+          height: 3.2rem;
+        }
+      }
+    }
+  }
+
+  &__body {
+    &-content {
+      &-grid {
+        &-container {
+          display: grid;
+          // grid-template-columns: [left-start] 370px [left-end right-start] 1fr [right-end];
+        }
+
+        &-left {
+          &-contractualStartDate {
+            margin-bottom: 12px;
+          }
+          &-plannedActualDates {
+            &__table {
+              width: 100%;
+              margin-top: 18px;
+
+              border-collapse: collapse;
+              &__head {
+                height: 24px;
+
+                text-align: left;
+                border-bottom: 0.6px solid #bdbdbd;
+                &__th {
+                  font-family: Poppins;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 12px;
+                  line-height: 20px;
+                  /* identical to box height, or 167% */
+
+                  color: #000000;
+                  &-1 {
+                    // float: right;
+                  }
+                }
+              }
+
+              &__body {
+                border-bottom: 0.6px solid #bdbdbd;
+
+                &__td {
+                  padding: 10px 0px 10px 0px;
+                  font-family: Poppins;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 12px;
+                  line-height: 20px;
+                  /* identical to box height, or 167% */
+
+                  color: #000000;
+
+                  &-1 {
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 20px;
+                    /* identical to box height, or 167% */
+
+                    color: #000000;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-datepicker {
+        width: 100%;
+      }
+    }
+  }
+}

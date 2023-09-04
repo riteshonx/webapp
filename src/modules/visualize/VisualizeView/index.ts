@@ -1,0 +1,1 @@
+export { MuiSeededLocationIntelligenceView as LocationIntelligenceView } from './LocationIntelligenceView';

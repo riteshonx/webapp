@@ -1,0 +1,96 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.updateCompany{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    z-index: 2;
+    height: 100%;
+    // width: 60%;
+    display: flex;
+    box-shadow: 0 12px 16px #0000000a, 0 4px 56px #0000000a;
+    background: transparent;
+    .closeIcon{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer
+    }
+    &__inactive{
+        // flex-basis: 17%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    &__details{
+        display: flex;
+        flex-direction: column;
+
+        &__toggle{
+            &__header {
+                display: flex;
+                margin: 10px 5px;
+                align-items: center;
+            }
+    
+            &__toggle-btn{
+                @include flexCenter(center);
+                width: 100px;
+              }
+    
+            &__g-view {
+            font-size: 13px;
+            width: 122px;
+            text-align: center;
+            cursor: pointer;
+            }
+    
+            .toggle-primary{
+                color: $onx-white;
+                background: $onx-primary;
+                border: $onx-primary;
+                font-size: 1.2rem;
+                padding: 5px 20px;
+                border-radius: 30px;
+                text-transform: none;
+            }
+        }
+
+        &__detailsContainer{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            overflow: auto
+        }
+
+    }
+}
+
+.smallSideBar{
+    flex-basis: 100%;
+    display: flex;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    background: #fff;
+}
+
+.fullSideBar{
+    flex-basis: 100%;
+    display: flex;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    background: #fff;
+}
+
+@media screen and (max-width: 1120px) {
+    .smallSideBar {
+       width: 75%;
+    }
+}

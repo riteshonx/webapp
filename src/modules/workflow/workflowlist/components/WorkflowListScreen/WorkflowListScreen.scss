@@ -1,0 +1,84 @@
+.table__main__head__cell {
+  font-family: Poppins !important;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+  min-width: 10rem !important;
+}
+.table__main__body__cell {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #1e1e1e;
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0.2rem;
+    cursor: pointer;
+    &:hover {
+      color: #000000 !important;
+    }
+  }
+}
+
+.table__main__body__menu {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #b0b0b0;
+  &__icon {
+    margin: 0 0 1.1rem 0.2rem;
+    cursor: pointer;
+    &:hover {
+      color: #000000 !important;
+    }
+  }
+}
+.MuiIconButton-root {
+  color: #b0b0b0 !important;
+}
+.table__main__body__delete {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #1e1e1e;
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0.2rem;
+    cursor: pointer;
+    &:hover {
+      color: #000000 !important;
+    }
+  }
+}
+
+.table__menu__body__cell {
+  font-family: Poppins !important;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.align_pagination {
+  width: 30%;
+}
+
+.table__main__body__iconContainer {
+  padding: 0.5rem;
+}
+
+.workflowListScreen__footerPagination {
+  padding: 1rem 0;
+}
+
+.tableRow {
+  cursor: pointer;
+  & :hover {
+    background-color: #f5f5f5;
+  }
+}

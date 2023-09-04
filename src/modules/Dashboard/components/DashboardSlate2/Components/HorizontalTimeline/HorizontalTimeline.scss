@@ -1,0 +1,142 @@
+.horizontalTimeline-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 0.5rem 0;
+  height: 55px;
+  &__popperStyle {
+    z-index: 3;
+  }
+  &__popperDiv {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    color: #fff;
+    max-height: 60vh;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 15px;
+      background: #ffffff24;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 15px;
+      height: 2rem;
+    }
+    &__row {
+      margin-bottom: 1rem;
+      &__val {
+        color: #f7b047;
+      }
+      &__taskName {
+        cursor: pointer;
+        color: #f7b047;
+        text-decoration: underline;
+      }
+    }
+    &__closeIcon {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+  &__iconButton {
+    padding: 0.5rem !important;
+    background-color: rgba(50, 50, 50, 0.6) !important;
+    &__icon {
+      font-size: 1.5rem !important;
+    }
+  }
+  &__scrollContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 100%;
+    // background: darkslategray;
+    justify-content: space-between;
+    width: 100%;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__dateList {
+      height: 1.5px;
+      background-color: grey;
+      width: 100%;
+      display: flex;
+
+      &__dateContainer {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &__flag {
+          position: absolute;
+          bottom: 8px;
+          right: 4px;
+          cursor: pointer;
+        }
+        &__dot {
+          min-height: 0.8rem;
+          min-width: 0.8rem;
+          border-radius: 50%;
+          background-color: #5656eb;
+          color: #fff;
+          position: relative;
+        }
+        &__dot1 {
+          min-height: 1.2rem;
+          min-width: 1.2rem;
+          border-radius: 50%;
+          background-color: #5656eb;
+          color: #fff;
+          position: relative;
+        }
+        &__dot2 {
+          min-height: 1.8rem;
+          min-width: 1.8rem;
+          border-radius: 50%;
+          background-color: #5656eb;
+          color: #fff;
+          position: relative;
+        }
+        &__activeDot {
+          background-color: #5656eb;
+          cursor: pointer;
+        }
+        &__activeDot1 {
+          background-color: green;
+          cursor: pointer;
+        }
+        &__activeDot2 {
+          background-color: red;
+          cursor: pointer;
+        }
+        &__date {
+          color: #fff;
+          font-size: 1rem;
+          white-space: nowrap;
+          margin-top: 0.2rem;
+        }
+      }
+      &__hiddenDot {
+        min-height: 0.5rem;
+        min-width: 0.5rem;
+        border-radius: 50%;
+        background-color: transparent;
+        color: #fff;
+      }
+    }
+  }
+}

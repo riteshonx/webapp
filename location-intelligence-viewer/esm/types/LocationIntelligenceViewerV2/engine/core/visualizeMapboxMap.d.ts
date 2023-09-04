@@ -1,0 +1,36 @@
+import mapboxgl from 'mapbox-gl';
+import { Coordinate } from '../../../LocationIntelligenceViewer/model/map/coordinate';
+declare type ProjectionType = 'mercator' | 'globe';
+export declare class VisualizeMapboxMap extends mapboxgl.Map {
+    projectionMode: ProjectionType;
+    private inputHandlers;
+    private _visible;
+    static readonly MIN_MERCATOR_ZOOM = 8;
+    private markers;
+    constructor(options?: mapboxgl.MapboxOptions);
+    private _addMarker;
+    addMarker: (id: number, coordinate: Coordinate, onClick: (id: number) => void) => void;
+    private _removeMarker;
+    removeMarker: (id: number) => void;
+    private _hasMarker;
+    hasMarker: (id: number) => boolean;
+    private _showMarker;
+    showMarker: (id: number) => void;
+    private _hideMarker;
+    hideMarker: (id: number) => void;
+    getScaleAtZoomLevel(zoomLevel: number): any;
+    getZoomLevelFromScale(scale: number): any;
+    update(): void;
+    set visible(visible: boolean);
+    get fov(): any;
+    set interactive(interactive: boolean);
+    get canvas(): HTMLCanvasElement;
+    get center(): Coordinate;
+    get zoom(): number;
+    private setup;
+    private setMapProjection;
+    private cacheHandlers;
+    private setEventListeners;
+    private onZoomChange;
+}
+export {};

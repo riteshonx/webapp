@@ -1,0 +1,97 @@
+// mixins
+@mixin flexCenter($position) {
+    display: flex;
+    justify-content: $position;
+    align-items: center;
+  }
+  
+  // vendor prefixes
+  @mixin prefix($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+  
+    // Output standard non-prefixed declaration
+    #{$property}: $value;
+  }
+  
+  // avatars
+  @mixin avatar($width, $height, $bwidth:1px) {
+    @include flexCenter(center);
+    width: $width;
+    height: $height;
+    // background: #2a97ff73;
+    border-radius: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    border: $bwidth solid $onx-primary;
+    
+    .avatar-icon {
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  
+  @mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: $background-color;
+    }
+  
+    // For Internet Explorer
+    & {
+      scrollbar-face-color: $foreground-color;
+      scrollbar-track-color: $background-color;
+    }
+  }
+
+  // success icon animation
+@mixin success-animation() {
+  svg {
+    animation: scale 2s ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+  }
+  
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    1% {
+      transform: scale(0);
+    }
+    20% {
+      transform: scale(0);
+    }
+    35% {
+      transform: scale(1.4);
+    }
+    40% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    65% {
+      transform: scale(1);
+    }
+    90% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

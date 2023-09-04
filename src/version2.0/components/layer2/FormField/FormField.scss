@@ -1,0 +1,109 @@
+.form-data {
+	width: 700px;
+	height: 580px;
+	overflow-y: auto;
+}
+.form-header {
+	width: 100%;
+	border: 2px solid #717171;
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+	background-color: #717171;
+}
+.cross-icon {
+	color: #fab144;
+}
+.formFieldInfo {
+	display: grid;
+	grid-template-columns: repeat(3, 2fr);
+	grid-auto-rows: 60px;
+	gap: 15px;
+	width: 100%;
+}
+.form-fields-container {
+	padding: 3%;
+}
+.constraint {
+	order: -2;
+}
+.created-by {
+	order: -1;
+	padding: 2px;
+	background-color: #717171;
+	display: flex;
+	justify-content: center;
+	align-self: baseline;
+}
+.created-on {
+	order: -1;
+	padding: 2px;
+	background-color: #717171;
+	display: flex;
+	justify-content: center;
+	align-self: baseline;
+}
+.status {
+	order: -1;
+	padding: 2px;
+	background-color: #717171;
+	display: flex;
+	justify-content: center;
+	align-self: baseline;
+}
+.form-sub-fields {
+	margin-top: 50px;
+}
+
+.label {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 24px;
+	color: #ffffff;
+}
+.value {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 24px;
+	color: #c6c6c6;
+}
+
+.link-top-border {
+	border: 0.5px solid rgba(255, 168, 13, 0.4);
+	margin-bottom: 30px;
+}
+
+.link-item {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 5px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+	width: 25%;
+}
+.link-item p {
+	color: #fab144;
+	border-bottom: 2px solid #fab144;
+	font-family: 'Poppins';
+	line-height: 24px;
+	font-weight: 500;
+}
+.pin-icon {
+	color: #fab144;
+	align-self: center;
+}
+.links-container-item-row-2 {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.links-container-item-row-1 {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}

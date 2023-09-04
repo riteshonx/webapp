@@ -1,0 +1,94 @@
+.templateField{
+    padding:  5px 75px 0 75px;
+    display: flex;
+    flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0px;
+            overflow-y: auto;
+    &__dropzone{
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__body{
+        align-content: flex-start;
+        &__box{
+            padding: 15px 10px 15px 10px;
+            background-color: #fff;
+            overflow: auto;
+            position: relative;
+            border-radius: 4px;
+            margin: 2px 0;
+            box-shadow: 0 1px 2px #f2f2f2;
+            &__label{
+                font-size: 1.4rem;
+                font-weight: 600;
+                height: 30px;
+                &__fixed{
+                    font-size: 1rem;
+                    font-weight: 600;
+                    padding: 4px;
+                    margin: 4px;
+                    background: #f4f4f4;
+                    border-radius: 4px;
+                }
+                &__required{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+                &__error{
+                    font-size: 1rem;
+                    color: red;
+                }
+            }
+            &__element{
+                width: 100%;
+            }
+        }
+        &__tablebox{
+            padding: 10px 1px 20px 20px;
+            background-color: #fff;
+            overflow: hidden;
+            position: relative;
+            border-radius: 4px;
+            margin: 2px 0;
+            box-shadow: 0 1px 2px #f2f2f2;
+            &__label{
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin: 10px 0;
+                &__fixed{
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+                &__required{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+        }
+            
+        &__to {
+            transform: scaleX(0);
+            background-color: #ddd;
+        }
+        &__tobackground{
+            background: #f7f7f7;
+            border: 1px dashed #c2c2c2;
+        }
+        &__from{
+            background: #f7f7f7;
+        }
+        &__selected{
+            background: #c2c2c226;
+        }
+    }
+   
+          
+}
+
+[draggable="true"] {
+    cursor: move;
+}

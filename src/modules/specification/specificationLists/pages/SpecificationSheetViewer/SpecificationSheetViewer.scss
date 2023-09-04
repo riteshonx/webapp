@@ -1,0 +1,25 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.spec-PDFviewer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  &__main {
+    display: grid;
+    grid-template-columns: 350px auto;
+    height: 100%;
+  }
+}
+
+.spec-noViewPermOrPleaseWait {
+  @include flexCenter(center);
+  flex-wrap: wrap;
+  margin: 10px 0px;
+  height: 80vh;
+  width: 95%;
+  font-size: 1.4rem;
+}

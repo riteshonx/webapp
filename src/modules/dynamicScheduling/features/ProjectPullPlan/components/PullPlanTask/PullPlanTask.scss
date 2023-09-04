@@ -1,0 +1,213 @@
+.PullPlanTask {
+  display: flex;
+  flex-direction: column;
+  height: 176px;
+  width: 175px;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 1rem;
+  &.task {
+    background: #e5f0f0;
+  }
+  &.work_package {
+    background: #c8e9f3;
+  }
+  &.wbs {
+    background: #e0e5fb;
+  }
+  &.project_phase {
+    background: #d7f1e0;
+  }
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    &__task {
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      font-size: 1.1rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    .task {
+      background: #d5e3e3;
+      border: 1px solid #668a95;
+      box-sizing: border-box;
+      border-radius: 4px;
+      color: #668a95;
+    }
+    .work_package {
+      background: #8ac1d2;
+      color: #fff;
+    }
+    .wbs {
+      background: #556cd6;
+      color: #fff;
+    }
+    .project_phase {
+      background: #5ebd7e;
+      color: #fff;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    &__title {
+      font-size: 12px;
+      font-weight: 600;
+      &__input {
+        .MuiInputBase-input {
+          font-size: 1rem;
+        }
+        .MuiInput-underline:before,
+        .MuiInput-underline:after,
+        .MuiInput-underline:hover:not(.Mui-disabled):before {
+          border-bottom: none;
+        }
+      }
+    }
+    &__time {
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      &__input {
+        .MuiInputBase-input {
+          font-size: 1rem;
+        }
+        &.MuiFormControl-marginNormal {
+          margin-top: 6px;
+          margin-bottom: 4px;
+        }
+      }
+    }
+    &__description {
+      font-size: 1rem;
+      word-break: break-word;
+      &__input {
+        width: 100%;
+        .MuiInputBase-input {
+          font-size: 1rem;
+        }
+        .MuiInput-underline:before,
+        .MuiInput-underline:after,
+        .MuiInput-underline:hover:not(.Mui-disabled):before {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  &__action {
+    display: flex;
+    justify-content: flex-end;
+    &__btn {
+      padding: 0.5rem;
+      &__icon {
+        font-size: 1.6rem;
+        &.task {
+          color: #668a95;
+        }
+        &.work_package {
+          color: #8ac1d2;
+        }
+        &.wbs {
+          color: #556cd6;
+        }
+        &.project_phase {
+          color: #5ebd7e;
+        }
+      }
+    }
+  }
+}
+
+.PullPlanMileStoneTask {
+  height: 176px;
+  width: 175px;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    height: 126px;
+    width: 125px;
+    transform: rotate(45deg);
+    background-color: #ffd1b4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__content {
+      transform: rotate(-45deg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__task {
+          transform: rotate(45deg);
+          height: 15px;
+          width: 15px;
+          background: #000;
+        }
+      }
+      &__body {
+        flex-grow: 1;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
+        &__title {
+          font-size: 1.3rem;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+          &__input {
+            width: 75%;
+            .MuiInputBase-input {
+              font-size: 1rem;
+              text-align: center;
+            }
+            .MuiInput-underline:before,
+            .MuiInput-underline:after,
+            .MuiInput-underline:hover:not(.Mui-disabled):before {
+              border-bottom: none;
+            }
+          }
+        }
+        &__description {
+          font-size: 1rem;
+          text-align: center;
+          word-break: break-word;
+          &__input {
+            width: 80%;
+            .MuiInputBase-input {
+              font-size: 1rem;
+              text-align: center;
+            }
+            .MuiInput-underline:before,
+            .MuiInput-underline:after,
+            .MuiInput-underline:hover:not(.Mui-disabled):before {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+      &__action {
+        display: flex;
+        justify-content: flex-end;
+        &__btn {
+          padding: 0.5rem;
+          &__icon {
+            font-size: 1.6rem;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

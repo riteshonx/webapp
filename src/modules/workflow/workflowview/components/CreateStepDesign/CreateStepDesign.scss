@@ -1,0 +1,117 @@
+@import "../../../../../assets/onx/variable";
+
+.createStepDesign__main {
+  padding: 2rem 1.5rem;
+  min-width: 30rem;
+  min-height: 12rem;
+  &__addedText {
+    padding: 3.8rem 1.5rem;
+  }
+  &:hover &__deleteContainer {
+    display: block;
+  }
+  &__iconButton {
+    padding: 0.7rem;
+    &:hover {
+      color: #000000 !important;
+    }
+  }
+
+  &__deleteIcon {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &__deleteContainer {
+    display: none;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    cursor: pointer;
+    z-index: 1;
+  }
+  &__stepTypeContainer {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    padding: 1rem;
+  }
+  &__stepType {
+    &__text1 {
+      background: #a077c0;
+    }
+    &__text2 {
+      background: #8bc097;
+      &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.2rem;
+      }
+    }
+    border-radius: 4px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 0.2rem 0.5rem;
+  }
+  &__addedStepName {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #000000;
+    max-width: 27rem !important;
+    overflow-wrap: break-word !important;
+  }
+  &__stepName {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 0.1rem;
+  }
+  &__formControl {
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+
+    &__checkbox {
+      margin: 0 0.5rem 0 0 !important;
+      padding: 0 !important;
+    }
+    &__label {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+      color: #000000;
+    }
+  }
+  &__buttonContainer {
+    &__button1 {
+      @include button(#000000, #ffffff);
+      border: 1px solid #666666;
+      margin-right: 1rem;
+      padding: 1.4rem 2.5rem !important;
+      &:hover {
+        color: #ffffff;
+        background-color: #666666;
+      }
+    }
+    &__button2 {
+      @include button(#ffffff, #666666);
+      padding: 1.4rem 2.5rem !important;
+      color: #ffffff !important;
+      &:hover {
+        color: #000000 !important;
+      }
+      &__disabled {
+        opacity: 0.5 !important;
+      }
+    }
+  }
+}

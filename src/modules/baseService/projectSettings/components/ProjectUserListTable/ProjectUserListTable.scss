@@ -1,0 +1,168 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+ .ProjectUserListTable{
+    &__root{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        height: 100%;
+        & .MuiPaper-elevation1{
+            box-shadow: none;
+        }
+        .nodata{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            
+        }
+    }
+    &__container{
+        height: 100%;
+        width: 100%;
+        flex-grow: 1;
+        padding: 0 1px;
+        overflow: auto;
+    }
+
+    &__paper{
+        width: 100%;
+        margin-bottom: 0;
+        display: flex;
+        flex: 1 1 0;
+        overflow-y: auto;
+    }
+
+    &__visuallyHidden{
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        top: 20px;
+        width: 1px;
+    }
+    &__actioncell{
+        float: right;
+        font-size:1.2rem;
+        color: #333333;
+        padding: 4px 16px !important;
+        height: 50px;
+        width: 100%;
+        &__namefield{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__icon{
+                font-size: 1.4rem;
+            }
+        }
+    }
+    &__cell{
+        font-size:1.2rem;
+        color: #333333;
+        padding: 0;
+        height: 50px;
+        &__namefield{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__icon{
+                font-size: 1.4rem;
+            }
+        }
+        &__company{
+            font-size:1.2rem;
+            color: #333333;
+            padding: 5px 0px;
+            height: 50px;
+            width:33%
+        }
+    }
+    &__headecell{
+        font-size:1.2rem;
+        color: #333333;
+        font-weight: 600;
+        padding:0px;
+    }
+    &__headecelllast{
+        font-size:1.2rem;
+        color: #333333;
+        font-weight: 600;
+        padding:0px;
+        //padding-right: 35px;
+    }
+    &__cellicon{
+        font-size:1.8rem;
+        cursor: pointer;
+        color: #B0B0B0;
+    }
+    &__checkbox{
+        padding:0px;
+    }
+    &__row{
+        cursor: pointer;
+        &:hover{
+            background-color: #c8c8c842;
+        }
+        &__nodata{
+            text-align:center !important;
+            color: #c2c2c2;
+        }
+        &__addRole{
+            background: #c2c2c2;
+            text-align: left;
+            position: relative;
+            padding: 25px;
+            &__icon{
+                position: absolute;
+                top: 15px;
+                left: 10px;
+            }
+            &__text{
+                position: absolute;
+                left: 40px;
+                top: 18px;
+            }
+        }
+    }
+ }
+
+ .no-permission{
+    @include flexCenter(center);
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    height: 60vh;
+    width: 100%;
+    font-size: 1rem;
+ }
+
+ .userSelect{
+    &__parent{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 0.5rem;
+            &__icon{
+                width: 2.6rem !important;
+                height: 2.6rem !important;
+                font-size: 1.2rem !important;
+                background: #F1F1F1 !important;
+                color: #949494 !important;
+                margin-right: 0.5rem;
+                }
+                &__label{
+                display: flex;
+                flex-direction: column;
+                    &__name{
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        text-align: left;
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }

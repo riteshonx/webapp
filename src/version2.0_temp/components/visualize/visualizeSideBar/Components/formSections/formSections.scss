@@ -1,0 +1,402 @@
+@import 'src/version2.0_temp/assets/styles/colors.scss';
+
+.v2-visualize {
+  @include color-sections(false);
+
+  &.classic-colors {
+    @include color-sections(true);
+
+    & .v2-visualize-formsection {
+      border-left: 1px solid $vis-color-3;
+    }
+  }
+
+  &-formsection {
+    grid-area: visualizeForms;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &-header {
+      height: 35px;
+      display: flex;
+      align-items: center;
+
+      & .MuiBottomNavigation-root {
+        height: 35px;
+        width: 100%;
+        background-color: $vis-color-1;
+      }
+
+      & .MuiBottomNavigationAction-root {
+        max-width: none;
+        color: $vis-font-color !important;
+
+        &.Mui-selected {
+          background-color: $vis-color-3;
+          color: $vis-color-1 !important;
+        }
+      }
+
+      & .MuiBottomNavigationAction-label {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+      }
+    }
+
+    &-content {
+      background-color: $vis-color-2;
+      height: calc(100% - 35px);
+      overflow: hidden;
+      position: relative;
+    }
+  }
+
+  &-formTabs {
+    height: 100%;
+    overflow: hidden;
+
+    &-hide {
+      display: none;
+    }
+
+    & .MuiTabs-root,
+    .MuiTab-root {
+      min-height: 36px;
+      height: 36px;
+    }
+
+    & .MuiTab-wrapper {
+      text-transform: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    & .MuiTabs-indicator {
+      background-color: $vis-color-3;
+      height: 1px;
+    }
+
+    & .Mui-selected {
+      color: $vis-color-3;
+      border-bottom: none;
+    }
+
+    & .MuiButtonBase-root {
+      border-bottom: 1px solid $vis-color-1;
+    }
+
+    & .MuiTabPanel-root {
+      padding: 0 5px;
+      height: calc(100% - 109px);
+      overflow: auto;
+
+      @media screen and (max-width: 1364px) {
+        height: calc(100% - 126px);
+      }
+
+      &.issue-tab {
+        height: calc(100% - 113px);
+
+        @media screen and (max-width: 1364px) {
+          height: calc(100% - 130px);
+        }
+      }
+    }
+
+  }
+
+  &-formTypeSelector {
+    padding: 10px 10px 5px;
+
+    .dropdown-button {
+      border: 1px solid $vis-color-3;
+      border-radius: 4px;
+      padding: 7px 14px 6px 7px;
+
+      & .MuiButton-label {
+        color: $vis-color-3;
+        font-weight: 400;
+        font-size: 14px;
+        justify-content: space-between;
+        text-transform: none;
+        line-height: 21px;
+      }
+    }
+
+    &-dropdown-content {
+      & .MuiPaper-root {
+        color: $vis-font-color;
+        background-color: $vis-color-2;
+        border: 1px solid $vis-color-3;
+        border-top: .5px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13px;
+        height: auto;
+        max-height: calc(100vh - 215px);
+
+        & .checkbox-container {
+          border-bottom: .5px solid $vis-color-3;
+          padding: 9px;
+          display: flex;
+          align-items: center;
+          text-transform: capitalize;
+
+          // &:last-of-type {
+          //   border-bottom: none;
+          // }
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &.subType {
+            padding-left: 30px;
+          }
+
+          &.lastChildType {
+            padding-left: 60px;
+          }
+
+          input[type="checkbox"] {
+            display: none;
+            margin-right: 9px;
+
+            &+span:first-of-type {
+              display: block;
+              height: 13px;
+              width: 13px;
+              outline: .5px solid $vis-border-color;
+              margin-right: 9px;
+
+              &:focus {
+                height: 16px;
+                width: 16px;
+              }
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          input[type="checkbox"]:checked {
+            display: block;
+            accent-color: $vis-color-2;
+            outline: .5px solid $vis-border-color;
+
+            &+span:first-of-type {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-formList {
+    .formPagination {
+      position: sticky;
+      bottom: 0;
+      background: $vis-color-2;
+      width: 100%;
+      padding: 10px 0 15px;
+      user-select: none;
+
+      & .MuiPaginationItem-icon {
+        font-size: 12px;
+      }
+
+      & .MuiPaginationItem-root {
+        font-size: 12px;
+        height: 30px;
+        min-width: 30px;
+        color: $vis-font-color;
+        border-color: $WHITE;
+
+        &.Mui-selected {
+          color: $vis-color-3;
+          border-color: $vis-color-3;
+        }
+      }
+    }
+
+    .formMessage {
+      padding: 10px 5px;
+    }
+  }
+
+  &-formListItem {
+    border: 0.5px solid $vis-border-color-1;
+    border-radius: 4px;
+    margin: 5px 0 10px 5px;
+    padding-bottom: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .details-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 400;
+      font-size: 14px;
+      padding: 5px;
+      word-break: break-all;
+
+      &.title {
+        color: $vis-color-3;
+        border-bottom: 0.5px solid $vis-border-color-1;
+        font-weight: 500;
+        word-break: break-word;
+      }
+
+      & .idSection {
+        min-width: 70px;
+        margin-left: 10px;
+        text-align: right;
+      }
+
+      & .formStatus {
+        text-transform: capitalize;
+      }
+
+      & .open {
+        color: $OVERDUE;
+      }
+
+      & .draft {
+        color: $vis-font-color;
+      }
+
+      & .overdue {
+        color: $OVERDUE;
+      }
+
+      & .closed {
+        color: $CLOSED;
+      }
+
+      & .notFound {
+        color: $vis-font-color;
+      }
+
+      & .ready {
+        color: $READY;
+      }
+
+    }
+  }
+
+  &-formDetailpage {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    background: $vis-color-2;
+    height: 100%;
+    width: 100%;
+    padding: 4px 5px;
+    font-weight: 400;
+    font-size: 14px;
+
+    &-header {
+      padding: 0 12px;
+      border-bottom: 1px solid #bebebe80;
+
+      &-item {
+        padding: 10px 0;
+        justify-content: space-between;
+      }
+
+      .title {
+        font-weight: 600;
+      }
+
+      .openFormExternalButtonContainer {
+        display: flex;
+        align-items: center;
+        color: $vis-color-3;
+        cursor: pointer;
+        svg {
+          margin-right: 3px;
+        }
+      }
+
+      .status-circle {
+        border: 5px solid;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-right: 6px;
+      }
+
+      & .formStatus {
+        text-transform: capitalize;
+      }
+
+      & .open {
+        color: $OVERDUE;
+        border-color: $OVERDUE;
+      }
+
+      & .draft {
+        color: $vis-font-color;
+        border-color: $WHITE;
+      }
+
+      & .overdue {
+        color: $OVERDUE;
+        border-color: $OVERDUE;
+      }
+
+      & .closed {
+        color: $CLOSED;
+        border-color: $CLOSED;
+      }
+
+      & .notFound {
+        color: $vis-font-color;
+        border-color: $WHITE;
+      }
+
+      & .ready {
+        color: $READY;
+        border-color: $READY;
+      }
+    }
+
+    &-content {
+      padding: 9px 12px;
+      border-bottom: 1px solid $vis-color-3;
+      line-height: 18px;
+      word-break: break-all;
+      overflow-y: auto;
+      max-height: calc(100% -121px);
+
+      &-item {
+        padding: 5px 0;
+
+        &.description {
+          word-break: break-word;
+        }
+      }
+    }
+
+  }
+
+  &-backButtonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    & .text {
+      font-size: 14px;
+      margin-left: -5px;
+    }
+  }
+}

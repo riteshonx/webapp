@@ -1,0 +1,54 @@
+@import '../../../../assets/styles/colors.scss';
+
+.v2-dailylog-popover {
+  min-width: 700px;
+  min-height: 250px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid $SLATE-BORDER-PRIMARY;
+  }
+
+  &-wrapper {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-table {
+    border-collapse: collapse;
+    width: 95%;
+    border: 1px solid $SLATE-V2-3;
+
+    &-head {
+      border: 1px solid$SLATE-V2-3
+    }
+
+    tr td:not(:last-child),
+    tr th:not(:last-child) {
+      border-right: 1px solid$SLATE-V2-3;
+    }
+
+    td {
+      padding: 10px;
+      border: 1px solid $SLATE-V2-3;
+    }
+
+    th {
+      padding: 10px;
+    }
+  }
+
+  &-pending {
+    align-self: start;
+    padding: 10px;
+    margin-left: 5px;
+  }
+}

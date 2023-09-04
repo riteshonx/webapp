@@ -1,0 +1,86 @@
+@import './vars';
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600&family=Montserrat&family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+.fh {
+  height: 100%;
+}
+.cdp {
+  height: 100%;
+  font-family: 'Archivo', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: var(--black);
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(183, 183, 183);
+  }
+  & *:focus {
+    outline: none;
+    border: 1px solid var(--turquoise);
+  }
+}
+
+button.cdp-btn {
+  font-size: 1em;
+  padding: 0.65em 1em;
+  background-color: var(--turquoise);
+  color: var(--black);
+  border: 0px solid;
+  border-radius: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: var(--gray-50);
+  }
+  &:active {
+    box-shadow: inset -2px -2px 2px var(--gray-100), inset 2px 2px 2px var(--white);
+  }
+}
+
+.cdp-input-group {
+  margin-bottom: 24px;
+  & label {
+    font-size: 11px;
+    color: var(--white);
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  &.imp label {
+    &::after {
+      content: "*";
+      font-size: 13px;
+      margin-left: 2px;
+      color: var(--red);
+    }
+  }
+  & input, & select, & textarea {
+    background-color: var(--black);
+    font-size: 12px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 0 solid;
+    width: 100%;
+    color: var(--white);
+    font-weight: 400;
+    &:focus {
+      outline: none;
+      border: 1px solid var(--turquoise)
+    }
+    &[type="checkbox"], &[type="radio"] {
+      width: auto;
+      margin-right: 6px;
+    }
+  }
+  &--radio {
+    display: flex;
+    border-bottom: 4px;
+    color: var(--white)
+  }
+}

@@ -1,0 +1,57 @@
+@import "../../../../assets/onx/variable";
+@import "../../../../assets/onx/abstracts/mixins";
+
+.successDialog {
+  &__parent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  &__editBox{
+    padding : 30px
+  }
+  &__avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 8px;
+    margin-top: 20px;
+  }
+  &__title {
+    padding-top: 20px;
+  }
+  &__worthy {
+    padding-top: 20px;
+  }
+  &__soundsGood {
+    border: 1px solid gray;
+    width: 130;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: none;
+  }
+  ////
+  &__success {
+    height: 100%;
+    @include flexCenter(center);
+
+    &__box {
+      @include flexCenter(center);
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background: #c4c4c4;
+      margin: 0 auto;
+      @include success-animation();
+    }
+
+    &__text {
+      // @extend .dialog__header__text;
+      margin-top: 10px;
+    }
+}
+
+}

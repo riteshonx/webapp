@@ -1,0 +1,73 @@
+.actionButtonHero {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rebeccapurple;
+    box-shadow: 0 0 10px 2px rgb(226, 226, 226);
+  }
+}
+.actionButtonContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  position: sticky;
+  background-color: rgb(255, 255, 255);
+  padding: 3rem;
+  border-radius: 0 0 8px 8px;
+  &_button {
+    padding: 1rem 2rem;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    margin: 0 0.5rem;
+    &:hover {
+      cursor: pointer;
+    }
+    &_progress {
+      min-width: 75px;
+      color: white;
+      background-color: #303030;
+      &:hover {
+        background-color: #0f0f0f;
+      }
+    }
+    &_cancel {
+      background-color: rgb(240, 240, 240);
+      color: #303030;
+      &:hover {
+        background-color: rgb(221, 221, 221);
+      }
+    }
+  }
+
+  &_submittingAnimation {
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.with_action_button_disabled {
+  &:hover {
+    background-color: #303030;
+    cursor: not-allowed;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slateDashboard{
+  &__actionButtonContainer{
+    background-color: #171d25;
+    border-top: 2px solid #fe9a0b;
+
+  }
+  &__actionButtonHero{
+    &::before{
+      box-shadow: none;
+      border-top: 2px solid #fe9a0b;
+    }
+  }
+}

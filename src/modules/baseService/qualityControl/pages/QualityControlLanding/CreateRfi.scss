@@ -1,0 +1,181 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.create-wrapper {
+  width: 100%;
+  position: relative;
+
+  &__workflow-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 100;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.create-nav {
+  @include flexCenter(space-between);
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  box-shadow: 0px 2px 4px #9e989869;
+  margin-bottom: 10px;
+  &__action {
+    @include flexCenter(flex-end);
+    font-weight: 600;
+
+    &__followers {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    &__workFLow {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+      text-transform: none;
+      &__icon {
+        font-size: 18px;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+.rfi-form {
+  height: calc(100vh - 180px);
+  overflow-y: auto;
+  padding: 0px 20px 20px 20px;
+  margin: 10px auto;
+  max-width: 900px;
+
+  &__form-container {
+    &__field {
+      padding: 2px 20px;
+      margin: 5px 0px;
+      position: relative;
+      &__clear {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+      &__impact {
+        .MuiFormGroup-root {
+          flex-direction: row !important;
+        }
+        &__inputs {
+          display: flex;
+          align-items: center;
+          &__label {
+            font-size: 1.4rem;
+            margin-left: 2rem;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .MuiInputLabel-root {
+        margin: 0px 0px 8px 0px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #000000;
+      }
+      .MuiOutlinedInput-input,
+      .MuiSelect-outlined {
+        padding: 10px 14px;
+        font-size: 1.3rem;
+        line-height: 16px;
+        background: #f8f8f8;
+      }
+      .MuiAutocomplete-inputRoot {
+        // display: none;
+        max-width: 100%;
+      }
+
+      .MuiOutlinedInput-multiline {
+        padding: 0px;
+      }
+    }
+  }
+
+  &__form-action {
+    @include flexCenter(flex-end);
+    padding: 0px 20px;
+
+    .rfi-primary {
+      margin-left: 10px;
+      color: $onx-white;
+      background: $onx-primary;
+    }
+
+    .rfi-primary:disabled {
+      background: none;
+      color: lightgray;
+    }
+  }
+}
+
+.error-wrap {
+  color: $onx-red;
+  height: 18px;
+  font-size: 1.2rem;
+  position: relative;
+  top: 3px;
+
+  &__message {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
+  }
+}
+
+.date-time-picker {
+  .MuiFormHelperText-root.Mui-error {
+    color: #ff0000;
+    height: 18px;
+    font-size: 1rem !important;
+    position: relative;
+    top: -2px;
+    font-family: "$font-family";
+    right: 13px;
+  }
+}
+
+.form-radio {
+  .MuiTypography-body1 {
+    font-weight: 400 !important;
+  }
+}
+
+.draft-btn {
+  margin-left: 10px;
+}
+
+.noCreatePermission {
+  width: 100%;
+  padding: 10px;
+
+  .no-permission {
+    @include flexCenter(center);
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    height: 60vh;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .rfi-form {
+    max-width: 1000px;
+    margin: 0px auto;
+  }
+}

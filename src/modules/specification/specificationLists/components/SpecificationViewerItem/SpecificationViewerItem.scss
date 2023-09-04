@@ -1,0 +1,17 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.specificationLists {
+  max-height: calc(100vh - 325px);
+  overflow-y: auto;
+
+  &__item {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  &__item-active {
+    background: #f5f5f5;
+    font-weight: 600;
+  }
+}

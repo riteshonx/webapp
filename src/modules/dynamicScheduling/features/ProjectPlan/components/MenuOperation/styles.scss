@@ -1,0 +1,29 @@
+.published{
+    &__assignee{
+        &__dialog{
+            width: 375px;
+            &__title {
+                font-size: 1.75rem;
+                padding: 2px 2px 2px 24px;
+            }
+            &__content{
+                &__text {
+                    font-size: 1.25rem;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;
+                    word-break: break-all;
+                }
+                &__list__width { 
+                     width: 260px,
+                }   
+            }
+        }
+    }
+}
+
+
+.btn-primary{
+    font-size: 1.32rem !important;
+}

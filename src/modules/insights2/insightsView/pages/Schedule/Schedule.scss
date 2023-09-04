@@ -1,0 +1,64 @@
+
+.v2-schedule {
+  height: calc(100vh - 240px);
+  &-nav {
+    display: flex;
+    align-items: center;
+
+    &__search {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 4px;
+      margin-right: 20px;
+
+      label {
+        line-height: 1;
+
+        svg {
+          width: 15px;
+          height: 15px;
+          margin: 12px 8px 8px 14px;
+          fill: #ffffff;
+        }
+      }
+
+      input {
+        font-size: 12px;
+        padding: 8px 0;
+        flex-grow: 1;
+        border: none;
+        background-color: transparent;
+        color: #ffffff;
+
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: #eaeaea;
+        }
+      }
+    }
+  }
+  &-container {
+    display: flex;
+    margin-top: 10px;
+    height: calc(100% - 40px);
+    &-card {
+      width: 30%;
+      min-width: 300px;
+      height: 100%;
+      overflow: auto;
+    }
+    &-detail {
+      margin-left: 20px;
+      width: 70%;
+      border: 1px solid rgba(255,255,255, 0.4);;
+      height: 100%;
+      overflow: auto;
+    }
+  }
+}

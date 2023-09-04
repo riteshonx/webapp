@@ -1,0 +1,39 @@
+@import '../../../../../../assets/onx/variable';
+.timeLineScale{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+
+    .rc-slider {
+        width: 200px;
+        margin: 0 10px;
+        padding: 3px 0;
+
+        .rc-slider-handle {
+            border: 2px solid #C4C4C4;
+            margin-top: -3px;
+        }
+
+        .rc-slider-track {
+            background-color: #C4C4C4;
+            height: 8px;
+        }
+
+        .rc-slider-rail{
+            background-color: #C4C4C4;
+            height: 8px;
+        }
+    }
+    
+    .seletedScale {
+        margin-left: 20px;
+        color: #68736F;
+    }
+
+    .zoomIcons {
+        color: #68736F;
+        cursor: pointer;
+    }
+}

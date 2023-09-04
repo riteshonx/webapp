@@ -1,0 +1,156 @@
+.documentUpdateView {
+  &__iconButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &__mainContainer {
+    display: flex;
+    flex: 1;
+    &__imageContainer {
+      display: flex;
+      flex: 10;
+      align-items: center;
+      justify-content: center;
+      background-color: darkgrey;
+      &__image {
+        width: 100%;
+        display: flex;
+        flex: 1;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &__doc {
+        font-size: 15rem;
+        color: grey;
+        flex: 1;
+      }
+    }
+    &__buttonContainer {
+      display: flex;
+      position: absolute;
+      flex-direction: row;
+      z-index: 1;
+      bottom: 0;
+      right: 0;
+      margin: 1rem;
+      &__button {
+        color: #fff;
+        background-color: #0d444b;
+        padding: 1rem;
+        margin-right: 0.7rem;
+        &:hover {
+          background-color: #0d444b;
+        }
+        &__icon {
+          font-size: 2.2rem;
+        }
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // &__icon {
+        //   font-size: 1.6rem;
+        //   margin-right: 0.5rem;
+        //   color: #fff;
+        // }
+        // &__clearIcon {
+        //   font-size: 1.6rem;
+        //   margin-right: 0.5rem;
+        //   color: #000;
+        // }
+      }
+    }
+
+    &__detailsContainer {
+      visibility: hidden;
+      width: 0%;
+      &__dashboardCheck {
+        .MuiTypography-body1 {
+          font-size: 1.4rem;
+        }
+      }
+      &__show {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        padding: 4rem;
+        margin-top: 2rem;
+        visibility: visible;
+        &__nonEditable {
+          pointer-events: none;
+        }
+
+        &__text {
+          width: 100%;
+          z-index: 1;
+          margin-bottom: 1rem;
+          text-align: left;
+          &__label {
+            margin: 0 0 4px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #000;
+          }
+          .MuiOutlinedInput-input {
+            padding: 10px 14px;
+            font-size: 1.2rem;
+          }
+          .MuiOutlinedInput-multiline {
+            padding: 0px;
+          }
+          &__fixed {
+            // color: #fff;
+            // background: #c2c2c230;
+            .MuiOutlinedInput-input {
+              // color: #000000;
+            }
+          }
+          &__customListSelect {
+            width: 100%;
+            .MuiOutlinedInput-input {
+              padding: 9px 14px;
+              font-size: 1.2rem;
+            }
+            &__fixed {
+              color: #fff;
+              // background: #c2c2c230;
+              .MuiOutlinedInput-input {
+                // color: #000000;
+              }
+            }
+            .mat-menu-item-sm {
+              font-size: 1.2rem !important;
+              &
+                .MuiTypography-root.MuiListItemText-primary.MuiTypography-body1.MuiTypography-displayBlock {
+                font-size: 1.2rem !important;
+              }
+            }
+          }
+        }
+        &__uploadDetails {
+          text-align: left;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          opacity: 0.6;
+          &__upload {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+          }
+          &__text {
+            font-size: 1.4rem;
+            color: #000;
+            margin-left: 0.1rem;
+            max-width: 9rem;
+          }
+        }
+      }
+    }
+  }
+}

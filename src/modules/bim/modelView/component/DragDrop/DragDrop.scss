@@ -1,0 +1,49 @@
+@import '../../../../../assets/onx/variable';
+
+.bimDragDrop {
+    height: 100%;
+    align-items: center;
+    display: grid;
+
+
+    .title {
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 56px;
+        padding-bottom: 30px
+    }
+
+    .dropZone {
+        @include flexCenter(center);
+        background: linear-gradient(132.77deg, #FCFCFC 11.98%, #F1F1F1 111.18%);
+        border: 2px dashed #505050;
+        box-sizing: border-box;
+        border-radius: 4px;
+        height: 43vh;
+        width: 37.5vw;
+        text-align: center;
+        margin: auto;
+
+        .dragText {
+            padding-top: 16px;
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 36px;
+        }
+
+        .uploadButton {
+            padding: 8px 63.5px;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            border-radius: 6px;
+            margin-bottom: 6px !important;
+        }
+    }
+
+    .alert {
+        margin: 15px auto;
+        width: 37.5vw;
+    }
+}

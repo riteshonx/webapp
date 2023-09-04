@@ -1,0 +1,10 @@
+@import '../../../../../../assets/onx/variable';
+
+.critical-path {
+  .active {
+    background-color: $onx-A7 !important;
+  }
+  &-button {
+    min-width: 36px !important;
+  }
+}

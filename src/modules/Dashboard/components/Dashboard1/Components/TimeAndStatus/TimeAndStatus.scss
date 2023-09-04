@@ -1,0 +1,141 @@
+.timeandstatus-container {
+  position: relative;
+  height: 27rem;
+  background-color: rgb(255, 255, 255);
+  min-width: 35rem;
+  width: 35rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  background-image: url("../../../../../../assets/images/Productivity.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 116%;
+  padding: 1.5rem 2rem 2rem;
+  margin-right: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  &__heading {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    &__count {
+      padding: 0 1rem;
+      background-color: #424242;
+      margin-left: 0.5rem;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+  }
+  &__chart-container {
+    display: flex;
+    height: 155px;
+    justify-content: center;
+    &__donut {
+      position: relative;
+      width: 140px;
+      margin-top: 3.5rem;
+      .donutchart-arcs-path {
+        opacity: 1;
+      }
+      &__key {
+        font-size: 0.95rem;
+      }
+      &__val {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      &__wp-total {
+        position: absolute;
+        top: 34%;
+        left: 25%;
+        font-weight: bold;
+        font-size: 1rem;
+        align-items: center;
+        display: flex;
+        text-align: center;
+      }
+      &__todo {
+        position: absolute;
+        top: 25%;
+        right: -17%;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: #ffff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      &__inprogress {
+        position: absolute;
+        top: -35%;
+        right: 30%;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: #ffff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      &__complete {
+        position: absolute;
+        top: 25%;
+        left: -30%;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: #ffff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+  }
+  &__legend-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1.2rem;
+    &__text {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
+    &__todo {
+      font-size: 1.5rem;
+      color: #105c6b;
+    }
+    &__inprogress {
+      font-size: 1.5rem;
+      color: #eec644;
+    }
+    &__complete {
+      font-size: 1.5rem;
+      color: #ef7753;
+    }
+  }
+  .donutchart-innertext {
+    .donutchart-innertext-label {
+      display: none !important;
+    }
+    .donutchart-innertext-value {
+      display: none !important;
+    }
+  }
+}

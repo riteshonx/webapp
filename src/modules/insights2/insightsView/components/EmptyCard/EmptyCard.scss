@@ -1,0 +1,18 @@
+@import '../../../styles/colors.scss';
+
+.v2-emptyCard {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__message {
+        background-color: transparent;
+        border: 1px dashed $SLATE-V2-3;
+        color: $SLATE-V2-3;
+        padding: 50px;
+        border-radius: 6px;
+        font-family: 12px;
+        text-align: center;
+    }
+}

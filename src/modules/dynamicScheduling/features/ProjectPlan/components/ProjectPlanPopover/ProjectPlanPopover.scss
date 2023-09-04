@@ -1,0 +1,97 @@
+@import '../../../../../../assets/onx/variable';
+
+.project-popover {
+  font-size: 10px;
+  color: rgba(59, 59, 59, 1);
+  min-width: 300px;
+
+  &__dates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 8px;
+
+    & span {
+      padding-left: 4px;
+      padding-right: 10px;
+      font-weight: 500;
+    }
+
+    & button {
+      font-size: 10px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+      border: 0 none;
+      background-color: $onx-primary;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+  }
+
+  &__assignee {
+    margin-bottom: 8px;
+
+    & span {
+      padding-left: 4px;
+      padding-right: 10px;
+      font-weight: 500;
+    }
+  }
+
+  &__detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 8px;
+
+    &__value {
+      font-weight: 500;
+      margin: 2px 0;
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+
+  &__constraints {
+    span {
+      padding-left: 4px;
+      padding-right: 10px;
+      font-weight: 500;
+    }
+  }
+
+  &__loading {
+    padding-top: 30px;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 30px;
+      width: 30px;
+      border: 4px solid $onx-primary;
+      border-bottom: 4px solid transparent;
+      animation: rotate 1s linear infinite;
+      border-radius: 50%;
+      margin: 0px auto;
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  &__error-message {
+    padding-top: 30px;
+    span {
+      margin: 0 auto;
+      font-size: 16px;
+    }
+  }
+  &__more-details {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,345 @@
+@import '../../../../../assets/onx/variable';
+
+.dvaTable {
+    width: 90%;
+    border: 1px solid #105C6B33;
+    position: absolute;
+    left: 112px;
+    top:125px;
+    .dvaTableHead {
+        background-color: #105C6B;
+        color: #F8F8F8;
+
+        th {
+            font-weight: bold;
+            background-color: #105C6B;
+            color: #F8F8F8;
+        }
+    }
+    tr:nth-child(odd){
+        background-color: #fff;
+    }
+
+    tr:nth-child(even){
+        background-color: #F1F1F1;
+    }
+
+    th, td {
+        border: 0;
+    }
+
+    dvaTableRow {
+        &.geybg {
+            background-color: #F8F8F8;
+        }
+    }
+
+    .fileNameCell {
+        display: flex;
+        align-items: center;
+        line-height: 1.8rem;
+
+        img {
+            padding-right: 8px;
+            width: 34px;
+            height: 34px;
+        }
+
+        .fileDetails{
+            color: #989898;
+            font-size: 1.2rem;
+            line-height: 10px;
+            .file-property{
+                margin-right: 5px;
+                border-left: 1px solid #cccccc;
+                .file-property-key{
+                    color: #8DA3C1;
+                    padding: 2px 5px;
+                }
+            }
+        }
+    }
+
+    dvaActions {
+        svg {
+            margin: 5px;
+        }
+
+        svg:hover {
+            cursor: pointer;
+        }
+    }
+
+    .steperCell {
+        padding: 16px 0 0 0;
+    }
+}
+
+dvaTableContainer {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    .ProjectDvaTablePagination {
+        position: sticky;
+        bottom: 0px;
+        z-index: 2;
+        background: white;
+      }
+}   
+
+.dva-dialog {
+      
+    .MuiDialog-paper {
+      overflow-y: hidden;
+    }
+      &__content {
+        &__fields {
+    
+          &__header {
+            font-weight: 600;
+          }
+    
+          .MuiGrid-item {
+            width: 300px;
+            padding: 0px 15px 0px 15px;
+          }
+    
+          .MuiFormLabel-root {
+            font-weight: 600;
+            line-height: 16px;
+            color: #000000;
+          }
+    
+          .MuiInput-root {
+            width: 100%;
+          }
+    
+          .MuiInputBase-input,
+          .MuiSelect-selectMenu {
+            font-size: 1.3rem;
+            color: #1f1f1f;
+          }
+    
+          &__select-box {
+            font-size: 1.3rem;
+            color: #1f1f1f;
+          }
+        }
+    
+        &__popUpBody {
+          padding: 20px;
+        }
+      }
+    
+      &__footer {
+        @include flexCenter(flex-end);
+        margin: 15px 0px;
+      }
+    }
+    .button-delete{
+      background: none;
+      border: none;
+      color: #D02F2F;
+      text-transform: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 20px;
+      left: 28px;
+      position: absolute;
+    }
+    .type-container{
+      position: relative;
+    }
+    
+    .tags {
+      display: grid;
+      grid-template-columns: 130px auto;
+    
+      &__action {
+        &__btn {
+          cursor: pointer;
+    
+          &__icon {
+            height: 20px;
+            margin-right: 2px;
+          }
+    
+          &__text {
+            position: relative;
+            top: 1px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 18px;
+          }
+        }
+    
+        &__btn:hover {
+          @include flexCenter(flex-start);
+          background: transparent;
+        }
+      }
+    
+      &__lists {
+        padding: 5px 10px;
+      }
+    }
+    
+    .popUpBody {
+      padding: 15px 20px;
+    }
+    
+    
+    .edit-icon {
+      position: relative;
+      top: 2px;
+      height: 20px;
+      margin-left: 0px;
+      color: #b0b0b0;
+      cursor: pointer;
+    }
+    
+    .editTask {
+      @include flexCenter(space-between);
+      flex-wrap: wrap;
+    
+      &__info {
+        @include flexCenter(flex-end);
+        color: #a1a1a1;
+        font-size: 1.2rem;
+    
+        &__wrap {
+          margin-left: 15px;
+        }
+    
+        &__header {
+          font-weight: 600;
+        }
+      }
+    }
+    
+    .error-wrap {
+      color: $onx-red;
+      height: 18px;
+      font-size: 1.2rem;
+      position: relative;
+      bottom: 5px;
+    
+      &__message {
+        padding: 0px;
+        margin: 0px;
+        font-size: 1rem;
+      }
+      &__message-small {
+        padding: 0px;
+        margin: 0px;
+        font-size: 0.9rem;
+      }
+    }
+
+      #dva-form-dialog-title {
+        background-color: #0D444B;
+        color:#FFF;
+        height: 55px;
+        width: 500px;
+      }
+  
+      .dva-manditory {
+        color:red;
+        padding-left: 5px;
+      }
+  
+
+      .dva-add-script-text-field {
+        box-sizing: border-box;
+        position: absolute;
+        width: 415px;
+        height: 35px;background: #FFFFFF;
+        border: 1px solid rgba(59, 59, 59, 0.4);
+      }
+
+       .dva-dialog__content {
+        width: 541 !important;
+        height: 400px;
+        overflow: none;
+        padding: 0px !important;
+      }
+
+      .dva-grid-input-label {
+        height:21px;
+        width:300px;
+      }
+    
+
+      .dva-dialog__footer {
+        bottom: 10px;
+        position: absolute;
+        left: 292px;
+      }
+      
+    
+
+      .upload-horizontal-line {
+        position: absolute;
+        width: 499px;
+        bottom: 62px;
+        height: 0px;
+        left: 1px;
+        border: 0.5px solid rgba(59, 59, 59, 0.5);
+        border: 0.5px solid #3B3B3B80
+      }
+    
+      .dva-dialog_content_upload_user-input {
+        position: absolute;
+        top: 127px;
+      }
+
+      .dva-dialog_content_upload_manufacturer {
+        position: absolute;
+        top: 197px;
+      }
+
+      .dva-dialog_content_upload_return-output {
+        position: absolute;
+        top: 267px;
+      }
+
+      .dva-dialog_content_upload_gh-file {
+        position: absolute;
+        top: 337px;
+      }
+
+      .dva-dialog-upload-file {
+        box-sizing: border-box;
+        position: absolute;
+        width: 414px;
+        height: 45px;
+        background: rgba(59, 59, 59, 0.1);
+        border: 1px dashed rgba(59, 59, 59, 0.4);
+        border-radius: 4px;
+      }
+
+      .dva-upload-btn-secondary {
+        position: absolute;
+        width: 100px;
+        height: 35px;
+        right: 56px;
+        border: 1px solid #0D444B;
+        text-transform: none !important;
+        top: 12px;
+
+      }
+
+      .dva-upload-btn-primary {
+        left: 61px;
+        height: 35px;
+        width: 100px;
+        position: relative;
+        border-radius: 4px;
+        background-color: #0D444B !important;
+        color: #FFF;
+        text-transform: none !important;
+        top: 12px;
+      }
+    

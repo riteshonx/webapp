@@ -1,0 +1,44 @@
+@import '../../../../../../assets/onx/variable';
+
+.bimProps {
+    border-left: 1px solid $onx-A7;
+    width: 350px;
+    height: calc(100vh - 200px);
+    
+
+    .title {
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 20px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $onx-A7;
+
+        svg:hover {
+            cursor: pointer;
+        }
+    }
+
+    .loadingIndctor {
+        padding-top: 10px;
+        width: 100;
+        text-align: center;
+    }
+
+    .content {
+        padding-top: 5px;
+        height: 94%;
+        overflow: auto;
+        word-break: break-word;
+
+        .info  {
+            padding: 0 5px;
+        }
+
+        tr:nth-child(even){
+            background-color: #fff;
+        }
+    }
+}

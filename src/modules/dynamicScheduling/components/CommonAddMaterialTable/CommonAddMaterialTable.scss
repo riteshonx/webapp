@@ -1,0 +1,163 @@
+@import '../../../../assets/onx/variable';
+
+.common-add-material {
+  &-popup {
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px;
+      min-height: 98px;
+      background: #ffffff;
+      box-shadow: 0px 2px 1px -1px rgba(180, 179, 189, 0.25),
+        2px 0px 1px rgba(180, 179, 189, 0.04),
+        0px 2px 8px rgba(180, 179, 189, 0.25);
+      padding-top: 39px;
+      padding-left: 29px;
+      &-heading {
+        padding: 0px;
+        h2 {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 36px;
+
+          /* identical to box height, or 150% */
+
+          display: flex;
+          align-items: center;
+
+          /* 333333 */
+
+          color: #333333;
+        }
+      }
+      &-search {
+        width: 300px;
+        height: 36px;
+        // padding-top: 40px;
+        margin-right: 40px;
+        // margin-bottom: 22px;
+        background: #ffffff;
+        /* Onx/A5 */
+
+        border: 0.5px solid $onx-A5;
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+    }
+    &-content {
+      // height: 592px;
+      overflow: hidden;
+      padding: 0px;
+      &-empty {
+        margin: auto;
+        margin-top: 200px;
+      }
+    }
+    &-footer {
+      height: 108px;
+      padding: 0px;
+
+      background: #ffffff;
+      box-shadow: 0px -2px 1px -1px rgba(180, 179, 189, 0.25),
+        2px 0px 1px rgba(180, 179, 189, 0.04),
+        0px -2px 8px rgba(180, 179, 189, 0.25);
+
+      &-discard {
+        background: #f0f0f0;
+        border: 0.5px solid #b8b6b6;
+        box-sizing: border-box;
+        box-shadow: inset 0px 2px 1px #ffffff;
+        border-radius: 6px;
+      }
+      &-add-material {
+        margin-right: 41px !important;
+        margin-left: 12px !important;
+      }
+    }
+  }
+  &-table {
+    &-container {
+      height: 100%;
+      padding: 8px 24px;
+    }
+    &-head {
+      &-checkbox {
+        // background: linear-gradient(181.49deg, #303030 1.26%, #1d1d1d 104.84%);
+        // box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.14);
+        // border-radius: 4px;
+        color: #000000;
+      }
+      &-cell {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        /* identical to box height, or 167% */
+
+        //   display: flex;
+        align-items: center;
+
+        color: #000000;
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 3;
+        flex-grow: 0;
+        margin: 0px 56px;
+        padding-bottom: 12px;
+
+        &-1 {
+          width: 290px;
+        }
+        &-2 {
+          width: 100px;
+        }
+        &-3 {
+          width: 100px;
+          &-customToolTip {
+            width: 77px;
+          }
+        }
+        &-4 {
+          width: 128px;
+        }
+        &-5 {
+          width: 160px;
+        }
+      }
+    }
+
+    &-body {
+      .MuiTableRow-root {
+        &:hover {
+          background-color: #ffffff;
+        }
+      }
+      .Mui-selected {
+        background-color: #ffffff;
+        &:hover {
+          background-color: #ffffff;
+        }
+      }
+      &-checkbox {
+        // span > input {
+        //   background: linear-gradient(
+        //     181.49deg,
+        //     #303030 1.26%,
+        //     #1d1d1d 104.84%
+        //   );
+        //   box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.14);
+        //   border-radius: 4px;
+        // }
+        color: #000000;
+      }
+      &-materialName {
+        width: 100px;
+      }
+    }
+  }
+}

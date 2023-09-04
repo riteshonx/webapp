@@ -1,0 +1,16 @@
+@import '../../../../../version2.0_temp/assets/styles/colors.scss';
+.noDataWrapper{
+    height: calc(100vh - 54px);
+    background-color: $SLATE-V2-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $WHITE;
+
+    & h2{
+        width: 50%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}

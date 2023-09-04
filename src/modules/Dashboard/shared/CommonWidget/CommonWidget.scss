@@ -1,0 +1,145 @@
+.commonWidget-main {
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0 1.5rem 1rem 0 !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+
+  &__dimensions1 {
+    height: 27rem;
+    width: 30rem;
+    &:hover {
+      transform: scale3d(1.015, 1.015, 1);
+      transition: all 0.5s ease-in-out !important;
+      &.commonWidget-main__pointer {
+        cursor: pointer;
+      }
+    }
+    &__variancesBg {
+      height: 115%;
+      background-position-y: -34px;
+    }
+    &__constraintsBg {
+      height: 87%;
+      background-position: center;
+    }
+
+    &__rfiBg {
+      height: 100%;
+      background-position-y: 5rem;
+      background-size: 100% 65% !important;
+    }
+    &__milestoneBg {
+      height: 100%;
+      background-position-y: 6.2rem;
+      background-size: 100% 62% !important;
+    }
+    &__aheadBg {
+      height: 78%;
+      background-position-y: 1.5rem;
+    }
+    &__ontimeBg {
+      height: 94%;
+      background-position-y: -1rem;
+    }
+    &__behindBg {
+      height: 115%;
+      background-position-y: -2.2rem;
+    }
+
+    // Project level widget styles
+    &__tmrBg,
+    &__ppcBg {
+      height: 110%;
+    }
+  }
+  &__dimensions {
+    height: 20rem;
+    width: 25rem;
+    &:hover {
+      transform: scale3d(1.05, 1.05, 1);
+      transition: all 0.5s ease-in-out !important;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      &.commonWidget-main__pointer {
+        cursor: pointer;
+      }
+    }
+    &__variancesBg {
+      height: 110%;
+      background-position-y: -34px;
+    }
+    &__constraintsBg {
+      height: 75%;
+      background-position-y: -5px;
+    }
+
+    &__rfiBg,
+    &__milestoneBg,
+    &__aheadBg {
+      height: 70%;
+    }
+    &__ontimeBg {
+      height: 80%;
+    }
+    &__behindBg {
+      height: 100%;
+      background-position-y: -25px;
+    }
+
+    // Project level widget styles
+    &__tmrBg,
+    &__ppcBg {
+      height: 110%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100%;
+
+    &__val {
+      height: 100%;
+      font-size: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__rfiMilestoneStatusContainer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 0.4rem;
+      &__val {
+        padding: 0 2rem;
+        margin-right: 0.5rem;
+        font-size: 1.4rem;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 30%;
+        white-space: nowrap;
+        &__bgColor {
+          cursor: pointer;
+          &:hover {
+            background: linear-gradient(
+              90deg,
+              rgb(210, 201, 233) 19%,
+              rgba(191, 196, 235, 1) 38%,
+              rgb(187, 191, 232) 100%
+            );
+          }
+        }
+      }
+    }
+  }
+  .MuiCardContent-root {
+    padding: 0;
+  }
+}

@@ -1,0 +1,69 @@
+// @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.action-panel .dropdown-item {
+    width: initial;
+}
+
+.action-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    user-select: none;
+    padding-top: 5px;
+}
+
+.action-item.active{
+    background-color: #EDEDED;
+}
+  
+.action-item-text {
+    text-align: center;
+    position: relative;
+    font-size: 1rem;
+    user-select: none;
+}
+  
+.action-item:active {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+} 
+
+.action-item:hover {
+    background-color: #EDEDFF;
+} 
+
+.action-item-indicator {
+    position: absolute;
+    z-index: 2;
+    top: 4px;
+    left: 4px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABHNCSVQICAgIfAhkiAAAACtJREFUCJljzM/P/8vIyMjEAAX///9/wlBQUPCfAQ0woQvgFvz///8TdEEAQJwMaPyOeIMAAAAASUVORK5CYII=);
+    background-size: 6px;
+    width: 6px;
+    height: 6px;
+}
+
+.fontSize {
+    font-size: 2rem;
+}
+
+.action-item-reset{
+    width: 2rem;
+    height: 2rem;
+}
+
+.action-panel {
+    margin-left: 0px;
+}
+
+.disabled
+{
+  pointer-events: none;
+  opacity: 0.7;
+  cursor: pointer;
+}

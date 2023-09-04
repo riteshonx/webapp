@@ -1,0 +1,49 @@
+@import '../../../../../assets/onx/variable';
+
+.bimQueryForm {
+
+    .btn-secondary {
+        background: $onx-btn-secondary;
+        border: 0.5px solid #B8B6B6;
+    }
+
+    .submit-section {
+        width: 100%;
+        text-align: right;
+
+        button {
+            margin-left: 10px;
+        }
+    }
+
+    .textField {
+        margin-bottom: 24px;
+
+        div {
+            padding: 0;  
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .radioLabel {
+        padding: 11px 0;
+
+        &.attrType {
+            padding: 0 0 10px;
+        }
+
+        .MuiFormControlLabel-label{
+            font-size: 1.2rem !important;
+        }
+
+        .MuiButtonBase-root {
+            color: $onx-btn-primary;
+        }
+    }
+    
+}
+
+ 

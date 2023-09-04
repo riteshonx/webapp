@@ -1,0 +1,68 @@
+.EditCustomList {
+  display: flex;
+  // flex: 1;
+  width: auto;
+  background: white;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0px;
+  // height: 80vh;
+  // max-height: 80vh;
+  overflow-y: auto;
+  margin-bottom: 40px;
+
+  &__header {
+    color: #6e6e6e;
+    font-size: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+  }
+
+ 
+
+  &__renderUi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // flex: 1;
+    border: 1px solid #f0f0f0;
+    // borderBottomWidth : 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+  }
+
+  &__footer {
+    display: flex;
+    flex: 1;
+    align-self: flex-end;
+    justify-content: flex-end;
+    // marginTop : '30vh'
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    background-color: #fff;
+  }
+  &__button_cancel {
+    width: 175px;
+    height: 46;
+    background: #fff;
+    margin-right: 10;
+    color: #000;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  &__button_update {
+    width: 175px;
+    height: 46;
+    // background: #000;
+    margin-right: 10;
+    color: #fff;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}

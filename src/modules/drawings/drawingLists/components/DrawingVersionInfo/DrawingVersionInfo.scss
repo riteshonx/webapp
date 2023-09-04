@@ -1,0 +1,111 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.versionIfo{
+    margin: 10px 15px;
+
+    &__note{
+        @include flexCenter(flex-start);
+        // align-items: end;
+        padding: 10px;
+        background: #00000012;
+        border: 1px solid #9E9E9E;
+        border-radius: 4px;
+        margin: 10px 0px;
+        font-size: 1.2rem;
+
+        &__logo{
+            margin-right: 10px;
+        }
+
+        &__text{
+            line-height: 24px;
+            span{
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    &__warning{
+        @include flexCenter(flex-start);
+        // align-items: end;
+        padding: 10px;
+        background: #FFD7D7;
+        border: 1px solid #df7e10;
+        border-radius: 4px;
+        color:#D02F2F;
+        margin: 10px 0px;
+        font-size: 1.2rem;
+
+        &__logo{
+            margin-right: 10px;
+        }
+        
+        &__text{
+            line-height: 24px;
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__details{
+        &__form{
+            &__field{
+                margin: 25px 0px;
+                position: relative;
+                
+                .MuiInputLabel-animated{
+                    margin-bottom: 7px;
+                    font-size: 12px;
+                }
+                &__input-field{
+                    .MuiOutlinedInput-input, .MuiSelect-outlined{
+                        padding: 13px 14px;
+                        font-size: 1.2rem;
+                        line-height: 16px;
+                        background: #F8F8F8;
+                    }
+
+                    .date-picker{
+                        position: relative;
+                    
+                        .calendar-icon{
+                            top: 0px;
+                            position: absolute;
+                            right: 0px;
+                            width: 100%;
+                            border-radius: 5px;
+                            height: 41px;
+
+                            .MuiIconButton-label{
+                                justify-content: flex-end !important;
+                            }
+                        }
+                    }
+                }
+
+                &__error-wrap{
+                    color: $onx-red;
+                    height: 18px;
+                    font-size: 1.2rem;
+                    position: absolute;
+                    bottom: -20px;
+                    
+                    &__message{
+                        padding: 0px;
+                        margin: 0px;
+                        font-size: 1rem;
+                        color: #F7B217;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.MuiFormHelperText-root.Mui-error{
+    font-size: 1.2rem;
+}

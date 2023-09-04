@@ -1,0 +1,85 @@
+@import '../../../version2.0_temp/assets/styles/colors.scss';
+
+.v2-visualize {
+    @include color-sections(false);
+
+    &.classic-colors {
+        @include color-sections(true);
+
+        &.v2-visualize-container {
+            margin-top: 4px;
+            grid-template-rows: calc(100vh - 68px);
+        }
+    }
+    &-container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        color: $vis-font-color;
+        background-color: $vis-color-1;
+        padding-bottom: 10px;
+
+        display: grid;
+        grid-template-rows: calc(100vh - 64px);
+        grid-template-areas: 'visualizeMain';
+
+        &-content {
+            grid-area: visualizeMain;
+
+            display: grid;
+            height: 100%;
+            grid-template-columns: 37% 63%;
+            grid-template-areas: 'visualizeSidebar visualizeViewer';
+
+            @media screen and (max-width: 1600px) {
+                grid-template-columns: 42% 58%;
+            }
+
+            @media screen and (max-width: 1440px) {
+                grid-template-columns: 44% 56%;
+            }
+
+            @media screen and (max-width: 1300px) {
+                grid-template-columns: 46% 54%;
+            }
+
+            @media screen and (max-width: 1254px) {
+                grid-template-columns: 48% 52%;
+            }
+
+            @media screen and (max-width: 1194px) {
+                grid-template-columns: 50% 50%;
+            }
+            
+            &-viewer {
+               grid-area: visualizeViewer;
+               margin: 0 10px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               width: 100%;
+               height: 100%;
+
+                .info-msg {
+                    font-weight: 500;
+                    font-size: 55px;
+                    opacity: 0.3;
+                }
+            
+                .info-msg-2 {
+                    font-weight: 500;
+                    font-size: 46px;
+                    opacity: 0.6;
+                    position: absolute;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}
+
+.userback-button {
+    margin-right: 24px !important;
+    margin-bottom: 12px  !important;
+    z-index: 2  !important;
+}

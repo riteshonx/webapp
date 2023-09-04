@@ -1,0 +1,102 @@
+
+.createForm{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+   &__header{
+        font-weight:600;
+        padding : 16px 0;
+        flex-grow: 0;
+        box-shadow:  0px 8px 6px rgba(0, 0, 0, 0.04), 0px 12px 16px rgba(0, 0, 0, 0.04);
+        display: flex;
+        justify-content: space-between;
+        &__left{
+            flex-basis: 35%;
+            &__title{
+                margin: 10px 0;
+                padding:  0 1.5rem;
+                ::placeholder {
+                    color: #aaa7a742;
+                    opacity: 1; /* Firefox */
+                    font-weight: 400;
+                }
+                &__input{
+                    background: #f7f7f7;
+                    width: 100%;
+                    & .MuiInputBase-root{
+                        input{
+                            font-size: 2rem !important;
+                            font-weight: 600 !important;
+                            padding: 10px !important;
+                        }
+                    }
+                }
+                &__error{
+                    font-size: 1rem;
+                    margin: 3px 0 0 3px;
+                    color: red;
+                    font-weight: 400;
+                }
+            }
+            &__subtitle{
+                padding: 5px 16px;
+                font-size: 1rem;
+            }
+        }
+        &__action{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            &__preview{
+                font-size: 1.4rem;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 15px;
+                text-transform: none;
+                &__text{
+                    padding: 0 1px;
+                    font-weight: 400;
+                }
+                &__icon{
+                    margin-right: 10px;
+                }
+            }
+            &__discardbtn{
+                margin: 0 10px;
+            }
+       }
+   }
+   &__body{
+       flex-grow: 1;
+       &__fieldsContainer{
+        padding: 0;
+        flex:1;
+        box-shadow: 2px 1px 5px 0px #00000014;
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+       }
+       &__fieldsElements{
+           padding: 0;
+           display: flex;
+           flex-direction: column;
+           margin-top: 3px;
+       }
+   }
+   &__preview{
+        position: absolute;
+        right:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        transition-property: width;
+        transition-duration: 1s;
+    }
+  
+}

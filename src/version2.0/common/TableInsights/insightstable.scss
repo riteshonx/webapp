@@ -1,0 +1,23 @@
+.v2-insights-table {
+  border-collapse: collapse;
+  width: 95%;
+  border: 1px solid orange;
+
+  &-head {
+    border: 1px solid orange;
+  }
+
+  tr td:not(:last-child),
+  tr th:not(:last-child) {
+    border-right: 1px solid orange;
+  }
+
+  td {
+    padding: 10px;
+  }
+
+  th {
+    border-bottom: 2px solid orange;
+    padding: 10px;
+  }
+}

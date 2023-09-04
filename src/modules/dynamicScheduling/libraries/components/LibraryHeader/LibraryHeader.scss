@@ -1,0 +1,17 @@
+@import "../../../../../assets/onx/variable";
+
+.lib-info{
+    margin: 10px 0px;
+
+    &__header{
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    &__description{
+        font-size: 1.2rem;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+    }
+}

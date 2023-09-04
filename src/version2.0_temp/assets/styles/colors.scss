@@ -1,0 +1,50 @@
+@import 'src/assets/onx/_variable.scss';
+
+$SLATE-V2-1: #181D24;
+$SLATE-V2-2: rgba(47, 52, 58, 0.98);
+$SLATE-V2-3: #FAB144;
+$SLATE-V2-4: #D3D3DE;
+$SLATE-V2-DARK-GREY-2: rgba(255, 255, 255, 0.4);
+$SLATE-V2-DARK-GREY-1: rgba(255, 255, 255, 0.3);
+$V2-popover-field-title-color:#f7b047;
+$SLATE-V2-POPOVER-BG-COLOR: #171d25;
+
+$SLATE-BOX-SHADOW:rgab(255, 255, 255, 0.25);
+$SLATE-BORDER-PRIMARY: #FFFFFF4D;
+$LAYER-BG-1: rgba(255, 255, 255, 0.1);
+$WHITE: #ffffff;
+$BLACK: #000000;
+$SLATE-BG-LIGHT:rgba(24, 29, 36, 0.9);
+
+$CLOSED: #3DA564;
+$CLOSED-LIGHT: #A8D7A9;
+$OVERDUE: #FF7C84;
+$IN-PROGRESS: #FFCA6A;
+$DRAFT: #B6B6B6;
+$READY: #9594cb;
+
+$vis-color-1: var(--vis-color-1);
+$vis-color-2: var(--vis-color-2);
+$vis-color-3: var(--vis-color-3);
+$vis-font-color: var(--vis-font-color);
+$vis-border-color: var(--vis-border-color);
+$vis-border-color-1: var(--vis-border-color-1);
+
+@mixin color-sections($isClassic: false) {
+    @if $isClassic {
+        --vis-color-1: #{$onx-A9};
+        --vis-color-2: #{$onx-A9};
+        --vis-color-3: #{$onx-primary};
+        --vis-font-color: black;
+        --vis-border-color:black;
+        --vis-border-color-1: #{$onx-primary};
+    } @else {
+        --vis-color-1: #{$SLATE-V2-1};
+        --vis-color-2: #{$SLATE-V2-2};
+        --vis-color-3: #{$SLATE-V2-3};
+        --vis-font-color: white;
+        --vis-border-color: white;
+        --vis-border-color-1: rgba(255, 255, 255, 0.6);
+    }
+}
+  

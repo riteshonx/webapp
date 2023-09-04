@@ -1,0 +1,105 @@
+@import '../../../../../assets/onx/variable';
+
+.create-template {
+  font-size: 1.2rem;
+  &__title-subheading {
+    font-size: 1.2rem;
+  }
+
+  &__content {
+    display: grid;
+    font-size: 1.2rem;
+
+    grid-template-columns: [left-start] 1fr [left-end right-start] 1fr [right-end];
+    grid-gap: 5rem;
+
+    &-right {
+      grid-column: right-start / right-end;
+
+      &__calendar {
+        display: flex;
+        // grid-template-columns: [left-start] 1fr [left-end center-start] 1fr [center-end right-start] 1fr [right-end];
+
+        &__country {
+          grid-column: left-start / center-end;
+
+          .MuiNativeSelect-select {
+            padding-left: 1rem;
+          }
+        }
+
+        &__year {
+          //  / padding-left: 5px;
+          // margin-top: 0.6rem;
+        }
+      }
+
+      &__calendar-list {
+        margin-top: 2rem;
+        max-height: 30rem;
+        overflow-x: auto;
+
+        &-table {
+          display: flex;
+          line-height: 3rem;
+          // grid-template-columns:
+          //   repeat(2, [col-start] 1fr [col-end])
+          &__name {
+            // grid-column: col-start-1 / col-end-2;
+            width: 25rem;
+            background-color: #f3f3f3;
+            padding-left: 1rem;
+            border-radius: 5px;
+            &__holidayName {
+              width: 100%;
+              height: 30px;
+              padding-left: 5px;
+              background: #f3f3f3;
+              border: 0;
+              border-radius: 5px;
+            }
+          }
+          &__calendar {
+            width: 15rem;
+            padding-left: 5px;
+
+            background-color: #f3f3f3;
+          }
+
+          &__delete {
+            width: 5rem;
+            padding-left: 1rem;
+            &__disabled {
+              pointer-events: none;
+              opacity: 0.7;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      &__selectedValue{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// .MuiPickersToolbar-toolbar {
+//   color: $onx-black;
+//   background-color: $onx-white;
+// }
+// .MuiPickersToolbarText-toolbarBtnSelected {
+//   color: $onx-black;
+// }
+
+// .MuiPickersMonth-monthSelected {
+//   color: $onx-black;
+// }
+
+// .MuiButton-label {
+//   .MuiTypography-subtitle1 {
+//     display: none;
+//   }
+// }

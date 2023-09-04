@@ -1,0 +1,22 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.drawingLists{
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+
+    &__item{
+        padding: 10px;
+        border-bottom: 1px solid lightgrey;
+        font-size: 1.2rem;
+    }
+
+    &__item:hover{
+        background: #F5F5F5;
+    }
+    
+    &__item-active{
+        background: #F5F5F5;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,23 @@
+
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.menu-item{
+    color: #6c6969;
+    font-size: 1.4rem !important;
+    &__icon{
+        svg{
+            position: relative;
+            top: 4px;
+            margin-right: 10px;
+            color: #6c6969;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.drawingSheetAction{
+    .MuiIconButton-root{
+        padding: 3px;
+    }
+}

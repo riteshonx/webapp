@@ -1,0 +1,142 @@
+@import '../../../../../../assets/onx/variable';
+
+.queryPopUp {
+    max-height: calc(100% - 75px);
+    top: 50px !important;
+
+    .dialogTitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $onx-primary;
+        color: #fff;
+        padding: 13px 25px;
+
+        .title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            font-family: $font-family;
+        }
+
+        svg {
+            width: 30px;
+            height: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .dialogContent{
+        .inpustSection {
+            padding: 25px 60px 20px;
+
+            .MuiInputLabel-root {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+                padding-bottom: 5px;
+            }
+
+            .textField {
+                margin-bottom: 18px;
+                width: 350px;
+
+                .MuiAutocomplete-inputRoot, .MuiOutlinedInput-root {
+                    padding: 16px 30px 16px 10px;
+
+                    .MuiAutocomplete-input, .MuiOutlinedInput-input {
+                        padding: 0;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 30px;
+                    }
+                }
+
+                .MuiOutlinedInput-root {
+                    .MuiOutlinedInput-notchedOutline{
+                        border: 0.5px solid #3B3B3B;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        &:hover{
+                            border-color: rgba(0, 0, 0, 0.23);
+                        }
+                    }
+
+                    &.Mui-focused {
+                        .MuiOutlinedInput-notchedOutline{
+                            border-color: $onx-primary;
+                            border-width: 2px;
+                        }
+                    }
+                }
+            }
+
+            .colour-input {
+                display: flex;
+                align-items: center;
+            }
+
+            svg:hover, input[type=color]:hover {
+                cursor: pointer;
+            }
+
+            input[type=color]{
+                width: 24px;
+                height: 16px;
+                border: none;
+                background: none;
+                margin-right: 10px;
+                margin-left: 10px;
+                margin-bottom: 5px;
+            }
+            input[type="color"]::-webkit-color-swatch-wrapper {
+                padding: 0;
+            }
+            input[type="color"]::-webkit-color-swatch {
+                border: none
+            }
+
+            .error-info {
+                margin-top: -18px;
+                margin-bottom: 18px;
+                font-size: 1.2rem;
+                color: $onx-error-dark;
+            }
+        
+        }
+
+        .submit-section {
+            padding: 25px;
+            width: 100%;
+            text-align: right;
+            border-top: 0.5px solid rgba(59, 59, 59, 0.5);
+    
+            button {
+                margin-left: 20px !important;
+                margin-right: 0 !important;
+                padding: 8px 20px;
+                line-height: 24px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .btn-secondary {
+                color: $onx-primary;
+                border-color: $onx-primary !important;
+            }
+        }
+    }
+
+    .MuiDialogContent-root{
+        padding: 0;
+    }
+
+    ::-webkit-scrollbar {
+        height: 8px;
+    }
+}
+ 

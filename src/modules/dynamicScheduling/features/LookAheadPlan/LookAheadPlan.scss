@@ -1,0 +1,25 @@
+@import '../../../../assets/onx/variable';
+.lookahead {
+    .activeview{
+        background-color: $onx-A7 !important;
+    }
+}
+
+.lookAhead-constraint-colored {
+    background: repeating-linear-gradient(
+        -45deg,
+        #F4CB60,
+        #F4CB60 23px,
+        #333 10px,
+        #333 30px
+      ) !important;
+      opacity: 0.9;
+    //border: 2px solid rgb(143, 15, 15) !important;
+}
+
+.lookAhead-constraint-colored b{
+    color: rgb(102, 138, 149) !important;
+    background-color: white;
+    padding: 0px 5px;
+    border: 1px solid rgb(102, 138, 149);
+}

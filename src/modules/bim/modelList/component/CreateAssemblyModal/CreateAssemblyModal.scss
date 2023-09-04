@@ -1,0 +1,22 @@
+@import "../../../../../assets/onx/variable";
+
+.bim-assembly-modal {
+    .dialogTitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        svg:hover {
+            cursor: pointer;
+        }
+    }
+
+    .assembly-name-error{
+        padding-top: 5px;
+        min-height: 15px;
+        font-size: 1rem;
+        margin-top: 3px;
+        color: red;
+        font-weight: 400;
+    }
+}

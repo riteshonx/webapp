@@ -1,0 +1,26 @@
+.companyPerformance{
+    padding: 10px 20px;
+    margin: 0 auto;
+    &_description{
+        margin: 10px 0px;
+        font-size: 1.3rem;
+        width:107.75rem
+    }
+    &_container{
+        margin: 25px 0px;
+        &_headings{
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        &_footer{
+            margin-top:20px;
+            border-top:2px solid rgb(70, 69, 69);
+            &_align{
+                margin-top:1.5rem;
+            }
+            &_input{
+                width: 8rem;
+            }
+        }
+    }
+}

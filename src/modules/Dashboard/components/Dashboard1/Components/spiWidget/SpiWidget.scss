@@ -1,0 +1,101 @@
+.spiWidget-main {
+  height: 27rem;
+  background-color: rgb(255, 255, 255);
+  width: 35rem;
+  min-width: 35rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  background-image: url("../../../../../../assets/images/Productivity.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  padding: 1.4rem 2rem 2rem;
+  margin-right: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  &__titleContainer {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    &__projectsCount {
+      padding: 0 1rem;
+      background-color: #424242;
+      margin-left: 0.5rem;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+  }
+  &__averageTitleContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 95%;
+    &__averageTitle {
+      font-size: 13px;
+      font-weight: 600;
+    }
+    &__trendContainer {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      &__spiValContainer {
+        padding-right: 2rem;
+        &__avgSpi {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        &__avgSpiTitle {
+          font-size: 10px;
+          font-weight: 600;
+          color: #757575;
+        }
+      }
+      &__avgSPITrendContainer {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 400;
+        width: 4.9rem;
+      }
+    }
+  }
+  &__projectContainer {
+    width: 95%;
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 0.5rem;
+      &__projectName {
+        width: 25%;
+        color: #212121;
+        font-size: 12px;
+        padding-top: 0.2rem;
+        white-space: nowrap;
+      }
+      &__avgContainer {
+        display: flex;
+        align-items: center;
+        &__spiVal {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          margin-right: 2rem;
+        }
+        &__spiTrend {
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          font-weight: 400;
+          width: 4.9rem;
+        }
+      }
+    }
+  }
+}

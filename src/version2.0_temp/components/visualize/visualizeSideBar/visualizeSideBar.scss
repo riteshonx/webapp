@@ -1,0 +1,32 @@
+@import 'src/version2.0_temp/assets/styles/colors.scss';
+
+.v2-visualize-sidebar{
+    grid-area: visualizeSidebar;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 38% 62%;
+    grid-template-areas: 'visualizeTree visualizeForms';
+    grid-column-gap: 2px;
+
+    @media screen and (max-width: 1600px) {
+        grid-template-columns: 35% 65%;
+    }
+
+    @media screen and (max-width: 1536px) {
+        grid-template-columns: 37% 63%;
+    }
+
+    @media screen and (max-width: 1380px) {
+        grid-template-columns: 39% 61%;
+    }
+
+    @media screen and (max-width: 1150px) {
+        grid-template-columns: 41% 59%;
+    }
+
+    @media screen and (max-width: 1090px) {
+        grid-template-columns: 43% 57%;
+    }
+}

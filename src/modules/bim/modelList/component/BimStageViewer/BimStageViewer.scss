@@ -1,0 +1,72 @@
+@import "../../../../../assets/onx/variable";
+
+.bim-stage-viewer {
+    .stage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 20px 18px 30px;
+        border: 1px solid $onx-primary;
+        border-radius: 6px;
+        margin-top: 15px;
+        color: $onx-primary;
+        width: 331px;
+        opacity: 0.5;
+
+        &.stg-cmpltd {
+            opacity: 1;
+        }
+        
+        &.deleting {
+            border-color: #E57569;
+            color: #E57569;
+            margin-top: 0;
+
+            .popUpProgress {
+                color: #E57569;
+            }
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        .popUpProgress {
+            color: $onx-primary;
+
+            &.stg-err {
+                color: #FE0505;
+            }
+        }
+
+        .progressValue {
+            color: $onx-primary;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 12px;
+        }
+
+        .uploadFilename{
+            font-size: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 14px;
+            width: 200px;
+            white-space: nowrap;
+        }
+    }
+
+    .info-msg {
+        margin-top: 15px;
+        text-align: center;
+        width: 331px;
+    }
+
+    .error-icon {
+        transform: rotate(180deg);
+        color: #FE0505;
+    }
+    
+}

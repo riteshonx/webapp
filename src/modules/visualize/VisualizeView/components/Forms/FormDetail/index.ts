@@ -1,0 +1,1 @@
+export { FormDetail } from './FormDetail';

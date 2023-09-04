@@ -1,0 +1,10 @@
+.project__checklist{
+    display: flex;
+    justify-content: space-between;
+    &__title{
+        font-size: 16px;
+    }
+   &__detailsButton{
+        padding: 1px;
+    }
+}

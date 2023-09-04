@@ -1,0 +1,34 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.projects {
+    position: relative;
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+  
+    &__users {
+      display: inline-block;
+      width: 100px;
+      height: 120px;
+      margin: 20px 10px;
+    }
+  
+    &__user-name {
+      text-align: center;
+      margin: 7px 0px 0px 0px;
+      height: 42px;
+      overflow: hidden;
+    }
+  
+    &__user-avatar {
+      @include avatar(72px, 72px);
+    }
+  
+    .highlight {
+      border: 2px solid $onx-primary;
+    }
+  
+    .boldText{
+      font-weight: bold;
+    }
+  }

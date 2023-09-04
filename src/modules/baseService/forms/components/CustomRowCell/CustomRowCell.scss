@@ -1,0 +1,49 @@
+.CustomRowCell{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    max-width: 200px;
+    &__icon{
+        font-size: 1.8rem;
+        color: #00000061;
+    }
+    &__caption{
+        font-weight: 400;
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+        flex-basis: 65%;
+        text-align: left;
+        word-wrap: break-word;
+        max-width: 160px;
+        font-weight: 600;
+    }
+    &__placeholder{
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #c2c2c2;
+    }
+    .action{
+        display: none;
+    }
+    &:hover{
+        & .action{
+            display: block;
+            position: absolute;
+            right: -5px;
+            &__delete{
+                padding: 4px;
+                &__icon{
+                    font-size: 1.6rem;
+                }
+            }
+            &__edit{
+                padding: 4px;
+                &__icon{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

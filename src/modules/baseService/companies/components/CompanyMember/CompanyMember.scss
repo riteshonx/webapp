@@ -1,0 +1,65 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.companyMember{
+    padding: 10px 20px;
+    margin: 0 auto;
+
+    &__description{
+        margin: 10px 0px;
+        font-size: 1.3rem;
+        width:107.75rem
+    }
+
+    &__container{
+        margin: 10px 0px;
+
+        &__actions {
+            @include flexCenter(space-between);
+            align-items: unset;
+        }
+    
+        &__action-btns {
+
+            .team-btn {
+                font-size: 1.2rem;
+                margin: 5px 0px 0px 5px;
+                border: 2px solid #0000007d;
+                text-transform: none !important;
+            }
+
+            .team-btn:disabled{
+                border: 1px solid #0000007d;
+            }
+        }
+
+        &__right{
+            &__search{
+                position: relative;
+                width: 340px;
+                margin-right: 15px;
+                .MuiOutlinedInput-input{
+                    padding: 10px 14px;
+                    font-family: $font-family;
+                    font-size: 1.2rem;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 16px;
+                    letter-spacing: 0.4000000059604645px;
+                    text-align: left;
+                }
+                &__icon{
+                  position: absolute;
+                  right: 5px;
+                  top: 5px;
+                  color: $onx-A7;
+                }
+              }
+        }
+
+        &__users-count{
+            font-size: 1.2rem;
+        }
+    }
+
+}

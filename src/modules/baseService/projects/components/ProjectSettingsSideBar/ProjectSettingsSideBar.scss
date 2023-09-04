@@ -1,0 +1,111 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.left-navBar{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    &__toggle{
+        &__header {
+            display: flex;
+            margin: 10px 5px;
+            align-items: center;
+        }
+
+        &__toggle-btn{
+            @include flexCenter(center);
+            width: 100px;
+          }
+
+        &__g-view {
+        font-size: 13px;
+        width: 122px;
+        text-align: center;
+        cursor: pointer;
+        }
+
+        .toggle-primary{
+            color: $onx-white;
+            background: $onx-primary;
+            border: $onx-primary;
+            font-size: 1.2rem;
+            padding: 5px 20px;
+            border-radius: 30px;
+            text-transform: none;
+        }
+    }
+    &__project{
+        @include flexCenter(flex-start);
+        margin: 15px 20px;
+        &__wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__avatar{
+            @include avatar(72px, 72px);
+        }
+
+        &__details{
+            margin: 0px 20px;
+            
+            &__name{
+                font-weight: 600;
+            }
+
+            &__address{
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__wrapper{
+        margin: 10px 0px;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        flex-shrink: 1;
+        flex-basis: 0;
+        overflow-y: auto;
+    }
+
+    &__item{
+        cursor: pointer;
+        margin: 5px 10px;
+        flex-wrap: wrap;
+        display: flex;
+
+        &__content{
+            width: calc(100% - 8px);
+            font-weight: 600;
+            border-bottom: 1px solid #C4C4C4;
+
+            &__text{
+                padding: 10px 8px;
+                margin: 3px 0px;
+            }
+
+            &__hover{
+                background: #dddddd73;
+            }
+        }
+
+        &__active{
+            padding: 12px 0px 12px 3px;
+            border-left: 1px solid $onx-black;
+            border-width: thick;
+            margin: 3px 0px;
+        }
+
+        &__hide{
+            visibility: hidden;
+        }
+
+        &__active-hover{
+            padding: 12px 0px 12px 3px;
+            border-left: 1px solid $onx-black;
+            border-width: thick;
+        }
+    }
+}

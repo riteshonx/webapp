@@ -1,0 +1,271 @@
+@import '../../../../assets/onx/variable';
+@import '../../../../assets/onx/abstracts/mixins';
+
+.projectPlan {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  &_autoschedule {
+    &_wait {
+      &_popup {
+        min-width: 500px;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px !important;
+        padding-top: 50px !important;
+
+        &_heading {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 33px;
+          /* identical to box height */
+
+          color: #105c6b;
+          margin-bottom: 20px;
+          margin-top: 20px;
+        }
+        &_loader {
+          // margin-top: 50px;
+          // margin-bottom: 20px;
+
+          &_temp {
+            width: 78px;
+            height: 78px;
+          }
+          width: 78px;
+          height: 78px;
+          background: conic-gradient(
+            from 90deg at 50% 50%,
+            rgba(16, 92, 107, 0) 0deg,
+            rgba(16, 92, 107, 0) 0.04deg,
+            #105c6b 360deg
+          );
+          -webkit-mask: radial-gradient(
+            farthest-side,
+            #0000 calc(100% - 10px),
+            #fff 0
+          );
+          mask: radial-gradient(farthest-side, #0000 calc(100% - 10px), #fff 0);
+          border-radius: 50%;
+          inset: calc(50% - 50px);
+          animation: rot 2s linear infinite;
+        }
+
+        @keyframes rot {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        &_text {
+          margin: 0px 80px 50px 80px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &__popover {
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+    padding: 10px;
+    filter: drop-shadow(0px 0px 2px #5ebd7e);
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+    &.left-bottom::after {
+      border-bottom: 10px solid #fff;
+      top: -10px;
+      left: 10px;
+    }
+    &.left-top::after {
+      border-top: 10px solid #fff;
+      bottom: -10px;
+      left: 10px;
+    }
+    &.right-bottom::after {
+      border-bottom: 10px solid #fff;
+      top: -10px;
+      right: 10px;
+    }
+    &.right-top::after {
+      border-top: 10px solid #fff;
+      bottom: -10px;
+      right: 10px;
+    }
+  }
+
+  &__filter {
+    &__menuItem {
+      padding: 0px;
+      margin-top: -8px;
+      width: 189px;
+      li {
+        list-style: none;
+        max-height: 181px;
+        overflow: scroll;
+        /* text-overflow: ellipsis; */
+        width: 190px;
+        overflow-x: hidden;
+
+        div {
+          width: 189px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+
+      &-container {
+        width: inherit;
+      }
+    }
+    &__assigne {
+      &-header {
+        background: rgba(59, 59, 59, 0.15);
+        // border-radius: 4px 4px 0px 0px;
+        height: 25px;
+        padding-left: 10px;
+        color: #3b3b3b;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 18px;
+        /* identical to box height, or 180% */
+
+        display: flex;
+        align-items: center;
+        position: fixed;
+        cursor: context-menu;
+      }
+      &__user {
+        &-container {
+          margin-top: 25px;
+        }
+      }
+      &__company {
+        &-container {
+          margin-top: 25px;
+        }
+      }
+      &-option {
+        cursor: context-menu;
+        &-line {
+          // margin-top: 8px;
+          // margin-bottom: 11px;
+          border: 1px solid rgba(180, 179, 189, 0.25);
+        }
+      }
+    }
+
+    &__type {
+      &-milestone {
+        cursor: context-menu;
+      }
+      &-wbs {
+        cursor: context-menu;
+      }
+      &-workpackage {
+        cursor: context-menu;
+      }
+      &-task {
+        cursor: context-menu;
+      }
+    }
+
+    &__activity-name {
+      width: 260px;
+
+      &__container {
+        width: 100%;
+        &__close {
+          position: absolute;
+          left: 209px;
+          top: 9px;
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+.disabledColumn {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
+
+.noCreatePermission {
+  width: 100%;
+  padding: 10px;
+  .pj-header {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .no-permission {
+    @include flexCenter(center);
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    height: 75vh;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}
+
+.projectPlan .gantt_task_row:last-child {
+  height: 99999px !important;
+  border-bottom: 1px transparent !important;
+  background-color: transparent !important;
+}
+
+.gantt__today__marker__default {
+  background: transparent !important;
+  opacity: 0.8;
+  border-style: solid;
+  border-color: #105c6bcc;
+}
+
+.gantt__today__marker__month__year {
+  background: rgba(46, 100, 117, 1);
+  width: 4px;
+}
+
+.gantt__today__marker__lookahed__week {
+  width: 200px;
+  background: transparent;
+  opacity: 0.8;
+  border-style: solid;
+  border-color: #105c6bcc;
+}
+
+.MuiListItem-button:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.MuiListItem-button {
+  transition: none;
+}
+
+.MuiListItem-root.Mui-focusVisible {
+  background-color: transparent !important;
+}

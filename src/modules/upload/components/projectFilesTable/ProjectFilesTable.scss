@@ -1,0 +1,29 @@
+.projectFilesTable {
+  &__tableHead {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  &__img {
+    width: 40px;
+    height: 40px;
+    flex: 1;
+    border-radius: 5px;
+    background-color: lightgray;
+  }
+  &__docsAndVideoIcon {
+    font-size: 40px;
+    color: grey;
+  }
+  &__iconContainer {
+    display: flex;
+  }
+  &__noContent {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    // margin-bottom: 6rem;
+    height: 5rem;
+    font-size: 1.4rem;
+  }
+}

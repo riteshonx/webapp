@@ -1,0 +1,76 @@
+@import '../../../../../assets/onx/variable';
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.lib-action {
+  @include flexCenter(space-between);
+  flex-wrap: wrap;
+
+  &__tab {
+    @include flexCenter(flex-start);
+
+    &__icon {
+      margin-right: 5px;
+      font-size: 1.5rem;
+    }
+
+    &__gallery {
+      @extend .tab-btn;
+      margin-right: 10px;
+    }
+
+    &__gallery--active {
+      @extend .tab-btn;
+      margin-right: 10px;
+      @extend .tab-active;
+    }
+
+    &__list {
+      @extend .tab-btn;
+    }
+
+    &__list--active {
+      @extend .tab-btn;
+      @extend .tab-active;
+    }
+  }
+
+  &__events {
+    @include flexCenter(flex-start);
+
+    &__search-bar {
+      position: relative;
+      width: 340px;
+      padding: 16px;
+      .MuiOutlinedInput-input {
+        padding: 10px 14px;
+        font-family: $font-family;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+        letter-spacing: 0.4000000059604645px;
+        text-align: left;
+      }
+      &__icon {
+        position: absolute;
+        right: 28px;
+        top: 20px;
+        color: #dddddd;
+      }
+    }
+  }
+}
+
+.tab-btn {
+  @include flexCenter(center);
+  padding: 8px 20px;
+  border-radius: 18px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.tab-active {
+  background: $onx-primary;
+  box-shadow: $onx-box-shadow;
+  color: $onx-white;
+}

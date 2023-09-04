@@ -1,0 +1,203 @@
+.fieldsContainer{
+    user-select: none;
+    &__title{
+        font-weight: 600;
+        font-size: 2.4rem;
+        padding: 4px 24px;
+        color: #333333;
+    }
+    &__option{
+        margin: 0 24px 4px 24px;
+        border-radius: 32px;
+        background-color: #E6E6E6;
+        display: flex;
+        padding: 10px 10px;
+        justify-content: space-between;
+        &__item{
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #C7C7C7;
+            display: flex;
+            justify-content: center;
+            flex-basis: 50%;
+            cursor: pointer;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 35px auto;
+            &__active{
+                color: #000;
+            }
+        }
+    }
+    &__existing{
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        overflow-y: auto;
+        flex-direction: column;
+        padding: 10px 0;
+        &__item{
+            background: #FFFFFF;
+            border-radius: 4px;
+            padding: 0 0 0 0;
+            margin: 8px 24px 0 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px #c8c8cd8f;
+            &__header{
+                margin: 2px 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &__label{
+                    display: grid;
+                    grid-template-columns: 35px auto;
+                    &__title{
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+                    &__icon{
+                        font-size: 1.8rem;
+                        color: #00000061;
+                    }
+                    &__icon__active{
+                        font-size:1.8rem;
+                        color: black;
+                    }
+                }
+                &__action{
+                    display: block;
+                    &__icon{
+                      font-size: 1.8rem;
+                      color: #00000061;
+                      margin: 0 5px;
+                    }
+                    &__icon__active{
+                        font-size: 1.8rem;
+                        color: black !important;
+                    }
+                }
+            }
+            &__details{
+                border-top: 1px solid #c2c2c2;
+                margin: 3px 0;
+                &__field{
+                    display: flex;
+                    margin: 4px 15px;
+                    
+                    &__label{
+                        flex-basis: 30%;
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.2rem;
+                        color: #000;
+                        font-weight: 500;
+                    }
+                    &__checkBoxlabel{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.2rem;
+                        color: #000;
+                        font-weight: 500;
+                    }
+                    &__numberedField{
+                        flex-basis: 70%;
+                        margin-left: 10px;
+                    }
+                    &__input{
+                        flex-basis: 70%;
+                        .MuiOutlinedInput-input{
+                            padding: 10px 10px;
+                        }
+                        .MuiInputBase-input{
+                            font-size: 1.2rem;
+                            height: 1.8rem;
+                        }
+                        .MuiFormHelperText-root{
+                            font-size: 1rem;
+                            color: red;
+                        }
+                        &__menuitem{
+                            font-size: 1.2rem;
+                        }
+                        .MuiMenuItem-root{
+                            font-size: 1.2rem;
+                        }
+                    }
+                    &__checkbox {
+                        margin: 0 0.5rem 0 0 !important;
+                        padding: 0 !important; 
+                        color:#000 !important;
+                    }
+                }
+               
+            }
+        }
+        &__active{      
+            background: #c2c2c21c;
+            box-shadow: 0 0 0px 2px #9a939340;
+        }
+
+    }
+    &__collection{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0px;
+        overflow: auto;
+        &__title{
+            font-size:1.2rem;
+            font-weight: 600;
+            margin: 4px 24px;
+        }
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            margin: 8px 24px 0 24px;
+            &__grid{
+                padding: 0;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+                grid-gap: 10px;
+                width: 100%;
+            }
+            &__input{
+                height: 75px;
+                background: #E7E7E7;
+                color: #646464;
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-top: 10px;
+                &__label{
+                    font-size: 1rem;
+                    text-align: center;
+                    padding: 10px;
+                }
+                &__icon{
+                    font-size:3.2rem;
+                    &__object_field{
+                        height: 1em;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__actionBtn{
+        padding:5px !important;
+    }
+    &__errorwarning{
+        font-size: 1.8rem;
+        color: rgb(247, 70, 70);
+        position: relative;
+        top: 5px;
+    }
+}

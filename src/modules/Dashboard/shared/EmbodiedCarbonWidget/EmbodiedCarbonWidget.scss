@@ -1,0 +1,66 @@
+.embodiedCarbonWidget-main {
+  border-radius: 3rem !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+
+  &__dimensions1 {
+    height: 27rem;
+    width: 30rem;
+    margin: 0 1.5rem 1rem 0 !important;
+    &:hover {
+      transform: scale3d(1.015, 1.015, 1);
+      transition: all 0.5s ease-in-out !important;
+    }
+    &__carbonFootprintBg {
+      height: 92%;
+      background-position-y: -6px;
+    }
+    &__carbonDataBg {
+      height: 83%;
+      background-position-y: 21px;
+    }
+  }
+  &__dimensions {
+    height: 20rem;
+    width: 25rem;
+    margin: 0 1.5rem 0 0 !important;
+    &:hover {
+      transform: scale3d(1.05, 1.05, 1);
+      transition: all 0.5s ease-in-out !important;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    &__carbonFootprintBg {
+      height: 92%;
+      background-position-y: -6px;
+    }
+    &__carbonDataBg {
+      height: 83%;
+      background-position-y: 21px;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 10px 0;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100%;
+
+    &__val {
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &__headStyle {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+  .MuiCardContent-root {
+    padding: 0;
+  }
+}

@@ -1,0 +1,67 @@
+@import '../../../../../../assets/onx/variable';
+.bimScheduleContainer{
+    position: relative;
+    z-index: 2;
+
+    .bimQuery {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        overflow-x: hidden;
+    }
+}
+
+.bimScheduleForm {
+    height: 100%;
+    width: 400px;
+    background-color: $onx-white;
+    z-index: 2;
+    overflow-y: auto;
+    border-right: 1px solid var(--onx-A8)  !important;
+
+    .menuButton {
+        margin-right: 5px;
+    }
+    .backButton:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .bimCloseButton {
+        float: right;
+        margin: 10px 10px 0;
+    }
+
+    .bimCloseButton:hover, .menuButton:hover {
+        cursor: pointer;
+    }
+
+    .scheduleBody{
+        padding: 30px 20px 20px 20px;
+
+        .blodText1 {
+            font-weight: bold;
+            font-size: 2.4rem;
+            line-height: 36px;
+            align-items: center;
+            display: flex;
+            padding-bottom: 10px;
+        }
+
+        .checkbox {            
+            .MuiCheckbox-root {
+                margin: 9px 6px 9px 9px;
+                padding: 0;
+                color: $onx-btn-primary;
+            }
+            .MuiFormControlLabel-label { 
+                font-size: 1.2rem;
+                line-height: 18px
+            }
+        }
+    }
+
+}
+
+ 

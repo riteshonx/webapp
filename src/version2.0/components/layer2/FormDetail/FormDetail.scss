@@ -1,0 +1,9 @@
+.form-title {
+	margin: 5px;
+	font-size: 12px;
+	color: white;
+	cursor: pointer;
+	&:hover {
+		color: orange;
+	}
+}

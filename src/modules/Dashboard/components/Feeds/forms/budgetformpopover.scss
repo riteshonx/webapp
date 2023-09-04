@@ -1,0 +1,97 @@
+@import '../../../Styles/colors.scss';
+
+.v2-budget-form {
+  &-loader{
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    & > div {
+      height: 40px;
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  }
+  &-fallback{
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    img{
+      align-self: flex-end;
+    }
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid $SLATE-BORDER-PRIMARY;
+    background: linear-gradient(89.95deg, #FAB144 -49.88%, rgba(255, 168, 13, 0.1) 102.13%);
+  }
+
+  &-insights {
+    padding: 16px 16px;
+    border-bottom: 1px solid $SLATE-BORDER-PRIMARY;
+
+    &-title {
+      color: $SLATE-V2-3;
+    }
+
+    &-content {
+      margin-top: 6px
+    }
+  }
+
+  &-body {
+    padding: 15px;
+    &-table {
+      border-collapse: collapse;
+    }
+
+  &-head {
+    border: 1px solid $SLATE-V2-3;
+    &-maxwidth{
+      max-width: 200px;
+    }
+  }
+
+  tr td:not(:last-child),
+  tr th:not(:last-child) {
+    border-right: 1px solid $SLATE-V2-3;
+  }
+  tr{
+    border: 1px solid $SLATE-V2-3;
+  }
+  td {
+    padding: 10px;
+  }
+
+  th {
+    padding: 10px;
+  }
+}
+&-insights-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  
+  &-body{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &-label{
+    white-space: nowrap;
+    color: $SLATE-V2-3;
+  }
+  
+  &-value{
+    color: #fff;
+    font-weight: 600;
+  }
+}
+  }

@@ -1,0 +1,14 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.companyLanding{
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    &_label{
+        font-weight: 600
+    }
+}

@@ -1,0 +1,190 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 270px);
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      
+      .active, .accordion:hover {
+        background-color: #ccc;
+      }
+      
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+    &__sort{
+        margin: 20px 15px 10px 15px;
+        .MuiInputLabel-animated{
+            margin-bottom: 7px;
+            font-size: 1.2rem;
+        }
+
+        &__radio-grouping{
+            @include flexCenter(flex-start);
+            flex-wrap: wrap;
+
+            .MuiFormGroup-root{
+                flex-direction: row;
+            }
+
+            .MuiFormControlLabel-root{
+                margin-right: 30px;
+            }
+
+            .MuiTypography-body1{
+                font-size: 1.4rem;
+            }
+        }
+    }
+    
+    &__lists{
+        height: calc(100vh - 310px);
+        overflow-y: auto;
+        
+        &__item{
+            border-bottom: 1px solid #E8E8E8;
+            min-height: 51px;
+
+            &__name{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                &__action{
+
+                    .text{
+                        font-style: italic;
+                        color: #9E9E9E;
+                    }
+
+                    .view{
+                        color: #9E9E9E;
+                        font-size: 20px;
+                        position: relative;
+                        top: 4px;
+                        margin: 0px 3px;
+                        cursor: pointer;
+                    }
+
+                    .error{
+                        color: #F85757;
+                        font-size: 20px;
+                        position: relative;
+                        top: 4px;
+                        margin: 0px 3px;
+                    }
+                     .warning{
+                        color: #df7e10;
+                        font-size: 20px;
+                        position: relative;
+                        top: 4px;
+                        margin: 0px 3px;
+                    }
+                    
+                }
+            }
+
+            &__index{
+                color: #9E9E9E;
+                margin-right: 10px;
+            }
+            
+            &__details{
+                width: 100%;
+
+                &__form{
+                    &__field{
+                        margin: 20px 0px 25px 0px;
+                        position: relative;
+                        
+                        .MuiInputLabel-animated{
+                            margin-bottom: 7px;
+                            font-size: 12px;
+                        }
+                        &__input-field{
+                            .MuiOutlinedInput-input, .MuiSelect-outlined{
+                                padding: 13px 14px;
+                                font-size: 1.3rem;
+                                line-height: 16px;
+                                background: #FFFFFF;
+                            }
+        
+                            .date-picker{
+                                position: relative;
+                            
+                                .calendar-icon{
+                                    top: -3px;
+                                    position: absolute;
+                                    right: 5px;
+                                }
+                            }
+                        }
+
+                        &__error-wrap{
+                            color: $onx-red;
+                            height: 18px;
+                            font-size: 1.2rem;
+                            position: absolute;
+                            top: 67px;
+                            left: 10px;
+                            
+                            &__message{
+                                padding: 0px;
+                                margin: 0px;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+        
+                    &__action{
+                        @include flexCenter(flex-end);
+                    }
+                }
+
+            }
+
+        }
+
+        .MuiPaper-elevation1{
+            box-shadow: none;
+            border-radius: 0px;
+        }
+
+        .MuiCollapse-container{
+            background: #F8F8F8;
+        }
+    }
+
+
+    &__accordion{
+        &:hover {
+            background: #f8f8f8;
+          }
+    }
+
+}
+
+
+.MuiMenu-list {
+    max-height: 40vh;
+    width: 100%;
+}

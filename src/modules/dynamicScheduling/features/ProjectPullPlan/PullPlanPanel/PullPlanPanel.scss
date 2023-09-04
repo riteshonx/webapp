@@ -1,0 +1,60 @@
+.PullPlanPanel{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+    &__header{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 33.3%;
+        &__name{
+            font-size: 2rem;
+            font-weight: 600;
+            padding: 3% 10px 10px 40px;
+        }
+        &__body{
+            flex-grow: 1;
+            padding-left: 40px;
+            padding-right: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            &__description{
+                font-size: 1.2rem;
+                white-space: nowrap;
+                color: #757575;
+                text-overflow: ellipsis; 
+                width: 100px;
+                overflow: hidden;
+            }
+            &__time{
+                font-size: 1.2rem;
+            }
+        }
+        &__tabs{
+            display: flex;
+            border-bottom: 1px solid #f0f0f0;
+            &__item{
+                width: 13rem;
+                font-size: 1.4rem;
+                font-weight: 600;
+                cursor: pointer;
+                text-align: center;
+            }
+            .active{
+                border-bottom: 3px solid #000;
+            }
+        }
+    }
+    &__body{
+        display: flex;
+        flex-grow: 1;
+    }
+    &__nodata{
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,38 @@
+.EditListItem{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5px;
+    ::placeholder {
+        color: #aaa7a775;
+        opacity: 1; /* Firefox */
+    }
+    &__input{
+        font-size: 1.2rem;
+        border-radius: 4px;
+        background: #f7f7f7;
+        width: 100%;
+        outline: none;
+        border: none;
+        user-select: none;
+        padding: 1rem 0.5rem;
+        &:active,&:focus{
+            outline: none;
+            border: none;
+        }
+    }
+    &__error{
+        font-size: 1rem;
+        margin: 3px 0 0 3px;
+        color: red;
+        font-weight: 400;
+    }
+    &__actions{
+        &__btn{
+            margin: 5px 10px 0 0;
+            &__icon{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

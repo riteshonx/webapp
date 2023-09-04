@@ -1,0 +1,26 @@
+.v2-component-menu-landing-page {
+  cursor: pointer;
+  
+  .v2-component-menu-landing-page-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    width: 260px;
+    margin-top: 100px;
+    display: block;
+    padding-left: 10px;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-left-color: #fff;
+    transition: border-left-width 0.4s linear;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+    &-detail {
+      font-size: 16px;
+    }
+    &.active {
+      border-left-width: 10px;
+    }
+  }
+}

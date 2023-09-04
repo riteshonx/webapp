@@ -1,0 +1,15 @@
+.equipment-master {
+  padding: 10px 45px 10px 25px;
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+  &__main {
+    top: 142px;
+    display: flex;
+    height: calc(100vh - 140px);
+    right: 0;
+    transition-property: width;
+    transition-duration: 10s;
+    z-index: 10;
+  }
+}

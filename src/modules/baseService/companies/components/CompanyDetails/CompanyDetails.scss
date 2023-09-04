@@ -1,0 +1,66 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.companyDetails{
+    padding: 10px 20px;
+    margin: 0 auto;
+
+    &__description{
+        margin: 10px 0px;
+        font-size: 1.2rem;
+        max-width: 420px;
+    }
+
+    &__metrics{
+
+        &__container {
+            @include flexCenter(flex-start);
+            height: 60px;
+            position: relative;
+        }
+        
+        &__label {
+            .MuiFormLabel-root{
+                width: 110px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+            }
+        &__icon{
+            margin-left: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #000;
+        }
+        }
+
+        &__input-field{
+            width: 100%;
+            max-width: 250px;
+            margin-left: 15px;
+            &__view{
+                border-bottom: 1px dotted #c2c2c2;
+                color: rgba(0, 0, 0, 0.38);
+                font-size: 1.4rem;
+            }
+            &__text{
+                color:#bfbdbd
+            }
+        }
+
+        &__error-wrap{
+            color: $onx-red;
+            height: 18px;
+            font-size: 1.2rem;
+            position: absolute;
+            bottom: -5px;
+            
+            &__message{
+                padding: 0px;
+                margin: 0px;
+                font-size: 1rem;
+            }
+        }
+    }
+}

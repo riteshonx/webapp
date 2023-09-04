@@ -1,0 +1,49 @@
+@import '../../../../../../assets/onx/variable';
+.floating_btn {
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+  background: $onx-primary;
+  width: 45px;
+  height: 45px;
+  border-radius: 9px;
+  z-index: 1000;
+
+  &__columnName {
+    &__typography {
+      padding: 8px;
+    }
+
+    .MuiPopover-paper {
+      width: 220px !important;
+    }
+
+    .MuiTypography-body1 {
+      font-size: 12px !important;
+      line-height: 20px !important;
+      font-weight: 500 !important;
+    }
+
+    .MuiTypography-body1:hover {
+      font-size: 12px !important;
+      line-height: 20px !important;
+      font-weight: 600 !important;
+      cursor: pointer;
+    }
+
+    &__checkIcon {
+      font-size: 15px;
+      float: right;
+      margin-top: 3px;
+    }
+
+    &__hideTickIcon {
+      display: none;
+    }
+
+    &__disabledColumn {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,212 @@
+@import '../../../../../assets/onx/variable';
+@import '../../../styles/colors.scss';
+.addActivities {
+    padding: 5px;
+    height: 100%;
+    position: relative;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(255,255,255, 0.1);
+        color: $SLATE-V2-3;
+    }
+
+    &__tab {
+        margin-top: 30px;
+        margin-bottom: 16px;
+        padding: 5px;
+        padding-bottom: 0;
+        border-bottom: 1px solid rgba(221, 221, 221, 0.1);
+        font-size: 12px;
+        color: $WHITE;
+
+        &__title {
+            display: flex;
+            position: relative;
+            width: fit-content;
+            padding: 5px;
+            padding-right: 12px;
+            border-bottom: 1px solid $WHITE;
+            font-weight: bold;
+
+            & span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 16px;
+                width: 16px;
+                line-height: 1;
+                font-size: 10px;
+                background-color: $SLATE-V2-4;
+                border-radius: 50%;
+                color: $BLACK;
+                margin-left: 4px;
+            }
+        }
+    }
+
+    &__search {
+        width: 460px;
+        display: flex;
+        align-items: center;
+        border: 1px solid $onx-A5;
+        border-radius: 4px;
+        margin-bottom: 25px;
+
+        label {
+            line-height: 1;
+
+            svg {
+                width: 15px;
+                height: 15px;
+                margin: 12px 8px 8px 14px;
+                fill: $WHITE;
+            }
+        }
+
+        input {
+            font-size: 12px;
+            padding: 8px 0;
+            flex-grow: 1;
+            border: none;
+            background-color: transparent;
+            color: $WHITE;
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: rgba(255,255,255, 0.1);
+            }
+        }
+    }
+
+    &__container {
+        max-height: 40vh;
+        overflow: auto;
+    }
+
+    &__table {
+        table-layout: fixed;
+        border-collapse: collapse;
+
+        & tr>th {
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+            color: $WHITE;
+            background-color: #171d25;
+        }
+
+        &__row {
+            font-size: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255, 0.1);
+            color: $WHITE;
+            padding: 9px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &.selected {
+                background-color: #242e3b;
+            }
+
+            &:nth-child(1) {
+                width: 40%;
+            }
+
+            &:nth-child(2) {
+                width: 120px;
+            }
+
+            &:nth-child(4) {
+                width: 120px;
+            }
+
+            &:nth-child(5) {
+                width: 100px;
+            }
+        }
+
+        .Mui-checked {
+            color: $WHITE;
+        }
+
+        .MuiSvgIcon-root {
+            font-size: 16px;
+            border-radius: 4px;
+            fill: $WHITE;
+        }
+    }
+    &__no-match-found {
+        text-align: center;
+        padding: 20px;
+        color: $OVERDUE;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 20px;
+        padding-right: 20px;
+        color: $WHITE;
+
+        & select {
+            width: 60px;
+            border: 1px solid $WHITE;
+            background-color: transparent;
+            margin-left: 12px;
+            font-size: 14px;
+            padding: 6px;
+            border-radius: 4px;
+            color: $WHITE;
+        }
+        & .MuiPaginationItem-root {
+            border: 1px solid $WHITE;
+            color: $WHITE;
+            background-color: transparent;
+        }
+    }
+
+    &__action {
+        padding: 20px 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 24px;
+
+        & button {
+            font-size: 13px;
+            line-height: 20px;
+            padding: 6px 16px;
+            font-weight: bold;
+            margin-left: 12px;
+            border-radius: 4px;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__cancel {
+            border: 1px solid $WHITE;
+            background-color: transparent;
+            color: $WHITE;
+        }
+
+        &__add {
+            background-color: $SLATE-V2-3;
+            color: $BLACK;
+            border: none;
+            &:disabled {
+                opacity: 0.3;
+            }
+        }
+    }
+}

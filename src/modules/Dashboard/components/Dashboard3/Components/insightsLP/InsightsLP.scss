@@ -1,0 +1,36 @@
+.insightsLP-main {
+  padding: 1rem;
+  height: calc(100% - 78px);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  &__insights {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 4px;
+    font-size: 1.05rem;
+    border: 0.5px solid lightgray;
+    text-decoration: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .highPriority {
+    background-color: #fae9e1;
+  }
+  &__noDataContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__text {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: gray;
+    }
+    &__circularProgress {
+      height: 3rem !important;
+      width: 3rem !important;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../../styles/colors.scss';
+
+.v2-LoadingCard {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__loader {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 4px solid $SLATE-V2-3;
+        border-bottom-color: transparent;
+        animation:  rotate 1s linear infinite;
+        @keyframes rotate {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+    }
+}

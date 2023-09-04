@@ -1,0 +1,103 @@
+@import 'src/version2.0_temp/assets/styles/colors.scss';
+
+.v2-visualize {
+    @include color-sections(false);
+
+    &.classic-colors {
+        @include color-sections(true);
+    }
+
+    &-locationtree {
+        grid-area: visualizeTree;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+        
+        &-header {
+            font-weight: 600;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        &-content {
+            background-color: $vis-color-2;
+            padding: 5px 0;
+            height: calc(100% - 35px);
+            overflow: auto;
+
+            &-allSwitch {
+                .MuiSwitch-colorSecondary.Mui-checked {
+                    color: $vis-color-3;
+                    
+                    &+.MuiSwitch-track {
+                        background-color: $vis-color-3;
+                    }
+                    
+                }
+            }
+
+            &-allExtrBtn {
+                &.MuiButton-text {
+                    color: $vis-font-color;
+                    text-transform: none;
+                    padding: 6px 12px;
+                }
+
+                &.MuiButton-root:hover{
+                    color: $vis-color-3;
+                }
+            }
+        }
+
+        &-container{
+            &:focus  {
+                border: none;
+                outline: none;
+
+                &> li > .MuiTreeItem-content{
+                    color: $vis-color-3;
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        &-item {
+            & .Mui-selected {
+                background-color: transparent !important;
+        
+                & .MuiTreeItem-label {
+                    color: $vis-color-3;
+                }
+            }
+        
+            & .MuiTreeItem-content {
+                padding: 3px 5px;
+            }
+        
+            & .MuiTreeItem-label {
+                font-size: 12px !important;
+            }
+        
+            & .MuiTreeItem-iconContainer {
+                color: $vis-color-3;
+            }
+
+            & .arrow {
+                transform: rotate(0deg);
+            }
+        
+            & .expanded {
+                transform: rotate(90deg);
+            }
+
+            & .MuiTreeItem-content:hover {
+                background-color: transparent !important;
+                color: $vis-color-3;
+                opacity: 0.7;
+            }
+        }
+    }
+}

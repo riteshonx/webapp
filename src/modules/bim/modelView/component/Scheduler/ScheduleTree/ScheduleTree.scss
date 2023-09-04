@@ -1,0 +1,95 @@
+@import '../../../../../../assets/onx/variable';
+
+.bimScheduleTree {
+    .treeSearch {
+        margin-bottom: 10px;
+    }
+
+    .bimTree {
+        .level-0 {
+            .MuiTreeItem-label {
+                font-weight: 700;
+                font-size: 1.3rem;
+                line-height: 20px;
+                color: $onx-A2;
+            }
+        }
+
+        .level-1 {
+            .MuiTreeItem-label {
+                font-weight: 600;
+                font-size: 1.3rem;
+                line-height: 20px;
+                color: $onx-A3;
+            }
+        }
+
+        .level-n {
+            .MuiTreeItem-label {
+                font-weight: normal;
+                font-size: 1.3rem;
+                line-height: 20px;
+                color: $onx-A3;
+            }
+        }
+        .no-children {
+            .labelName, .MuiTreeItem-content {
+                cursor: default;
+            }
+        }
+
+        .MuiTreeItem-content {
+            margin: 5px 0;
+        }
+
+        .MuiTreeItem-label:hover {
+            background-color: white;
+        }
+
+        .nodeLabel {
+            display: flex;
+            // align-items: center;
+            justify-content: space-between;
+
+            .labelName {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                flex:1;
+                width: 50%;
+            }
+
+            .operations {
+                display: flex;
+                align-items: center;
+
+                .cubeIcon, .eyeIcon{
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    .milestoneIcon {
+        width: 8px;
+        height: 8px;
+
+        background: #000000;
+        transform: rotate(45deg);
+    }
+
+    
+}
+
+.bimSchdulerMenu {
+    .MuiMenuItem-root {
+        font-size: 1.2rem;
+        line-height: 20px;
+        min-width: 116px;
+        padding: 8px 12px;
+    }
+}
+
+ 

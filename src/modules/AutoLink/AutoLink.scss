@@ -1,0 +1,62 @@
+@import "src/version2.0_temp/assets/styles/colors.scss";
+
+.auto-link-grid {
+  height: calc(100vh - 54px);
+  background-color: #171d25;
+}
+.v2-auto-link {
+  width: 100%;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-gap: 12px;
+  &--search {
+    background-color: #2f343a;
+    border: 1px solid white;
+    padding: 4px 20px;
+    margin: 6px;
+    margin-bottom: 2px;
+    color: white;
+    border-radius: 4px;
+    min-width: calc(100% - 12px);
+  }
+  &--icon {
+    &--search {
+      position: absolute;
+      z-index: 1;
+      color: white;
+      left: 8px;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    &--close {
+      position: absolute;
+      z-index: 1;
+      color: white;
+      right: 8px;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  }
+  & > div {
+    height: calc(100vh - 95px);
+    overflow: auto;
+    background: $SLATE-V2-2;
+    position: relative;
+    h2 {
+      background: $SLATE-V2-2;
+      position: sticky;
+      top: 0;
+      font-size: 22px;
+      padding: 15px 10px;
+      color: $WHITE;
+      border-bottom: 1px solid $SLATE-V2-3;
+    }
+  }
+  .no-task-found {
+    font-size: 20px;
+    color: $SLATE-V2-3;
+    text-align: center;
+  }
+}

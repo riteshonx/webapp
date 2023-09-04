@@ -1,0 +1,97 @@
+@import "../../../../assets/onx/variable";
+@import "../../../../assets/onx/abstracts/mixins";
+
+.dialog{
+    @include flexCenter(center);
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__header {
+        &__text {
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 1.6;
+            letter-spacing: 0.0075em;
+            margin: 0px 0px 10px 0px;
+            font-weight: 600;
+        }
+
+        &__close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+        }
+    }
+
+    &__body {
+        margin-bottom: 10px;
+        max-width: 380px;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+    }
+
+    &__footer {
+        @include flexCenter(space-evenly);
+        margin: 10px 10px 25px 10px;
+
+        &__btn {
+            min-width: 111px !important;
+            margin: 0px 12px;
+            padding: 8px 0;
+            font-size: 1.2rem !important;
+        }
+    }
+
+    &__success {
+        height: 100%;
+        @include flexCenter(center);
+    
+        &__box {
+          @include flexCenter(center);
+          height: 80px;
+          width: 80px;
+          border-radius: 50%;
+          margin: 0 auto;
+          @include success-animation();
+          border: 3px solid #0D444B;
+
+          &__icon{
+            font-size: 32px !important;;
+            color: #0D444B;
+          }
+        }
+    
+        &__text {
+          @extend .dialog__header__text;
+          margin-top: 10px;
+        }
+    }
+
+    &__warning {
+        @extend .dialog__success;
+    
+        &__box {
+          @extend .dialog__success__box;
+          border: 3px solid #F25959;
+
+          &__icon{
+            @extend .dialog__success__box__icon;
+            color: #F25959;
+          }
+        }
+    
+        &__text {
+          @extend .dialog__success__text;
+        }
+    }
+
+    .btn-primary{
+        margin-left: 15px;
+    }
+}
+
+

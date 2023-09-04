@@ -1,0 +1,87 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.invite-teammates{
+    margin: 0px 15px;
+}
+
+.invite-popOver{
+    color: #6c6969;
+    font-size: 1.4rem !important;
+    padding: 10px;
+    min-width: 350px;
+
+    &__users{
+        max-height: 200px;
+        overflow-y: auto;
+
+        &__assigneeContainer {
+            font-size: 1.2rem;
+            padding: 0.7rem;
+            border-bottom: 1px solid #e8e8e8;
+            cursor: pointer;
+        }
+
+        &__avatar {
+            height: 2.7rem !important;
+            width: 2.7rem !important;
+            font-size: 1.4rem;
+            color: #fff !important;
+            background-color: $onx-primary !important;
+        }
+
+        &__details{
+            display: flex;
+            flex-direction: column;
+            padding-left: 1rem;
+            &__name {
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 1.3rem;
+              letter-spacing: 0.02em;
+              color: #1f1f1f;
+            }
+            &__designation {
+              font-family: Poppins;
+              font-style: normal;
+              font-size: 1rem;
+              letter-spacing: 0.02em;
+              color: #757575;
+            }
+          }
+
+          &__addIconContainer {
+            padding: 4px !important;
+            cursor: pointer;
+            margin-left: 10px;
+            &__addIcon {
+              height: 1.5rem;
+              width: 1.5rem;
+            }
+            &__active {
+              height: 1.5rem;
+              width: 1.5rem;
+              color: green;
+            }
+            &__disabled {
+              height: 1.5rem;
+              width: 1.5rem;
+              color: #c2c2c2;
+            }
+          }
+    }
+
+    &__actions{
+        @include flexCenter(flex-end);
+        flex-wrap: wrap;
+        margin: 10px 0px;
+    }
+    &__message{
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+    }
+    
+}
+

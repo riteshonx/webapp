@@ -1,0 +1,44 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.DrawingListTable{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    &__nodata{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    &__upload-btn{
+        margin: 20px 0px;
+    }
+}
+
+.drawing-action{
+    @include flexCenter(flex-end);
+    flex-wrap: wrap;
+    width: 80px !important;
+
+    &__icon-wrapper{
+        margin-right: 5px;
+        color: #6c6969;
+
+        .mat-icon{
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+}
+
+.drawingLists{     
+    &__drawing-row{
+       cursor: pointer;
+    }
+    &__drawing-row:hover{
+        background: #c8c8c842;
+    }
+}

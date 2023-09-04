@@ -1,0 +1,74 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+// grid view styles starts
+
+.grid-view{
+    &__card{
+        width: 282px;
+        height: 170px;
+        border-radius: 5px;
+        background: #FBFBFB;
+        border: 1px solid #D7D7D7;
+        padding: 10px 15px;
+        margin: 10px 15px 10px 0px ;
+
+        &__name{
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0px;
+            margin-bottom: 5px;
+            width: 205px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &__description{
+            height: 85px;
+            width: 205px;
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 18px;
+            letter-spacing: 0px;
+            color: #545454;
+            margin-bottom: 5px;
+            overflow: hidden;
+        }
+
+        &__info{
+            @include flexCenter(space-between);
+            flex-wrap: wrap;
+
+            &__type{
+                @include flexCenter(flex-start);
+
+                &__task-type{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    line-height: 18px;
+                    margin: 5px 10px 5px 0px;
+                }
+
+                &__duration{
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                    line-height: 18px; 
+                    margin: 5px 10px 5px 0px;           
+                }
+            }
+
+            &__action{
+                @include flexCenter(flex-end);
+
+                &__icon{
+                    height: 20px;
+                    margin-left: 0px;
+                    color: #B0B0B0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

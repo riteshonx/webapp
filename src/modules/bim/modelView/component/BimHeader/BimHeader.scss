@@ -1,0 +1,19 @@
+@import "../../../../../assets/onx/variable";
+
+.bim-info{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    
+    &__description{
+        font-size: 1.2rem;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: inline-grid;
+        align-items: center;
+    }
+}

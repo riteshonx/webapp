@@ -1,0 +1,123 @@
+@import '../../../../../../assets/onx/variable';
+.pullPlanButton {
+  &__startPullPlan {
+    text-transform: none;
+    background: #82c660;
+    color: #fff;
+    &:hover,
+    &:active {
+      background: #82c660;
+      color: #fff;
+    }
+  }
+  &__start {
+    display: flex;
+    border: 1px solid #bdbdbd;
+    border-left: 5px solid $onx-primary;
+    padding: 2px 4px 3px 10px;
+    border-radius: 4px 4px;
+    align-items: center;
+    margin-right: 8px;
+    &__date {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: $onx-primary;
+      padding: 0;
+    }
+    &__month {
+      font-size: 1.2rem;
+      color: #424242;
+      font-weight: 400;
+      margin: 0 5px;
+      padding: 0 5px;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    &__task {
+      font-weight: 600;
+      font-size: 12px;
+      color: $onx-primary;
+      padding: 0 10px 0 5px;
+      cursor: pointer;
+    }
+    &__button {
+      text-transform: none;
+      background: #82c660;
+      color: #fff;
+      &:hover,
+      &:active {
+        background: #82c660;
+        color: #fff;
+      }
+      &.MuiButton-containedSizeSmall {
+        padding: 1px 8px;
+      }
+    }
+  }
+  &__stopPullPlan {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    flex-direction: row;
+    padding: 0 10px;
+    &__time {
+      margin: 0 0 0 0.5rem;
+      font-weight: 600;
+      width: 65px;
+    }
+    &__btn {
+      text-transform: none;
+      background: #ea4e4e;
+      color: #fff;
+      &:hover,
+      &:active {
+        background: #ea4e4e;
+        color: #fff;
+      }
+      .MuiButton-startIcon {
+        border-radius: 50%;
+        padding: 1px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+      }
+    }
+    &__icon {
+      color: #ea4e4e;
+      font-size: 1.8rem;
+    }
+  }
+  &__deadline {
+    padding: 5px 8px;
+    border-radius: 2px;
+    background: #fff8d4;
+    color: #94651c;
+    font-style: italic;
+    &__date {
+      font-weight: 600;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  &__time {
+    display: flex;
+    align-items: center;
+    background: rgba(23, 211, 19, 0.31);
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-right: 5px;
+    &__value {
+      display: flex;
+      margin-left: 10px;
+      font-size: 12px;
+      &__timer {
+        width: 65px;
+      }
+    }
+  }
+}

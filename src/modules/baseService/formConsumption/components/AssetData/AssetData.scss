@@ -1,0 +1,10 @@
+.asset__data{
+  &__value{
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 16px;
+    li{
+        margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import '../../../../../assets/onx/variable';
+
+.bimElementTable {
+    border-collapse: collapse;
+
+    .bimTableHead {
+        position: sticky;
+        top: 0;
+        border-bottom: 1px solid #DDDDDD;
+
+        td {
+            white-space: nowrap;
+            font-weight: 500;
+            color: #000000;
+            z-index: 1;
+            background-color: #DDDDDD;
+            border: 1px solid #DDDDDD;
+        }
+    }
+
+    .query-row{
+        cursor: pointer;
+    }
+
+    .tableNo {
+        text-align: center;
+        font-weight: 500;
+        color: #000000;
+        background-color: #EEEEEE;
+        width: 50px;
+    }
+
+    .type5 {
+        min-width: 100px;
+        color: #333333;
+        background-color: #EEEEEE;
+    }
+
+    th, td {
+        border: 1px solid #DDDDDD;
+        padding: 12px;
+        text-align: left;
+        overflow: hidden;
+    }
+}
+.element-table-dialog{
+    max-height: calc(100% - 75px);
+    top: 50px !important;
+
+    .dialogTitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        svg:hover {
+            cursor: pointer;
+        }
+    }
+
+    .MuiDialogContent-root{
+        padding: 0;
+    }
+
+    ::-webkit-scrollbar {
+        height: 8px;
+    }
+}
+ 

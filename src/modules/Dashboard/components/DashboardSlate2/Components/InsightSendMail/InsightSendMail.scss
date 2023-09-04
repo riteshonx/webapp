@@ -1,0 +1,177 @@
+@import "../../../../../../assets/onx/variable";
+
+.insight-mail {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_container {
+    width: 600px;
+    border-radius: 10px;
+    padding: 15px;
+    background: linear-gradient(0deg, #13223d, #234f70 100%) no-repeat !important;
+  }
+
+  &_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      color: #fe9a0b;
+    }
+    &_iconContainer {
+      padding: 0 !important;
+    }
+  }
+
+  &_user {
+    position: relative;
+    margin-top: 10px;
+
+    &_search {
+      border: 0.91px solid #3b3b3b;
+      padding: 10px 8px;
+      border-radius: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 80px;
+      overflow-y: auto;
+      background: #fff;
+      & .MuiChip-root {
+        // margin-right: 6px;
+
+        margin: 2px 6px 2px 0;
+      }
+
+      input {
+        flex-grow: 1;
+        min-width: 100px;
+        border: 0 solid;
+        font-size: 13px;
+
+        &::placeholder {
+          color: rgba(16, 92, 107, 0.55);
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    &_select {
+      position: absolute;
+      padding: 12px;
+      top: calc(100% + 2px);
+      right: 0;
+      left: 0;
+      z-index: 1;
+      background-color: #fff;
+      max-height: 164px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+    }
+
+    &_option {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 36px 1fr 30px;
+      padding: 4px 0;
+      border-bottom: 1px solid $onx-A5;
+
+      &:last-child {
+        border-bottom: 0 solid;
+      }
+
+      & .MuiAvatar-root {
+        height: 30px;
+        width: 30px;
+      }
+
+      & .Mui-checked {
+        color: $onx-primary;
+      }
+    }
+
+    &_name {
+      font-size: 14px;
+      font-weight: 500;
+      color: $onx-primary;
+    }
+
+    &_email {
+      font-size: 12px;
+      color: $onx-A5;
+    }
+  }
+
+  & textarea {
+    border: 1px solid rgba(59, 59, 59, 1);
+    height: 120px;
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    color: rgba(53, 62, 73, 1);
+    border-radius: 6px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & label {
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+    margin: 12px 20px 20px 0;
+    margin-bottom: 5px;
+  }
+
+  &_action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+    & button {
+      font-size: 13px;
+      width: 60px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $onx-primary;
+      margin-left: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      &:disabled {
+        background-color: var(--onx-A8);
+        color: var(--onx-A5);
+        border: 1px solid var(--onx-A8) !important;
+      }
+    }
+
+    &_cancel {
+      background-color: white;
+      color: $onx-primary;
+    }
+
+    &_submit {
+      background-color: #fe9a0b;
+      color: white;
+    }
+  }
+}

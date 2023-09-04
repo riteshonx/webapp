@@ -1,0 +1,30 @@
+import { Group, Object3D, Plane, PlaneHelper, Vector3 } from 'three';
+import { VisualizeRenderer } from '../../../LocationIntelligenceViewerV2/engine/core/visualizeRenderer';
+export declare class ClippingPlanes {
+    minYClippingPlane: Plane;
+    worldPlane: Plane;
+    maxYClippingPlane: Plane;
+    minPlaneHelper: PlaneHelper;
+    maxPlaneHelper: PlaneHelper;
+    clippingPlanes: Plane[];
+    private tweens;
+    private planeCapMap;
+    private max;
+    private min;
+    private worldMin;
+    private currentLocalTopPlanePosition;
+    private currentLocalBottomPlanePosition;
+    private currentWorldPlanePosition;
+    private parent;
+    private _hidden;
+    private _renderer;
+    constructor(parent: Object3D, renderer: VisualizeRenderer);
+    setMinMax(worldMin: Vector3, min: Vector3, max: Vector3): void;
+    setPos(minPos: number, maxPos: number): Promise<void>;
+    hide(): void;
+    show(): void;
+    displayBelowGrade(): void;
+    getDebuggablePlaneGroup(): Group;
+    private animatePlanes;
+    private render;
+}

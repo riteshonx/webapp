@@ -1,0 +1,214 @@
+@import '../../../../../../assets/onx/variable';
+
+.common-edit-task-details-view-related-task {
+  height: 684px;
+  //display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: scroll;
+
+  &__empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+
+    &-img {
+      width: 720px;
+      height: 113.73px;
+    }
+
+    &-text {
+      &-1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        /* identical to box height, or 125% */
+        color: #757575;
+        margin-top: 50px;
+      }
+
+      &-2 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        /* identical to box height, or 167% */
+
+        margin-top: 10px;
+
+        /* Onx/A3 */
+
+        color: $onx-A3;
+      }
+    }
+  }
+  &__data {
+    margin-left: 60px;
+    margin-top: 88px;
+    margin-right: 80px;
+    width: 100%;
+
+    &__table {
+      &-head {
+        &-cell {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 16px;
+          /* identical to box height, or 160% */
+          align-items: center;
+
+          /* Onx/A2 */
+
+          color: $onx-A2;
+        }
+      }
+
+      &-body {
+        &__icon {
+          width: 16.24px;
+          height: 16px;
+          margin-right: 8px;
+        }
+
+        &__table-row {
+          &__table-cell {
+            &__align-center {
+              display: flex;
+              align-items: center;
+            }
+            &-name {
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 13px;
+              line-height: 20px;
+              /* identical to box height, or 154% */
+
+              /* Onx/A2 */
+
+              color: #212121;
+            }
+
+            &-status {
+              font-family: Poppins;
+              font-style: italic;
+              font-weight: normal;
+              font-size: 13px;
+              line-height: 20px;
+              /* identical to box height, or 154% */
+
+              /* Onx/A4 */
+
+              color: #757575;
+              &-complete {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 20px;
+                color: #6dbc8d;
+              }
+            }
+
+            &-blockers {
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 20px;
+              /* identical to box height, or 167% */
+
+              /* Onx/A2 */
+
+              color: #212121;
+            }
+          }
+
+          &-complete {
+            background-color: #f3fef6;
+          }
+        }
+      }
+    }
+
+    color: #000000;
+
+    .MuiTableCell-root {
+      width: calc(100% / 3);
+    }
+  }
+  &__action-menu {
+    width: 44px;
+    height: 100px;
+    //display: flex;
+    // position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: 8px;
+    background: #ffffff;
+    /* Base Card */
+
+    box-shadow: 0px 2px 1px -1px rgba(180, 179, 189, 0.25),
+      2px 0px 1px rgba(180, 179, 189, 0.04),
+      0px 2px 8px rgba(180, 179, 189, 0.25);
+    border-radius: 4px;
+
+    &__task-tree {
+      width: 24px;
+      height: 24px;
+      margin: 13px 12px;
+      // margin-left: 12px;
+      // margin-right: 12px;
+      cursor: pointer;
+    }
+    &__preceding-task {
+      width: 24px;
+      height: 24px;
+      margin-top: 13px;
+      margin-left: 12px;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+    &__succeeding-task {
+      width: 24px;
+      height: 24px;
+      // margin: 13px 12px;
+      margin-top: 12px;
+      margin-left: 12px;
+      margin-right: 12px;
+      margin-bottom: 13px;
+      cursor: pointer;
+    }
+
+    &__mb-13 {
+      margin-bottom: 13px;
+    }
+  }
+  &-heading {
+    position: absolute;
+    width: 241px;
+    height: 28px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 36px;
+    margin-left: 72px;
+    /* identical to box height, or 156% */
+
+    color: #000000;
+  }
+}

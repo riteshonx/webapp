@@ -1,0 +1,1 @@
+export { BuildingPrefab } from './buildingPrefab';

@@ -1,0 +1,82 @@
+@import '../../../../assets/onx/variable';
+
+.RightSideNavbar{
+    position: fixed;
+    z-index: 1000;
+    top: 115px;
+    display: flex;
+    height: calc(100vh - 155px);
+    right: 0;
+    transition-property: width;
+    transition-duration: 0.1s;
+    background: #fff;
+    &.open{
+        width: 440px;
+    }
+    &.close{
+        width: 40px;
+    }
+    &__options{
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        &__tab{
+            box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px 0px 0px 5px;
+            flex-basis: 50.3%;
+            width: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            &__title{
+                transform: rotate(-90deg);
+                white-space: nowrap;
+                display: block;
+                z-index: 1;
+                font-size: 1.4rem;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                height: auto;
+                width: inherit;
+            }
+            .title1 {
+                top: 95px;
+            }
+            .title3{
+                top: 130px;
+            }
+        }
+        .activetab{
+            background: white;
+            color: #000 !important;
+            border: 1px solid #b8b7b7;
+        }
+        .tab1{
+            background: $onx-btn-primary;
+            color: #F5F5F5;
+        }
+        .tab2{
+            background-color: $onx-btn-primary;
+            color: #F5F5F5;
+        }
+        .tab3{
+            background: #5F5D5E;
+            color: #F5F5F5;
+        }
+    }
+    &__view{
+        background-color: #FFFFFF;
+        flex-basis: 100%;
+        z-index: 10;
+        display: flex;
+        flex-grow: 1;
+        width: 100%;
+        &> div{
+            width: 100%;
+            display: flex;
+            flex-grow: 1;
+
+        }
+    }
+}

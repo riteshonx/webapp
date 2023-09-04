@@ -1,0 +1,100 @@
+@import "../../../../../assets/onx/variable";
+
+.dailyLog-filter {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+
+  &__container {
+    position: fixed;
+    display: flex;
+    top: 200px;
+    bottom: 250px;
+    right: 0;
+    background: #fff;
+    z-index: 999;
+    border-radius: 4px 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+    transition: width 0.6s;
+
+    &.close {
+      width: 40px;
+    }
+
+    &.expand {
+      width: 300px;
+    }
+  }
+
+  &__left {
+    height: 100%;
+    background: $onx-primary;
+    opacity: 0.8;
+    border-radius: 5px 0px 0px 5px;
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    &__title {
+      transform: rotate(-90deg);
+      white-space: nowrap;
+      display: block;
+      z-index: 1;
+      font-size: 1.4rem;
+      width: 40px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    &__arrow {
+      position: absolute;
+      top: 10px;
+      right: 4px;
+
+      &__icon {
+        font-size: 34px;
+        color: #fff;
+      }
+    }
+  }
+
+  &__right {
+    flex-grow: 1;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 15px 30px 15px;
+      align-items: center;
+
+      &__title {
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      &__option {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__filters {
+      height: calc(100% - 90px);
+      overflow-y: auto;
+    }
+
+    .Mui-checked {
+      color: $onx-primary;
+    }
+
+    .MuiSvgIcon-root {
+      font-size: 16px;
+      border-radius: 4px;
+    }
+
+    .MuiFormControlLabel-label {
+      font-size: 12px;
+    }
+  }
+}

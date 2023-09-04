@@ -1,0 +1,44 @@
+.filterText{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    flex-direction: column;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #dddddd;
+        align-items: center;
+        &__name{
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        &__active{
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #c2c2c2;
+        }
+        &__action{
+            padding-right: 10px;
+            display: flex;
+            align-items: center;
+            &__value{
+                background: #dddd;
+                width:20px;
+                border-radius: 50%;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+            }
+        }
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        & .MuiOutlinedInput-input{
+            padding: 9px 15px;
+            font-size: 1.4rem;
+        }
+    }
+}

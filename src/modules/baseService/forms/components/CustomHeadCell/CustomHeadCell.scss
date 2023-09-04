@@ -1,0 +1,49 @@
+.CustomHeadCell{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    &__icon{
+        font-size: 1.8rem;
+        color: #00000061;
+    }
+    &__caption{
+        font-weight: 400;
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        max-width: 130px;
+        font-weight: 600;
+    }
+    &__placeholder{
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #c2c2c2;
+    }
+    &:hover{
+        .CustomHeadCell{
+            &__action{
+                display: block;
+                z-index: 2;
+                transition: 0.4s;
+                position: absolute;
+                right: -5px;
+                &__delete{
+                    padding: 4px;
+                    &__icon{
+                        font-size: 1.6rem;
+                    }
+                }
+                &__edit{
+                    padding: 4px;
+                    &__icon{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    &__action{
+        display: none;
+    }
+}

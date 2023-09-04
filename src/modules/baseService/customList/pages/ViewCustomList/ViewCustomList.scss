@@ -1,0 +1,157 @@
+.viewCustomList{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    &__header{
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        &__title{
+            padding: 0;
+            width: 35%;
+            font-size: 2.6rem;
+            ::placeholder {
+                color: #aaa7a775;
+                opacity: 1; /* Firefox */
+            }
+            &__input{
+                font-size: 2.4rem;
+                font-weight: 600;
+                border-radius: 4px;
+                background: #f7f7f7;
+                width: 100%;
+                outline: none;
+                border: none;
+                user-select: none;
+                padding: 1rem 0.5rem;
+                &:active,&:focus{
+                    outline: none;
+                    border: none;
+                }
+            }
+            &__error{
+                font-size: 1rem;
+                margin: 3px 0 0 3px;
+                color: red;
+                font-weight: 400;
+            }
+        }
+    }
+    &__body{
+        flex-grow: 1;
+        padding: 1rem 3rem 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        &__header{
+            display: flex;
+            border-bottom: 1px solid #F0F0F0;
+            justify-content: space-between;
+            font-size: 1.4rem;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+            overflow-y: auto;
+            &__item{
+                font-size: 1.2rem;
+                padding: 5px 0;
+                border-bottom: 1px solid #F0F0F0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 1rem;
+                height: 40px;
+                &.nochild{
+                    padding-left: 3.5rem;
+                }
+                &:hover{
+                    background: #f0f0f0;
+                }
+                &__left{
+                    display: flex;
+                    align-items: center;
+                    &__btn{
+                        padding:3px;
+                        margin-right: 5px;
+                    }
+                    &__edit{
+                        display: none;
+                    }
+                    & .active{
+                        font-weight: 600;
+                    }
+                }
+                &:hover &__left{
+                    &__edit{
+                        display: block;
+                        padding: 0.2rem;
+                        margin-left: 2rem;
+                        &__icon{
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+                &__right{
+                    &__btn{
+                        padding: 0.5rem;
+                        &__icon{
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+            &__addItem{
+                font-size: 1.2rem;
+                padding: 5px 0;
+                cursor: pointer;
+                &__btn{
+                    text-transform: none;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+            }
+            &__newitem{
+                padding: 5px 0;
+                ::placeholder {
+                    color: #aaa7a775;
+                    opacity: 1; /* Firefox */
+                }
+                &__input{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    border-radius: 4px;
+                    background: #f7f7f7;
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    user-select: none;
+                    padding: 1rem;
+                    &:active,&:focus{
+                        outline: none;
+                        border: none;
+                    }
+                }
+                &__error{
+                    font-size: 1rem;
+                    margin: 3px 0 0 3px;
+                    color: red;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    &__footer{
+        margin: 0 3rem 1rem 3rem;
+        display: flex;
+        justify-content: flex-end;
+        border-top: 1px solid #F0F0F0;
+        padding: 1rem 0 0 1rem;
+        align-items: center;
+        &__btn{
+            margin-right: 1rem !important;
+        }
+    }
+}

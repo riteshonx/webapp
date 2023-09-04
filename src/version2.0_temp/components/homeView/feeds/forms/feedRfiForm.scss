@@ -1,0 +1,42 @@
+
+@import '../../../../assets/styles/colors.scss';
+.v2-rfi-task {
+    min-width: 500px;
+    &-nav {
+      justify-content: space-between;
+      font-size: 16px;
+      border-bottom: 1px solid #FFFFFF4D;
+      padding: 10px 16px;
+      font-weight:  500;
+      &-title{
+        &-subject{
+          margin-left: 5px;
+        }
+        &-state{
+          margin-left: 5px;
+        }
+      }
+
+    }
+  
+    &-container {
+      padding: 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      border-bottom: 1px solid #FFFFFF4D;
+    }
+  
+    &-title {
+      font-weight: 500;
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    &-col {
+      display: flex;
+      color: --var($WHITE);
+      font-size: 14px;
+      max-width: 300px;
+    }
+  }
+  

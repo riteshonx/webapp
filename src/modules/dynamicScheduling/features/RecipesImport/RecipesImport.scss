@@ -1,0 +1,15 @@
+.RecipesImport{
+    display: flex;
+    flex-direction: column;
+    &__header{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 20px 10px 10px 10px;
+        &__search{
+            position: absolute;
+            right: 15px;
+            top:25px;
+        }
+    }
+}

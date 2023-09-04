@@ -1,0 +1,58 @@
+.v2-feed-container{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #181d24;
+}
+
+.v2-feed-header{
+        display:flex;
+        justify-content:space-between;
+      }
+.v2-feed-title{
+    font-size: 16px;
+    font-weight: 500,
+  }
+.v2-feed-description{
+    font-size: 12px;
+    font-weight:400;
+    margin:2px;
+  }
+.v2-feed-subTtile{
+    font-size: 14px;
+    font-weight: 400,
+  }
+.v2-feed-spanKey{
+  color:orange
+  }
+.v2-feed-icon{
+    color:orange
+    }
+.v2-feed-cardFooter{
+    display:flex;
+    justify-content:space-between
+  }
+.v2-feed-detail {
+  max-width: 400px;
+  padding: 10px;
+  &-nav {
+    justify-content: space-between;
+  }
+  &-container {
+    padding: 10px 0;
+  }
+  &-title {
+    color: #FAB144;
+    font-size: 14px;
+  }
+  &-value {
+    color: #fff;
+    font-size: 14px;
+    & a {
+      text-decoration: underline;
+    }
+  }
+}

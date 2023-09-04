@@ -1,0 +1,82 @@
+@import '../../../../../assets/onx/variable';
+@import '../../../styles/colors.scss';
+
+.v2-lessonsLearnedDetails {
+    padding: 5px;
+    color: $WHITE;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        color: $SLATE-V2-3;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+        &__title {
+            font-size: 16px;
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &__action {
+            &__button {
+                font-size: 12px !important;
+                margin: 0 10px !important;
+                background-color: $SLATE-V2-3 !important;
+                color: $BLACK !important;
+
+                &:hover {
+                    background-color: $SLATE-V2-3 !important;
+                }
+
+                &.MuiButton-outlined {
+                    background-color: $SLATE-V2-3 !important;
+                    border: 1px solid $SLATE-V2-3 !important;
+                    color: $BLACK !important;
+                }
+            }
+        }
+    }
+
+    &__content {
+        margin-right: 30px;
+        &__info {
+            margin: 10px;
+            float: right;
+            font-size: 14px;
+            color: $SLATE-V2-3;
+        }
+
+        &__parameter {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px 30px;
+
+            &__group {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        &>div {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        h4,
+        p {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}

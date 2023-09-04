@@ -1,0 +1,55 @@
+@import '../../../assets/styles/colors.scss';
+
+.v2-popover {
+  position: fixed;
+  background: $SLATE-V2-2;
+  color: $WHITE;
+  z-index: 9;
+  animation: fadeup 0.6s linear;
+  filter: drop-shadow(0px 0px 2px $SLATE-V2-3);
+
+  &-container {
+    width: fit-content;
+  }
+
+  &-notch {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $SLATE-V2-2;
+    position: absolute;
+
+    &.left {
+      transform: rotate(90deg);
+    }
+
+    &.right {
+      transform: rotate(-90deg);
+    }
+
+    &.top {
+      transform: rotate(180deg);
+    }
+
+    &.bottom {
+      transform: rotate(0deg);
+    }
+
+    &.top-left {
+      transform: rotate(180deg);
+    }
+
+    &.top-right {
+      transform: rotate(180deg);
+    }
+
+    &.bottom-left {
+      transform: rotate(0deg);
+    }
+
+    &.bottom-right {
+      transform: rotate(0deg);
+    }
+  }
+}

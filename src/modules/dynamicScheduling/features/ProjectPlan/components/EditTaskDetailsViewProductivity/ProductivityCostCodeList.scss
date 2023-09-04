@@ -1,0 +1,23 @@
+.productivitycode__option__list {
+    &__item {
+        
+        padding: 6px 4px 4px 8px;
+        display: "inlineBlock";
+        margin-left: "10px";
+        align-items: center;
+        background: #fff;
+        cursor: pointer;
+        list-style: none;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #3B3B3B;
+        border-bottom: 1px solid var(--onx-A7);
+    }
+
+    &__code {
+        padding-right: 5px;
+    }
+}

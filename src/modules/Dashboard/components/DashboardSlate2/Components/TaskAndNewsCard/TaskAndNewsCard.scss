@@ -1,0 +1,152 @@
+.taskAndNewsCardSlate2-container {
+  min-height: 60rem;
+  transition: all 2s ease;
+  overflow: hidden;
+  background: url("../../../../../../assets/images/bg-27-1.png");
+  min-width: 40rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 1px 10px 0 transparent;
+  &__closeIconButton {
+    position: absolute !important;
+    right: 0;
+    height: 15px;
+    width: 15px;
+    background: rgb(247, 176, 71) !important;
+    border-radius: 0px !important;
+    padding: 0 !important;
+    z-index: 9999;
+    &__icon {
+      font-size: 18px !important;
+      color: #fff;
+    }
+  }
+  &__taskAndTweetsContainer {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent !important;
+    /* Remove this if you don't want the 3D effect */
+    &__flip-icon-container {
+      min-width: 41rem;
+      max-width: 41rem;
+      position: relative;
+      &__flip-icon {
+        position: absolute;
+        right: -3.5rem;
+        font-size: 1.8rem;
+        top: 1.5rem;
+        z-index: 1;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    &__flip-card {
+      background-color: transparent !important;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      &:hover {
+        transform: scale3d(1.02, 1.02, 1);
+        transition: all 0.5s ease-in-out !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+
+    /* This container is needed to position the front and back side */
+    &__flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      // text-align: center;
+      transition: transform 1.5s;
+      transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    &__flip-card-on-hover {
+      transform: rotateY(180deg);
+    }
+
+    /* Style the back side */
+    &__flip-card-back {
+      transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    &__flip-card-front,
+    &__flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    .slick-slider {
+      min-width: 41rem;
+      max-width: 41rem;
+    }
+    .slick-dots {
+      top: 45px;
+      height: 10px;
+    }
+    .slick-arrow {
+      display: none !important;
+    }
+  }
+  & .MuiInputBase-root {
+    color: #fff;
+    font-size: 13px;
+  }
+  &__scroll {
+    &::-webkit-scrollbar {
+      width: 4px; /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent; /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: lightgrey; /* color of the scroll thumb */
+      border-radius: 20px; /* roundness of the scroll thumb */
+      // border: 3px solid orange; /* creates padding around scroll thumb */
+    }
+  }
+  &__open {
+    transform: translateY(0rem);
+  }
+  &__hidden {
+    transform: translateY(70rem);
+  }
+  &__messageCard {
+    &:hover {
+      transform: scale(1.02);
+      // background-color: #bdbdbd;
+    }
+  }
+  &__dismissCard {
+    animation: swipeLeft 1s ease forwards;
+  }
+  &__pinCard {
+    animation: swipeRight 1s ease forwards;
+  }
+  @keyframes swipeLeft {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translateX(110%);
+    }
+  }
+  @keyframes swipeRight {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translateX(-110%);
+    }
+  }
+}

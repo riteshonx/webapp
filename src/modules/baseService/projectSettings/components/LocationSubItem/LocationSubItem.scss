@@ -1,0 +1,99 @@
+
+.LocationSubItem{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        &__left{
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+    &__element{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin-left: 5%;
+        &__item{
+            padding: 10px 10px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            &:hover{
+                background: #f0f0f0;
+            }
+            .active{
+                font-weight: 600;
+            }
+            &__left{
+                display: flex;
+                align-items: center;
+                &__btn{
+                    padding:3px;
+                    margin-right: 5px;
+                }
+                &__edit{
+                    display: none;
+                }
+            }
+            &:hover &__left{
+                &__edit{
+                    display: block;
+                    padding: 0.2rem;
+                    margin-left: 2rem;
+                    &__icon{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            &__right{
+                &__btn{
+                    padding: 0.5rem;
+                    &__icon{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        &__addItem{
+            border-bottom: 1px solid #ddd;
+            color: #000;
+            padding: 5px 5px;
+            &__btn{
+                text-transform: none;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-right: 10px;
+            }
+        }
+        &__newitem{
+            padding: 5px 0;
+            ::placeholder {
+                color: #aaa7a710;
+                opacity: 1; /* Firefox */
+                font-weight: 400;
+            }
+            &__input{
+                background: #f7f7f7;
+                width: 100%;
+                & .MuiInputBase-root{
+                    input{
+                        font-size: 1.2rem !important;
+                        font-weight: 600 !important;
+                        padding: 10px !important;
+                    }
+                }
+            }
+            &__error{
+                font-size: 1rem;
+                margin: 3px 0 0 3px;
+                color: red;
+                font-weight: 400;
+            }
+        }
+    }
+}

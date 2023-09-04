@@ -1,0 +1,18 @@
+@import "../../../../../assets/onx/variable";
+.btnedit {
+    background: url('../../../../../assets/images/baseline_edit_black_18dp.png') no-repeat;
+    cursor:pointer;
+    border: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .btndelete {
+    background: url('../../../../../assets/images/baseline_delete_black_18dp.png') no-repeat;
+    cursor:pointer;
+    border: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }

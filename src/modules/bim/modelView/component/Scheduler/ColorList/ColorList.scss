@@ -1,0 +1,33 @@
+@import '../../../../../../assets/onx/variable';
+
+.bimColorList {
+
+    // display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bimColorIcon {
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #bb4b4b;
+    border-radius: 50%;
+}
+
+.bimColorIcon span{
+   font-size: 18px;
+   position: relative;
+   top: -2px;
+   left: 1.5px;
+} 
+
+.bimColorPop{
+    margin-top: 5px;
+
+    .colorPopList{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+} 

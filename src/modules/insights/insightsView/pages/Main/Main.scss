@@ -1,0 +1,40 @@
+@import '../../../../../assets/onx/variable';
+
+.insights {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+
+    &__heading {
+        font-size: 24px;
+        color: $onx-A2;
+        margin-bottom: 10px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__tab {
+        padding: 10px;
+        box-shadow: $onx-card-shadow-base;
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__cardsContainer {
+        height: calc(100vh - 240px);
+        overflow-y: auto;
+        padding-right: 5px;
+    }
+
+    &__cardDetails {
+        height: calc(100vh - 240px);
+        overflow-y: auto;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        margin-left: 5px;
+    }
+}

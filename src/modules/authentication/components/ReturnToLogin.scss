@@ -1,0 +1,13 @@
+@import "../../../assets/onx/variable";
+
+.returnToLoginContainer {
+  &_returnToLoginLink {
+    display: block;
+    text-align: center;
+    color: #1d3a40;
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+}

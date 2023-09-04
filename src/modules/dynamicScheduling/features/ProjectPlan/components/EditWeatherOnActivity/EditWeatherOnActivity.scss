@@ -1,0 +1,105 @@
+@import '../../../../../../assets/onx/variable';
+
+.weather-activity {
+  padding: 16px;
+  & *:focus {
+    outline: none;
+  }
+  &__info {
+    margin-left: 10px;
+    padding: 2px;
+  }
+  &__template {
+    label {
+      font-size: 10px;
+      line-height: 16px;
+      font-weight: bold;
+      display: block;
+    }
+    select {
+      padding: 8px 12px;
+      font-size: 12px;
+      line-height: 20px;
+      width: 300px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      &::placeholder {
+        color: $onx-A2;
+      }
+    }
+    &__group {
+      display: flex;
+      align-items: center;
+      margin-top: 4px;
+      margin-bottom: 16px;
+    }
+  }
+  &__parameter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    &__label {
+      width: 120px;
+      font-size: 13px;
+      font-weight: bold;
+      color: $onx-A2;
+    }
+    &__value {
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+      color: $onx-A2;
+      input {
+        padding: 6px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        width: 240px;
+        border: 1px solid #9E9E9E;
+        margin-right: 8px;
+        margin-left: 24px;
+        color: $onx-A2;
+        &::placeholder {
+          color: #E0E0E0;
+          font-style: italic;
+        }
+      }
+      &.temperature__value {
+        input {
+          width: 100px;
+          margin-left: 0;
+        }
+      }
+      &__range {
+        margin-right: 8px;
+      }
+      input[type="checkbox"] {
+        width: 20px !important;
+      }
+      &__label {
+        font-size: 10px;
+        color: #000;
+        margin-left: 4px;
+      }
+    }
+  }
+  &__msg {
+    font-size: 10px;
+    color: $onx-A4
+  }
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  input:disabled {
+    color: transparent;
+    border: 1px solid rgba(#9E9E9E, 0.2);
+  }
+}

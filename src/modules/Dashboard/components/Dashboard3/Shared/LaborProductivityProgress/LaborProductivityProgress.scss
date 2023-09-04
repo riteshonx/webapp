@@ -1,0 +1,61 @@
+.laborProductivityProgress-main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.01);
+    background-color: #eeeeee;
+  }
+  &__projectName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3b3b3b;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    &__taskNameContainer {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #3b3b3b;
+    }
+    &__hoursMetricsContainer {
+      display: flex;
+      align-items: center;
+      &__plannedByProjectedHours {
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #151e23;
+      }
+      &__productivityPercentage {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 900;
+        min-width: 6rem;
+        justify-content: flex-end;
+        &__paddingRight {
+          padding-right: 1rem;
+        }
+      }
+      &__icon {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .green {
+    color: #1fe08f;
+  }
+  .red {
+    color: red;
+  }
+}

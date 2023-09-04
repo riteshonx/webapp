@@ -1,0 +1,47 @@
+@import '../../../../../assets/onx/variable';
+
+.bimTable {
+    .bimTableHead {
+        background-color: #F8F8F8;
+
+        th {
+            font-weight: bold;
+        }
+    }
+
+    th, td {
+        border: 0;
+    }
+
+    .fileNameCell {
+        display: flex;
+        align-items: center;
+        line-height: 1.8rem;
+
+        img {
+            padding-right: 8px;
+            width: 34px;
+            height: 34px;
+        }
+
+        .fileDetails{
+            color: #989898;
+            font-size: 1.2rem;
+            line-height: 10px;
+            .file-property{
+                margin-right: 5px;
+                border-left: 1px solid #cccccc;
+                .file-property-key{
+                    color: #8DA3C1;
+                    padding: 2px 5px;
+                }
+            }
+        }
+    }
+}
+
+.bimTableContainer {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}   

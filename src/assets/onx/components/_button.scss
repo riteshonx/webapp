@@ -1,0 +1,85 @@
+.btn {
+  &-primary {
+    cursor: pointer;
+    font-size: 1.32rem;
+    margin: 0 4px !important;
+    color: $onx-btn-primary-color !important;
+    text-transform: none !important;
+    /* linear GD button */
+
+    background-color: $onx-btn-primary !important;
+    box-sizing: border-box;
+    color: #fff !important;
+    text-transform: none !important;
+    min-width: 75px !important;
+    &:hover {
+      background: $onx-btn-primary;
+    }
+
+    &:active {
+      background: $onx-btn-primary;
+    }
+
+    &:disabled {
+      background:$onx-btn-primary !important;
+      opacity: 0.7;
+    }
+  }
+
+  &-secondary {
+    // background-color: $onx-white !important;
+    min-width: 75px !important;
+    text-transform: none !important;
+    margin: 0 4px !important;
+    background: $onx-btn-secondary;
+    box-sizing: border-box;
+    background: #f0f0f0;
+    border: 0.5px solid #b8b6b6 !important;
+    box-shadow: inset 0px 2px 1px #ffffff;
+    border-radius: 4px;
+  }
+
+  &-text {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 24px;
+    text-transform: none !important;
+    /* identical to box height, or 150% */
+    border: 0px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: --onx-btn-secondary-color;
+    &:hover {
+      color: #4f4f4f;
+      background-color: inherit;
+    }
+
+    &:active {
+      font-weight: bold;
+      color: $onx-btn-secondary-color;
+    }
+  }
+
+  &-disabled {
+    background: $onx-btn-disabled;
+    border-radius: 6px;
+    text-transform: none !important;
+
+    &:hover,
+    :active {
+      background: $onx-btn-disabled;
+    }
+  }
+}
+
+
+.mat-menu-item-sm{
+  font-size: 1.2rem !important;
+  // background-color: #171d25 !important;
+  & .MuiTypography-root.MuiListItemText-primary.MuiTypography-body1.MuiTypography-displayBlock{
+    font-size: 1.2rem !important;
+    // background-color: #171d25 !important
+  }
+}

@@ -1,0 +1,45 @@
+.image-carousel-container {
+  &__imageBg {
+    flex: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: gray;
+  }
+  &__video {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+  }
+  &__iconContainer {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+  .slick-list {
+    height: 100% !important;
+  }
+  .slick-track {
+    height: 100% !important;
+  }
+  .slick-current {
+    div {
+      height: 100% !important;
+    }
+  }
+  .slick-next {
+    right: 0px !important;
+  }
+  .slick-prev {
+    z-index: 1;
+    left: 0px !important;
+  }
+  .slick-slider {
+    height: 90vh;
+  }
+  .img {
+    width: 100%;
+    height: 90vh;
+  }
+}

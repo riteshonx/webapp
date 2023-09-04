@@ -1,0 +1,87 @@
+.CustomListValue {
+  &__input {
+    position: relative;
+    & .MuiOutlinedInput-input {
+      padding: 9px 14px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    &__close {
+      position: absolute !important;
+      right: 0;
+      top: -0.5rem;
+      &__icon {
+        color: #000000;
+        font-size: 2rem;
+      }
+    }
+  }
+  &__value {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dddddd;
+    padding: 0 10px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  &__dialog {
+    &__title {
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+      font-size: 2rem;
+      font-weight: 600;
+      padding: 20px 30px;
+    }
+    &__body {
+      height: 75vh;
+      overflow-y: auto;
+      &__item {
+        border-bottom: 1px solid #dddddd;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        &__btn {
+          padding: 0;
+          margin: 5px 10px 5px 5px;
+        }
+        &:hover {
+          background: #f0f0f0;
+          cursor: pointer;
+        }
+        &.selected {
+          background: #ddd;
+        }
+        & .only {
+          padding-left: 10px;
+        }
+      }
+    }
+    &__action {
+      padding: 10px;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.customListDropdown {
+  margin-left: 5%;
+  &__item {
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 10px;
+    &:hover {
+      background: #f0f0f0;
+      cursor: pointer;
+    }
+    &__btn {
+      padding: 0;
+      margin: 5px 0 5px 10px;
+    }
+    &.selected {
+      background: #ddd;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.v2-qc-task {
+  width: 400px;
+  .v2-qc-task-loader {
+    font-size: 10px;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  &-nav {
+    justify-content: space-between;
+    font-size: 16px;
+    border-bottom: 1px solid #FFFFFF4D;
+    padding: 10px 6px;
+    font-weight:  500;
+  }
+
+  &-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  &-title {
+    font-weight: 500;
+    margin-right: 4px;
+    white-space: nowrap;
+  }
+  &-col {
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,691 @@
+@import '../../../../../../assets//onx//variable';
+
+.common-edit-task-detail-view__constraints {
+  // height: 100%;
+  height: 400px;
+  width: 100%;
+
+  &-border-top {
+    border-top: 1px solid #ddd;
+  }
+  &__empty {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-text {
+      width: 364px;
+      height: 50px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 25px;
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: $onx-A5;
+      margin-top: 20.5px;
+      margin-bottom: 35px;
+    }
+
+    &-add-constraint {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 20px;
+      padding: 10px 24px;
+      color: $onx-A2;
+      border: 1px solid #424242;
+      box-sizing: border-box;
+      border-radius: 6px;
+    }
+  }
+
+  &__data {
+    display: grid;
+    grid-template-columns: [table-start] 1fr [table-end];
+    grid-template-rows: [header-start] 50px [header-end body-start] max-content [body-end];
+
+    &__table-header {
+      display: grid;
+      grid-template-columns: [title-start] 200px [title-end category-start] 170px [category-end description-start ] 200px [description-end assignee-start] 150px [assignee-end dueDate-start ] 170px [dueDate-end createdby-start] 150px [createdby-end createdon-start] 100px [createdon-end resolvedby-start] 100px [resolvedby-end resolvedon-start] 100px [resolvedon-end edit-btn-start] 50px [edit-btn-end delete-btn-start] 50px [delete-btn-end] 50px;
+      // grid-column-start: title-start;
+      // grid-column-end: delete-btn-end;
+      grid-row: header-start / header-end;
+
+      // margin-left: 33px;
+      column-gap: 5px;
+      justify-content: center;
+      align-items: center;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 16px;
+      /* identical to box height, or 160% */
+      // margin: 44px 24px 20px 33px;
+      letter-spacing: 0.02em;
+      border-bottom: 1px solid #ddd;
+      padding-left: 5px;
+      /* Onx/A4 */
+
+      color: $onx-A2;
+      &__item {
+        &-1 {
+          grid-column: title-start / title-end;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 16px;
+          /* identical to box height, or 160% */
+
+          letter-spacing: 0.02em;
+
+          /* Onx/A2 */
+
+          color: $onx-A2;
+        }
+
+        &-2 {
+          grid-column: category-start / category-end;
+
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 16px;
+          /* identical to box height, or 160% */
+
+          letter-spacing: 0.02em;
+
+          /* Onx/A2 */
+
+          color: $onx-A2;
+        }
+
+        &-3 {
+          grid-column: description-start / description-end;
+        }
+        &-4 {
+          grid-column: assignee-start / assignee-end;
+        }
+        &-5 {
+          grid-column: dueDate-start / dueDate-end;
+        }
+        &-6 {
+          grid-column: createdby-start / createdby-end;
+        }
+        &-7 {
+          grid-column: createdon-start / createdon-end;
+        }
+        &-8 {
+          grid-column: resolvedby-start / resolvedby-end;
+        }
+        &-9 {
+          grid-column: resolvedon-start / resolvedon-end;
+        }
+        &-10 {
+          grid-column: edit-btn-start / edit-btn-end;
+        }
+        &-11 {
+          grid-column: delete-btn-start / delete-btn-end;
+        }
+      }
+    }
+
+    &-add-constraint {
+      &-btn {
+        border: none;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 20px;
+        /* identical to box height, or 154% */
+
+        /* Onx/A2 */
+
+        color: $onx-A2;
+        margin-left: 30px;
+      }
+
+      &-input {
+        display: flex;
+        margin-left: 30px;
+        margin-top: 20px;
+
+        .MuiInputBase-formControl {
+          height: 36px;
+        }
+        &-text {
+          width: 159px;
+          height: 36px;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+          /* identical to box height, or 167% */
+
+          /* Onx/A6 */
+
+          color: $onx-A6;
+
+          // border: 0.5px solid #bdbdbd;
+          box-sizing: border-box;
+          border-radius: 4px;
+          margin-right: 15px;
+
+          &__error {
+            position: absolute !important;
+            color: #f00 !important;
+            font-size: 1rem !important;
+          }
+        }
+
+        &-assignee {
+          width: 214px;
+          margin-right: 15px;
+          //   &__option {
+
+          //   }
+        }
+
+        &-description {
+          // margin-left: 100px;
+          margin-right: 15px;
+          width: 150px;
+        }
+
+        &-due-date {
+          width: 170px;
+        }
+
+        &-category {
+          width: 160px;
+          height: 36px;
+          margin-right: 16px;
+          .MuiOutlinedInput-input {
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+    &__body {
+      // &__row {
+      //   :hover {
+      //     div:last-child {
+      //       display: flex;
+      //     }
+      //   }
+      // }
+
+      // grid-column-start: title-start;
+      // grid-column-end: delete-btn-end;
+
+      &__item {
+        display: grid;
+        grid-column: table-start / table-end;
+        grid-template-columns: [title-start] 200px [title-end category-start] 170px [category-end description-start ] 200px [description-end assignee-start] 150px [assignee-end dueDate-start ] 170px [dueDate-end createdby-start] 150px [createdby-end createdon-start] 100px [createdon-end resolvedby-start] 100px [resolvedby-end resolvedon-start] 100px [resolvedon-end edit-btn-start] 50px [edit-btn-end delete-btn-start] 50px [delete-btn-end];
+        // grid-row: body-start / body-end;
+        column-gap: 5px;
+        font-family: Poppins;
+        font-style: normal;
+        // font-weight: 600;
+        // font-size: 10px;
+        line-height: 16px;
+        font-weight: normal;
+        font-size: 13px;
+        /* identical to box height, or 160% */
+        // margin-top: 20px;
+        // margin-bottom: 20px;
+        // margin-left: 33px;
+        letter-spacing: 0.02em;
+        border-bottom: 1px solid #ddd;
+        padding-left: 5px;
+        /* Onx/A4 */
+
+        color: $onx-A2;
+        // border-top: 1px solid #ddd;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+
+        .MuiInputBase-formControl {
+          height: 36px;
+        }
+        &__name {
+          grid-column: title-start / title-end;
+          display: flex;
+          align-items: center;
+
+          flex-wrap: wrap;
+
+          padding-right: 2px;
+          &__input {
+            // width: 212px;
+            line-height: 0;
+            height: 36px;
+            width: 164px;
+          }
+
+          &-text {
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 130px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            // line-height: 20px;
+            /* identical to box height, or 154% */
+
+            align-items: center;
+
+            /* Onx/A2 */
+
+            color: $onx-A2;
+
+            &-hiperlink {
+              cursor: pointer;
+              color: #0052cc;
+              &:hover {
+                text-decoration: underline;
+                // color: #0052cc;
+              }
+            }
+          }
+        }
+
+        &__status {
+          &__check {
+            font-size: 2.5rem;
+            cursor: pointer;
+            margin-right: 12px;
+            width: 2.2rem;
+            height: 2.2rem;
+          }
+
+          &__uncheck {
+            background: linear-gradient(
+              120.17deg,
+              #fcfcfc -31.99%,
+              #e2e2e2 102.21%
+            );
+            margin-right: 12px;
+            border: 0.5px solid #cccccc;
+            box-sizing: border-box;
+            box-shadow: inset 0px 1px 2px rgba(14, 14, 14, 0.55);
+            width: 2.2rem;
+            height: 2.2rem;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+        }
+
+        &__category {
+          grid-column: category-start / category-end;
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 2px;
+          padding-right: 2px;
+
+          .MuiOutlinedInput-input {
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          &-heading {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 20px;
+            /* identical to box height, or 154% */
+
+            display: flex;
+            align-items: center;
+
+            /* Onx/A2 */
+
+            color: #212121;
+          }
+
+          &-option {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            height: 36px;
+            /* identical to box height, or 167% */
+
+            /* Onx/A2 */
+
+            color: #212121;
+          }
+        }
+
+        &__description {
+          grid-column: description-start / description-end;
+
+          &-input {
+            width: 100%;
+          }
+        }
+
+        &__assignee {
+          grid-column: assignee-start / assignee-end;
+        }
+
+        &__due-date {
+          grid-column: dueDate-start / dueDate-end;
+        }
+        &__createdby {
+          grid-column: createdby-start / createdby-end;
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 2px;
+          padding-right: 2px;
+
+          span {
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+        &__createdon {
+          grid-column: createdon-start / createdon-end;
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 2px;
+          padding-right: 2px;
+        }
+        &__resolvedby {
+          grid-column: resolvedby-start / resolvedby-end;
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 2px;
+          padding-right: 2px;
+        }
+        &__resolvedon {
+          grid-column: resolvedon-start / resolvedon-end;
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 2px;
+          padding-right: 2px;
+
+          :first-child {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 20px;
+            color: $onx-warn;
+          }
+        }
+        &__btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // padding-left: 14.5px;
+
+          &__delete {
+            justify-content: left;
+          }
+
+          &-edit {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+          }
+          &-delete {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin-left: 14.5px;
+            // margin-left: 18.66px;
+          }
+
+          &-save {
+            display: flex;
+            // justify-content: space-evenly;
+            justify-content: center;
+
+            &-update {
+              :first-child {
+                color: #fff;
+              }
+            }
+
+            &-discard {
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 20px;
+              /* identical to box height, or 167% */
+
+              display: flex;
+              align-items: center;
+              text-align: center;
+
+              /* Onx/A2 */
+
+              color: $onx-A2;
+            }
+          }
+          &-discard {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  &__form-name {
+    &__popover {
+      &__table {
+        padding-left: 20px;
+        width: 100%;
+        &__tr {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          &__th {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            /* identical to box height, or 154% */
+
+            /* Onx/A2 */
+
+            color: #212121;
+            text-align: left;
+            margin-right: 20px;
+          }
+
+          &__td {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 20px;
+            align-self: left;
+            /* identical to box height, or 154% */
+
+            /* Onx/A2 */
+
+            color: #212121;
+            text-align: left;
+            margin-left: 20px;
+
+            &-5 {
+              &-email {
+                display: block;
+                font-size: 1rem;
+                font-weight: 300;
+                color: #c1c1c1;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__singleUserSelect {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &__search {
+      height: 36px;
+      border: 1px solid #afacac;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border-radius: 4px;
+      .MuiInput-root {
+        padding: 3px 31px;
+      }
+      .MuiInput-underline:before,
+      .MuiInput-underline:after,
+      .MuiInput-underline:hover:not(.Mui-disabled):before {
+        border-bottom: none;
+      }
+      &__icon {
+        position: absolute;
+        left: 5px;
+        top: 7px;
+        color: #c2c2c2;
+        cursor: pointer;
+      }
+      &__input {
+        width: 100%;
+        border-bottom: 1px solid;
+      }
+      &__close {
+        position: absolute !important;
+        right: 0;
+        top: 2px;
+        padding: 5px !important;
+        &__icon {
+        }
+      }
+    }
+    &__option {
+      z-index: 999;
+      position: absolute;
+      top: 40px;
+      width: 100%;
+      background: #fff;
+      &__list {
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        overflow-y: auto;
+        flex-direction: column;
+        max-height: 230px;
+        position: relative;
+        bottom: 4px;
+        width: 216px;
+        box-shadow: 0px 4px 56px rgba(0, 0, 0, 0.04),
+          0px 12px 16px rgba(0, 0, 0, 0.04);
+        &__item {
+          border-bottom: 1px solid #ddd;
+          padding: 6px 8px 6px 8px;
+          align-items: center;
+          margin: 0;
+          font-size: 1.4rem;
+          display: flex;
+          justify-content: space-between;
+          z-index: 999;
+          background: #fff;
+          cursor: pointer;
+          &__left {
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            &__icon {
+              width: 2.6rem !important;
+              height: 2.6rem !important;
+              font-size: 1.2rem !important;
+              background: #f1f1f1 !important;
+              color: #949494 !important;
+              margin-right: 1rem;
+            }
+            &__label {
+              display: flex;
+              flex-direction: column;
+              &__name {
+                font-size: 1.2rem;
+                font-weight: 500;
+                text-align: left;
+              }
+              &__email {
+                font-size: 1rem;
+                font-weight: 300;
+                color: #c1c1c1;
+                text-align: left;
+              }
+            }
+          }
+          &__right {
+            padding: 0.5rem;
+            cursor: pointer;
+            &__add {
+              padding: 0.2rem;
+              &__icon {
+                font-size: 2rem !important;
+                border: 1px dashed;
+                border-radius: 50%;
+              }
+            }
+            &__remove {
+              padding: 0.2rem;
+              &__icon {
+                font-size: 2rem !important;
+              }
+            }
+          }
+        }
+      }
+      &__nodata {
+        text-align: center;
+        padding: 10px;
+        font-weight: 400;
+      }
+      &__actions {
+        padding: 2px 5px;
+        display: flex;
+        justify-content: flex-end;
+        background: #fafafa;
+        z-index: 999;
+        &__error {
+          font-size: 0.9rem;
+          font-weight: 400;
+          color: red;
+          display: flex;
+          align-items: center;
+        }
+        &__btn {
+          text-transform: none !important;
+          margin: 0 1px;
+          font-size: 1.2rem !important;
+        }
+      }
+    }
+  }
+}

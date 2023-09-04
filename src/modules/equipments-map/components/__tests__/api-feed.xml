@@ -1,0 +1,2877 @@
+<Fleet version="1" snapshotTime="2022-04-13T07:05:33Z" xmlns="http://standards.iso.org/iso/15143/-3">
+    <Links>
+        <rel>self</rel>
+        <href>https:///l-lynchapi.co.uk/LlynchAPI/api/fleet/data</href>
+    </Links>
+    <Links>
+        <rel>first</rel>
+        <href>https:///l-lynchapi.co.uk/LlynchAPI/api/fleet/data</href>
+    </Links>
+    <Links>
+        <rel>last</rel>
+        <href>https:///l-lynchapi.co.uk/LlynchAPI/api/fleet/data</href>
+    </Links>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Hydrema</OemName>
+            <Model>912F</Model>
+            <EquipmentId>1051 </EquipmentId>
+            <SerialNumber>552688</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:50:56Z">
+            <Latitude>52.4829520</Latitude>
+            <Longitude>-1.8785650</Longitude>
+            <Altitude>110.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <CumulativeOperatingHours datetime="2022-04-13T06:50:56Z">
+            <Hour>4990.75</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T06:50:56Z">
+            <Odometer>9968.7</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T06:50:56Z">
+            <EngineNumber>N/A</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2020-07-24T12:45:26Z">
+            <SpeedUnits>kilometres per hour</SpeedUnits>
+            <Speed>5.59</Speed>
+        </MaximumSpeedLast24>
+        <Camera>
+            <URL>https://www.youtube.com/embed/AdUw5RdyZxI?mute=1</URL>
+        </Camera>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Hydrema</OemName>
+            <Model>912G</Model>
+            <EquipmentId>1076</EquipmentId>
+            <SerialNumber>3603820</SerialNumber>
+            <Pin>14669</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T21:22:25Z">
+            <Latitude>52.5261830</Latitude>
+            <Longitude>-1.7186700</Longitude>
+            <Altitude>80.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T15:48:34Z">
+            <FuelConsumed>4508.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <CumulativeOperatingHours datetime="2022-04-12T21:22:25Z">
+            <Hour>1339.10</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T21:22:25Z">
+            <Odometer>1602.9</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T21:22:25Z">
+            <EngineNumber>N/A</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <Camera>
+            <URL>https://www.youtube.com/embed/8KGXSjtS5pk?mute=1</URL>
+        </Camera>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Hydrema</OemName>
+            <Model>912GMT</Model>
+            <EquipmentId>1087</EquipmentId>
+            <SerialNumber>3684741</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T07:00:22Z">
+            <Latitude>52.3370530</Latitude>
+            <Longitude>-1.5173320</Longitude>
+            <Altitude>70.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-13T07:04:08Z">
+            <FuelConsumed>1387.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <CumulativeOperatingHours datetime="2022-04-13T07:04:08Z">
+            <Hour>450.25</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T07:00:22Z">
+            <Odometer>278.5</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T07:00:22Z">
+            <Running>false</Running>
+        </EngineStatus>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Volvo</OemName>
+            <Model>EC140E</Model>
+            <EquipmentId>14132</EquipmentId>
+            <SerialNumber>314170</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:59:25Z">
+            <Latitude>52.6913830</Latitude>
+            <Longitude>-1.7858280</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-13T06:59:17Z">
+            <FuelConsumed>14294.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T06:59:25Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2022-04-13T06:59:17Z">
+            <Hour>860.62</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T06:59:25Z">
+            <Hour>2305.90</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-13T06:58:30Z">
+            <EngineNumber>1</EngineNumber>
+            <Running>true</Running>
+        </EngineStatus>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>PC138US-11</Model>
+            <EquipmentId>15103z</EquipmentId>
+            <SerialNumber>F51226</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T01:23:57Z">
+            <Latitude>52.5147650</Latitude>
+            <Longitude>-1.7213000</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>18315.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>88.90</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-06-21T23:59:59Z">
+            <Hour>934.20</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T07:26:44Z">
+            <Hour>2846.60</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>2.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>1289.70</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>PC138US-11</Model>
+            <EquipmentId>15114z</EquipmentId>
+            <SerialNumber>F51258</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T01:29:57Z">
+            <Latitude>52.3557320</Latitude>
+            <Longitude>-1.5429330</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>26935.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>93.30</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>77.80</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-06-18T23:59:59Z">
+            <Hour>1152.20</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-11T23:52:47Z">
+            <Hour>3503.10</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>56.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>1332.80</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>PC138US-11</Model>
+            <EquipmentId>15128Z</EquipmentId>
+            <SerialNumber>F51584</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T06:53:59Z">
+            <Latitude>52.5261320</Latitude>
+            <Longitude>-1.7202660</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>15587.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>66.70</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-06-21T23:59:59Z">
+            <Hour>573.70</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-11T23:52:42Z">
+            <Hour>2142.90</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>40.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>894.30</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>HITACHI</OemName>
+            <Model>ZX170W-6</Model>
+            <EquipmentId>1629w</EquipmentId>
+            <SerialNumber>HCMLBE5ZV00040275</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T22:59:59Z">
+            <Latitude>53.7334720</Latitude>
+            <Longitude>-0.3544140</Longitude>
+            <Altitude>5</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T22:59:59Z">
+            <FuelConsumed>24516.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T22:59:59Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2022-01-27T00:00:00Z">
+            <Hour>662.70</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T22:59:59Z">
+            <Hour>3674.65</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T22:59:59Z">
+            <Odometer>4619.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <FuelUsedLast24 datetime="2022-04-12T22:59:59Z">
+            <FuelConsumed>52.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-12T22:59:59Z">
+            <Hour>1828.45</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>PW180-11</Model>
+            <EquipmentId>2226w</EquipmentId>
+            <SerialNumber>H75085</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T01:12:55Z">
+            <Latitude>52.4475990</Latitude>
+            <Longitude>-1.6965660</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>7377.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>53.30</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>66.70</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-06-21T23:59:59Z">
+            <Hour>444.30</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T06:49:32Z">
+            <Hour>1037.20</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>82.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>507.40</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>PC210LC-11E0</Model>
+            <EquipmentId>2493</EquipmentId>
+            <SerialNumber>K75550</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T00:46:37Z">
+            <Latitude>52.5028990</Latitude>
+            <Longitude>-1.8373330</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>9411.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>88.90</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeOperatingHours datetime="2022-04-11T16:26:51Z">
+            <Hour>872.60</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>35.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>416.40</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>PC210LC-11E0</Model>
+            <EquipmentId>2494</EquipmentId>
+            <SerialNumber>K75554</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T00:11:28Z">
+            <Latitude>52.3884650</Latitude>
+            <Longitude>-1.6252340</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>11191.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeOperatingHours datetime="2022-04-11T01:10:36Z">
+            <Hour>848.90</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>0.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>291.80</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Volvo</OemName>
+            <Model>ECR235E</Model>
+            <EquipmentId>25096Z</EquipmentId>
+            <SerialNumber>311494</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:42:21Z">
+            <Latitude>52.3886110</Latitude>
+            <Longitude>-1.6230550</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-13T06:42:22Z">
+            <FuelConsumed>34755.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T06:42:21Z">
+            <Percent>66.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2022-04-13T06:42:22Z">
+            <Hour>1413.32</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T06:42:21Z">
+            <Hour>3204.15</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-13T06:42:01Z">
+            <EngineNumber>1</EngineNumber>
+            <Running>true</Running>
+        </EngineStatus>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>PC290LC-11</Model>
+            <EquipmentId>2948</EquipmentId>
+            <SerialNumber>K70210</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T01:23:16Z">
+            <Latitude>52.5256660</Latitude>
+            <Longitude>-1.7173670</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>48101.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>88.90</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-06-21T23:59:59Z">
+            <Hour>1358.50</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T08:04:42Z">
+            <Hour>3753.50</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>3.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>1661.10</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Hitachi</OemName>
+            <Model>ZX26U-6</Model>
+            <EquipmentId>3201</EquipmentId>
+            <SerialNumber>HCMACK50L00051980</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-11T10:03:06Z">
+            <Latitude>52.5529670</Latitude>
+            <Longitude>-1.7083820</Longitude>
+            <Altitude>97</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-13T07:00:05Z">
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T07:00:05Z">
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeOperatingHours datetime="2022-04-13T05:59:59Z">
+            <Hour>164.52</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T07:00:05Z">
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <FuelUsedLast24 datetime="2022-04-13T07:00:05Z">
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-13T07:00:05Z">
+            <Hour>0.00</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Volvo</OemName>
+            <Model>ECR355E</Model>
+            <EquipmentId>35004Z</EquipmentId>
+            <SerialNumber>310217</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:46:55Z">
+            <Latitude>51.5424960</Latitude>
+            <Longitude>-2.6430510</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-13T06:40:18Z">
+            <FuelConsumed>50336.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T06:46:55Z">
+            <Percent>73.50</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2021-11-12T09:15:02Z">
+            <Hour>2319.90</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T06:46:55Z">
+            <Hour>4695.15</Hour>
+        </CumulativeOperatingHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>HB365LC-3E0</Model>
+            <EquipmentId>3602H</EquipmentId>
+            <SerialNumber>K75165</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T01:07:30Z">
+            <Latitude>52.5488320</Latitude>
+            <Longitude>-1.7104000</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>25445.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>88.90</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-06-21T23:59:59Z">
+            <Hour>43.50</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-11T23:52:27Z">
+            <Hour>1219.60</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>38.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>410.80</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>PC360LC-11E0</Model>
+            <EquipmentId>3651</EquipmentId>
+            <SerialNumber>K75023</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T01:41:56Z">
+            <Latitude>52.3553990</Latitude>
+            <Longitude>-1.5424330</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>59301.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>53.30</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>66.70</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-06-21T23:59:59Z">
+            <Hour>880.20</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T07:16:26Z">
+            <Hour>3205.60</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>201.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>1322.00</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Wacker Neuson</OemName>
+            <Model>DV60</Model>
+            <EquipmentId>6119DV</EquipmentId>
+            <SerialNumber>WNCD2401LPAL01272</SerialNumber>
+            <Pin>WNCD2401LPAL01272</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:59:13Z">
+            <Latitude>52.4720230</Latitude>
+            <Longitude>-1.7141470</Longitude>
+            <Altitude>105.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelRemaining datetime="2022-04-13T07:03:06Z">
+            <Percent>28.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-03-23T11:20:22Z">
+            <Percent>0.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-04-13T07:03:06Z">
+            <Hour>142.66</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T07:03:06Z">
+            <Hour>581.05</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T06:59:13Z">
+            <Odometer>1020.7</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T06:59:13Z">
+            <EngineNumber>N/A</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <CumulativePowerTakeOffHours datetime="2022-02-28T14:46:38Z">
+            <Hour>0.00</Hour>
+        </CumulativePowerTakeOffHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>PC80MR-5E0</Model>
+            <EquipmentId>8420</EquipmentId>
+            <SerialNumber>F70414</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T01:44:35Z">
+            <Latitude>52.5102650</Latitude>
+            <Longitude>-1.7432330</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>5615.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>53.30</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2021-06-21T23:59:59Z">
+            <Percent>88.90</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-06-21T23:59:59Z">
+            <Hour>53.30</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-11T23:59:59Z">
+            <Hour>998.10</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>2.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>423.30</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Takeuchi</OemName>
+            <Model>TB290-2</Model>
+            <EquipmentId>8441</EquipmentId>
+            <SerialNumber>190502901</SerialNumber>
+            <Pin>190502901</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T11:30:37Z">
+            <Latitude>52.5493000</Latitude>
+            <Longitude>-1.7184370</Longitude>
+            <Altitude>129</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T11:23:29Z">
+            <FuelConsumed>5255.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T11:23:29Z">
+            <Percent>42.40</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+            <FuelTankCapacity>0</FuelTankCapacity>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-02-25T15:08:39Z">
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeOperatingHours datetime="2022-04-12T11:30:38Z">
+            <Hour>890.60</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-12T11:30:37Z">
+            <EngineNumber></EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Takeuchi</OemName>
+            <Model>TB295W</Model>
+            <EquipmentId>9058</EquipmentId>
+            <SerialNumber>190300957</SerialNumber>
+            <Pin>190300957</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T11:21:01Z">
+            <Latitude>53.7400200</Latitude>
+            <Longitude>-0.3412150</Longitude>
+            <Altitude>61.28</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T11:21:01Z">
+            <FuelConsumed>17508.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T11:21:00Z">
+            <Percent>72.80</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+            <FuelTankCapacity>0</FuelTankCapacity>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T11:21:01Z">
+            <Percent>79.60</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+            <DefTankCapacity>0</DefTankCapacity>
+        </DEFRemaining>
+        <CumulativeOperatingHours datetime="2022-04-12T11:21:00Z">
+            <Hour>3289.90</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-12T11:20:25Z">
+            <EngineNumber></EngineNumber>
+            <Running>True</Running>
+        </EngineStatus>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Takeuchi</OemName>
+            <Model>TB295W</Model>
+            <EquipmentId>9060</EquipmentId>
+            <SerialNumber>190401009</SerialNumber>
+            <Pin>190401009</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T11:25:30Z">
+            <Latitude>51.0382600</Latitude>
+            <Longitude>-1.3299710</Longitude>
+            <Altitude>0</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T11:15:58Z">
+            <FuelConsumed>7680.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T11:15:59Z">
+            <Percent>60.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+            <FuelTankCapacity>0</FuelTankCapacity>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T11:15:58Z">
+            <Percent>79.60</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+            <DefTankCapacity>0</DefTankCapacity>
+        </DEFRemaining>
+        <CumulativeOperatingHours datetime="2022-04-12T11:32:02Z">
+            <Hour>1265.20</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-12T11:25:27Z">
+            <EngineNumber></EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Takeuchi</OemName>
+            <Model>TB295W</Model>
+            <EquipmentId>9062</EquipmentId>
+            <SerialNumber>190401181</SerialNumber>
+            <Pin>190401181</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T09:04:49Z">
+            <Latitude>52.3880900</Latitude>
+            <Longitude>-1.6235460</Longitude>
+            <Altitude>175</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-01T10:08:33Z">
+            <FuelConsumed>2780.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-01T10:38:32Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+            <FuelTankCapacity>0</FuelTankCapacity>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-01T10:38:32Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+            <DefTankCapacity>0</DefTankCapacity>
+        </DEFRemaining>
+        <CumulativeOperatingHours datetime="2022-04-01T10:44:20Z">
+            <Hour>441.40</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-01T10:44:19Z">
+            <EngineNumber></EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Wacker Neuson</OemName>
+            <Model>DV90</Model>
+            <EquipmentId>961SDV </EquipmentId>
+            <SerialNumber>756463</SerialNumber>
+            <Pin>WNCD2402PPAL00865</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:50:40Z">
+            <Latitude>52.6935520</Latitude>
+            <Longitude>-1.7856400</Longitude>
+            <Altitude>55.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelRemaining datetime="2022-04-13T03:05:43Z">
+            <Percent>1.60</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-13T01:24:34Z">
+            <Percent>0.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-12-21T07:33:43Z">
+            <Hour>954.80</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T06:50:40Z">
+            <Hour>1323.35</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T06:50:40Z">
+            <Odometer>1269.2</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T06:50:40Z">
+            <EngineNumber>N/A</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <CumulativePowerTakeOffHours datetime="2022-02-28T12:54:57Z">
+            <Hour>0.00</Hour>
+        </CumulativePowerTakeOffHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Wacker Neuson</OemName>
+            <Model>DV90</Model>
+            <EquipmentId>9634DV</EquipmentId>
+            <SerialNumber>715951</SerialNumber>
+            <Pin>WNCD2402TPAL00606</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T07:00:07Z">
+            <Latitude>52.4717030</Latitude>
+            <Longitude>-1.7140150</Longitude>
+            <Altitude>105.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-02-15T17:20:50Z">
+            <FuelConsumed>4598.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T07:03:41Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-07T08:33:18Z">
+            <Percent>0.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-03-30T20:52:09Z">
+            <Hour>217.88</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T07:03:41Z">
+            <Hour>1339.50</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T07:00:07Z">
+            <Odometer>3705.9</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T07:00:07Z">
+            <EngineNumber>N/A</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <CumulativePowerTakeOffHours datetime="2022-02-28T14:33:27Z">
+            <Hour>0.00</Hour>
+        </CumulativePowerTakeOffHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Wacker Neuson</OemName>
+            <Model>DV90</Model>
+            <EquipmentId>9636DV </EquipmentId>
+            <SerialNumber>721830</SerialNumber>
+            <Pin>WNCD2402TPAL00671</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:51:23Z">
+            <Latitude>52.7151700</Latitude>
+            <Longitude>-1.8023120</Longitude>
+            <Altitude>75.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelRemaining datetime="2022-04-13T06:36:23Z">
+            <Percent>70.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-02-16T10:06:49Z">
+            <Percent>0.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeOperatingHours datetime="2022-04-13T06:51:23Z">
+            <Hour>927.30</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T06:51:23Z">
+            <Odometer>1694.7</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T06:51:23Z">
+            <EngineNumber>N/A</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <CumulativePowerTakeOffHours datetime="2022-02-28T14:58:50Z">
+            <Hour>0.00</Hour>
+        </CumulativePowerTakeOffHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Wacker Neuson</OemName>
+            <Model>DV90</Model>
+            <EquipmentId>9639DV</EquipmentId>
+            <SerialNumber>754544</SerialNumber>
+            <Pin>WNCD2402JPAL00769</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T05:59:34Z">
+            <Latitude>52.5519330</Latitude>
+            <Longitude>-1.7077300</Longitude>
+            <Altitude>90.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelRemaining datetime="2022-04-12T16:14:44Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-03-11T08:21:24Z">
+            <Percent>0.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-06-07T11:47:20Z">
+            <Hour>239.02</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T05:59:34Z">
+            <Hour>1540.95</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T05:59:34Z">
+            <Odometer>2542.3</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T05:59:34Z">
+            <EngineNumber>N/A</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <CumulativePowerTakeOffHours datetime="2022-02-28T14:58:58Z">
+            <Hour>0.00</Hour>
+        </CumulativePowerTakeOffHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Wacker Neuson</OemName>
+            <Model>DV90</Model>
+            <EquipmentId>968SDV</EquipmentId>
+            <SerialNumber>WNCD2402EPAL01381</SerialNumber>
+            <Pin>WNCD2402EPAL01381</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T05:51:44Z">
+            <Latitude>52.4761620</Latitude>
+            <Longitude>-1.7157100</Longitude>
+            <Altitude>110.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelRemaining datetime="2022-04-12T15:51:52Z">
+            <Percent>26.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeOperatingHours datetime="2022-04-13T05:51:44Z">
+            <Hour>555.70</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T05:51:44Z">
+            <Odometer>969.8</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T05:51:44Z">
+            <EngineNumber>N/A</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <CumulativePowerTakeOffHours datetime="2022-02-28T14:58:00Z">
+            <Hour>0.00</Hour>
+        </CumulativePowerTakeOffHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Wacker Neuson</OemName>
+            <Model>DV90</Model>
+            <EquipmentId>971SDV</EquipmentId>
+            <SerialNumber>WNCD2402TPAL01447</SerialNumber>
+            <Pin>WNCD2402TPAL01447</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T07:04:05Z">
+            <Latitude>52.3881530</Latitude>
+            <Longitude>-1.6236430</Longitude>
+            <Altitude>110.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelRemaining datetime="2022-04-01T15:06:57Z">
+            <Percent>86.80</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2021-11-24T12:44:54Z">
+            <Percent>0.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeOperatingHours datetime="2022-04-13T07:04:05Z">
+            <Hour>219.10</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T07:04:05Z">
+            <Odometer>452.9</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T07:04:05Z">
+            <EngineNumber>N/A</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <CumulativePowerTakeOffHours datetime="2022-02-28T14:58:52Z">
+            <Hour>0.00</Hour>
+        </CumulativePowerTakeOffHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>CAT</OemName>
+            <Model>D5 LGP</Model>
+            <EquipmentId>D6N46</EquipmentId>
+            <SerialNumber>RG900582</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T11:01:17Z">
+            <Latitude>52.5488000</Latitude>
+            <Longitude>-1.7105100</Longitude>
+            <Altitude>87</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T10:59:11Z">
+            <FuelConsumed>17583.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T10:59:11Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T10:59:11Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2021-07-19T10:22:42Z">
+            <Count>715</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T10:59:11Z">
+            <Hour>480.40</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T11:01:17Z">
+            <Hour>1392.40</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T10:59:11Z">
+            <Odometer>4059.9</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T10:59:08Z">
+            <EngineNumber>J7A12143</EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-04-12T00:00:00Z">
+            <FuelConsumed>14.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativePayloadTotals datetime="2021-07-19T09:43:21Z">
+            <Payload>820000.00</Payload>
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>CAT</OemName>
+            <Model>D5 LGP</Model>
+            <EquipmentId>D6N50</EquipmentId>
+            <SerialNumber>RG901005</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T16:49:02Z">
+            <Latitude>52.3788100</Latitude>
+            <Longitude>-1.5993000</Longitude>
+            <Altitude>111</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T16:47:16Z">
+            <FuelConsumed>14580.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T16:47:16Z">
+            <Percent>88.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T16:47:16Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2021-07-30T09:32:52Z">
+            <Count>12172</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T16:47:16Z">
+            <Hour>391.10</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T16:49:02Z">
+            <Hour>1106.20</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T16:47:16Z">
+            <Odometer>2653.4</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T16:47:13Z">
+            <EngineNumber>RG901005</EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-04-12T00:00:00Z">
+            <FuelConsumed>70.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativePayloadTotals datetime="2021-07-30T08:50:06Z">
+            <Payload>3598000.00</Payload>
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>D61PX-24E0</Model>
+            <EquipmentId>D6N55</EquipmentId>
+            <SerialNumber>41343</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T00:04:30Z">
+            <Latitude>52.3889990</Latitude>
+            <Longitude>-1.6232330</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>12708.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-06-18T23:59:59Z">
+            <Hour>9.70</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-11T01:03:26Z">
+            <Hour>1053.40</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>0.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>511.90</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>CAT</OemName>
+            <Model>D6 LGP</Model>
+            <EquipmentId>D6T017</EquipmentId>
+            <SerialNumber>HR900305</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T15:29:21Z">
+            <Latitude>52.4730200</Latitude>
+            <Longitude>-1.7159400</Longitude>
+            <Altitude>112</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T15:29:21Z">
+            <FuelConsumed>63443.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T15:29:21Z">
+            <Percent>73.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T15:29:21Z">
+            <Percent>55.20</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2021-07-29T17:23:31Z">
+            <Count>52</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T15:29:21Z">
+            <Hour>938.10</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T15:29:21Z">
+            <Hour>3300.70</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T15:29:21Z">
+            <Odometer>6652.2</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T14:33:11Z">
+            <EngineNumber>HR900305</EngineNumber>
+            <Running>True</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-04-12T00:00:00Z">
+            <FuelConsumed>78.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativePayloadTotals datetime="2021-07-29T17:23:31Z">
+            <Payload>914000.00</Payload>
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>CAT</OemName>
+            <Model>D6 LGP</Model>
+            <EquipmentId>D6T032</EquipmentId>
+            <SerialNumber>HR901086</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:12:01Z">
+            <Latitude>52.4477400</Latitude>
+            <Longitude>-1.6964900</Longitude>
+            <Altitude>97</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-13T06:11:04Z">
+            <FuelConsumed>1883.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T06:11:04Z">
+            <Percent>72.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-13T06:11:04Z">
+            <Percent>95.60</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-04-13T06:11:04Z">
+            <Hour>37.70</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T06:12:01Z">
+            <Hour>131.70</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T06:11:04Z">
+            <Odometer>309.2</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T16:13:54Z">
+            <EngineNumber>XWE11477</EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-04-12T00:00:00Z">
+            <FuelConsumed>72.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Volvo</OemName>
+            <Model>A30G</Model>
+            <EquipmentId>DT107</EquipmentId>
+            <SerialNumber>342968</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:51:26Z">
+            <Latitude>52.2941670</Latitude>
+            <Longitude>-1.4652710</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-13T06:52:05Z">
+            <FuelConsumed>39108.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T06:51:26Z">
+            <Percent>78.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeLoadCount datetime="2022-04-13T06:52:05Z">
+            <Count>14323</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-13T06:52:05Z">
+            <Hour>1542.82</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T06:51:26Z">
+            <Hour>3054.20</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T06:52:05Z">
+            <Odometer>13596150.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T06:50:54Z">
+            <EngineNumber>1</EngineNumber>
+            <Running>true</Running>
+        </EngineStatus>
+        <CumulativePayloadTotals datetime="2022-04-13T06:52:05Z">
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2021-01-18T09:16:03Z</UnitInstallDateTime>
+            <OemName>BELL</OemName>
+            <Model>B30E</Model>
+            <EquipmentId>DT113</EquipmentId>
+            <SerialNumber>B93A631EJ03009700</SerialNumber>
+            <Pin>B93A631EJ03009700</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T23:00:05Z">
+            <Latitude>52.4478000</Latitude>
+            <Longitude>-1.6970000</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>18547.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>80.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>82.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2022-04-12T23:00:00Z">
+            <Count>5806</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T23:00:00Z">
+            <Hour>877.36</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T23:00:00Z">
+            <Hour>1651.20</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T23:00:00Z">
+            <Odometer>11187.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T16:05:11Z">
+            <EngineNumber>Not Available</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-03-22T00:00:00Z">
+            <FuelConsumed>8.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <AverageLoadFactorLast24 datetime="2022-03-22T00:00:00Z"/>
+        <CumulativePayloadTotals datetime="2022-04-12T23:00:00Z">
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2021-05-05T09:06:48Z</UnitInstallDateTime>
+            <OemName>BELL</OemName>
+            <Model>B30E</Model>
+            <EquipmentId>DT125</EquipmentId>
+            <SerialNumber>B93A631EL03009833</SerialNumber>
+            <Pin>B93A631EL03009833</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T23:00:06Z">
+            <Latitude>52.5004000</Latitude>
+            <Longitude>-1.8400000</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>6203.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>80.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>98.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2022-04-12T23:00:00Z">
+            <Count>2187</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T23:00:00Z">
+            <Hour>482.62</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T23:00:00Z">
+            <Hour>720.70</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T23:00:00Z">
+            <Odometer>2527.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T16:25:14Z">
+            <EngineNumber>Not Available</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-03-15T00:00:00Z">
+            <FuelConsumed>0.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <AverageLoadFactorLast24 datetime="2022-02-23T00:00:00Z">
+            <Percent>51.40</Percent>
+        </AverageLoadFactorLast24>
+        <CumulativePayloadTotals datetime="2022-04-12T23:00:00Z">
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2018-04-06T09:08:01Z</UnitInstallDateTime>
+            <OemName>BELL</OemName>
+            <Model>B30E</Model>
+            <EquipmentId>DT135</EquipmentId>
+            <SerialNumber>B93A631EC02008370</SerialNumber>
+            <Pin>B93A631EC02008370</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T23:00:06Z">
+            <Latitude>52.3788000</Latitude>
+            <Longitude>-1.5995000</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>47114.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>82.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>78.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2022-04-12T23:00:00Z">
+            <Count>21429</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T23:00:00Z">
+            <Hour>3300.11</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T23:00:00Z">
+            <Hour>4825.90</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T23:00:00Z">
+            <Odometer>16201.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2021-04-26T14:28:31Z">
+            <EngineNumber>Not Available</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-03-16T00:00:00Z">
+            <FuelConsumed>8.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <AverageLoadFactorLast24 datetime="2022-03-16T00:00:00Z"/>
+        <CumulativePayloadTotals datetime="2022-04-12T23:00:00Z">
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2019-04-29T09:08:19Z</UnitInstallDateTime>
+            <OemName>BELL</OemName>
+            <Model>B30E</Model>
+            <EquipmentId>DT138</EquipmentId>
+            <SerialNumber>B93A631EL02108979</SerialNumber>
+            <Pin>B93A631EL02108979</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T23:00:06Z">
+            <Latitude>52.5004000</Latitude>
+            <Longitude>-1.8400000</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>43050.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>84.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>98.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2022-04-12T23:00:00Z">
+            <Count>17797</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T23:00:00Z">
+            <Hour>2014.60</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T23:00:00Z">
+            <Hour>3499.50</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T23:00:00Z">
+            <Odometer>16417.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T16:25:41Z">
+            <EngineNumber>Not Available</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-03-22T00:00:00Z">
+            <FuelConsumed>8.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <AverageLoadFactorLast24 datetime="2022-03-22T00:00:00Z"/>
+        <CumulativePayloadTotals datetime="2022-04-12T23:00:00Z">
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Volvo</OemName>
+            <Model>A30G</Model>
+            <EquipmentId>DT140</EquipmentId>
+            <SerialNumber>752476</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T13:26:34Z">
+            <Latitude>52.3544390</Latitude>
+            <Longitude>-1.5422210</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-12T06:55:48Z">
+            <FuelConsumed>17403.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T13:26:34Z">
+            <Percent>90.50</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2022-04-12T06:55:48Z">
+            <Hour>301.37</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T13:26:34Z">
+            <Hour>774.70</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T06:55:48Z">
+            <Odometer>5930560.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T13:25:52Z">
+            <EngineNumber>1</EngineNumber>
+            <Running>true</Running>
+        </EngineStatus>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2017-09-27T22:08:51Z</UnitInstallDateTime>
+            <OemName>BELL</OemName>
+            <Model>B20E</Model>
+            <EquipmentId>DT203</EquipmentId>
+            <SerialNumber>AEBA620EA02008275</SerialNumber>
+            <Pin>AEBA620EA02008275</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T23:00:06Z">
+            <Latitude>52.3557000</Latitude>
+            <Longitude>-1.5429000</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>28955.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>88.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>88.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2022-04-12T23:00:00Z">
+            <Count>12532</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T23:00:00Z">
+            <Hour>2823.49</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T23:00:00Z">
+            <Hour>4558.20</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T23:00:00Z">
+            <Odometer>20682.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T16:35:16Z">
+            <EngineNumber>Not Available</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-03-30T00:00:00Z">
+            <FuelConsumed>0.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <AverageLoadFactorLast24 datetime="2022-01-07T00:00:00Z">
+            <Percent>59.40</Percent>
+        </AverageLoadFactorLast24>
+        <CumulativePayloadTotals datetime="2022-04-12T23:00:00Z">
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2020-10-08T08:02:29Z</UnitInstallDateTime>
+            <OemName>BELL</OemName>
+            <Model>B25E</Model>
+            <EquipmentId>DT2501</EquipmentId>
+            <SerialNumber>B93A625EE03009662</SerialNumber>
+            <Pin>B93A625EE03009662</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T23:00:06Z">
+            <Latitude>52.3866000</Latitude>
+            <Longitude>-1.6192000</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>7260.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>92.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>98.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2022-04-12T23:00:00Z">
+            <Count>2820</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T23:00:00Z">
+            <Hour>777.66</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T23:00:00Z">
+            <Hour>1095.90</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T23:00:00Z">
+            <Odometer>3242.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T15:36:45Z">
+            <EngineNumber>Not Available</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-03-24T00:00:00Z">
+            <FuelConsumed>8.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <AverageLoadFactorLast24 datetime="2022-03-24T00:00:00Z"/>
+        <CumulativePayloadTotals datetime="2022-04-12T23:00:00Z">
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2022-02-09T09:10:06Z</UnitInstallDateTime>
+            <OemName>BELL</OemName>
+            <Model>B30E</Model>
+            <EquipmentId>DT3010</EquipmentId>
+            <SerialNumber>B93A631EA03010141</SerialNumber>
+            <Pin>B93A631EA03010141</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T23:00:05Z">
+            <Latitude>52.4589000</Latitude>
+            <Longitude>-1.7051000</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>1364.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>100.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>98.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2022-04-12T23:00:00Z">
+            <Count>349</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T23:00:00Z">
+            <Hour>53.92</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T23:00:00Z">
+            <Hour>115.70</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T23:00:00Z">
+            <Odometer>962.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T10:58:12Z">
+            <EngineNumber>Not Available</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <CumulativePayloadTotals datetime="2022-04-12T23:00:00Z">
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>CAT</OemName>
+            <Model>730</Model>
+            <EquipmentId>DT3024</EquipmentId>
+            <SerialNumber>3T302347</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T15:55:07Z">
+            <Latitude>52.6154100</Latitude>
+            <Longitude>-1.7682800</Longitude>
+            <Altitude>94</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T15:55:07Z">
+            <FuelConsumed>510.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T15:55:07Z">
+            <Percent>89.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T15:55:07Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2022-04-12T15:55:07Z">
+            <Count>175</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T15:55:07Z">
+            <Hour>26.50</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T15:55:07Z">
+            <Hour>47.10</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T15:55:07Z">
+            <Odometer>86.4</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T15:55:03Z">
+            <EngineNumber>T4F20505</EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-04-12T00:00:00Z">
+            <FuelConsumed>62.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativePayloadTotals datetime="2022-04-12T15:55:07Z">
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>CAT</OemName>
+            <Model>730</Model>
+            <EquipmentId>DT3026</EquipmentId>
+            <SerialNumber>3T302326</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:00:49Z">
+            <Latitude>52.6154300</Latitude>
+            <Longitude>-1.7677000</Longitude>
+            <Altitude>90</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T23:45:53Z">
+            <FuelConsumed>504.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T23:45:53Z">
+            <Percent>67.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T23:45:53Z">
+            <Percent>95.60</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2022-04-12T23:45:53Z">
+            <Count>168</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T23:45:53Z">
+            <Hour>20.00</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T06:00:49Z">
+            <Hour>43.10</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T23:45:53Z">
+            <Odometer>85.6</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T15:56:23Z">
+            <EngineNumber>T4F20407</EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-04-12T00:00:00Z">
+            <FuelConsumed>69.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativePayloadTotals datetime="2022-04-12T23:45:53Z">
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Volvo</OemName>
+            <Model>A40G</Model>
+            <EquipmentId>DT4005</EquipmentId>
+            <SerialNumber>#N/A</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:38:51Z">
+            <Latitude>52.4749980</Latitude>
+            <Longitude>-1.7149960</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-13T06:39:44Z">
+            <FuelConsumed>1459.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T06:38:51Z">
+            <Percent>79.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeOperatingHours datetime="2020-10-06T00:00:00Z">
+            <Hour>1036.69</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T06:39:44Z">
+            <Odometer>368700.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>CAT</OemName>
+            <Model>730C</Model>
+            <EquipmentId>DT75</EquipmentId>
+            <SerialNumber>TFF00938</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T16:30:51Z">
+            <Latitude>52.4475250</Latitude>
+            <Longitude>-1.6965790</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-12T16:30:51Z">
+            <FuelConsumed>113122.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T16:30:51Z">
+            <Percent>86.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2021-07-29T16:53:29Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2021-07-29T16:53:29Z">
+            <Count>2317</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T16:30:51Z">
+            <Hour>3320.20</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T16:30:51Z">
+            <Hour>7716.70</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2021-07-29T16:53:29Z">
+            <Odometer>2537.3</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T16:30:51Z">
+            <EngineNumber>T4F02761</EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-04-12T00:00:00Z">
+            <FuelConsumed>64.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativePayloadTotals datetime="2021-07-29T17:23:31Z">
+            <Payload>914000.00</Payload>
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>CAT</OemName>
+            <Model>730C</Model>
+            <EquipmentId>DT88</EquipmentId>
+            <SerialNumber>TFF01327</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-11T20:22:47Z">
+            <Latitude>52.4479520</Latitude>
+            <Longitude>-1.6970370</Longitude>
+        </Location>
+        <FuelUsed datetime="2021-07-23T15:00:43Z">
+            <FuelConsumed>1056.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2021-07-23T15:00:43Z">
+            <Percent>99.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2021-07-26T07:46:18Z">
+            <Percent>95.60</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2021-07-26T08:12:08Z">
+            <Count>7721</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2021-07-23T15:00:43Z">
+            <Hour>27.00</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2021-07-23T15:00:53Z">
+            <Hour>139.90</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2021-07-26T07:40:05Z">
+            <Odometer>52.9</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2021-07-23T15:00:40Z">
+            <EngineNumber>KR207420</EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-04-11T00:00:00Z">
+            <FuelConsumed>0.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativePayloadTotals datetime="2021-07-26T08:09:13Z">
+            <Payload>3447000.00</Payload>
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2018-01-17T09:04:12Z</UnitInstallDateTime>
+            <OemName>BELL</OemName>
+            <Model>B30E</Model>
+            <EquipmentId>DT94</EquipmentId>
+            <SerialNumber>B93A631EC02008327</SerialNumber>
+            <Pin>B93A631EC02008327</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T23:00:06Z">
+            <Latitude>52.5002000</Latitude>
+            <Longitude>-1.8401000</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>39445.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>98.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T23:00:00Z">
+            <Percent>98.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2022-04-12T23:00:00Z">
+            <Count>12378</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T23:00:00Z">
+            <Hour>3360.62</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T23:00:00Z">
+            <Hour>5144.10</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T23:00:00Z">
+            <Odometer>23151.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2021-04-16T08:46:22Z">
+            <Running>false</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-03-30T00:00:00Z">
+            <FuelConsumed>8.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <AverageLoadFactorLast24 datetime="2022-03-30T00:00:00Z"/>
+        <CumulativePayloadTotals datetime="2022-04-12T23:00:00Z">
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>CAT</OemName>
+            <Model>432F2</Model>
+            <EquipmentId>JC57</EquipmentId>
+            <SerialNumber>HWP03079</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T05:50:51Z">
+            <Latitude>52.4996300</Latitude>
+            <Longitude>-1.8372000</Longitude>
+            <Altitude>64</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T23:35:56Z">
+            <FuelConsumed>4194.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T23:35:56Z">
+            <Percent>89.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T23:35:56Z">
+            <Percent>72.80</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeLoadCount datetime="2021-07-30T09:16:19Z">
+            <Count>51107</Count>
+        </CumulativeLoadCount>
+        <CumulativeIdleHours datetime="2022-04-12T23:35:56Z">
+            <Hour>325.90</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T05:50:51Z">
+            <Hour>793.50</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T23:35:56Z">
+            <Odometer>1962.9</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T16:28:40Z">
+            <EngineNumber>W7N79817</EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-04-12T00:00:00Z">
+            <FuelConsumed>52.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativePayloadTotals datetime="2021-07-30T09:09:17Z">
+            <Payload>3920000.00</Payload>
+            <PayloadUnits>kilogram</PayloadUnits>
+        </CumulativePayloadTotals>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>JOHN DEERE</OemName>
+            <Model>6155M</Model>
+            <EquipmentId>JD107</EquipmentId>
+            <SerialNumber>1L06155MCJG902433</SerialNumber>
+            <Pin>1L06155MCJG902433</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-03-30T15:49:43Z">
+            <Latitude>52.6836110</Latitude>
+            <Longitude>-1.7830560</Longitude>
+        </Location>
+        <FuelRemaining datetime="2022-03-30T15:14:45Z">
+            <Percent>62.40</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-03-30T15:14:45Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-03-30T15:14:45Z">
+            <Hour>2260.38</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-03-30T16:48:05Z">
+            <Hour>7956.90</Hour>
+        </CumulativeOperatingHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>JOHN DEERE</OemName>
+            <Model>6155M</Model>
+            <EquipmentId>JD108</EquipmentId>
+            <SerialNumber>1L06155MPJG903609</SerialNumber>
+            <Pin>1L06155MPJG903609</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-03-30T16:54:32Z">
+            <Latitude>51.2088890</Latitude>
+            <Longitude>-3.1436390</Longitude>
+        </Location>
+        <FuelRemaining datetime="2022-03-30T16:39:01Z">
+            <Percent>33.60</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-03-30T16:39:01Z">
+            <Percent>86.80</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-03-30T16:39:01Z">
+            <Hour>1311.05</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-03-30T16:54:40Z">
+            <Hour>5008.25</Hour>
+        </CumulativeOperatingHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>JOHN DEERE</OemName>
+            <Model>6155M</Model>
+            <EquipmentId>JD109</EquipmentId>
+            <SerialNumber>1L06155MVHK895704</SerialNumber>
+            <Pin>1L06155MVHK895704</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-03-30T16:36:40Z">
+            <Latitude>52.3486670</Latitude>
+            <Longitude>-1.5318610</Longitude>
+        </Location>
+        <FuelRemaining datetime="2022-03-30T15:24:31Z">
+            <Percent>68.40</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-03-30T15:24:31Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-03-30T15:24:31Z">
+            <Hour>1563.75</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-03-30T16:37:33Z">
+            <Hour>2725.90</Hour>
+        </CumulativeOperatingHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>JOHN DEERE</OemName>
+            <Model>6155M</Model>
+            <EquipmentId>JD115</EquipmentId>
+            <SerialNumber>1L06155MCMK115354</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-03-30T16:45:20Z">
+            <Latitude>52.3880830</Latitude>
+            <Longitude>-1.6234440</Longitude>
+        </Location>
+        <FuelRemaining datetime="2022-03-30T15:39:14Z">
+            <Percent>99.20</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-03-30T15:39:14Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-03-30T15:39:14Z">
+            <Hour>445.59</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-03-30T16:45:30Z">
+            <Hour>679.00</Hour>
+        </CumulativeOperatingHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>JOHN DEERE</OemName>
+            <Model>6155M</Model>
+            <EquipmentId>JD119</EquipmentId>
+            <SerialNumber>1L06155MCMK127139</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-03-30T16:48:23Z">
+            <Latitude>52.5124440</Latitude>
+            <Longitude>-1.7491670</Longitude>
+        </Location>
+        <FuelRemaining datetime="2022-03-30T14:34:25Z">
+            <Percent>73.60</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-03-30T14:34:25Z">
+            <Percent>92.80</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-03-30T14:34:25Z">
+            <Hour>192.78</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-03-30T16:48:25Z">
+            <Hour>233.40</Hour>
+        </CumulativeOperatingHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>JOHN DEERE</OemName>
+            <Model>6155M</Model>
+            <EquipmentId>JD122</EquipmentId>
+            <SerialNumber>1L06155MHMK130412</SerialNumber>
+            <Pin>1L06155MHMK130412</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-03-30T16:36:17Z">
+            <Latitude>52.5055830</Latitude>
+            <Longitude>-1.7300000</Longitude>
+        </Location>
+        <FuelRemaining datetime="2022-03-30T14:03:09Z">
+            <Percent>46.80</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-03-30T14:03:09Z">
+            <Percent>88.80</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-03-30T14:03:09Z">
+            <Hour>46.68</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-03-30T16:36:21Z">
+            <Hour>60.95</Hour>
+        </CumulativeOperatingHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Komatsu</OemName>
+            <Model>PC138US-11</Model>
+            <EquipmentId>LR1205</EquipmentId>
+            <SerialNumber>F51084</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T01:13:00Z">
+            <Latitude>52.5023660</Latitude>
+            <Longitude>-1.8408340</Longitude>
+        </Location>
+        <FuelUsed datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>8131.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>73.30</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-11T23:59:59Z">
+            <Percent>66.70</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2021-06-21T23:59:59Z">
+            <Hour>457.20</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-11T23:57:50Z">
+            <Hour>1591.50</Hour>
+        </CumulativeOperatingHours>
+        <FuelUsedLast24 datetime="2022-04-11T23:59:59Z">
+            <FuelConsumed>35.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+        <CumulativeNonproductiveIdleHours datetime="2022-04-11T23:59:59Z">
+            <Hour>814.30</Hour>
+        </CumulativeNonproductiveIdleHours>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>ENIGMA</OemName>
+            <Model>H13i</Model>
+            <EquipmentId>R1313</EquipmentId>
+            <SerialNumber>H211.0670</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T16:24:00Z">
+            <Latitude>53.7408110</Latitude>
+            <Longitude>-0.3417660</Longitude>
+            <Altitude>0</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelRemaining datetime="2021-05-12T17:09:15Z">
+            <Percent>0.00</Percent>
+            <FuelTankCapacity>0</FuelTankCapacity>
+        </FuelRemaining>
+        <CumulativeOperatingHours datetime="2022-04-12T16:24:00Z">
+            <Hour>5398.01</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T16:24:00Z">
+            <Odometer>6408.9</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T16:24:00Z">
+            <EngineNumber>H211.0670</EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T16:19:59Z">
+            <Speed>0.00</Speed>
+        </MaximumSpeedLast24>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2020-11-19T08:59:02Z</UnitInstallDateTime>
+            <OemName>Hamm AG</OemName>
+            <Model>H267</Model>
+            <EquipmentId>R1340</EquipmentId>
+            <SerialNumber>H2670074</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T17:04:12Z">
+            <Latitude>52.3881000</Latitude>
+            <Longitude>-1.6234100</Longitude>
+            <Altitude>135.61</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T16:37:04Z">
+            <FuelConsumed>4029.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T16:37:04Z">
+            <Percent>95.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T16:37:04Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-04-12T16:37:04Z">
+            <Hour>184.37</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T16:37:04Z">
+            <Hour>394.79</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T16:37:04Z">
+            <Odometer>0.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T16:37:04Z">
+            <EngineNumber>1</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T16:37:04Z">
+            <SpeedUnits>metres per minute</SpeedUnits>
+            <Speed>158.33</Speed>
+        </MaximumSpeedLast24>
+        <AverageLoadFactorLast24 datetime="2022-04-12T16:37:04Z"/>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>1970-01-01T00:00:00Z</UnitInstallDateTime>
+            <OemName>Hamm AG</OemName>
+            <Model>H267</Model>
+            <EquipmentId>R1342</EquipmentId>
+            <SerialNumber>H2670339</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T16:46:49Z">
+            <Latitude>52.3787000</Latitude>
+            <Longitude>-1.5993800</Longitude>
+            <Altitude>112.97</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T16:46:49Z">
+            <FuelConsumed>1990.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T16:46:49Z">
+            <Percent>77.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T16:46:49Z">
+            <Percent>95.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-04-12T16:46:49Z">
+            <Hour>89.56</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T16:46:49Z">
+            <Hour>210.27</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T16:46:49Z">
+            <Odometer>0.4</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T16:46:49Z">
+            <EngineNumber>1</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T16:46:49Z">
+            <SpeedUnits>metres per minute</SpeedUnits>
+            <Speed>188.28</Speed>
+        </MaximumSpeedLast24>
+        <AverageLoadFactorLast24 datetime="2022-04-12T16:46:49Z"/>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2019-01-17T10:36:17Z</UnitInstallDateTime>
+            <OemName>Hamm AG</OemName>
+            <Model>H234</Model>
+            <EquipmentId>R1605</EquipmentId>
+            <SerialNumber>H2340651</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T15:46:22Z">
+            <Latitude>52.6344000</Latitude>
+            <Longitude>-1.7800200</Longitude>
+            <Altitude>153.04</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T15:27:29Z">
+            <FuelConsumed>21882.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T15:27:29Z">
+            <Percent>70.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T15:27:29Z">
+            <Percent>96.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-04-12T15:27:29Z">
+            <Hour>428.61</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T15:27:29Z">
+            <Hour>1484.97</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T15:27:29Z">
+            <Odometer>9.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T15:27:29Z">
+            <EngineNumber>1</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T15:27:29Z">
+            <SpeedUnits>metres per minute</SpeedUnits>
+            <Speed>173.31</Speed>
+        </MaximumSpeedLast24>
+        <AverageLoadFactorLast24 datetime="2022-04-12T15:27:29Z"/>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>1970-01-01T00:00:00Z</UnitInstallDateTime>
+            <OemName>Hamm AG</OemName>
+            <Model>H267</Model>
+            <EquipmentId>R1614</EquipmentId>
+            <SerialNumber>H2670267</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-08T10:18:26Z">
+            <Latitude>52.4217000</Latitude>
+            <Longitude>-1.6743200</Longitude>
+            <Altitude>97.66</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-03-16T14:06:10Z">
+            <FuelConsumed>8874.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-03-16T14:06:10Z">
+            <Percent>95.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-03-16T14:06:10Z">
+            <Percent>75.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-03-16T15:47:16Z">
+            <Hour>395.31</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-03-16T15:47:16Z">
+            <Hour>824.33</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-03-16T12:44:06Z">
+            <Odometer>3.5</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-03-16T15:47:16Z">
+            <EngineNumber>1</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-03-16T15:47:16Z">
+            <SpeedUnits>metres per minute</SpeedUnits>
+            <Speed>0.00</Speed>
+        </MaximumSpeedLast24>
+        <AverageLoadFactorLast24 datetime="2022-03-16T15:47:16Z"/>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>CAT</OemName>
+            <Model>CS78B</Model>
+            <EquipmentId>R1904</EquipmentId>
+            <SerialNumber>49300328</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T05:42:53Z">
+            <Latitude>52.3370900</Latitude>
+            <Longitude>-1.5174600</Longitude>
+            <Altitude>64</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T23:28:57Z">
+            <FuelConsumed>1972.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T23:28:57Z">
+            <Percent>0.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T23:28:57Z">
+            <Percent>95.60</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-04-12T23:28:57Z">
+            <Hour>140.80</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T05:42:53Z">
+            <Hour>214.60</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T23:28:57Z">
+            <Odometer>177.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T09:01:37Z">
+            <EngineNumber>W7N79310</EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <FuelUsedLast24 datetime="2022-04-12T00:00:00Z">
+            <FuelConsumed>5.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>1970-01-01T00:00:00Z</UnitInstallDateTime>
+            <OemName>Hamm AG</OemName>
+            <Model>H268</Model>
+            <EquipmentId>R1910</EquipmentId>
+            <SerialNumber>H2680261</SerialNumber>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T15:52:43Z">
+            <Latitude>52.3564000</Latitude>
+            <Longitude>-1.5434100</Longitude>
+            <Altitude>85.60</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T15:52:45Z">
+            <FuelConsumed>6863.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T15:52:45Z">
+            <Percent>79.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <DEFRemaining datetime="2022-04-12T15:52:45Z">
+            <Percent>100.00</Percent>
+            <DefTankCapacityUnits>litre</DefTankCapacityUnits>
+        </DEFRemaining>
+        <CumulativeIdleHours datetime="2022-04-12T15:52:45Z">
+            <Hour>199.06</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T15:52:45Z">
+            <Hour>556.56</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-12T15:52:45Z">
+            <Odometer>0.6</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-12T15:52:45Z">
+            <EngineNumber>1</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T15:52:45Z">
+            <SpeedUnits>metres per minute</SpeedUnits>
+            <Speed>111.65</Speed>
+        </MaximumSpeedLast24>
+        <AverageLoadFactorLast24 datetime="2022-04-12T15:52:45Z"/>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2021-07-08T11:32:32Z</UnitInstallDateTime>
+            <OemName>JCB</OemName>
+            <Model>540-140HiVis</Model>
+            <EquipmentId>T1420</EquipmentId>
+            <Pin>JCB5A8MGVM3060996</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T05:02:28Z">
+            <Latitude>52.3520540</Latitude>
+            <Longitude>-1.5303760</Longitude>
+            <Altitude>73.5</Altitude>
+            <AltitudeUnits>Metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-13T05:02:27Z">
+            <FuelConsumed>2441.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T05:02:27Z">
+            <Percent>92.80</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2022-04-13T05:02:27Z">
+            <Hour>236.09</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T05:02:27Z">
+            <Hour>563.90</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-12T16:44:19Z">
+            <EngineNumber></EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T23:00:00Z">
+            <SpeedUnits>kilometres per hour</SpeedUnits>
+        </MaximumSpeedLast24>
+        <FuelUsedLast24 datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>28.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2021-05-24T06:46:20Z</UnitInstallDateTime>
+            <OemName>JCB</OemName>
+            <Model>540-140HiVis</Model>
+            <EquipmentId>T1421</EquipmentId>
+            <Pin>JCB5A8MGAM3011363</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T00:36:27Z">
+            <Latitude>52.5522560</Latitude>
+            <Longitude>-1.7059540</Longitude>
+            <Altitude>88</Altitude>
+            <AltitudeUnits>Metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-13T00:36:28Z">
+            <FuelConsumed>2852.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T00:36:28Z">
+            <Percent>98.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2022-04-12T12:03:47Z">
+            <Hour>197.14</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T00:36:28Z">
+            <Hour>681.40</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-12T12:17:58Z">
+            <EngineNumber></EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T23:00:00Z">
+            <SpeedUnits>kilometres per hour</SpeedUnits>
+        </MaximumSpeedLast24>
+        <FuelUsedLast24 datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>11.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2019-09-10T09:36:15Z</UnitInstallDateTime>
+            <OemName>JCB</OemName>
+            <Model>540-170</Model>
+            <EquipmentId>T1761</EquipmentId>
+            <Pin>JCB5AFMGHK2861052</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-12T20:50:24Z">
+            <Latitude>52.2686890</Latitude>
+            <Longitude>-1.4378830</Longitude>
+            <Altitude>71.25</Altitude>
+            <AltitudeUnits>Metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-12T20:50:20Z">
+            <FuelConsumed>10137.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-12T20:50:20Z">
+            <Percent>97.20</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2022-04-12T20:50:20Z">
+            <Hour>893.67</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-12T20:50:20Z">
+            <Hour>2757.20</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-12T20:48:30Z">
+            <EngineNumber></EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T20:50:20Z">
+            <SpeedUnits>kilometres per hour</SpeedUnits>
+        </MaximumSpeedLast24>
+        <FuelUsedLast24 datetime="2022-04-12T20:50:20Z">
+            <FuelConsumed>27.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2021-05-22T06:16:37Z</UnitInstallDateTime>
+            <OemName>JCB</OemName>
+            <Model>540-170</Model>
+            <EquipmentId>T1765</EquipmentId>
+            <Pin>JCB5AFMGCM3011342</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T05:50:40Z">
+            <Latitude>52.2687710</Latitude>
+            <Longitude>-1.4378420</Longitude>
+            <Altitude>75.25</Altitude>
+            <AltitudeUnits>Metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-13T05:50:36Z">
+            <FuelConsumed>6605.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T05:50:36Z">
+            <Percent>98.00</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2022-04-13T05:50:36Z">
+            <Hour>658.78</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T05:50:36Z">
+            <Hour>1576.85</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-13T05:36:11Z">
+            <EngineNumber></EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T23:00:00Z">
+            <SpeedUnits>kilometres per hour</SpeedUnits>
+        </MaximumSpeedLast24>
+        <FuelUsedLast24 datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>14.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2021-09-15T13:17:58Z</UnitInstallDateTime>
+            <OemName>JCB</OemName>
+            <Model>540-170</Model>
+            <EquipmentId>T1768</EquipmentId>
+            <Pin>JCB5AFMGVM3063644</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T05:02:20Z">
+            <Latitude>52.3788720</Latitude>
+            <Longitude>-1.5992330</Longitude>
+            <Altitude>117.875</Altitude>
+            <AltitudeUnits>Metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-13T05:02:12Z">
+            <FuelConsumed>1864.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T05:02:12Z">
+            <Percent>79.60</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2022-04-13T05:02:12Z">
+            <Hour>143.36</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T05:02:12Z">
+            <Hour>395.80</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-12T16:44:57Z">
+            <EngineNumber></EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T23:00:00Z">
+            <SpeedUnits>kilometres per hour</SpeedUnits>
+        </MaximumSpeedLast24>
+        <FuelUsedLast24 datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>24.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Manitou</OemName>
+            <Model>MT 625 H COMFORT 75K ST5 S1</Model>
+            <EquipmentId>T640</EquipmentId>
+            <SerialNumber>3615890</SerialNumber>
+            <Pin>MAN00000C01054803</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T07:04:33Z">
+            <Latitude>52.2690980</Latitude>
+            <Longitude>-1.4357570</Longitude>
+            <Altitude>75.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-13T07:03:39Z">
+            <FuelConsumed>2356.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T07:03:39Z">
+            <Percent>41.20</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeOperatingHours datetime="2022-04-13T07:04:33Z">
+            <Hour>986.40</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T07:04:33Z">
+            <Odometer>1379.7</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T07:04:33Z">
+            <EngineNumber>N/A</EngineNumber>
+            <Running>true</Running>
+        </EngineStatus>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <OemName>Manitou</OemName>
+            <Model>MT 733 EASY 75 D ST5 S1</Model>
+            <EquipmentId>T760</EquipmentId>
+            <SerialNumber>MAN00000T01068954</SerialNumber>
+            <Pin>MAN00000T01068954</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T06:54:43Z">
+            <Latitude>52.6024550</Latitude>
+            <Longitude>-1.7538350</Longitude>
+            <Altitude>115.00</Altitude>
+            <AltitudeUnits>metre</AltitudeUnits>
+        </Location>
+        <CumulativeIdleHours datetime="2022-04-12T15:10:49Z">
+            <Hour>15.84</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T06:54:43Z">
+            <Hour>58.00</Hour>
+        </CumulativeOperatingHours>
+        <Distance datetime="2022-04-13T06:54:43Z">
+            <Odometer>48.0</Odometer>
+            <OdometerUnits>kilometre</OdometerUnits>
+        </Distance>
+        <EngineStatus datetime="2022-04-13T06:54:43Z">
+            <EngineNumber>N/A</EngineNumber>
+            <Running>false</Running>
+        </EngineStatus>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2016-05-25T09:53:43Z</UnitInstallDateTime>
+            <OemName>JCB</OemName>
+            <Model>TLT35 Teletruk</Model>
+            <EquipmentId>TLT02</EquipmentId>
+            <Pin>JCBTLT35JG2253662</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T03:05:35Z">
+            <Latitude>51.5643440</Latitude>
+            <Longitude>-0.4289490</Longitude>
+            <Altitude>36.125</Altitude>
+            <AltitudeUnits>Metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-13T03:05:31Z">
+            <FuelConsumed>16842.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T03:05:31Z">
+            <Percent>38.40</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2022-04-13T03:05:31Z">
+            <Hour>2823.42</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T03:05:31Z">
+            <Hour>6426.25</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-13T02:54:03Z">
+            <EngineNumber></EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T23:00:00Z">
+            <SpeedUnits>kilometres per hour</SpeedUnits>
+        </MaximumSpeedLast24>
+        <FuelUsedLast24 datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>10.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+    </Equipment>
+    <Equipment>
+        <EquipmentHeader>
+            <UnitInstallDateTime>2016-06-10T10:12:08Z</UnitInstallDateTime>
+            <OemName>JCB</OemName>
+            <Model>TLT35 Teletruk</Model>
+            <EquipmentId>TLT03</EquipmentId>
+            <Pin>JCBTLT35EG2253671</Pin>
+        </EquipmentHeader>
+        <Location datetime="2022-04-13T03:24:26Z">
+            <Latitude>51.5659950</Latitude>
+            <Longitude>-0.4305590</Longitude>
+            <Altitude>76.5</Altitude>
+            <AltitudeUnits>Metre</AltitudeUnits>
+        </Location>
+        <FuelUsed datetime="2022-04-13T03:24:24Z">
+            <FuelConsumed>11842.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsed>
+        <FuelRemaining datetime="2022-04-13T03:24:24Z">
+            <Percent>44.80</Percent>
+            <FuelTankCapacityUnits>litre</FuelTankCapacityUnits>
+        </FuelRemaining>
+        <CumulativeIdleHours datetime="2022-04-13T03:24:24Z">
+            <Hour>2205.79</Hour>
+        </CumulativeIdleHours>
+        <CumulativeOperatingHours datetime="2022-04-13T03:24:24Z">
+            <Hour>4695.55</Hour>
+        </CumulativeOperatingHours>
+        <EngineStatus datetime="2022-04-13T03:24:11Z">
+            <EngineNumber></EngineNumber>
+            <Running>False</Running>
+        </EngineStatus>
+        <MaximumSpeedLast24 datetime="2022-04-12T23:00:00Z">
+            <SpeedUnits>kilometres per hour</SpeedUnits>
+        </MaximumSpeedLast24>
+        <FuelUsedLast24 datetime="2022-04-12T23:00:00Z">
+            <FuelConsumed>8.00</FuelConsumed>
+            <FuelUnits>litre</FuelUnits>
+        </FuelUsedLast24>
+    </Equipment>
+</Fleet>

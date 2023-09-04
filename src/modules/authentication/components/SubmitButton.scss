@@ -1,0 +1,45 @@
+.submitButton {
+  padding: 1rem;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 4px;
+  background-color: #dc8326eb;
+  margin: 1rem 1rem 1.5rem 1rem;
+  color: white;
+  transition: all 0.2s;
+  &:hover {
+    background-color: #dc8326eb;
+    cursor: pointer;
+  }
+
+  &_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: all 1s linear;
+  }
+
+  &_submittingAnimation {
+    position: absolute;
+    left: 30%;
+    top: 10px;
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &_withDisabled {
+    background-color: #dc8326eb;
+    flex: 1;
+    &:hover {
+      cursor: not-allowed;
+      background-color: #dc8326eb;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &_halfWidth {
+    width: 50%;
+  }
+}

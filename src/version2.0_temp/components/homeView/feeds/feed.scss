@@ -1,0 +1,76 @@
+@import '../../../assets/styles/colors.scss';
+
+.v2-feed {
+  &-wrapper {
+    width: 440px;
+    border: 1px solid $SLATE-V2-3;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 120px;
+    left: 0px;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    height: 580px;
+    overflow: auto;
+    animation: fadeup 0.6s linear;
+
+    &-tabs {
+      display: flex;
+      justify-content: space-between;
+      position: sticky;
+      top: 0px;
+      padding: 10px;
+      cursor: pointer;
+      background-color: #181d24;
+
+      &-tab {
+        color: #FFFFFF;
+        padding: 5px;
+
+          &-active {
+            padding: 5px;
+            color: $SLATE-V2-3;
+
+        }
+        
+      }
+
+      & img {
+        margin-left: 20px;
+      }
+
+    }
+  }
+
+  &-expand {
+    background: $SLATE-V2-3;
+    position: absolute;
+    left: 440px;
+    bottom: 620px;
+    z-index: 3;
+    padding: 2px 4px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    cursor: pointer;
+  }
+}
+
+.v2-insights-modal {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $SLATE-V2-2;
+  border: 1px solid $SLATE-V2-3;
+  border-radius: 2px;
+  animation: fadeup 0.6s linear;
+  z-index: 9;
+
+  &-content {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+}

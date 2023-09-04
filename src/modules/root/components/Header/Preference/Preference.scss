@@ -1,0 +1,155 @@
+.Preference{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    &__title{
+        font-size: 2.4rem;
+        font-weight: 600;
+        border-bottom: 1px solid #c2c2c2;
+        position: relative;
+        padding: 20px;
+        &__close{
+            position: absolute !important;
+            right: 0;
+            top: 0;
+        }
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+        flex-shrink: 1;
+        overflow: auto;
+        padding: 10px 20px;
+        &__tenants{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 15px 0 10px 0;
+            flex-direction: column;
+            &__title {
+                font-size: 1.6rem;
+                flex-basis: 25%;
+                font-weight: 600;
+                display: flex;
+                margin: 4px 10px;
+            }
+            &__option {
+            font-size: 1.6rem;
+            flex-basis: 75%;
+            padding: 4px 10px;
+            border-radius: 0 32px 32px 0;
+                .MuiSelect-outlined.MuiSelect-outlined{
+                    padding: 10px 10px;
+                }
+                .MuiSelect-select:focus {
+                    background-color: inherit;
+                }
+                .MuiSelect-selectMenu {
+                    font-weight: 600;
+                }
+            }
+        }
+        &__build {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            font-size: 1rem;
+        }
+        &__theme{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 15px 0 10px 0;
+            flex-direction: column;
+            &__title {
+                font-size: 1.6rem;
+                flex-basis: 25%;
+                font-weight: 600;
+                display: flex;
+                margin: 4px 10px;
+            }
+            &__options{
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+                flex-basis: 75%;
+                padding: 4px 10px;
+                justify-content: flex-start;
+                &__item{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 8px;
+                    border: 1px solid #c2c2c2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    cursor: pointer;
+                    margin-right: 10rem;
+                    &__icon{
+                        position: absolute;
+                        bottom: -12px;
+                        right:-12px;
+                        color: green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slateDashboard{
+background-color: #171d25;
+color: #fff;
+&__updatedPreference{
+        border-bottom: 2px solid #fe9a0b;
+}
+&__title{
+    color: #fe9a0b;
+    margin-left: 12px;
+}
+
+&__options{
+    background-color:#171d25 ;
+    color: #fff;
+    .MuiSvgIcon-root {
+        color: #fff; 
+    }
+    div{
+        .MuiPaper-root{
+            color: #fff;
+            background-color: #171d25;
+        }
+    }
+
+
+    .MuiSelect-outlined.MuiSelect-outlined{
+        padding: 10px 10px;
+        border: 1px solid #fff;
+    }
+    .MuiSelect-select:focus {
+        background-color: #171d25;
+        color: #fff;
+    }
+    .MuiSelect-selectMenu {
+        font-weight: 600;
+        color: #fff;
+    }
+    .MuiMenu-list{
+        color: #fff;
+    }
+    .MuiList-root{
+        background-color: #171d25;
+    }
+}
+}
+
+
+.addIconContainer{
+    &__optionFont{
+        color: white;
+    }
+}

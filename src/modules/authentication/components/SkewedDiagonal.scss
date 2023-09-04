@@ -1,0 +1,11 @@
+.skewedDiagonal {
+  left: -150px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 30vw;
+  transform: skew(17deg);
+  background: #403e3f;
+  transition: 0.4s;
+  z-index: 0;
+}

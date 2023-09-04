@@ -1,0 +1,77 @@
+.dateRangeSlider {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  // max-height: 6rem;
+  margin: 0.5rem 0;
+  &__scrollContainer {
+    flex: 1;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    // margin-bottom: -1rem;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &__dateList {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 0 0.5rem;
+      margin-bottom: 0.5rem;
+      &__dates {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 50%;
+        padding: 1rem;
+        justify-content: center;
+        cursor: pointer;
+        min-width: 4.2rem;
+        max-width: 4.2rem;
+        min-height: 4.2rem;
+        max-height: 4.2rem;
+        font-size: 1.25rem;
+        &__dayAndDateStyle {
+          flex: 1;
+          display: flex;
+        }
+        &__selectedDate {
+          background-color: #171d25;
+          color: #fff;
+        }
+        &__currentDate {
+          color: #171d25;
+        }
+      }
+    }
+    &__uploadedDatesMark {
+      padding: 0.3rem;
+      border-radius: 50%;
+      background-color: #07676e;
+      visibility: visible;
+    }
+    &__uploadedDatesMarkHide {
+      visibility: hidden;
+    }
+    &__monthAndYearLabelHide {
+      display: none;
+    }
+    &__monthAndYearLabel {
+      display: flex;
+      position: sticky;
+      top: 0;
+      left: 0;
+      visibility: visible;
+      font-size: 1.25rem;
+      font-weight: bold;
+      &__monthStyle {
+        margin-right: 0.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import '../../../../../assets/onx/variable';
+@import '../../../styles/colors.scss';
+
+.v2-scheduleDetails {
+    padding: 5px;
+    color: $WHITE;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+        color: $SLATE-V2-3;
+    }
+
+    &__content {
+        h4 {
+            font-size: 16px;
+            color: $SLATE-V2-3;
+        }
+        &__info {
+            margin: 10px;
+            float: right;
+            color: $SLATE-V2-3;
+        }
+
+        &__subject {
+            margin-bottom: 5px;
+            margin-top: 5px;
+
+            &.flex {
+                display: flex;
+            }
+
+            &__ruleName {
+                margin-left: 14px;
+            }
+
+            &__table {
+                height: calc(100vh - 500px);
+                overflow: auto;
+                position: relative;
+
+                &>table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+
+                &__header {
+                    position: sticky;
+                    top: -1px;
+                    z-index: 1;
+                    line-height: 18px;
+                    color: $WHITE;
+                    background-color: #171d25;
+                    border: 1px solid rgba(255,255,255, 0.3);
+                    text-align: left;
+                    padding: 4px 12px;
+
+                    &:last-child {
+                        width: 160px
+                    }
+                }
+
+                &__data {
+                    line-height: 20px;
+                    color: $WHITE;
+                    padding: 4px 12px;
+                    border: 1px solid rgba(255,255,255, 0.3);
+
+                    &__btn {
+                        margin-right: 4px;
+
+                        &__icon {
+                            transform: rotate(-45deg);
+                            color: $SLATE-V2-3;
+                        }
+                    }
+                }
+            }
+        }
+
+        h4,
+        p,
+        tr,
+        td {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: $WHITE;
+        }
+
+    }
+}

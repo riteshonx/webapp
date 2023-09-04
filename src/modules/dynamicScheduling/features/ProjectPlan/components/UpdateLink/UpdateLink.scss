@@ -1,0 +1,102 @@
+@import '../../../../../../assets/onx/variable';
+@import '../../../../../../assets/onx/abstracts/mixins';
+
+.updateLinkDialog {
+  width: 340px;
+  min-height: 205px;
+
+  &__header {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.0075em;
+    margin: 0px 0px 10px 0px;
+
+    &__text {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.0075em;
+      margin: 0px 0px 10px 0px;
+    }
+
+    &__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+    }
+  }
+
+  &__body {
+    margin-bottom: 10px;
+    max-width: 380px;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+
+    &__dropdown {
+      margin-top: 30px;
+
+      .MuiInput-root {
+        text-align: left;
+      }
+
+      .MuiFormLabel-root {
+        float: left;
+        font-size: 1.2rem !important;
+        margin-bottom: 5px !important;
+      }
+    }
+
+    &__textField {
+      .MuiOutlinedInput-input {
+        width: 320px !important;
+      }
+      .MuiFormControl-root {
+        padding: 5px 0 0 0 !important;
+      }
+      &__note {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 21px;
+    float: right;
+
+    &__btn {
+      min-width: 111px !important;
+      margin: 0px 12px;
+      padding: 8px 0;
+      font-size: 1.2rem !important;
+    }
+  }
+
+  &__success {
+    height: 100%;
+    //  @include flexCenter(center);
+
+    &__box {
+      //  @include flexCenter(center);
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background: #c4c4c4;
+      margin: 0 auto;
+      @include success-animation();
+    }
+
+    &__text {
+      @extend .updateLinkDialog__header__text;
+      margin-top: 10px;
+    }
+  }
+
+  .btn-primary {
+    margin-left: 15px;
+  }
+}

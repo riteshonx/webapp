@@ -1,0 +1,43 @@
+@import '../../../assets/styles/colors.scss';
+
+.v2-feed-card {
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
+  margin: 10px 0;
+  color: $WHITE;
+  background-color: #181d24;
+  &-header {
+    display: flex;
+    padding-bottom: 4px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba($WHITE, 0.3);
+  }
+  &-title {
+    font-size: 16px;
+    font-weight: 500,
+  }
+  &-cardFooter {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+  }
+  &-insight {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba($WHITE, 0.3);
+    &-title {
+      color: $SLATE-V2-3;
+    }
+    &-content {
+      margin-top: 6px;
+    }
+  }
+  &-spanKey {
+    color: $SLATE-V2-3
+  }
+  
+  &-icon {
+    color: $WHITE;
+    margin-left: 10px;
+  }
+}

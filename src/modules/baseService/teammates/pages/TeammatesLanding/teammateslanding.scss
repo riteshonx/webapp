@@ -1,0 +1,279 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.teammates {
+  &__parentView {
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  &__view-btn {
+    @include flexCenter(flex-end);
+    flex-direction: row-reverse;
+
+    .g-view {
+      @include flexCenter(center);
+      width: 134px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 600;
+      & svg {
+        margin-right: 1rem;
+      }
+    }
+
+    .l-view {
+      @include flexCenter(center);
+      width: 120px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 600;
+      & svg {
+        margin-right: 1rem;
+      }
+    }
+
+    .toggle-primary {
+      color: $onx-white;
+      background: $onx-primary;
+      border: $onx-primary;
+      font-size: 1.2rem;
+      padding: 6px 20px;
+      border-radius: 30px;
+      text-transform: none;
+    }
+    svg {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  &__userName {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 15px;
+    &__selected {
+      text-align: center;
+      font-size: 12px;
+      padding-top: 15px;
+      font-weight: bold;
+    }
+  }
+
+  &__selectedParentView {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 99;
+    width: 25%;
+    background: white;
+    box-shadow: -10px 0 15px rgb(224, 224, 224);
+    animation: slideIn 0.2s;
+  }
+  &__selectedImage {
+    width: 100%;
+    height: 300px;
+  }
+  &__closeIcon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+  }
+  &__teammatesViewStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+  }
+  &__selectedCompanyName {
+    padding: 16px;
+    color: #787878;
+    font-size: 14px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  &__selectedEmail {
+    padding: 28px;
+    color: #787878;
+    font-size: 14px;
+    padding-left: 16px;
+  }
+  &__selectedStatus {
+    padding: 16px;
+    color: #787878;
+    font-size: 14px;
+    padding-top: 0px;
+  }
+  &__selectedProjectView {
+    display: flex;
+    flex-direction: row;
+    padding-left: 16px;
+  }
+  &__selectedProjectAvatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    // background: "#000",
+    margin-right: -15px;
+  }
+  &__gridView {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    overflow: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0px;
+    align-content: flex-start;
+    &__grid {
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      grid-gap: 10px 0px;
+      width: 100%;
+    }
+  }
+  &__imageParent {
+    display: flex;
+    flex-direction: column;
+    // flex: 1;
+    // justify-content: center
+    width: 100px;
+    height: 120px;
+    align-items: center;
+  }
+
+  &__userDetailEdit {
+    color: #333;
+    font-weight: bold;
+    font-size: 20;
+    // padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    padding: 16px;
+  }
+
+  &__editIcon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #000;
+    margin-left: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+  }
+  &__editIconSize {
+    font-size: 15px;
+    color: #fff;
+  }
+
+  &__editBoxProjects {
+    color: #787878;
+    font-size: 14;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+
+  &__viewIcons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__avatar-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 34px;
+    cursor: pointer;
+    &__selected {
+      width: 68px;
+      height: 68px;
+      border-radius: 34px;
+      border: 2px solid $onx-primary;
+    }
+  }
+
+  &__avatar-icon:hover {
+    width: 70px;
+    height: 70px;
+    border: 1px solid $onx-primary;
+  }
+
+  &__plus_small {
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 25px;
+    background-color: $onx-primary;
+    // margin-right: 8px;
+    color: #fff;
+  }
+
+  &__right {
+    @include flexCenter(flex-end);
+    flex-wrap: wrap;
+
+    &__search {
+      position: relative;
+      width: 300px;
+      margin-right: 15px;
+      .MuiOutlinedInput-input {
+        padding: 8px 14px;
+        font-family: $font-family;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+        letter-spacing: 0.4000000059604645px;
+        text-align: left;
+        height: 20px;
+      }
+      &__icon {
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        color: $onx-A7;
+        height: 26px;
+      }
+    }
+
+    &__count {
+      position: absolute;
+      right: 0;
+      font-size: 1.2rem;
+      text-align: right;
+      margin: 5px 0px;
+      color: #9e9e9e;
+    }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

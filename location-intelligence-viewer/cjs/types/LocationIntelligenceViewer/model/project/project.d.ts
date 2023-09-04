@@ -1,0 +1,43 @@
+import { FocusableObject } from '../../../Viewer/models/focusableObject';
+import { DisplayStyle } from '../../materials/displayStyle';
+import { Building } from '../building/building';
+import { SmartProjectSite } from '../external';
+import { Coordinate } from '../map/coordinate';
+import { IProject } from './IProject';
+import { NodeCollection } from '../nodeCollection/nodeCollection';
+import { BuildingPrefab } from '../prefabs';
+import { Level } from '../building/level';
+import { Zone } from '../building/zone';
+import { Room } from '../building/room';
+import { VisualizeRenderer } from '../../../LocationIntelligenceViewerV2/engine/core/visualizeRenderer';
+import { VisualizeScene } from '../../../LocationIntelligenceViewerV2/engine/core/visualizeScene';
+export declare class Project {
+    projectId: number;
+    name: string;
+    editable: boolean;
+    buildingPrefabs: BuildingPrefab[];
+    buildings: Building[];
+    center: Coordinate;
+    boundingBox: {
+        min: Coordinate;
+        max: Coordinate;
+    };
+    private isVisisbleInScene;
+    private nodeMapById;
+    private _renderer;
+    private _scene;
+    constructor(project: IProject, buildingPrefabs: BuildingPrefab[], buildings: Building[], renderer: VisualizeRenderer, scene: VisualizeScene);
+    setDisplayStyle(displayStyle: DisplayStyle): void;
+    snapTo(): void;
+    addToWorld(): void;
+    removeFromWorld(): void;
+    findNodeById(id: number): Zone | Building | Room | Level | NodeCollection;
+    asSmartProject(focusOn: (focusableObject: FocusableObject) => Promise<void>, jumpTo: (focusableObject: FocusableObject) => void): SmartProjectSite;
+    private initializeBuildings;
+    createNodeCollectionFromIds(ids: number[], name: string, externalReferenceId: string): NodeCollection;
+    private buildNodeMapById;
+    private _addZoneToNodeMap;
+    private addZoneToNodeMap;
+    private _addRoomToNodeMap;
+    private addRoomToNodeMap;
+}

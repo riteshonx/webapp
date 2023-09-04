@@ -1,0 +1,70 @@
+.progressBar-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex: 1;
+  &__zeroValue {
+    align-items: center;
+    margin-bottom: 1.6rem;
+  }
+  &__nonZeroValue {
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+  }
+  &__productivityValue {
+    align-items: flex-start;
+    margin-bottom: 1.3rem;
+  }
+  svg#hsbarExample {
+    border-radius: 8px;
+  }
+  &__stackBarTitle {
+    width: 25%;
+    color: #212121;
+    font-size: 12px;
+    white-space: nowrap;
+    &__padding {
+      padding-top: 0.5rem;
+    }
+  }
+  &__subStackBarTitle {
+    width: 25%;
+    color: #212121;
+    font-size: 10px;
+    white-space: nowrap;
+    &__padding {
+      padding-top: 0.5rem;
+    }
+  }
+  &__subTitle_container{
+    width: 35%;
+    &__subTitle{
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+  &__stackBarContainer {
+    width: 55%;
+    &__zeroValue {
+      display: flex;
+    }
+    &__noContent {
+      font-size: 12px;
+    }
+    &__totalValue {
+      color: #757575;
+      font-size: 10px;
+      visibility: hidden;
+      &__show {
+        visibility: visible;
+      }
+    }
+  }
+  &__trendContainer {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    width: 21%;
+  }
+}

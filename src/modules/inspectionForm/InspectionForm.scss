@@ -1,0 +1,82 @@
+.inspectionForm-main {
+  margin-top: -54px;
+  display: flex;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  flex: 1;
+  .MuiTableCell-root {
+    border-bottom: 0.5px solid lightgray;
+  }
+  &__header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    &__icon {
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  }
+
+  &__breadCrumbContainer {
+    padding: 1rem 0 2rem 1.5rem;
+    font-size: 17px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: flex;
+    align-items: center;
+    &__boldText {
+      font-weight: bold;
+    }
+    &__normalText {
+      font-weight: normal;
+    }
+    &__arrow {
+      padding: 0 1rem;
+      &__text {
+        cursor: pointer;
+      }
+    }
+    &__iconContainer {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &__icon {
+        margin-right: 0.5rem;
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__infiniteScrollContainer {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 4px 8px;
+    &__tableContainer {
+      max-height: 60rem;
+      &__headCell {
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
+  &__invalidUrl {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  &__loadContainer {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    margin-top: -54px;
+    justify-content: center;
+    align-items: center;
+  }
+}

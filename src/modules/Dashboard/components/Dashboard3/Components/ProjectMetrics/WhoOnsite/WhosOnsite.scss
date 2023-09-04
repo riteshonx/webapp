@@ -1,0 +1,68 @@
+.whosOnsite-main {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+  &__headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 0.5px solid lightgray;
+    &__header {
+      font-weight: 500;
+      color: #171d25;
+    }
+    &__legendContainer {
+      display: flex;
+      font-size: 1rem;
+      color: #3b3b3b;
+      &__legend {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        &__circle {
+          height: 0.8rem;
+          width: 0.8rem;
+          border-radius: 50%;
+          margin-right: 0.2rem;
+        }
+      }
+    }
+  }
+  &__updatedDateContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &__head {
+      color: #757575;
+      font-weight: 500;
+      margin-right: 0.4rem;
+    }
+    &__date {
+      color: #757575;
+      font-weight: normal;
+    }
+  }
+  .lightGreen {
+    background-color: #90b890;
+  }
+  .yellow {
+    background-color: #ffa80d;
+  }
+  .darkGreen {
+    background-color: #171d25;
+  }
+  .noMargin {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,84 @@
+@import "../../../../../assets/onx/variable";
+
+.workflowEditor__main {
+  width: 100%;
+  &__buttonContainer {
+    &__button1 {
+      @include button(#000000, #ffffff);
+      border: 1px solid #666666;
+      margin-right: 1rem;
+      &:hover {
+        color: #ffffff;
+        background-color: #666666;
+      }
+    }
+    &__button2 {
+      @include button(#ffffff, #666666);
+      &:hover {
+        color: #000000;
+      }
+      &__disabled {
+        opacity: 0.5;
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+.react-flow__handle__right {
+  position: absolute !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  background: #000 !important;
+  border: 1px solid #000 !important;
+  border-radius: 100% !important;
+  right: -1.2rem !important;
+  &__target1 {
+    opacity: 0 !important;
+    right: -0.2rem !important;
+    top: 2rem !important;
+    width: 1rem !important;
+    height: 4rem !important;
+    border-radius: 4px !important;
+    &:hover {
+      opacity: 0.3 !important;
+    }
+  }
+  &__target2 {
+    opacity: 0 !important;
+    right: -0.2rem !important;
+    top: 10rem !important;
+    width: 1rem !important;
+    height: 4rem !important;
+    border-radius: 4px !important;
+    &:hover {
+      opacity: 0.3 !important;
+    }
+  }
+}
+
+.react-flow__handle__left {
+  position: absolute !important;
+  opacity: 0 !important;
+  width: 1rem !important;
+  height: 4rem !important;
+  left: -0.2rem !important;
+  border-radius: 4px !important;
+  &:hover {
+    opacity: 0.3 !important;
+  }
+  &__source1 {
+    opacity: 0 !important;
+    top: 2rem !important;
+    &:hover {
+      opacity: 0.3 !important;
+    }
+  }
+  &__source2 {
+    opacity: 0 !important;
+    top: 10rem !important;
+    &:hover {
+      opacity: 0.3 !important;
+    }
+  }
+}

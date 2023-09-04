@@ -1,0 +1,83 @@
+@import '../../../../../../assets/onx/variable';
+.timeLineSlider{
+    position: relative;
+    height: 60px;
+    overflow-x: auto;
+    flex: 1;
+    -ms-overflow-style: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar { 
+        display: none;  
+    }
+
+    .rc-slider {
+        margin: 30px 0 0;
+
+        .rc-slider-rail {
+            margin:  0 35px;
+            height: 18px;
+            background-color: #D5D5D5;
+            border-radius: 3px;
+        }
+
+        .rc-slider-track  {
+            margin:  0 35px;
+            height: 18px;
+            background-color: $onx-primary;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        .rc-slider-step  {
+            margin:  0 35px;
+            height: 18px;
+        }
+
+        .rc-slider-handle {
+            height: 18px;
+            width: 18px;
+            margin:  0 35px;
+            border-radius: 10px;
+            border: none;
+            background-color: $onx-primary;
+            z-index: 2;
+        }
+
+        .rc-slider-mark {
+            margin:  0 35px;
+            top: -20px;
+        }
+
+        .rc-slider-dot{
+            display: none;
+        }
+        
+        .rc-slider-mark > .rc-slider-mark-text-active {
+            display: inline-block;
+        }
+
+        .rc-slider-mark > .rc-slider-mark-text:last-of-type {
+           width: 60px;
+        }
+    }
+}
+
+.timeLineSliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+
+    svg {
+        cursor: pointer;
+        color: #C4C4C4;
+        margin-top: 28px;
+    }
+
+    .btn-placeholder{
+        width: 24px;
+        height: 24px;
+        margin-top: 28px;
+    }
+}

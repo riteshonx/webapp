@@ -1,0 +1,59 @@
+.filterPopup-main {
+  &__filterFieldsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  &__autoCompleteWidth {
+    width: 100%;
+  }
+  &__createdDateContainer {
+    margin-bottom: 4rem;
+  }
+  &__buttonContainer {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    border-radius: 0.5px solid lightgray;
+    font-weight: 500;
+    &__clearButton {
+      margin-right: 1.5rem;
+      cursor: pointer;
+    }
+    &__applyButton {
+      cursor: pointer;
+      color: #105c6b;
+    }
+  }
+  &__headText {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+  }
+  .MuiInputBase-root {
+    padding: 2px !important;
+  }
+  .MuiOutlinedInput-input {
+    padding: 10px;
+  }
+  &__date-picker {
+    position: relative;
+
+    .calendar-icon {
+      top: 0px;
+      position: absolute;
+      right: 0px;
+      width: 100%;
+      border-radius: 5px;
+      height: 41px;
+
+      .MuiIconButton-label {
+        justify-content: flex-end !important;
+      }
+    }
+  }
+}

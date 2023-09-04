@@ -1,0 +1,52 @@
+.nonComplianceWidget-main {
+  height: 27rem;
+  background-color: rgb(255, 255, 255);
+  width: 35rem;
+  min-width: 35rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  background-image: url("../../../../../../assets/images/Productivity.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 116%;
+  padding: 1.4rem;
+  margin-right: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  &__titleContainer {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    &__projectsCount {
+      padding: 0 1rem;
+      background-color: #424242;
+      margin-left: 0.5rem;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+  }
+  &__bestAndWorstContainer {
+    margin-bottom: 1.8rem;
+    display: flex;
+    &__categoryType{
+      margin-right: 1.8rem;
+    }
+    &__complianceType {
+      padding: 0 2.5rem;
+      border-bottom: none;
+      cursor: pointer;
+      border-bottom: 1px solid #cacaca;
+      font-size: 1.2rem;
+      &__selected {
+        border-bottom: 5px solid #212121;
+      }
+    }
+  }
+  &__progressBarContainer {
+    margin-bottom: 1.5rem;
+  }
+}

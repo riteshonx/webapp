@@ -1,0 +1,132 @@
+@import '../../../../../../assets/onx/variable';
+
+.recipe-task-details-right-view {
+  &__header {
+    height: 6rem;
+    background: #ffffff;
+    /* Base Card */
+    box-shadow: 0px 2px 1px -1px rgba(180, 179, 189, 0.25),
+      2px 0px 1px rgba(180, 179, 189, 0.04),
+      0px 2px 8px rgba(180, 179, 189, 0.25);
+    &__header-options {
+      display: flex;
+      &--task-tabs {
+        display: -webkit-box;
+        padding: 2rem;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #757575;
+      }
+    }
+  }
+}
+
+.task__attributes__tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  display: flex;
+  height: 6rem;
+
+  box-shadow: 0px 2px 1px -1px rgba(180, 179, 189, 0.25),
+    2px 0px 1px rgba(180, 179, 189, 0.04), 0px 2px 8px rgba(180, 179, 189, 0.25);
+
+  &-comment {
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: auto;
+    margin-top: auto;
+    display: none; // added to hide comment button
+  }
+
+  &-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  &-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 1.2rem;
+
+    &-active {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      display: flex;
+      align-items: center;
+      color: #212121;
+    }
+
+    &-active-border {
+      border-bottom: 3px solid #212121;
+    }
+
+    &__icon {
+      margin-right: 0.5rem;
+    }
+
+    &__name {
+      font-family: Poppins;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.8rem;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #757575;
+    }
+  }
+  &__constraints-state-open {
+    position: relative;
+    font-size: 1.2rem;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #666666;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 20px;
+    color: #ffffff;
+    bottom: 12px;
+    padding-bottom: 0px;
+  }
+}
+
+/* Style the buttons inside the tab */
+// .tab button {
+//   background-color: inherit;
+//   float: left;
+//   border: none;
+//   outline: none;
+//   cursor: pointer;
+//   padding: 14px 16px;
+//   transition: 0.3s;
+//   font-size: 17px;
+// }
+
+/* Change background color of buttons on hover */
+// .tab button:hover {
+//   background-color: #ddd;
+// }
+
+/* Create an active/current tablink class */
+// .tab button.active {
+//   background-color: #ccc;
+// }

@@ -1,0 +1,10 @@
+.tooltip{
+    &__wrapper{
+       &__data{
+        max-height: 250px;
+        overflow: auto;
+        font-size: 12px;
+       }
+
+    }
+}

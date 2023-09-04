@@ -1,0 +1,26 @@
+.formlistTable{
+    &__cellicon{
+        font-size:1.8rem;
+        cursor: pointer;
+        color: #B0B0B0;
+    }
+
+    &__defaultIconRow {
+        display: flex;
+    }
+    
+    &__default {
+        position: relative;
+        left: 10px;
+        bottom: 2px;
+        &__star {
+          position: relative;
+          bottom: 8px;
+          right: 13px;
+        }
+    }
+
+
+}
+
+  

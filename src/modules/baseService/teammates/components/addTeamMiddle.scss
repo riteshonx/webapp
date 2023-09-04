@@ -1,0 +1,231 @@
+@import "../../../../assets/onx/variable";
+@import "../../../../assets/onx/abstracts/mixins";
+
+.addTeamMiddle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: calc(100vh - 270px);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0px;
+  &__parentView {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    grid-gap: 10px 0px;
+    width: 100%;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__addnew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__companiesImageView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  &__companiesImageCross {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    background: #e5e5e5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 1px;
+    vertical-align: middle;
+    padding: 2;
+    z-index: 99;
+    width: max-content;
+  }
+
+  &__plusDiv {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__companyNameText {
+    font-size: 12px;
+    text-align: center;
+  }
+  &__companyNameText_overflow {
+    width: 73px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__select {
+    width: 100%;
+    margin-left: 8px;
+  }
+
+  &__crossProjectVisible {
+    font-size: 12px;
+    color: #c4c4c4;
+    visibility: inherit;
+  }
+  &__crossSize{
+    font-size: 18px;
+  }
+  &__crossProjectHidden {
+    font-size: 12px;
+    color: #c4c4c4;
+    visibility: hidden;
+  }
+
+  &__error {
+    font-size: 10px;
+    color: red;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar_companies {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 8px;
+  }
+  &__avatar_companies_selected {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 8px;
+    border: 3px solid $onx-primary;
+    // #333;
+  }
+
+  &__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    // backgroundColor: #000;
+    margin-top: 8px;
+  }
+  &__avatar_selected {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    // backgroundColor: #000;
+    margin-top: 8px;
+    border: 3px solid $onx-primary;
+  }
+
+  &__plus {
+    font-size: 48px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: gray;
+    // margin-right: 8px;
+    margin-top: 8px;
+    color: #fff;
+    cursor: pointer;
+  }
+  &__plus_small {
+    font-size: 48px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: gray;
+    // margin-right: 8px;
+    margin-top: 8px;
+    color: #fff;
+    cursor: pointer;
+  }
+  &__projectSelect {
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-top: 8px;
+    flex-basis: 0px;
+    align-content: flex-start;
+    overflow-y: auto;
+  }
+  &__projectSelectImage {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8;
+  }
+
+  &__projectArea {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    grid-gap: 10px 0px;
+    width: 100%;
+  }
+
+  &__projectAreaImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__projectSelectImageView {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 8px;
+    margin-top: 8px;
+  }
+
+  &__projectSelectImageViewCross {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    line-height: 1px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    align-items: center;
+    padding: 2px 2px;
+  }
+
+  &__dummySelect {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-top: 8px;
+  }
+
+  &__dummySelectText {
+    font-size: 12px;
+    color: #c4c4c4;
+    visibility: inherit;
+  }
+}
+
+.noItemsFound {
+  text-align: center;
+}

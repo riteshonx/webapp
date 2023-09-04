@@ -1,0 +1,82 @@
+@import "../../../../../assets/onx/variable";
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.updateProjects{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: transparent;
+    position: relative;
+    .closeIcon{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        display: none;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    &__details{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        &__toggle{
+            &__header {
+                display: flex;
+                margin: 10px 5px;
+                align-items: center;
+            }
+    
+            &__toggle-btn{
+                @include flexCenter(center);
+                width: 100px;
+              }
+    
+            &__g-view {
+            font-size: 13px;
+            width: 122px;
+            text-align: center;
+            cursor: pointer;
+            }
+    
+            .toggle-primary{
+                color: $onx-white;
+                background: $onx-primary;
+                border: $onx-primary;
+                font-size: 1.2rem;
+                padding: 5px 20px;
+                border-radius: 30px;
+                text-transform: none;
+            }
+        }
+
+        &__detailsContainer{
+            
+        }
+
+    }
+    
+}
+
+.smallSideBar{
+    flex-basis: 65%;
+    display: flex;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    background: #fff;
+}
+
+.fullSideBar{
+    flex-basis: 100%;
+    display: flex;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    background: #fff;
+}

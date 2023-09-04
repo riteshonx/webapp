@@ -1,0 +1,149 @@
+@import '../../../../../assets/onx/variable';
+@import "../../../../../assets/onx/abstracts/mixins";
+
+.pullPlan{
+
+    &__header{
+
+        &__description{
+            font-size: 10px;
+            color: #646464;
+            ;
+        }
+
+    }
+
+    &__content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    &__left{
+        margin: 10px 0px 20px 0px;
+        border-right: 1px solid lightgray;
+        padding: 0px 35px 0px 0px;
+        width: 370px;
+
+        &__field{
+            margin: 10px 0px;
+            &__error {
+                color: #f00;
+                font-size: 1rem;
+            }
+            &__label{
+                span{
+                    color: #f00;
+                }
+            }
+        }
+
+        .MuiInputLabel-animated{
+            font-size: 12px;
+            margin-bottom: 3px;
+        }
+
+        .MuiOutlinedInput-multiline{
+            padding: 5px;
+        }
+    }
+
+    &__right{
+        width: 370px;
+        margin: 10px 0px 20px 0px;
+
+        padding: 0px 15px 0px 35px;
+
+        &__assignee{
+            display: flex;
+            flex-wrap: wrap;
+
+            &__label{
+                width: 100%;
+                font-size: 1.4rem;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            &__wrapper{
+                width: 100%;
+                max-height: 225px;
+                overflow: auto;
+            }
+
+            &__info {
+                @include flexCenter(flex-start);
+                flex-wrap: wrap;
+                position: relative;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #d3d3d36e;
+                margin-bottom: 10px;
+                margin-right: 20px;
+
+                .MuiAvatar-colorDefault{
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &__name{
+                    font-size: 1.3rem;
+                    margin-left: 10px;
+                }
+
+                &__close{
+                    position: absolute;
+                    right: 2px;
+                    top: 5px;
+                    cursor: pointer;
+                }
+            }
+            
+            &__container{
+                width: 100%;
+                margin: 0 auto;
+
+                &__no-data{
+                    @include flexCenter(center);
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    margin: 20px auto;
+                    width: 180px;
+                    text-align: center;
+                    color: #9E9E9E;
+
+                }
+            }
+
+            &__add-assignee{
+                font-size: 1.2rem;
+                font-weight: 800;
+                cursor: pointer;
+                text-align: center;
+                color: #000000;
+                margin: 0 0 10px 0;
+                width: 199%;
+                height: 40px;
+            }
+
+        }
+    }
+
+    &__footer{
+        @include flexCenter(space-between);
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        &__btn{
+            color: #f00;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &__icon{
+                margin-right: 5px;
+                font-size: 1.6rem;
+            }
+        }
+        &__action{
+            @include flexCenter(flex-end);
+        }
+    }
+}

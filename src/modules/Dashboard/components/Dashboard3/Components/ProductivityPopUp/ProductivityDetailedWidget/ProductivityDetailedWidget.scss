@@ -1,0 +1,70 @@
+@import "../../../../../../../assets/onx/variable";
+@import "../../../../../../../assets/onx/abstracts/mixins";
+
+
+.productivity-detailed-widget{
+    margin: 0 7.5px 0 7.5px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    .dtld-wdgt-tabSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px 0 0;
+        border-bottom: 0.5px solid rgba(59, 59, 59, 0.2);
+
+        .product-metric-tab {
+            min-height: 0;
+
+            .MuiTabs-indicator {
+                background-color: $onx-success;
+                height: 4px;
+            }
+
+            .MuiTab-root {
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 20px;
+                text-transform: none;
+                padding: 0 0 6px 0;
+                min-width: 100px;
+                min-height: 0;
+                color: #000000;
+                opacity: 1;
+            }
+
+            .MuiTab-wrapper {
+                padding: 10px 4px 7px;
+            }
+
+            .Mui-selected {
+                color: $onx-success;
+            }
+        }
+
+        .variances-ind {
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 11px;
+            @include flexCenter(space-between);
+
+            span {
+                margin-right: 5px;
+            }
+        }
+
+    }
+
+    .dtld-wdgt-content {
+        overflow: auto;
+        min-height: 200px;
+        max-height: 285px;
+        width: 100%;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #FFFFFF;
+    }
+}

@@ -1,0 +1,195 @@
+@import "../../../../Styles/colors.scss";
+.insightsInfoPopover-main {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    border-bottom: 1px solid #ffffff4d;
+    padding: 10px 16px;
+    font-weight: 500;
+    &__closeIcon {
+      cursor: pointer;
+    }
+    background: linear-gradient(
+      89.95deg,
+      $SLATE-V2-3 -49.88%,
+      rgba(255, 168, 13, 0.1) 102.13%
+    );
+    &__title {
+      color: $WHITE;
+      font-weight: 600;
+    }
+  }
+  &__noContent {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  &__content {
+    height: auto;
+    display: grid;
+    font-weight: 500;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 0 2rem 2rem 2rem;
+    & .MuiPaper-root {
+      height: 100%;
+      overflow: auto;
+    }
+    & ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    & ::-webkit-scrollbar-track {
+      border-radius: 15px;
+      background: #ffffff24;
+    }
+
+    & ::-webkit-scrollbar-thumb {
+      border-radius: 15px;
+      height: 2rem;
+    }
+
+    &__tableContainer {
+      height: 100% !important;
+      & .MuiButtonBase-root.MuiTableSortLabel-root.Mui-active,
+      .MuiButtonBase-root.MuiTableSortLabel-root,
+      .MuiTableSortLabel-icon {
+        color: #ffa80d !important;
+      }
+      & .MuiPaper-root {
+        overflow: hidden;
+      }
+      &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 15px;
+        background: #ffffff24;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        height: 2rem;
+      }
+    }
+    &__collapseTabelCell {
+      padding-bottom: 0;
+      padding-top: 0;
+      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+      &__tableContainer {
+        &__table {
+          box-shadow: rgba(0, 0, 0, 0.18) 0px 4px 8px;
+        }
+        &::-webkit-scrollbar {
+          width: 4px;
+          height: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+          border-radius: 15px;
+          background: #ffffff24;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 15px;
+          height: 2rem;
+        }
+      }
+    }
+    &__titleContainer {
+      padding: 2rem 1rem;
+      color: $WHITE;
+      &__subTitle {
+        font-size: 1.3rem;
+        font-weight: normal;
+        margin-top: 1rem;
+      }
+    }
+    &__hiddenTableCell {
+      visibility: hidden;
+    }
+    &__tableCell {
+      &__cursor {
+        cursor: pointer;
+      }
+      &__projectCell {
+        position: sticky;
+        top: 40px;
+      }
+      &.MuiTableCell-root {
+        min-width: 100px !important;
+        max-width: 100px !important;
+      }
+      &__startDate {
+        &.MuiTableCell-root {
+          min-width: 105px !important;
+          max-width: 105px !important;
+        }
+      }
+      &__taskName {
+        &.MuiTableCell-root {
+          min-width: 200px !important;
+          max-width: 200px !important;
+        }
+      }
+    }
+    &__delayTableCell {
+      &.MuiTableCell-root {
+        min-width: 80px !important;
+        max-width: 80px !important;
+      }
+    }
+    &__floatTableCell {
+      &.MuiTableCell-root {
+        min-width: 60px !important;
+        max-width: 60px !important;
+      }
+    }
+    &__activeRow {
+      & .MuiTableCell-root {
+        color: #fbd783 !important;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.12);
+        font-weight: 600;
+      }
+    }
+    & .MuiTableContainer-root {
+      background: #171d25;
+      border-radius: 4px;
+    }
+    & .MuiTableHead-root {
+      & .MuiTableCell-root {
+        font-size: 13px;
+        font-weight: 600;
+        color: #ffa80d !important;
+        border-top: 0.5px solid rgba(255, 255, 255, 0.12);
+      }
+    }
+    & .MuiTableBody-root {
+      & .MuiTableCell-root {
+        font-size: 12px;
+      }
+    }
+
+    & .MuiTableCell-root {
+      background-color: #171d25;
+      color: #fff;
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.12);
+      padding: 12px 0;
+    }
+    &__noDataContainer {
+      height: calc(100% - 44px);
+      width: calc(100% - 44px);
+      flex: 1;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+  }
+}

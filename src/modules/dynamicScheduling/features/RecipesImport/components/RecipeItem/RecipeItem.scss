@@ -1,0 +1,73 @@
+.RecipeItem{
+    display: flex;
+    flex-direction: column;
+    &__tab{
+        box-shadow: 0px 2px 1px -1px rgba(180, 179, 189, 0.25), 2px 0px 1px rgba(180, 179, 189, 0.04), 0px 2px 8px rgba(180, 179, 189, 0.25);
+        background: #FFFFFF;
+        border: 0.5px solid #EEEEEE;
+        box-sizing: border-box;
+        margin: 4px 10px;
+        padding: 0 0 0 10px;
+        border-radius: 4px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        &__more{
+            position: absolute;
+            left: 5px;
+            top: 2px;
+            cursor: pointer;
+            &__icon{
+                font-size: 1.6rem;
+            }
+        }
+        &__left{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            &__label{
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-left: 30px;
+                &-hiperlink {
+                    cursor: pointer;
+                    &:hover {
+                      text-decoration: underline;
+                      color: #0052cc;
+                      // color: #0052cc;
+                    }
+                }
+            }
+            &__taskType{
+                display: flex;
+                font-style: italic;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: right;
+                color: #9E9E9E;
+                padding-right: 10px;
+            }
+        }
+        &__download{
+            width: 40px;
+            background: linear-gradient(132.77deg, #FCFCFC 11.98%, #F1F1F1 111.18%);
+            border: 0.5px solid #E0E0E0;
+            height: 40px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            &__icon{
+                font-size: 2rem;
+            }
+        }
+    }
+    &__children{
+        margin-left: 25px;
+    }
+}

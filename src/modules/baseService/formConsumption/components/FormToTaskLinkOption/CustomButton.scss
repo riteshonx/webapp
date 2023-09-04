@@ -1,0 +1,10 @@
+.showButtonLinkTask {
+  margin-left: 1rem;
+  padding: 1rem;
+  border: none;
+  background-color: inherit;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
+}

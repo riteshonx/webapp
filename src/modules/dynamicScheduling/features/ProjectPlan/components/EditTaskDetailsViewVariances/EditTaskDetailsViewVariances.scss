@@ -1,0 +1,307 @@
+@import '../../../../../../assets/onx/variable';
+.edit-task-detail-view__variances {
+  height: 400px;
+  width: 95%;
+
+  &__empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 95%;
+    flex-direction: column;
+    &-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      width: 95%;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      &-yay {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 56px;
+        /* identical to box height, or 156% */
+
+        /* Onx/A4 */
+
+        color: #757575;
+      }
+
+      &-text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height, or 125% */
+
+        /* Onx/A5 */
+
+        color: #9e9e9e;
+      }
+    }
+
+    &-add-variance {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 20px;
+      padding: 10px 24px;
+      color: $onx-A2;
+      border: 1px solid #424242;
+      box-sizing: border-box;
+      border-radius: 6px;
+    }
+  }
+
+  &__data {
+    &__table {
+      //   display: grid;
+      //   grid-template-columns: [first-start] 1fr [first-end second-start ] 1fr [second-end third-start] 1fr [third-end fourth-start] 1fr [fourth-end fifth-start] 1fr [fifth-end];
+      width: 100%;
+      margin-top: 44px;
+      margin-left: 30px;
+
+      &__head {
+        grid-template-columns: [first-start] 1fr [first-end second-start ] 1fr [second-end third-start] 1fr [third-end fourth-start] 1fr [fourth-end fifth-start] 1fr [fifth-end];
+        width: 100%;
+        height: 60px;
+      }
+
+      th {
+        align-items: start;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: left;
+        /* identical to box height, or 160% */
+        border-bottom: 1px solid #eeeeee;
+
+        letter-spacing: 0.02em;
+
+        /* Onx/A2 */
+
+        color: $onx-A4;
+      }
+      &__th {
+        &-1 {
+          grid-column: first-start/ first-end;
+          color: $onx-A2 !important;
+        }
+        &-2 {
+          grid-column: second-start/ second-end;
+          color: $onx-A2 !important;
+        }
+        &-3 {
+          grid-column: third-start/ third-end;
+        }
+        &-4 {
+          grid-column: fourth-start/ fourth-end;
+        }
+        &-5 {
+          grid-column: fifth-start/ fifth-end;
+        }
+      }
+
+      &__body {
+        grid-template-columns: [first-start] 1fr [first-end second-start ] 1fr [second-end third-start] 1fr [third-end fourth-start] 1fr [fourth-end fifth-start] 1fr [fifth-end];
+        width: 100%;
+        height: 60px;
+        margin-top: 20px;
+
+        &__row {
+          height: 60px;
+          margin-top: 20px;
+          border-top: 1px solid #eeeeee;
+          border-bottom: 1px solid #eeeeee;
+
+          &-hover {
+            &:hover {
+              .edit-task-detail-view__variances__data__table__body__row__item__btn {
+                display: flex;
+              }
+            }
+          }
+
+          td {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 20px;
+            /* identical to box height, or 154% */
+
+            /* Onx/A2 */
+            width: calc(100% / 5);
+            color: $onx-A4;
+            border-bottom: 1px solid #eeeeee;
+            // border-top: 1px solid #eeeeee;
+          }
+
+          &__td {
+            &-1 {
+              color: $onx-A2 !important;
+              width: calc(100% / 5);
+            }
+            &-2 {
+              color: $onx-A2 !important;
+              width: calc(100% / 5);
+
+              &-select {
+                width: 223px;
+              }
+            }
+            &-3 {
+              width: calc(100% / 5);
+            }
+            &-4 {
+              width: calc(100% / 5);
+            }
+            &-5 {
+              width: calc(100% / 5);
+            }
+          }
+
+          &__item {
+            &__name {
+              display: flex;
+              align-items: center;
+
+              flex-wrap: wrap;
+
+              padding-right: 2px;
+              &__input {
+                line-height: 0;
+                height: 36px;
+              }  
+              
+              &-text {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 180px;
+              }
+            }
+            &__btn {
+              display: none;
+              align-items: center;
+              justify-content: center;
+
+              &-edit {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+              }
+              &-delete {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                margin-left: 14.5px;
+              }
+
+              &-save {
+                display: flex;
+                justify-content: center;
+
+                &-update {
+                  :first-child {
+                    color: #fff;
+                  }
+                }
+
+                &-discard {
+                  font-family: Poppins;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 12px;
+                  line-height: 20px;
+
+                  display: flex;
+                  align-items: center;
+                  text-align: center;
+                  color: $onx-A2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-add-variance {
+      &-btn {
+        border: none;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 20px;
+
+        /* Onx/A2 */
+
+        color: $onx-A2;
+        margin-left: 30px;
+      }
+
+      &-input {
+        display: flex;
+        margin-left: 30px;
+        margin-top: 20px;
+
+        &-text {
+          flex-direction: row !important;
+          width: 159px;
+          height: 36px;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+          /* identical to box height, or 167% */
+
+          /* Onx/A6 */
+
+          color: $onx-A6;
+
+          // border: 0.5px solid #bdbdbd;
+          box-sizing: border-box;
+          border-radius: 4px;
+          margin-right: 15px !important;
+
+          &__error {
+            position: absolute !important;
+            color: #f00 !important;
+            font-size: 1rem !important;
+            line-height: 12px;
+          }
+        }
+
+        &-category {
+          width: 177px;
+          height: 36px;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  // &-hover {
+  //   width: 100%;
+  //   :hover {
+  //     :nth-child(5) {
+  //       display: flex;
+  //     }
+  //   }
+  // }
+}

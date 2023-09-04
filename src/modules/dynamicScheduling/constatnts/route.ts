@@ -1,0 +1,9 @@
+export const SCHEDULING = 'scheduling';
+export const PROJECT_PLAN = 'project-plan';
+export const TASK_LIBRARY = 'task-library';
+export const LIBRARY = 'library';
+export const CALENDAR = 'calendar';
+export const SCHEDULE_RECIPES = 'recipes';
+export const MATERIAL_MASTER = 'material-master';
+export const SCHEDULE_RECIPE_Plan = 'recipe-plan';
+export const EQUIPMENT_MASTER = 'equipment-master';

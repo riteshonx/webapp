@@ -1,0 +1,38 @@
+@import '../../../../../assets/onx/variable';
+
+.insights__tab {
+    display: flex;
+
+    &__button {
+        background-color: transparent;
+        padding: 0 30px;
+        color: $onx-black;
+        border-width: 0px 1px 0px 0px;
+        border-style: solid;
+        border-color: $onx-A7;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        opacity: 0.4;
+        font-size: 14px;
+        cursor: pointer;
+
+        &.active {
+            opacity: 1;
+        }
+
+        &__count {
+            font-size: 12px;
+            margin-left: 12px;
+            padding: 2px 8px;
+            background-color: $onx-primary;
+            color: #fff;
+            border-radius: 2em;
+        }
+
+        & img {
+            width: 18px;
+            margin-right: 12px;
+        }
+    }
+}

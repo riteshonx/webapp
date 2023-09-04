@@ -1,0 +1,63 @@
+.ProjectUserDetails {
+  padding: 0 !important;
+  margin: 0 !important;
+  &__avatargroup {
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+    .MuiAvatarGroup-avatar {
+      height: 3.5rem;
+      width: 3.5rem;
+      font-size: 1.2rem;
+      background: #000;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  &__menu {
+    & .MuiList-padding {
+      padding: 0 !important;
+    }
+    & .MuiMenu-list {
+      max-height: 200px;
+    }
+  }
+  &__valuitems {
+    display: grid;
+    grid-template-columns: 25px auto;
+    &__groupIcon {
+      background: #f1f1f1;
+      color: #949494;
+      border-radius: 50%;
+      width: 2.6rem;
+      height: 2.6rem;
+      font-size: 1.6rem;
+    }
+    & .MuiList-padding {
+      padding: 0 !important;
+    }
+    & .MuiMenu-list {
+      max-height: 200px;
+    }
+    &__icon {
+      width: 2.6rem !important;
+      height: 2.6rem !important;
+      font-size: 1rem !important;
+      background: #000 !important;
+      color: #fff;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      padding-left: 15px;
+      font-size: 1.2rem;
+      &__name {
+        font-size: 1.2rem;
+      }
+      &__email {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import '../../../../../assets/onx/variable';
+@import '../../../../../assets/onx/abstracts/mixins';
+
+.modalContent {
+  display: flex;
+  justify-content: center;
+}
+
+.ChangeOrderHeader {
+  font-weight: bold;
+
+  &__text-cell {
+    width: 120px;
+  }
+}
+
+.gap-1 {
+  gap: 1%;
+}
+
+.ChangeOrder {
+  border-right: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
+  overflow: auto;
+
+  .bordered-cell {
+    border-right: 1px solid #bdbdbd;
+  }
+
+  th {
+    border-top: 1px solid #bdbdbd;
+  }
+
+  td.bordered-cell {
+    padding: 0px;
+    background: white;
+    overflow: hidden;
+  }
+
+  td.non-editable-cell {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 250px;
+    text-overflow: ellipsis;
+  }
+
+  .left-border.bordered-cell {
+    border-left: 1px solid #bdbdbd;
+  }
+
+  .MuiTableRow-root:nth-child(even) {
+    background: #fafafa;
+  }
+
+  .MuiTableRow-root {
+    border-bottom: 1px solid #bdbdbd;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.unitWidth {
+  width: 31px;
+}
+.btnAdd {
+  right: 20px;
+}
